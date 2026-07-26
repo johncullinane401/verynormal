@@ -397,8 +397,39 @@ OldaleTown_Text_TownSign:
 `
 script OldaleTown_EventScript_YinTalk {
 	lockall
-	setflag(WE_FLAG_NO_CATCHING)
-	msgbox("It is done.")
+	call(CheckForNormalType)
+	// setflag(WE_FLAG_NO_CATCHING)
+	faceplayer
+	msgbox("I have been waiting patiently\nfor you.")
+	if (flag(FLAG_CAUGHTNORMAL)) {
+		msgbox("I see you have obtain your CATALYST.")
+		msgbox("This is most excellent.")
+		msgbox("But, to continue your path, difficult\nchoices must be made.")
+		msgbox("And now, you are met with one of those choices.")
+		fadeoutbgm(2)
+		msgbox("Your CATALSYT will prove to be very\nuseful to you.")
+		msgbox("The rest of your companions...")
+		msgbox("...must be dismissed.")
+		delay(2)
+		msgbox("I know you have only known them\na short while.")
+		msgbox("Are you prepared for their sacrifice?", MSGBOX_YESNO)
+		if(var(VAR_RESULT) == YES) {
+			delay(5)
+			msgbox("........................")
+			msgbox("It has been taken care of")
+		}
+	} else {
+		msgbox("Unfortunately, you have not yet\nobtained your CATALYST.")
+		msgbox("Any NORMAL type will do.")
+		msgbox("Please return to me once you have\nobtained one.")
+	}
 	releaseall
+}
+
+script CheckForNormalType {
+	checkspecies(SPECIES_ZIGZAGOON, NO_PARTY_SCREEN)
+	if (var(VAR_RESULT) == TRUE) {
+		setflag(FLAG_CAUGHTNORMAL)
+	}
 }
 

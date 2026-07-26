@@ -795,14 +795,122 @@ OldaleTown_EventScript_YinTalk::
 # 399 "data/maps/OldaleTown/scripts.pory"
 	lockall
 # 400 "data/maps/OldaleTown/scripts.pory"
-	setflag WE_FLAG_NO_CATCHING
-# 401 "data/maps/OldaleTown/scripts.pory"
-	msgbox OldaleTown_EventScript_YinTalk_Text_0
+	call CheckForNormalType
 # 402 "data/maps/OldaleTown/scripts.pory"
+	faceplayer
+# 403 "data/maps/OldaleTown/scripts.pory"
+	msgbox OldaleTown_EventScript_YinTalk_Text_0
+# 404 "data/maps/OldaleTown/scripts.pory"
+	goto_if_set FLAG_CAUGHTNORMAL, OldaleTown_EventScript_YinTalk_2
+# 419 "data/maps/OldaleTown/scripts.pory"
+	msgbox OldaleTown_EventScript_YinTalk_Text_11
+# 420 "data/maps/OldaleTown/scripts.pory"
+	msgbox OldaleTown_EventScript_YinTalk_Text_12
+# 421 "data/maps/OldaleTown/scripts.pory"
+	msgbox OldaleTown_EventScript_YinTalk_Text_13
+OldaleTown_EventScript_YinTalk_1:
+# 423 "data/maps/OldaleTown/scripts.pory"
 	releaseall
+	return
+
+OldaleTown_EventScript_YinTalk_2:
+# 405 "data/maps/OldaleTown/scripts.pory"
+	msgbox OldaleTown_EventScript_YinTalk_Text_1
+# 406 "data/maps/OldaleTown/scripts.pory"
+	msgbox OldaleTown_EventScript_YinTalk_Text_2
+# 407 "data/maps/OldaleTown/scripts.pory"
+	msgbox OldaleTown_EventScript_YinTalk_Text_3
+# 408 "data/maps/OldaleTown/scripts.pory"
+	msgbox OldaleTown_EventScript_YinTalk_Text_4
+# 409 "data/maps/OldaleTown/scripts.pory"
+	msgbox OldaleTown_EventScript_YinTalk_Text_5
+# 410 "data/maps/OldaleTown/scripts.pory"
+	msgbox OldaleTown_EventScript_YinTalk_Text_6
+# 411 "data/maps/OldaleTown/scripts.pory"
+	msgbox OldaleTown_EventScript_YinTalk_Text_7
+# 412 "data/maps/OldaleTown/scripts.pory"
+	delay 2
+# 413 "data/maps/OldaleTown/scripts.pory"
+	msgbox OldaleTown_EventScript_YinTalk_Text_8
+# 414 "data/maps/OldaleTown/scripts.pory"
+	msgbox OldaleTown_EventScript_YinTalk_Text_9, MSGBOX_YESNO
+# 415 "data/maps/OldaleTown/scripts.pory"
+	compare VAR_RESULT, YES
+	goto_if_eq OldaleTown_EventScript_YinTalk_5
+	goto OldaleTown_EventScript_YinTalk_1
+
+OldaleTown_EventScript_YinTalk_5:
+# 416 "data/maps/OldaleTown/scripts.pory"
+	msgbox OldaleTown_EventScript_YinTalk_Text_10
+	goto OldaleTown_EventScript_YinTalk_1
+
+
+CheckForNormalType::
+# 427 "data/maps/OldaleTown/scripts.pory"
+	checkspecies SPECIES_ZIGZAGOON, NO_PARTY_SCREEN
+# 428 "data/maps/OldaleTown/scripts.pory"
+	compare VAR_RESULT, TRUE
+	goto_if_eq CheckForNormalType_1
+	return
+
+CheckForNormalType_1:
+# 429 "data/maps/OldaleTown/scripts.pory"
+	setflag FLAG_CAUGHTNORMAL
 	return
 
 
 OldaleTown_EventScript_YinTalk_Text_0:
-# 401 "data/maps/OldaleTown/scripts.pory"
-	.string "It is done.$"
+# 403 "data/maps/OldaleTown/scripts.pory"
+	.string "I have been waiting patiently\nfor you.$"
+
+OldaleTown_EventScript_YinTalk_Text_1:
+# 405 "data/maps/OldaleTown/scripts.pory"
+	.string "I see you have obtain your CATALYST.$"
+
+OldaleTown_EventScript_YinTalk_Text_2:
+# 406 "data/maps/OldaleTown/scripts.pory"
+	.string "This is most excellent.$"
+
+OldaleTown_EventScript_YinTalk_Text_3:
+# 407 "data/maps/OldaleTown/scripts.pory"
+	.string "But, to continue your path, difficult\nchoices must be made.$"
+
+OldaleTown_EventScript_YinTalk_Text_4:
+# 408 "data/maps/OldaleTown/scripts.pory"
+	.string "And now, you are met with one of those choices.$"
+
+OldaleTown_EventScript_YinTalk_Text_5:
+# 409 "data/maps/OldaleTown/scripts.pory"
+	.string "Your CATALSYT will prove to be very\nuseful to you.$"
+
+OldaleTown_EventScript_YinTalk_Text_6:
+# 410 "data/maps/OldaleTown/scripts.pory"
+	.string "The rest of your companions...$"
+
+OldaleTown_EventScript_YinTalk_Text_7:
+# 411 "data/maps/OldaleTown/scripts.pory"
+	.string "...must be dismissed.$"
+
+OldaleTown_EventScript_YinTalk_Text_8:
+# 413 "data/maps/OldaleTown/scripts.pory"
+	.string "I know you have only known them\na short while.$"
+
+OldaleTown_EventScript_YinTalk_Text_9:
+# 414 "data/maps/OldaleTown/scripts.pory"
+	.string "Are you prepared for their sacrifice?$"
+
+OldaleTown_EventScript_YinTalk_Text_10:
+# 416 "data/maps/OldaleTown/scripts.pory"
+	.string "$"
+
+OldaleTown_EventScript_YinTalk_Text_11:
+# 419 "data/maps/OldaleTown/scripts.pory"
+	.string "Unfortunately, you have not yet\nobtained your CATALYST.$"
+
+OldaleTown_EventScript_YinTalk_Text_12:
+# 420 "data/maps/OldaleTown/scripts.pory"
+	.string "Any NORMAL type will do.$"
+
+OldaleTown_EventScript_YinTalk_Text_13:
+# 421 "data/maps/OldaleTown/scripts.pory"
+	.string "Please return to me once you have\nobtained one.$"

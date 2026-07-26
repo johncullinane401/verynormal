@@ -802,14 +802,14 @@ OldaleTown_EventScript_YinTalk::
 	msgbox OldaleTown_EventScript_YinTalk_Text_0
 # 404 "data/maps/OldaleTown/scripts.pory"
 	goto_if_set FLAG_CAUGHTNORMAL, OldaleTown_EventScript_YinTalk_2
-# 419 "data/maps/OldaleTown/scripts.pory"
-	msgbox OldaleTown_EventScript_YinTalk_Text_11
-# 420 "data/maps/OldaleTown/scripts.pory"
-	msgbox OldaleTown_EventScript_YinTalk_Text_12
-# 421 "data/maps/OldaleTown/scripts.pory"
-	msgbox OldaleTown_EventScript_YinTalk_Text_13
+# 427 "data/maps/OldaleTown/scripts.pory"
+	msgbox OldaleTown_EventScript_YinTalk_Text_16
+# 428 "data/maps/OldaleTown/scripts.pory"
+	msgbox OldaleTown_EventScript_YinTalk_Text_17
+# 429 "data/maps/OldaleTown/scripts.pory"
+	msgbox OldaleTown_EventScript_YinTalk_Text_18
 OldaleTown_EventScript_YinTalk_1:
-# 423 "data/maps/OldaleTown/scripts.pory"
+# 431 "data/maps/OldaleTown/scripts.pory"
 	releaseall
 	return
 
@@ -823,38 +823,52 @@ OldaleTown_EventScript_YinTalk_2:
 # 408 "data/maps/OldaleTown/scripts.pory"
 	msgbox OldaleTown_EventScript_YinTalk_Text_4
 # 409 "data/maps/OldaleTown/scripts.pory"
-	msgbox OldaleTown_EventScript_YinTalk_Text_5
+	fadeoutbgm 2
 # 410 "data/maps/OldaleTown/scripts.pory"
-	msgbox OldaleTown_EventScript_YinTalk_Text_6
+	msgbox OldaleTown_EventScript_YinTalk_Text_5
 # 411 "data/maps/OldaleTown/scripts.pory"
-	msgbox OldaleTown_EventScript_YinTalk_Text_7
+	msgbox OldaleTown_EventScript_YinTalk_Text_6
 # 412 "data/maps/OldaleTown/scripts.pory"
-	delay 2
+	msgbox OldaleTown_EventScript_YinTalk_Text_7
 # 413 "data/maps/OldaleTown/scripts.pory"
-	msgbox OldaleTown_EventScript_YinTalk_Text_8
+	delay 2
 # 414 "data/maps/OldaleTown/scripts.pory"
-	msgbox OldaleTown_EventScript_YinTalk_Text_9, MSGBOX_YESNO
+	msgbox OldaleTown_EventScript_YinTalk_Text_8
 # 415 "data/maps/OldaleTown/scripts.pory"
+	msgbox OldaleTown_EventScript_YinTalk_Text_9, MSGBOX_YESNO
+# 416 "data/maps/OldaleTown/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq OldaleTown_EventScript_YinTalk_5
 	goto OldaleTown_EventScript_YinTalk_1
 
 OldaleTown_EventScript_YinTalk_5:
-# 416 "data/maps/OldaleTown/scripts.pory"
+# 417 "data/maps/OldaleTown/scripts.pory"
+	delay 5
+# 418 "data/maps/OldaleTown/scripts.pory"
 	msgbox OldaleTown_EventScript_YinTalk_Text_10
+# 419 "data/maps/OldaleTown/scripts.pory"
+	msgbox OldaleTown_EventScript_YinTalk_Text_11
+# 420 "data/maps/OldaleTown/scripts.pory"
+	msgbox OldaleTown_EventScript_YinTalk_Text_12
+# 421 "data/maps/OldaleTown/scripts.pory"
+	msgbox OldaleTown_EventScript_YinTalk_Text_13
+# 422 "data/maps/OldaleTown/scripts.pory"
+	msgbox OldaleTown_EventScript_YinTalk_Text_14
+# 423 "data/maps/OldaleTown/scripts.pory"
+	msgbox OldaleTown_EventScript_YinTalk_Text_15
 	goto OldaleTown_EventScript_YinTalk_1
 
 
 CheckForNormalType::
-# 427 "data/maps/OldaleTown/scripts.pory"
+# 435 "data/maps/OldaleTown/scripts.pory"
 	checkspecies SPECIES_ZIGZAGOON, NO_PARTY_SCREEN
-# 428 "data/maps/OldaleTown/scripts.pory"
+# 436 "data/maps/OldaleTown/scripts.pory"
 	compare VAR_RESULT, TRUE
 	goto_if_eq CheckForNormalType_1
 	return
 
 CheckForNormalType_1:
-# 429 "data/maps/OldaleTown/scripts.pory"
+# 437 "data/maps/OldaleTown/scripts.pory"
 	setflag FLAG_CAUGHTNORMAL
 	return
 
@@ -877,40 +891,60 @@ OldaleTown_EventScript_YinTalk_Text_3:
 
 OldaleTown_EventScript_YinTalk_Text_4:
 # 408 "data/maps/OldaleTown/scripts.pory"
-	.string "And now, you are met with one of those choices.$"
+	.string "And now, you are met with one of those\nchoices.$"
 
 OldaleTown_EventScript_YinTalk_Text_5:
-# 409 "data/maps/OldaleTown/scripts.pory"
+# 410 "data/maps/OldaleTown/scripts.pory"
 	.string "Your CATALSYT will prove to be very\nuseful to you.$"
 
 OldaleTown_EventScript_YinTalk_Text_6:
-# 410 "data/maps/OldaleTown/scripts.pory"
+# 411 "data/maps/OldaleTown/scripts.pory"
 	.string "The rest of your companions...$"
 
 OldaleTown_EventScript_YinTalk_Text_7:
-# 411 "data/maps/OldaleTown/scripts.pory"
+# 412 "data/maps/OldaleTown/scripts.pory"
 	.string "...must be dismissed.$"
 
 OldaleTown_EventScript_YinTalk_Text_8:
-# 413 "data/maps/OldaleTown/scripts.pory"
+# 414 "data/maps/OldaleTown/scripts.pory"
 	.string "I know you have only known them\na short while.$"
 
 OldaleTown_EventScript_YinTalk_Text_9:
-# 414 "data/maps/OldaleTown/scripts.pory"
+# 415 "data/maps/OldaleTown/scripts.pory"
 	.string "Are you prepared for their sacrifice?$"
 
 OldaleTown_EventScript_YinTalk_Text_10:
-# 416 "data/maps/OldaleTown/scripts.pory"
-	.string "$"
+# 418 "data/maps/OldaleTown/scripts.pory"
+	.string "........................$"
 
 OldaleTown_EventScript_YinTalk_Text_11:
 # 419 "data/maps/OldaleTown/scripts.pory"
-	.string "Unfortunately, you have not yet\nobtained your CATALYST.$"
+	.string "It has been taken care of.$"
 
 OldaleTown_EventScript_YinTalk_Text_12:
 # 420 "data/maps/OldaleTown/scripts.pory"
-	.string "Any NORMAL type will do.$"
+	.string "You are a strong-willed person.$"
 
 OldaleTown_EventScript_YinTalk_Text_13:
 # 421 "data/maps/OldaleTown/scripts.pory"
+	.string "That was not an easy choice to make.$"
+
+OldaleTown_EventScript_YinTalk_Text_14:
+# 422 "data/maps/OldaleTown/scripts.pory"
+	.string "Do not weep for your companions.$"
+
+OldaleTown_EventScript_YinTalk_Text_15:
+# 423 "data/maps/OldaleTown/scripts.pory"
+	.string "You will see them again in the\nAshen Garden.$"
+
+OldaleTown_EventScript_YinTalk_Text_16:
+# 427 "data/maps/OldaleTown/scripts.pory"
+	.string "Unfortunately, you have not yet\nobtained your CATALYST.$"
+
+OldaleTown_EventScript_YinTalk_Text_17:
+# 428 "data/maps/OldaleTown/scripts.pory"
+	.string "Any NORMAL type will do.$"
+
+OldaleTown_EventScript_YinTalk_Text_18:
+# 429 "data/maps/OldaleTown/scripts.pory"
 	.string "Please return to me once you have\nobtained one.$"

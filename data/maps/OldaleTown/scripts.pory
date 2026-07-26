@@ -405,7 +405,7 @@ script OldaleTown_EventScript_YinTalk {
 		msgbox("I see you have obtain your CATALYST.")
 		msgbox("This is most excellent.")
 		msgbox("But, to continue your path, difficult\nchoices must be made.")
-		msgbox("And now, you are met with one of those choices.")
+		msgbox("And now, you are met with one of those\nchoices.")
 		fadeoutbgm(2)
 		msgbox("Your CATALSYT will prove to be very\nuseful to you.")
 		msgbox("The rest of your companions...")
@@ -416,7 +416,12 @@ script OldaleTown_EventScript_YinTalk {
 		if(var(VAR_RESULT) == YES) {
 			delay(5)
 			msgbox("........................")
-			msgbox("It has been taken care of")
+			msgbox("It has been taken care of.")
+			msgbox("You are a strong-willed person.")
+			msgbox("That was not an easy choice to make.")
+			msgbox("Do not weep for your companions.")
+			msgbox("You will see them again in the\nAshen Garden.")
+			
 		}
 	} else {
 		msgbox("Unfortunately, you have not yet\nobtained your CATALYST.")

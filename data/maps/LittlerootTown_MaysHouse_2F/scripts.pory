@@ -422,7 +422,7 @@ script LittlerootTown_MaysHouse_2F_EventScript_YinTalk {
 	msgbox("You must obtain")
 	msgbox("A CATALYST.")
 	msgbox("A NORMAL type will do.")
-	msgbox("Once you have done this, I will find\nyou again in 'Oldale Town'.")
+	msgbox("Once you have done this, I will find\nyou again in 'Petalburg City'.")
 	msgbox("With that, I bid you farewell.")
 	removeobject(17)
 	setflag(FLAG_VANISH_YIN_ONE)

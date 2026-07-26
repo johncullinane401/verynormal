@@ -976,7 +976,7 @@ LittlerootTown_MaysHouse_2F_EventScript_YinTalk_Text_18:
 
 LittlerootTown_MaysHouse_2F_EventScript_YinTalk_Text_19:
 # 425 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
-	.string "Once you have done this, I will find\nyou again in 'Oldale Town'.$"
+	.string "Once you have done this, I will find\nyou again in 'Petalburg City'.$"
 
 LittlerootTown_MaysHouse_2F_EventScript_YinTalk_Text_20:
 # 426 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"

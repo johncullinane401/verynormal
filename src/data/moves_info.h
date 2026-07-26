@@ -3777,6 +3777,30 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .validApprenticeMove = TRUE,
     },
 
+    [MOVE_DREAMDEVOUR] =
+    {
+        .name = COMPOUND_STRING("Dream Devour"),
+        .description = COMPOUND_STRING(
+            "Once their dreams have gone,\n"
+            "they will have nothing left."),
+        .effect = EFFECT_DARK_VOID,
+        .power = 100,
+        .type = TYPE_NORMAL,
+        .accuracy = 100,
+        .pp = 99,
+        .target = TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_SPECIAL,
+        .argument = { .absorbPercentage = 50 },
+        .healingMove = B_HEAL_BLOCKING >= GEN_6,
+        .contestEffect = CONTEST_EFFECT_STARTLE_PREV_MONS,
+        .contestCategory = CONTEST_CATEGORY_SMART,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {COMBO_STARTER_CALM_MIND, COMBO_STARTER_HYPNOSIS, COMBO_STARTER_LOVELY_KISS, COMBO_STARTER_SPORE, COMBO_STARTER_SING, COMBO_STARTER_YAWN, COMBO_STARTER_DARK_VOID, COMBO_STARTER_GRASS_WHISTLE, COMBO_STARTER_SLEEP_POWDER},
+        .battleAnimScript = gBattleAnimMove_DreamEater,
+        .validApprenticeMove = TRUE,
+    },
+
     [MOVE_POISON_GAS] =
     {
         .name = COMPOUND_STRING("Poison Gas"),

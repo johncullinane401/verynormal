@@ -786,7 +786,9 @@ script PetalburgCity_EventScript_YinTalk {
 			msgbox("That was not an easy choice to make.")
 			msgbox("Do not weep for your companions.")
 			msgbox("You will see them again in the\nAshen Garden.")
-			
+
+            call(PetalburgCity_PokemonFanClub_EventScript_DDTutor)
+            releaseall
 		}
 	} else {
 		msgbox("Unfortunately, you have not yet\nobtained your CATALYST.")

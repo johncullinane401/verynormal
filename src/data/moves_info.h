@@ -3779,11 +3779,11 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
 
     [MOVE_DREAMDEVOUR] =
     {
-        .name = COMPOUND_STRING("Dream Devour"),
+        .name = COMPOUND_STRING("DreamDevour"),
         .description = COMPOUND_STRING(
             "Once their dreams have gone,\n"
             "they will have nothing left."),
-        .effect = EFFECT_DARK_VOID,
+        .effect = EFFECT_ELECTRO_BALL,
         .power = 100,
         .type = TYPE_NORMAL,
         .accuracy = 100,

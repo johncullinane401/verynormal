@@ -24,6 +24,24 @@ MoveTutor_Text_SwaggerTaught:
 	.string "I'll just praise my POKéMON from now\n"
 	.string "on without the swagger.$"
 
+
+MoveTutor_Text_DDTeach:
+	.string "Please take my power.$"
+
+MoveTutor_Text_DDDeclined:
+	.string "...$"
+
+MoveTutor_Text_DDWhichMon:
+	.string "Choose your CATALYST.$"
+
+MoveTutor_Text_DDTaught:
+	.string "Done.$"
+
+
+
+
+
+
 MoveTutor_Text_RolloutTeach:
 	.string "Did you know that you can go from\n"
 	.string "here a long way in that direction\l"

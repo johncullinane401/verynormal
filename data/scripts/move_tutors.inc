@@ -1,7 +1,7 @@
 SlateportCity_PokemonFanClub_EventScript_SwaggerTutor::
 	lock
 	faceplayer
-	move_tutor MOVE_SWAGGER, MoveTutor_Text_SwaggerTeach, MoveTutor_Text_SwaggerWhichMon, MoveTutor_EventScript_SwaggerDeclined, MoveTutor_EventScript_SwaggerTaught, FLAG_MOVE_TUTOR_TAUGHT_SWAGGER
+	move_tutor MOVE_SWAGGER, MoveTutor_Text_DDTeach, MoveTutor_Text_SwaggerWhichMon, MoveTutor_EventScript_SwaggerDeclined, MoveTutor_EventScript_SwaggerTaught, FLAG_MOVE_TUTOR_TAUGHT_SWAGGER
 	release
 	end
 
@@ -14,6 +14,33 @@ MoveTutor_EventScript_SwaggerTaught::
 	msgbox MoveTutor_Text_SwaggerTaught, MSGBOX_DEFAULT
 	release
 	end
+
+
+
+
+
+PetalburgCity_PokemonFanClub_EventScript_DDTutor::
+	lock
+	faceplayer
+	move_tutor MOVE_DREAMDEVOUR, MoveTutor_Text_DDTeach, MoveTutor_Text_DDWhichMon, MoveTutor_EventScript_DDDeclined, MoveTutor_EventScript_DDTaught, FLAG_LEARNED_DD
+	release
+	end
+
+MoveTutor_EventScript_DDDeclined::
+	msgbox MoveTutor_Text_DDDeclined, MSGBOX_DEFAULT
+	release
+	end
+
+
+MoveTutor_EventScript_DDTaught::
+	msgbox MoveTutor_Text_DDTaught, MSGBOX_DEFAULT
+	release
+	end
+
+#
+
+
+
 
 MauvilleCity_EventScript_RolloutTutor::
 	lock

@@ -103,6 +103,12 @@ static bool32 IsFieldMoveUnlocked_Defog(void)
     return OW_DEFOG_FIELD_MOVE;
 }
 
+static bool32 IsFieldMoveUnlocked_DD(void)
+{
+    return TRUE;
+}
+
+
 const struct FieldMoveInfo gFieldMoveInfo[FIELD_MOVES_COUNT] =
 {
     [FIELD_MOVE_CUT] =
@@ -230,4 +236,13 @@ const struct FieldMoveInfo gFieldMoveInfo[FIELD_MOVES_COUNT] =
         .moveID = MOVE_DEFOG,
         .partyMsgID = PARTY_MSG_CANT_USE_HERE,
     },
+    /*
+    [FIELD_MOVE_DD] =
+    {
+        .fieldMoveFunc = SetUpFieldMove_DD,
+        .isUnlockedFunc = IsFieldMoveUnlocked_DD,
+        .moveID = MOVE_DREAMDEVOUR,
+        .partyMsgID = PARTY_MSG_CANT_USE_HERE,
+    },
+    */
 };

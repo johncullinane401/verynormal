@@ -10496,7 +10496,8 @@
     "MOVE_TRICK",
     "MOVE_WATER_PULSE",
     "MOVE_WHIRLPOOL",
-    "MOVE_WORK_UP"
+    "MOVE_WORK_UP",
+    "MOVE_DREAMDEVOUR"
   ],
   "LITWICK": [
     "MOVE_ACID",

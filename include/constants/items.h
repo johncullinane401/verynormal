@@ -819,7 +819,7 @@ enum __attribute__((packed)) Item
     ITEM_HM04 = 685,
     ITEM_HM05 = 686,
     ITEM_HM06 = 687,
-    ITEM_HM07 = 688,
+    ITEM_HM07 = 688, // was waterfall
     ITEM_HM08 = 689,
 
 

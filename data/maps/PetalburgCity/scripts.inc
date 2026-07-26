@@ -1530,14 +1530,14 @@ PetalburgCity_EventScript_YinTalk::
 	msgbox PetalburgCity_EventScript_YinTalk_Text_0
 # 769 "data/maps/PetalburgCity/scripts.pory"
 	goto_if_set FLAG_CAUGHTNORMAL, PetalburgCity_EventScript_YinTalk_2
-# 792 "data/maps/PetalburgCity/scripts.pory"
-	msgbox PetalburgCity_EventScript_YinTalk_Text_16
-# 793 "data/maps/PetalburgCity/scripts.pory"
-	msgbox PetalburgCity_EventScript_YinTalk_Text_17
 # 794 "data/maps/PetalburgCity/scripts.pory"
+	msgbox PetalburgCity_EventScript_YinTalk_Text_16
+# 795 "data/maps/PetalburgCity/scripts.pory"
+	msgbox PetalburgCity_EventScript_YinTalk_Text_17
+# 796 "data/maps/PetalburgCity/scripts.pory"
 	msgbox PetalburgCity_EventScript_YinTalk_Text_18
 PetalburgCity_EventScript_YinTalk_1:
-# 796 "data/maps/PetalburgCity/scripts.pory"
+# 798 "data/maps/PetalburgCity/scripts.pory"
 	releaseall
 	return
 
@@ -1584,19 +1584,23 @@ PetalburgCity_EventScript_YinTalk_5:
 	msgbox PetalburgCity_EventScript_YinTalk_Text_14
 # 788 "data/maps/PetalburgCity/scripts.pory"
 	msgbox PetalburgCity_EventScript_YinTalk_Text_15
+# 790 "data/maps/PetalburgCity/scripts.pory"
+	call PetalburgCity_PokemonFanClub_EventScript_DDTutor
+# 791 "data/maps/PetalburgCity/scripts.pory"
+	releaseall
 	goto PetalburgCity_EventScript_YinTalk_1
 
 
 PetalburgCity_CheckForNormalType::
-# 800 "data/maps/PetalburgCity/scripts.pory"
+# 802 "data/maps/PetalburgCity/scripts.pory"
 	checkspecies SPECIES_ZIGZAGOON, NO_PARTY_SCREEN
-# 801 "data/maps/PetalburgCity/scripts.pory"
+# 803 "data/maps/PetalburgCity/scripts.pory"
 	compare VAR_RESULT, TRUE
 	goto_if_eq PetalburgCity_CheckForNormalType_1
 	return
 
 PetalburgCity_CheckForNormalType_1:
-# 802 "data/maps/PetalburgCity/scripts.pory"
+# 804 "data/maps/PetalburgCity/scripts.pory"
 	setflag FLAG_CAUGHTNORMAL
 	return
 
@@ -1666,13 +1670,13 @@ PetalburgCity_EventScript_YinTalk_Text_15:
 	.string "You will see them again in the\nAshen Garden.$"
 
 PetalburgCity_EventScript_YinTalk_Text_16:
-# 792 "data/maps/PetalburgCity/scripts.pory"
+# 794 "data/maps/PetalburgCity/scripts.pory"
 	.string "Unfortunately, you have not yet\nobtained your CATALYST.$"
 
 PetalburgCity_EventScript_YinTalk_Text_17:
-# 793 "data/maps/PetalburgCity/scripts.pory"
+# 795 "data/maps/PetalburgCity/scripts.pory"
 	.string "Any NORMAL type will do.$"
 
 PetalburgCity_EventScript_YinTalk_Text_18:
-# 794 "data/maps/PetalburgCity/scripts.pory"
+# 796 "data/maps/PetalburgCity/scripts.pory"
 	.string "Please return to me once you have\nobtained one.$"

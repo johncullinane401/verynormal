@@ -795,217 +795,213 @@ LittlerootTown_MaysHouse_2F_EventScript_YinTalk::
 # 400 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
 	lockall
 # 401 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
-	fadeoutbgm 5
-# 402 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
 	msgbox LittlerootTown_MaysHouse_2F_EventScript_YinTalk_Text_0
-# 403 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
+# 402 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
 	msgbox LittlerootTown_MaysHouse_2F_EventScript_YinTalk_Text_1
-# 404 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
+# 403 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
 	msgbox LittlerootTown_MaysHouse_2F_EventScript_YinTalk_Text_2
-# 405 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
+# 404 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
 	msgbox LittlerootTown_MaysHouse_2F_EventScript_YinTalk_Text_3
-# 406 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
+# 405 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
 	msgbox LittlerootTown_MaysHouse_2F_EventScript_YinTalk_Text_4
-# 407 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
+# 406 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
 	msgbox LittlerootTown_MaysHouse_2F_EventScript_YinTalk_Text_5
-# 408 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
+# 407 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
 	msgbox LittlerootTown_MaysHouse_2F_EventScript_YinTalk_Text_6
-# 409 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
+# 408 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
 	msgbox LittlerootTown_MaysHouse_2F_EventScript_YinTalk_Text_7
-# 410 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
+# 409 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
 	msgbox LittlerootTown_MaysHouse_2F_EventScript_YinTalk_Text_8, MSGBOX_YESNO
-# 412 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
+# 411 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq LittlerootTown_MaysHouse_2F_EventScript_YinTalk_2
-# 416 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
+# 415 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
 	msgbox LittlerootTown_MaysHouse_2F_EventScript_YinTalk_Text_11
-# 417 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
+# 416 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
 	msgbox LittlerootTown_MaysHouse_2F_EventScript_YinTalk_Text_12
-# 418 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
+# 417 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
 	msgbox LittlerootTown_MaysHouse_2F_EventScript_YinTalk_Text_13
-# 419 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
+# 418 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
 	msgbox LittlerootTown_MaysHouse_2F_EventScript_YinTalk_Text_14
 LittlerootTown_MaysHouse_2F_EventScript_YinTalk_1:
-# 421 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
+# 420 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
 	msgbox LittlerootTown_MaysHouse_2F_EventScript_YinTalk_Text_15
-# 422 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
+# 421 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
 	msgbox LittlerootTown_MaysHouse_2F_EventScript_YinTalk_Text_16
-# 423 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
+# 422 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
 	msgbox LittlerootTown_MaysHouse_2F_EventScript_YinTalk_Text_17
-# 424 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
+# 423 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
 	msgbox LittlerootTown_MaysHouse_2F_EventScript_YinTalk_Text_18
-# 425 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
+# 424 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
 	msgbox LittlerootTown_MaysHouse_2F_EventScript_YinTalk_Text_19
-# 426 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
+# 425 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
 	msgbox LittlerootTown_MaysHouse_2F_EventScript_YinTalk_Text_20
-# 427 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
+# 426 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
 	removeobject 17
-# 428 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
+# 427 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
 	setflag FLAG_VANISH_YIN_ONE
-# 429 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
+# 428 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
 	warp MAP_LITTLEROOT_TOWN_MAYS_HOUSE_1F, 2, 3
-# 430 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
+# 429 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
 	releaseall
 	return
 
 LittlerootTown_MaysHouse_2F_EventScript_YinTalk_2:
-# 413 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
+# 412 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
 	msgbox LittlerootTown_MaysHouse_2F_EventScript_YinTalk_Text_9
-# 414 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
+# 413 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
 	msgbox LittlerootTown_MaysHouse_2F_EventScript_YinTalk_Text_10
 	goto LittlerootTown_MaysHouse_2F_EventScript_YinTalk_1
 
 
 LittlerootTown_MaysHouse_2F_EventScript_YinTalk_Ghost::
-# 434 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
+# 433 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
 	lockall
-# 435 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
-	fadeoutbgm 5
-# 436 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
+# 434 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
 	msgbox LittlerootTown_MaysHouse_2F_EventScript_YinTalk_Ghost_Text_0
-# 437 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
+# 435 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
 	msgbox LittlerootTown_MaysHouse_2F_EventScript_YinTalk_Ghost_Text_1
-# 438 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
+# 436 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
 	msgbox LittlerootTown_MaysHouse_2F_EventScript_YinTalk_Ghost_Text_2
-# 439 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
+# 437 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
 	msgbox LittlerootTown_MaysHouse_2F_EventScript_YinTalk_Ghost_Text_3
-# 440 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
+# 438 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
 	msgbox LittlerootTown_MaysHouse_2F_EventScript_YinTalk_Ghost_Text_4
-# 441 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
+# 439 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
 	msgbox LittlerootTown_MaysHouse_2F_EventScript_YinTalk_Ghost_Text_5
-# 442 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
+# 440 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
 	msgbox LittlerootTown_MaysHouse_2F_EventScript_YinTalk_Ghost_Text_6
-# 443 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
+# 441 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
 	releaseall
 	return
 
 
 LittlerootTown_MaysHouse_2F_EventScript_Creepy::
-# 447 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
+# 445 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
 	lockall
-# 448 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
+# 446 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
 	removeobject 17
-# 449 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
+# 447 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
 	setflag FLAG_VANISH_YIN_GHOST
-# 450 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
+# 448 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
 	releaseall
 	return
 
 
-# 453 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
+# 451 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
 UpMovement:
-# 454 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
+# 452 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
 	walk_up
 	step_end
 
 LittlerootTown_MaysHouse_2F_EventScript_YinTalk_Text_0:
-# 402 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
+# 401 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
 	.string "Hello, there.$"
 
 LittlerootTown_MaysHouse_2F_EventScript_YinTalk_Text_1:
-# 403 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
+# 402 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
 	.string "I do not have much time to\nspeak with you, so I will be blunt.$"
 
 LittlerootTown_MaysHouse_2F_EventScript_YinTalk_Text_2:
-# 404 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
+# 403 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
 	.string "You do not need to know my name.$"
 
 LittlerootTown_MaysHouse_2F_EventScript_YinTalk_Text_3:
-# 405 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
+# 404 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
 	.string "After all, I do not know yours.$"
 
 LittlerootTown_MaysHouse_2F_EventScript_YinTalk_Text_4:
-# 406 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
+# 405 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
 	.string "But, I believe we can\nhelp each other.$"
 
 LittlerootTown_MaysHouse_2F_EventScript_YinTalk_Text_5:
-# 407 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
+# 406 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
 	.string "I would prefer for you to stay in the\ndark, however.$"
 
 LittlerootTown_MaysHouse_2F_EventScript_YinTalk_Text_6:
-# 408 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
+# 407 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
 	.string "............$"
 
 LittlerootTown_MaysHouse_2F_EventScript_YinTalk_Text_7:
-# 409 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
+# 408 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
 	.string "I am sure this is sounding rather\nsuspicious to you.$"
 
 LittlerootTown_MaysHouse_2F_EventScript_YinTalk_Text_8:
-# 410 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
+# 409 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
 	.string "Despite this, will you assist me?$"
 
 LittlerootTown_MaysHouse_2F_EventScript_YinTalk_Text_9:
-# 413 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
+# 412 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
 	.string "Of course you will.$"
 
 LittlerootTown_MaysHouse_2F_EventScript_YinTalk_Text_10:
-# 414 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
+# 413 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
 	.string "I am happy to hear that.$"
 
 LittlerootTown_MaysHouse_2F_EventScript_YinTalk_Text_11:
-# 416 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
+# 415 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
 	.string "So you say.$"
 
 LittlerootTown_MaysHouse_2F_EventScript_YinTalk_Text_12:
-# 417 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
+# 416 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
 	.string "And yet, what do you have to lose?$"
 
 LittlerootTown_MaysHouse_2F_EventScript_YinTalk_Text_13:
-# 418 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
+# 417 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
 	.string "Ignore me if you wish.$"
 
 LittlerootTown_MaysHouse_2F_EventScript_YinTalk_Text_14:
-# 419 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
+# 418 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
 	.string "But if you change your mind...$"
 
 LittlerootTown_MaysHouse_2F_EventScript_YinTalk_Text_15:
-# 421 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
+# 420 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
 	.string "I will need you to do something first.$"
 
 LittlerootTown_MaysHouse_2F_EventScript_YinTalk_Text_16:
-# 422 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
+# 421 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
 	.string "You must obtain$"
 
 LittlerootTown_MaysHouse_2F_EventScript_YinTalk_Text_17:
-# 423 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
+# 422 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
 	.string "A CATALYST.$"
 
 LittlerootTown_MaysHouse_2F_EventScript_YinTalk_Text_18:
-# 424 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
+# 423 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
 	.string "A NORMAL type will do.$"
 
 LittlerootTown_MaysHouse_2F_EventScript_YinTalk_Text_19:
-# 425 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
+# 424 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
 	.string "Once you have done this, I will find\nyou again in 'Petalburg City'.$"
 
 LittlerootTown_MaysHouse_2F_EventScript_YinTalk_Text_20:
-# 426 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
+# 425 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
 	.string "With that, I bid you farewell.$"
 
 LittlerootTown_MaysHouse_2F_EventScript_YinTalk_Ghost_Text_0:
-# 436 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
+# 434 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
 	.string "There is a woman here.$"
 
 LittlerootTown_MaysHouse_2F_EventScript_YinTalk_Ghost_Text_1:
-# 437 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
+# 435 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
 	.string "Her face is pale and sickly, and\nher hair is a deep black.$"
 
 LittlerootTown_MaysHouse_2F_EventScript_YinTalk_Ghost_Text_2:
-# 438 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
+# 436 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
 	.string "Her eyes are clouded and sharp, like\nmarbles dipped in tar.$"
 
 LittlerootTown_MaysHouse_2F_EventScript_YinTalk_Ghost_Text_3:
-# 439 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
+# 437 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
 	.string "She is staring at you intently.$"
 
 LittlerootTown_MaysHouse_2F_EventScript_YinTalk_Ghost_Text_4:
-# 440 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
+# 438 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
 	.string "You look down at her hands.$"
 
 LittlerootTown_MaysHouse_2F_EventScript_YinTalk_Ghost_Text_5:
-# 441 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
+# 439 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
 	.string "She is pointing south.$"
 
 LittlerootTown_MaysHouse_2F_EventScript_YinTalk_Ghost_Text_6:
-# 442 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
+# 440 "data/maps/LittlerootTown_MaysHouse_2F/scripts.pory"
 	.string "Or is it down?$"

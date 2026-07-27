@@ -691,116 +691,449 @@ OldaleTown_Text_SavingMyProgress:
 # 346 "data/maps/OldaleTown/scripts.pory"
 OldaleTown_Text_IWorkAtPokemonMart:
 # 347 "data/maps/OldaleTown/scripts.pory"
-	.string "Hi!\n"
+	.string "What a weird detective, huh?\n"
 # 348 "data/maps/OldaleTown/scripts.pory"
-	.string "I work at a POKéMON MART.\p"
+	.string "She's been running all around\pHoenn, it seems.\p"
 # 349 "data/maps/OldaleTown/scripts.pory"
-	.string "Can I get you to come with me?$"
+	.string "I work at a POKéMON MART.\p"
 # 350 "data/maps/OldaleTown/scripts.pory"
-
+	.string "Can I get you to come with me?$"
 # 351 "data/maps/OldaleTown/scripts.pory"
-OldaleTown_Text_ThisIsAPokemonMart:
+
 # 352 "data/maps/OldaleTown/scripts.pory"
-	.string "This is a POKéMON MART.\n"
+OldaleTown_Text_ThisIsAPokemonMart:
 # 353 "data/maps/OldaleTown/scripts.pory"
-	.string "Just look for our blue roof.\p"
+	.string "This is a POKéMON MART.\n"
 # 354 "data/maps/OldaleTown/scripts.pory"
-	.string "We sell a variety of goods including\n"
+	.string "Just look for our blue roof.\p"
 # 355 "data/maps/OldaleTown/scripts.pory"
-	.string "POKé BALLS for catching POKéMON.\p"
+	.string "We sell a variety of goods including\n"
 # 356 "data/maps/OldaleTown/scripts.pory"
-	.string "Here, I'd like you to have this as\n"
+	.string "POKé BALLS for catching POKéMON.\p"
 # 357 "data/maps/OldaleTown/scripts.pory"
-	.string "a promotional item.$"
+	.string "Here, I'd like you to have this as\n"
 # 358 "data/maps/OldaleTown/scripts.pory"
-
+	.string "a promotional item.$"
 # 359 "data/maps/OldaleTown/scripts.pory"
-OldaleTown_Text_PotionExplanation:
+
 # 360 "data/maps/OldaleTown/scripts.pory"
-	.string "A POTION can be used anytime, so it's\n"
+OldaleTown_Text_PotionExplanation:
 # 361 "data/maps/OldaleTown/scripts.pory"
-	.string "even more useful than a POKéMON CENTER\l"
+	.string "A POTION can be used anytime, so it's\n"
 # 362 "data/maps/OldaleTown/scripts.pory"
-	.string "in certain situations.$"
+	.string "even more useful than a POKéMON CENTER\l"
 # 363 "data/maps/OldaleTown/scripts.pory"
-
+	.string "in certain situations.$"
 # 364 "data/maps/OldaleTown/scripts.pory"
-OldaleTown_Text_WaitDontComeInHere:
+
 # 365 "data/maps/OldaleTown/scripts.pory"
-	.string "Aaaaah! Wait!\n"
+OldaleTown_Text_WaitDontComeInHere:
 # 366 "data/maps/OldaleTown/scripts.pory"
-	.string "Please don't come in here.\p"
+	.string "Aaaaah! Wait!\n"
 # 367 "data/maps/OldaleTown/scripts.pory"
-	.string "I just discovered the footprints of\n"
+	.string "Please don't come in here.\p"
 # 368 "data/maps/OldaleTown/scripts.pory"
-	.string "a rare POKéMON!\p"
-# 369 "data/maps/OldaleTown/scripts.pory"
-	.string "Wait until I finish sketching\n"
-# 370 "data/maps/OldaleTown/scripts.pory"
-	.string "them, okay?$"
-# 371 "data/maps/OldaleTown/scripts.pory"
-
-# 372 "data/maps/OldaleTown/scripts.pory"
-OldaleTown_Text_DiscoveredFootprints:
-# 373 "data/maps/OldaleTown/scripts.pory"
 	.string "I just discovered the footprints of\n"
-# 374 "data/maps/OldaleTown/scripts.pory"
+# 369 "data/maps/OldaleTown/scripts.pory"
 	.string "a rare POKéMON!\p"
-# 375 "data/maps/OldaleTown/scripts.pory"
+# 370 "data/maps/OldaleTown/scripts.pory"
 	.string "Wait until I finish sketching\n"
-# 376 "data/maps/OldaleTown/scripts.pory"
+# 371 "data/maps/OldaleTown/scripts.pory"
 	.string "them, okay?$"
+# 372 "data/maps/OldaleTown/scripts.pory"
+
+# 373 "data/maps/OldaleTown/scripts.pory"
+OldaleTown_Text_DiscoveredFootprints:
+# 374 "data/maps/OldaleTown/scripts.pory"
+	.string "I just discovered the footprints of\n"
+# 375 "data/maps/OldaleTown/scripts.pory"
+	.string "a rare POKéMON!\p"
+# 376 "data/maps/OldaleTown/scripts.pory"
+	.string "Wait until I finish sketching\n"
 # 377 "data/maps/OldaleTown/scripts.pory"
-
+	.string "them, okay?$"
 # 378 "data/maps/OldaleTown/scripts.pory"
-OldaleTown_Text_FinishedSketchingFootprints:
+
 # 379 "data/maps/OldaleTown/scripts.pory"
-	.string "I finished sketching the footprints of\n"
+OldaleTown_Text_FinishedSketchingFootprints:
 # 380 "data/maps/OldaleTown/scripts.pory"
-	.string "a rare POKéMON.\p"
+	.string "I finished sketching the footprints of\n"
 # 381 "data/maps/OldaleTown/scripts.pory"
-	.string "But it turns out they were only my\n"
+	.string "a rare POKéMON.\p"
 # 382 "data/maps/OldaleTown/scripts.pory"
-	.string "own footprints…$"
+	.string "But it turns out they were only my\n"
 # 383 "data/maps/OldaleTown/scripts.pory"
-
+	.string "own footprints…$"
 # 384 "data/maps/OldaleTown/scripts.pory"
-OldaleTown_Text_MayLetsGoBack:
+
 # 385 "data/maps/OldaleTown/scripts.pory"
-	.string "MAY: {PLAYER}{KUN}!\n"
+OldaleTown_Text_MayLetsGoBack:
 # 386 "data/maps/OldaleTown/scripts.pory"
-	.string "Over here!\l"
+	.string "MAY: {PLAYER}{KUN}!\n"
 # 387 "data/maps/OldaleTown/scripts.pory"
-	.string "Let's hurry home!$"
+	.string "Over here!\l"
 # 388 "data/maps/OldaleTown/scripts.pory"
-
+	.string "Let's hurry home!$"
 # 389 "data/maps/OldaleTown/scripts.pory"
-OldaleTown_Text_BrendanLetsGoBack:
-# 390 "data/maps/OldaleTown/scripts.pory"
-	.string "BRENDAN: I'm heading back to my dad's\n"
-# 391 "data/maps/OldaleTown/scripts.pory"
-	.string "LAB now.\l"
-# 392 "data/maps/OldaleTown/scripts.pory"
-	.string "{PLAYER}, you should hustle back, too.$"
-# 393 "data/maps/OldaleTown/scripts.pory"
 
+# 390 "data/maps/OldaleTown/scripts.pory"
+OldaleTown_Text_BrendanLetsGoBack:
+# 391 "data/maps/OldaleTown/scripts.pory"
+	.string "BRENDAN: I'm heading back to my dad's\n"
+# 392 "data/maps/OldaleTown/scripts.pory"
+	.string "LAB now.\l"
+# 393 "data/maps/OldaleTown/scripts.pory"
+	.string "{PLAYER}, you should hustle back, too.$"
 # 394 "data/maps/OldaleTown/scripts.pory"
-OldaleTown_Text_TownSign:
+
 # 395 "data/maps/OldaleTown/scripts.pory"
-	.string "OLDALE TOWN\n"
+OldaleTown_Text_TownSign:
 # 396 "data/maps/OldaleTown/scripts.pory"
+	.string "OLDALE TOWN\n"
+# 397 "data/maps/OldaleTown/scripts.pory"
 	.string "“Where things start off scarce.”$"
 
 OldaleTown_CheckForNormalType::
-# 399 "data/maps/OldaleTown/scripts.pory"
-	checkspecies SPECIES_ZIGZAGOON, NO_PARTY_SCREEN
 # 400 "data/maps/OldaleTown/scripts.pory"
+	checkspecies SPECIES_ZIGZAGOON, NO_PARTY_SCREEN
+# 401 "data/maps/OldaleTown/scripts.pory"
 	compare VAR_RESULT, TRUE
 	goto_if_eq OldaleTown_CheckForNormalType_1
 	return
 
 OldaleTown_CheckForNormalType_1:
-# 401 "data/maps/OldaleTown/scripts.pory"
+# 402 "data/maps/OldaleTown/scripts.pory"
 	setflag FLAG_CAUGHTNORMAL
 	return
 
+
+OldaleTown_EventScript_Yan1::
+# 407 "data/maps/OldaleTown/scripts.pory"
+	goto_if_unset FLAG_FIRST_YAN_MEETING, OldaleTown_EventScript_Yan1_1
+	return
+
+OldaleTown_EventScript_Yan1_1:
+# 408 "data/maps/OldaleTown/scripts.pory"
+	lockall
+# 409 "data/maps/OldaleTown/scripts.pory"
+	msgbox OldaleTown_EventScript_Yan1_Text_0
+# 410 "data/maps/OldaleTown/scripts.pory"
+	applymovement 5, YanMovement1
+# 411 "data/maps/OldaleTown/scripts.pory"
+	waitmovement 0
+# 412 "data/maps/OldaleTown/scripts.pory"
+	msgbox OldaleTown_EventScript_Yan1_Text_1
+# 413 "data/maps/OldaleTown/scripts.pory"
+	msgbox OldaleTown_EventScript_Yan1_Text_2, MSGBOX_YESNO
+# 414 "data/maps/OldaleTown/scripts.pory"
+	compare VAR_RESULT, YES
+	goto_if_eq OldaleTown_EventScript_Yan1_4
+# 417 "data/maps/OldaleTown/scripts.pory"
+	msgbox OldaleTown_EventScript_Yan1_Text_4
+OldaleTown_EventScript_Yan1_3:
+# 419 "data/maps/OldaleTown/scripts.pory"
+	msgbox OldaleTown_EventScript_Yan1_Text_5
+# 420 "data/maps/OldaleTown/scripts.pory"
+	msgbox OldaleTown_EventScript_Yan1_Text_6, MSGBOX_YESNO
+# 421 "data/maps/OldaleTown/scripts.pory"
+	compare VAR_RESULT, YES
+	goto_if_eq OldaleTown_EventScript_Yan1_8
+# 424 "data/maps/OldaleTown/scripts.pory"
+	msgbox OldaleTown_EventScript_Yan1_Text_8
+# 425 "data/maps/OldaleTown/scripts.pory"
+	msgbox OldaleTown_EventScript_Yan1_Text_9
+# 426 "data/maps/OldaleTown/scripts.pory"
+	msgbox OldaleTown_EventScript_Yan1_Text_10
+OldaleTown_EventScript_Yan1_7:
+# 428 "data/maps/OldaleTown/scripts.pory"
+	giveitem ITEM_RED_CARD, 1
+# 429 "data/maps/OldaleTown/scripts.pory"
+	msgbox OldaleTown_EventScript_Yan1_Text_11
+# 430 "data/maps/OldaleTown/scripts.pory"
+	msgbox OldaleTown_EventScript_Yan1_Text_12
+# 431 "data/maps/OldaleTown/scripts.pory"
+	msgbox OldaleTown_EventScript_Yan1_Text_13, MSGBOX_YESNO
+# 432 "data/maps/OldaleTown/scripts.pory"
+	msgbox OldaleTown_EventScript_Yan1_Text_14
+# 433 "data/maps/OldaleTown/scripts.pory"
+	msgbox OldaleTown_EventScript_Yan1_Text_15
+# 434 "data/maps/OldaleTown/scripts.pory"
+	msgbox OldaleTown_EventScript_Yan1_Text_16
+# 435 "data/maps/OldaleTown/scripts.pory"
+	msgbox OldaleTown_EventScript_Yan1_Text_17
+# 436 "data/maps/OldaleTown/scripts.pory"
+	msgbox OldaleTown_EventScript_Yan1_Text_18
+# 437 "data/maps/OldaleTown/scripts.pory"
+	msgbox OldaleTown_EventScript_Yan1_Text_19
+# 438 "data/maps/OldaleTown/scripts.pory"
+	msgbox OldaleTown_EventScript_Yan1_Text_20
+# 439 "data/maps/OldaleTown/scripts.pory"
+	msgbox OldaleTown_EventScript_Yan1_Text_21
+# 440 "data/maps/OldaleTown/scripts.pory"
+	applymovement 5, YanMovement2
+# 441 "data/maps/OldaleTown/scripts.pory"
+	waitmovement 0
+# 442 "data/maps/OldaleTown/scripts.pory"
+	delay 50
+# 443 "data/maps/OldaleTown/scripts.pory"
+	applymovement 5, YanFaceDown
+# 444 "data/maps/OldaleTown/scripts.pory"
+	waitmovement 0
+# 445 "data/maps/OldaleTown/scripts.pory"
+	applymovement 5, YanWalkDown
+# 446 "data/maps/OldaleTown/scripts.pory"
+	waitmovement 0
+# 447 "data/maps/OldaleTown/scripts.pory"
+	msgbox OldaleTown_EventScript_Yan1_Text_22
+# 448 "data/maps/OldaleTown/scripts.pory"
+	msgbox OldaleTown_EventScript_Yan1_Text_23
+# 449 "data/maps/OldaleTown/scripts.pory"
+	msgbox OldaleTown_EventScript_Yan1_Text_24
+# 450 "data/maps/OldaleTown/scripts.pory"
+	msgbox OldaleTown_EventScript_Yan1_Text_25
+# 451 "data/maps/OldaleTown/scripts.pory"
+	applymovement 5, YanFaceUp
+# 452 "data/maps/OldaleTown/scripts.pory"
+	waitmovement 0
+# 453 "data/maps/OldaleTown/scripts.pory"
+	applymovement 5, YanWalkUp
+# 454 "data/maps/OldaleTown/scripts.pory"
+	waitmovement 0
+# 455 "data/maps/OldaleTown/scripts.pory"
+	fadeoutbgm 1
+# 456 "data/maps/OldaleTown/scripts.pory"
+	delay 100
+# 457 "data/maps/OldaleTown/scripts.pory"
+	msgbox OldaleTown_EventScript_Yan1_Text_26
+# 458 "data/maps/OldaleTown/scripts.pory"
+	delay 100
+# 459 "data/maps/OldaleTown/scripts.pory"
+	msgbox OldaleTown_EventScript_Yan1_Text_27
+# 460 "data/maps/OldaleTown/scripts.pory"
+	waitmessage
+# 461 "data/maps/OldaleTown/scripts.pory"
+	multichoice 20, 5, MULTI_NONONO, FALSE
+# 462 "data/maps/OldaleTown/scripts.pory"
+	closemessage
+# 463 "data/maps/OldaleTown/scripts.pory"
+	msgbox OldaleTown_EventScript_Yan1_Text_28
+# 464 "data/maps/OldaleTown/scripts.pory"
+	msgbox OldaleTown_EventScript_Yan1_Text_29
+# 465 "data/maps/OldaleTown/scripts.pory"
+	applymovement 5, YanMovement3
+# 466 "data/maps/OldaleTown/scripts.pory"
+	waitmovement 0
+# 467 "data/maps/OldaleTown/scripts.pory"
+	fadeinbgm 1
+# 468 "data/maps/OldaleTown/scripts.pory"
+	removeobject 5
+# 469 "data/maps/OldaleTown/scripts.pory"
+	setflag FLAG_FIRST_YAN_MEETING
+# 470 "data/maps/OldaleTown/scripts.pory"
+	delay 50
+# 471 "data/maps/OldaleTown/scripts.pory"
+	msgbox OldaleTown_EventScript_Yan1_Text_30
+# 472 "data/maps/OldaleTown/scripts.pory"
+	releaseall
+	return
+
+OldaleTown_EventScript_Yan1_4:
+# 415 "data/maps/OldaleTown/scripts.pory"
+	msgbox OldaleTown_EventScript_Yan1_Text_3
+	goto OldaleTown_EventScript_Yan1_3
+
+OldaleTown_EventScript_Yan1_8:
+# 422 "data/maps/OldaleTown/scripts.pory"
+	msgbox OldaleTown_EventScript_Yan1_Text_7
+	goto OldaleTown_EventScript_Yan1_7
+
+
+# 476 "data/maps/OldaleTown/scripts.pory"
+YanMovement1:
+# 477 "data/maps/OldaleTown/scripts.pory"
+	face_down
+# 478 "data/maps/OldaleTown/scripts.pory"
+	walk_down
+# 478 "data/maps/OldaleTown/scripts.pory"
+	walk_down
+# 478 "data/maps/OldaleTown/scripts.pory"
+	walk_down
+# 478 "data/maps/OldaleTown/scripts.pory"
+	walk_down
+# 479 "data/maps/OldaleTown/scripts.pory"
+	face_player
+	step_end
+
+# 482 "data/maps/OldaleTown/scripts.pory"
+YanMovement2:
+# 483 "data/maps/OldaleTown/scripts.pory"
+	face_up
+# 484 "data/maps/OldaleTown/scripts.pory"
+	walk_up
+# 484 "data/maps/OldaleTown/scripts.pory"
+	walk_up
+	step_end
+
+# 487 "data/maps/OldaleTown/scripts.pory"
+YanMovement3:
+# 488 "data/maps/OldaleTown/scripts.pory"
+	face_up
+# 489 "data/maps/OldaleTown/scripts.pory"
+	walk_up
+# 489 "data/maps/OldaleTown/scripts.pory"
+	walk_up
+# 489 "data/maps/OldaleTown/scripts.pory"
+	walk_up
+# 489 "data/maps/OldaleTown/scripts.pory"
+	walk_up
+# 489 "data/maps/OldaleTown/scripts.pory"
+	walk_up
+	step_end
+
+# 493 "data/maps/OldaleTown/scripts.pory"
+YanFaceDown:
+# 494 "data/maps/OldaleTown/scripts.pory"
+	face_down
+	step_end
+
+# 497 "data/maps/OldaleTown/scripts.pory"
+YanWalkDown:
+# 498 "data/maps/OldaleTown/scripts.pory"
+	walk_down
+	step_end
+
+# 501 "data/maps/OldaleTown/scripts.pory"
+YanWalkUp:
+# 502 "data/maps/OldaleTown/scripts.pory"
+	walk_up
+	step_end
+
+# 505 "data/maps/OldaleTown/scripts.pory"
+YanFaceUp:
+# 506 "data/maps/OldaleTown/scripts.pory"
+	face_up
+	step_end
+
+OldaleTown_EventScript_Yan1_Text_0:
+# 409 "data/maps/OldaleTown/scripts.pory"
+	.string "Hey!$"
+
+OldaleTown_EventScript_Yan1_Text_1:
+# 412 "data/maps/OldaleTown/scripts.pory"
+	.string "Heyo! I'm talkin' to you!$"
+
+OldaleTown_EventScript_Yan1_Text_2:
+# 413 "data/maps/OldaleTown/scripts.pory"
+	.string "I haven't seen you around here\nbefore. Are you new around here?$"
+
+OldaleTown_EventScript_Yan1_Text_3:
+# 415 "data/maps/OldaleTown/scripts.pory"
+	.string "I knew it!$"
+
+OldaleTown_EventScript_Yan1_Text_4:
+# 417 "data/maps/OldaleTown/scripts.pory"
+	.string "Huh. Well, I've never seen you.\nAnyway...$"
+
+OldaleTown_EventScript_Yan1_Text_5:
+# 419 "data/maps/OldaleTown/scripts.pory"
+	.string "Take this!$"
+
+OldaleTown_EventScript_Yan1_Text_6:
+# 420 "data/maps/OldaleTown/scripts.pory"
+	.string "The woman throws a small card\nat you. Catch it?$"
+
+OldaleTown_EventScript_Yan1_Text_7:
+# 422 "data/maps/OldaleTown/scripts.pory"
+	.string "You catch the card with ease.$"
+
+OldaleTown_EventScript_Yan1_Text_8:
+# 424 "data/maps/OldaleTown/scripts.pory"
+	.string "The card falls to your feet\non the grass.$"
+
+OldaleTown_EventScript_Yan1_Text_9:
+# 425 "data/maps/OldaleTown/scripts.pory"
+	.string "...oh, sorry. I thought\nyou'd catch it.$"
+
+OldaleTown_EventScript_Yan1_Text_10:
+# 426 "data/maps/OldaleTown/scripts.pory"
+	.string "You awkwardly pick up the card.$"
+
+OldaleTown_EventScript_Yan1_Text_11:
+# 429 "data/maps/OldaleTown/scripts.pory"
+	.string "My name's Yan. I may not\nlook like it, but I'm a detective.$"
+
+OldaleTown_EventScript_Yan1_Text_12:
+# 430 "data/maps/OldaleTown/scripts.pory"
+	.string "...or, somethin' like that.$"
+
+OldaleTown_EventScript_Yan1_Text_13:
+# 431 "data/maps/OldaleTown/scripts.pory"
+	.string "Since you're new around here,\nI assume you've never heard of me?$"
+
+OldaleTown_EventScript_Yan1_Text_14:
+# 432 "data/maps/OldaleTown/scripts.pory"
+	.string "Hey, that was rhetorical.$"
+
+OldaleTown_EventScript_Yan1_Text_15:
+# 433 "data/maps/OldaleTown/scripts.pory"
+	.string "Point is, I've been investigating\naround here for some time now.$"
+
+OldaleTown_EventScript_Yan1_Text_16:
+# 434 "data/maps/OldaleTown/scripts.pory"
+	.string "Nobody here seems to notice, but\nthere's something weird goin' on.$"
+
+OldaleTown_EventScript_Yan1_Text_17:
+# 435 "data/maps/OldaleTown/scripts.pory"
+	.string "Weird objects, strange looking Pokemon,\netc. etc.$"
+
+OldaleTown_EventScript_Yan1_Text_18:
+# 436 "data/maps/OldaleTown/scripts.pory"
+	.string "I've seen it! I swear!\nOn Route 103, there's something off.$"
+
+OldaleTown_EventScript_Yan1_Text_19:
+# 437 "data/maps/OldaleTown/scripts.pory"
+	.string "You can see for yourself!$"
+
+OldaleTown_EventScript_Yan1_Text_20:
+# 438 "data/maps/OldaleTown/scripts.pory"
+	.string "Anyway, if you see anything out\nof the ordinary, give me a call!$"
+
+OldaleTown_EventScript_Yan1_Text_21:
+# 439 "data/maps/OldaleTown/scripts.pory"
+	.string "See ya!$"
+
+OldaleTown_EventScript_Yan1_Text_22:
+# 447 "data/maps/OldaleTown/scripts.pory"
+	.string "...$"
+
+OldaleTown_EventScript_Yan1_Text_23:
+# 448 "data/maps/OldaleTown/scripts.pory"
+	.string "Sorry, I almost forgot to\nask your name!$"
+
+OldaleTown_EventScript_Yan1_Text_24:
+# 449 "data/maps/OldaleTown/scripts.pory"
+	.string "...oh, {PLAYER}?$"
+
+OldaleTown_EventScript_Yan1_Text_25:
+# 450 "data/maps/OldaleTown/scripts.pory"
+	.string "Cool name, dude.$"
+
+OldaleTown_EventScript_Yan1_Text_26:
+# 457 "data/maps/OldaleTown/scripts.pory"
+	.string "{PLAYER}...$"
+
+OldaleTown_EventScript_Yan1_Text_27:
+# 459 "data/maps/OldaleTown/scripts.pory"
+	.string "You haven't...\p...seen a woman\nin grey, have you?$"
+
+OldaleTown_EventScript_Yan1_Text_28:
+# 463 "data/maps/OldaleTown/scripts.pory"
+	.string "...cool. Just curious.$"
+
+OldaleTown_EventScript_Yan1_Text_29:
+# 464 "data/maps/OldaleTown/scripts.pory"
+	.string "Be seeing ya.$"
+
+OldaleTown_EventScript_Yan1_Text_30:
+# 471 "data/maps/OldaleTown/scripts.pory"
+	.string "You aren't going to call.$"

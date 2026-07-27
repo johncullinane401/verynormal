@@ -398,7 +398,6 @@ RivalsHouse_2F_Text_BrendanWhereShouldIGoNext:
 
 script LittlerootTown_MaysHouse_2F_EventScript_YinTalk {
 	lockall
-	fadeoutbgm(5)
 	msgbox("Hello, there.")
 	msgbox("I do not have much time to\nspeak with you, so I will be blunt.")
 	msgbox("You do not need to know my name.")
@@ -432,7 +431,6 @@ script LittlerootTown_MaysHouse_2F_EventScript_YinTalk {
 
 script LittlerootTown_MaysHouse_2F_EventScript_YinTalk_Ghost {
 	lockall
-	fadeoutbgm(5)
 	msgbox("There is a woman here.")
 	msgbox("Her face is pale and sickly, and\nher hair is a deep black.")
 	msgbox("Her eyes are clouded and sharp, like\nmarbles dipped in tar.")

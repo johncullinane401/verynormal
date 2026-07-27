@@ -975,14 +975,21 @@ const u8 sText_FreshWater[] = _("FRESH WATER");
 const u8 sText_SodaPop[] = _("SODA POP");
 const u8 sText_Lemonade[] = _("LEMONADE");
 
+const u8 sText_NONONO[] = _("NO");
+
 static const struct MenuAction sMultichoiceList_ThirstyGirlFreshWater[] = {
     {sText_FreshWater},
     {gText_Exit}
 };
 
 static const struct MenuAction sMultichoiceList_ThirstyGirlSodaPop[] = {
-    {sText_SodaPop},
-    {gText_Exit}
+    {sText_NONONO},
+    {sText_NONONO}
+};
+
+static const struct MenuAction sMultichoiceList_NONO[] = {
+    {sText_NONONO},
+    {sText_NONONO}
 };
 
 static const struct MenuAction sMultichoiceList_ThirstyGirlFreshWaterSodaPop[] = {
@@ -1294,6 +1301,7 @@ static const struct MultichoiceListStruct sMultichoiceLists[] =
     [MULTI_HOF_VICTORIES_QUIT]                         = MULTICHOICE(sMultichoiceList_HOF_Victories_Quit),
     [MULTI_EGGS_VICTORIES_QUIT]                        = MULTICHOICE(sMultichoiceList_Eggs_Victories_Quit),
     [MULTI_HOF_EGGS_VICTORIES_QUIT]                    = MULTICHOICE(sMultichoiceList_HOF_Eggs_Victories_Quit),
+    [MULTI_NONONO]                                     = MULTICHOICE(sMultichoiceList_NONO),
 };
 
 const u8 *const gStdStrings[] =

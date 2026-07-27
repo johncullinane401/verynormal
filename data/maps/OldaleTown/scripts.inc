@@ -934,6 +934,8 @@ OldaleTown_EventScript_Yan1_7:
 # 471 "data/maps/OldaleTown/scripts.pory"
 	msgbox OldaleTown_EventScript_Yan1_Text_30
 # 472 "data/maps/OldaleTown/scripts.pory"
+	clearflag FLAG_DISABLE_CATCHING
+# 473 "data/maps/OldaleTown/scripts.pory"
 	releaseall
 	return
 
@@ -948,69 +950,69 @@ OldaleTown_EventScript_Yan1_8:
 	goto OldaleTown_EventScript_Yan1_7
 
 
-# 476 "data/maps/OldaleTown/scripts.pory"
+# 478 "data/maps/OldaleTown/scripts.pory"
 YanMovement1:
-# 477 "data/maps/OldaleTown/scripts.pory"
-	face_down
-# 478 "data/maps/OldaleTown/scripts.pory"
-	walk_down
-# 478 "data/maps/OldaleTown/scripts.pory"
-	walk_down
-# 478 "data/maps/OldaleTown/scripts.pory"
-	walk_down
-# 478 "data/maps/OldaleTown/scripts.pory"
-	walk_down
 # 479 "data/maps/OldaleTown/scripts.pory"
+	face_down
+# 480 "data/maps/OldaleTown/scripts.pory"
+	walk_down
+# 480 "data/maps/OldaleTown/scripts.pory"
+	walk_down
+# 480 "data/maps/OldaleTown/scripts.pory"
+	walk_down
+# 480 "data/maps/OldaleTown/scripts.pory"
+	walk_down
+# 481 "data/maps/OldaleTown/scripts.pory"
 	face_player
 	step_end
 
-# 482 "data/maps/OldaleTown/scripts.pory"
+# 484 "data/maps/OldaleTown/scripts.pory"
 YanMovement2:
-# 483 "data/maps/OldaleTown/scripts.pory"
+# 485 "data/maps/OldaleTown/scripts.pory"
 	face_up
-# 484 "data/maps/OldaleTown/scripts.pory"
+# 486 "data/maps/OldaleTown/scripts.pory"
 	walk_up
-# 484 "data/maps/OldaleTown/scripts.pory"
+# 486 "data/maps/OldaleTown/scripts.pory"
 	walk_up
 	step_end
 
-# 487 "data/maps/OldaleTown/scripts.pory"
+# 489 "data/maps/OldaleTown/scripts.pory"
 YanMovement3:
-# 488 "data/maps/OldaleTown/scripts.pory"
+# 490 "data/maps/OldaleTown/scripts.pory"
 	face_up
-# 489 "data/maps/OldaleTown/scripts.pory"
+# 491 "data/maps/OldaleTown/scripts.pory"
 	walk_up
-# 489 "data/maps/OldaleTown/scripts.pory"
+# 491 "data/maps/OldaleTown/scripts.pory"
 	walk_up
-# 489 "data/maps/OldaleTown/scripts.pory"
+# 491 "data/maps/OldaleTown/scripts.pory"
 	walk_up
-# 489 "data/maps/OldaleTown/scripts.pory"
+# 491 "data/maps/OldaleTown/scripts.pory"
 	walk_up
-# 489 "data/maps/OldaleTown/scripts.pory"
+# 491 "data/maps/OldaleTown/scripts.pory"
 	walk_up
 	step_end
 
-# 493 "data/maps/OldaleTown/scripts.pory"
+# 495 "data/maps/OldaleTown/scripts.pory"
 YanFaceDown:
-# 494 "data/maps/OldaleTown/scripts.pory"
+# 496 "data/maps/OldaleTown/scripts.pory"
 	face_down
 	step_end
 
-# 497 "data/maps/OldaleTown/scripts.pory"
+# 499 "data/maps/OldaleTown/scripts.pory"
 YanWalkDown:
-# 498 "data/maps/OldaleTown/scripts.pory"
+# 500 "data/maps/OldaleTown/scripts.pory"
 	walk_down
 	step_end
 
-# 501 "data/maps/OldaleTown/scripts.pory"
+# 503 "data/maps/OldaleTown/scripts.pory"
 YanWalkUp:
-# 502 "data/maps/OldaleTown/scripts.pory"
+# 504 "data/maps/OldaleTown/scripts.pory"
 	walk_up
 	step_end
 
-# 505 "data/maps/OldaleTown/scripts.pory"
+# 507 "data/maps/OldaleTown/scripts.pory"
 YanFaceUp:
-# 506 "data/maps/OldaleTown/scripts.pory"
+# 508 "data/maps/OldaleTown/scripts.pory"
 	face_up
 	step_end
 

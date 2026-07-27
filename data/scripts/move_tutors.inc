@@ -29,13 +29,13 @@ PetalburgCity_PokemonFanClub_EventScript_DDTutor::
 MoveTutor_EventScript_DDDeclined::
 	msgbox MoveTutor_Text_DDDeclined, MSGBOX_DEFAULT
 	release
-	end
+	return
 
 
 MoveTutor_EventScript_DDTaught::
 	msgbox MoveTutor_Text_DDTaught, MSGBOX_DEFAULT
 	release
-	end
+	return
 
 #
 

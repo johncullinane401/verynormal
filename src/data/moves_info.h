@@ -3783,13 +3783,13 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Once their dreams have gone,\n"
             "they will have nothing left."),
-        .effect = EFFECT_ELECTRO_BALL,
-        .power = 200,
+        .effect = EFFECT_ABSORB,
+        .power = 250,
         .type = TYPE_NORMAL,
         .accuracy = 100,
         .pp = 99,
         .target = TARGET_SELECTED,
-        .priority = 0,
+        .priority = 1,
         .category = DAMAGE_CATEGORY_SPECIAL,
         .argument = { .absorbPercentage = 50 },
         .healingMove = B_HEAL_BLOCKING >= GEN_6,

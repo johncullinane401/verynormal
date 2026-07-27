@@ -450,7 +450,6 @@ script OldaleTown_EventScript_Yan1 {
 		msgbox("Cool name, dude.")
 		applymovement(5,YanFaceUp)
 		waitmovement(0)
-		applymovement(5,YanWalkUp)
 		waitmovement(0)
 		fadeoutbgm(1)
 		delay(100)

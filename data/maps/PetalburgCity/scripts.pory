@@ -834,3 +834,9 @@ script PetalburgCity_CheckForNormalType {
 		setflag(FLAG_CAUGHTNORMAL)
 	}
 }
+
+script PetalburgCity_EventScript_ObviousRoadblock {
+	lockall
+	msgbox("The door is sealed tightly shut.")
+	releaseall
+}

@@ -1668,6 +1668,16 @@ PetalburgCity_CheckForNormalType_1:
 	return
 
 
+PetalburgCity_EventScript_ObviousRoadblock::
+# 839 "data/maps/PetalburgCity/scripts.pory"
+	lockall
+# 840 "data/maps/PetalburgCity/scripts.pory"
+	msgbox PetalburgCity_EventScript_ObviousRoadblock_Text_0
+# 841 "data/maps/PetalburgCity/scripts.pory"
+	releaseall
+	return
+
+
 PetalburgCity_EventScript_YinTalk_Text_0:
 # 767 "data/maps/PetalburgCity/scripts.pory"
 	.string "I have been waiting patiently\nfor you.$"
@@ -1783,3 +1793,7 @@ PetalburgCity_EventScript_YinTalk_Text_27:
 PetalburgCity_EventScript_YinTalk_Text_28:
 # 826 "data/maps/PetalburgCity/scripts.pory"
 	.string "Please return to me once you have\nobtained one.$"
+
+PetalburgCity_EventScript_ObviousRoadblock_Text_0:
+# 840 "data/maps/PetalburgCity/scripts.pory"
+	.string "The door is sealed tightly shut.$"

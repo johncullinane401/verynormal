@@ -253,8 +253,8 @@ MoveTutor_Text_ExplosionTaught:
 `
 
 text MoveTutor_Text_DDTeach {
-	"Are you ready?\n"
-    "I will infuse your CATALYST\pwith my power."
+	"Are you ready?\p"
+    "I will infuse your CATALYST\nwith my power.\p"
     "It will never level up again.\p"
     "It will never breed again.\p"
     "It will never love again.\p"
@@ -262,5 +262,5 @@ text MoveTutor_Text_DDTeach {
     "It will never feel pain again.\p"
     "It will never smile again.\p"
     "It will never frown again.\p"
-    "Are you prepared?\n"
+    "If you accept these terms,\nthen continue.\n"
 }

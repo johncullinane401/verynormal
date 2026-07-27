@@ -1145,6 +1145,9 @@ void ItemUseOutOfBattle_EvolutionStone(u8 taskId)
 
 static u32 GetBallThrowableState(void)
 {
+    if (FlagGet(FLAG_DISABLE_CATCHING)) {
+        return BALL_THROW_UNABLE_DISABLED_FLAG;     
+    }
     if (IsBattlerAlive(GetBattlerAtPosition(B_POSITION_OPPONENT_LEFT))
      && IsBattlerAlive(GetBattlerAtPosition(B_POSITION_OPPONENT_RIGHT)))
         return BALL_THROW_UNABLE_TWO_MONS;

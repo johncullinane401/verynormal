@@ -505,8 +505,8 @@ MoveTutor_Text_ExplosionTaught:
 
 MoveTutor_Text_DDTeach::
 # 255 "data/text/move_tutors.pory"
-	.string "Are you ready?\n"
-	.string "I will infuse your CATALYST\pwith my power."
+	.string "Are you ready?\p"
+	.string "I will infuse your CATALYST\nwith my power.\p"
 	.string "It will never level up again.\p"
 	.string "It will never breed again.\p"
 	.string "It will never love again.\p"
@@ -514,4 +514,4 @@ MoveTutor_Text_DDTeach::
 	.string "It will never feel pain again.\p"
 	.string "It will never smile again.\p"
 	.string "It will never frown again.\p"
-	.string "Are you prepared?\n$"
+	.string "If you accept these terms,\nthen continue.\n$"

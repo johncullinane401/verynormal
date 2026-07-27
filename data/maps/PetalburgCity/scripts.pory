@@ -768,6 +768,7 @@ script PetalburgCity_EventScript_YinTalk {
 	msgbox("I have been waiting patiently\nfor you.")
 	if (flag(FLAG_CAUGHTNORMAL)) {
 		msgbox("I see you have obtain your CATALYST.")
+		setflag(FLAG_DISABLE_CATCHING)
 		msgbox("This is most excellent.")
 		msgbox("But, to continue your path, difficult\nchoices must be made.")
 		msgbox("And now, you are met with one of those\nchoices.")
@@ -789,6 +790,8 @@ script PetalburgCity_EventScript_YinTalk {
 
             call(PetalburgCity_PokemonFanClub_EventScript_DDTutor)
             releaseall
+		} else {
+			msgbox("Return when you are ready.")
 		}
 	} else {
 		msgbox("Unfortunately, you have not yet\nobtained your CATALYST.")

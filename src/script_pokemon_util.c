@@ -693,3 +693,18 @@ void DeleteAllPartyMonsExceptZigzagoon(void)
 {
     DeleteAllPartyMonsExceptSpecies(SPECIES_ZIGZAGOON);
 }
+
+void SetExpLevel(void)
+{
+    struct Pokemon *mon = &gParties[B_TRAINER_PLAYER][0];
+    u8 level = 15;
+    u32 exp;
+
+
+    SetMonData(mon, MON_DATA_LEVEL, &level);
+
+    exp = gExperienceTables[gSpeciesInfo[GetMonData(mon, MON_DATA_SPECIES, NULL)].growthRate][level];
+    SetMonData(mon, MON_DATA_EXP, &exp);
+
+    CalculateMonStats(mon);
+}

@@ -807,6 +807,7 @@ script PetalburgCity_EventScript_YinTalk {
             msgbox("That was not an easy choice to make.")
             msgbox("Do not weep for your companions.")
             msgbox("You will see them again in the\nAshen Garden.")
+			msgbox("Now...")
             setflag(FLAG_YIN_SPIEL)
             call(PetalburgCity_PokemonFanClub_EventScript_DDTutor)
             if (flag(FLAG_LEARNED_DD)) {
@@ -831,6 +832,7 @@ script PetalburgCity_EventScript_YinTalk {
         msgbox("Please return to me once you have\nobtained one.")
     }
     releaseall
+	special(SetExpLevel)
 }
 
 script PetalburgCity_CheckForNormalType {

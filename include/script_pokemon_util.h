@@ -14,5 +14,6 @@ void Script_GetChosenMonOffensiveIVs(void);
 void Script_GetChosenMonDefensiveIVs(void);
 
 void DeleteAllPartyMonsExceptZigzagoon(void);
+void SetExpLevel(void);
 
 #endif // GUARD_SCRIPT_POKEMON_UTIL_H

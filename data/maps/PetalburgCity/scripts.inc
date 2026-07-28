@@ -1541,8 +1541,10 @@ PetalburgCity_EventScript_YinTalk::
 PetalburgCity_EventScript_YinTalk_1:
 # 834 "data/maps/PetalburgCity/scripts.pory"
 	releaseall
-# 835 "data/maps/PetalburgCity/scripts.pory"
+# 836 "data/maps/PetalburgCity/scripts.pory"
 	special SetExpLevel
+# 837 "data/maps/PetalburgCity/scripts.pory"
+	setflag FLAG_DISABLE_EXP
 	return
 
 PetalburgCity_EventScript_YinTalk_2:
@@ -1667,25 +1669,25 @@ PetalburgCity_EventScript_YinTalk_13:
 
 
 PetalburgCity_CheckForNormalType::
-# 839 "data/maps/PetalburgCity/scripts.pory"
+# 841 "data/maps/PetalburgCity/scripts.pory"
 	checkspecies SPECIES_ZIGZAGOON, NO_PARTY_SCREEN
-# 840 "data/maps/PetalburgCity/scripts.pory"
+# 842 "data/maps/PetalburgCity/scripts.pory"
 	compare VAR_RESULT, TRUE
 	goto_if_eq PetalburgCity_CheckForNormalType_1
 	return
 
 PetalburgCity_CheckForNormalType_1:
-# 841 "data/maps/PetalburgCity/scripts.pory"
+# 843 "data/maps/PetalburgCity/scripts.pory"
 	setflag FLAG_CAUGHTNORMAL
 	return
 
 
 PetalburgCity_EventScript_ObviousRoadblock::
-# 846 "data/maps/PetalburgCity/scripts.pory"
-	lockall
-# 847 "data/maps/PetalburgCity/scripts.pory"
-	msgbox PetalburgCity_EventScript_ObviousRoadblock_Text_0
 # 848 "data/maps/PetalburgCity/scripts.pory"
+	lockall
+# 849 "data/maps/PetalburgCity/scripts.pory"
+	msgbox PetalburgCity_EventScript_ObviousRoadblock_Text_0
+# 850 "data/maps/PetalburgCity/scripts.pory"
 	releaseall
 	return
 
@@ -1811,5 +1813,5 @@ PetalburgCity_EventScript_YinTalk_Text_29:
 	.string "Please return to me once you have\nobtained one.$"
 
 PetalburgCity_EventScript_ObviousRoadblock_Text_0:
-# 847 "data/maps/PetalburgCity/scripts.pory"
+# 849 "data/maps/PetalburgCity/scripts.pory"
 	.string "The door is sealed tightly shut.$"

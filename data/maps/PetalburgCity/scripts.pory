@@ -832,7 +832,9 @@ script PetalburgCity_EventScript_YinTalk {
         msgbox("Please return to me once you have\nobtained one.")
     }
     releaseall
+	
 	special(SetExpLevel)
+	setflag(FLAG_DISABLE_EXP)
 }
 
 script PetalburgCity_CheckForNormalType {

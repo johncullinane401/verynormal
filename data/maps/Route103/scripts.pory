@@ -354,10 +354,40 @@ Route103_Text_RouteSign:
 
 script Route103_EventScript_Portal {
 	lockall
-	msgbox("For some reason, this part of the\ntree and grass is completely grey.")
+	msgbox("For some reason, this part of the\ntree and grass is completely grey,\pand the grass has dissolved into sand.")
 	if (flag(FLAG_PORTAL_ACCESS)) {
 		msgbox("Use DREAMDEVOUR?", MSGBOX_YESNO)
 	}
 	releaseall
 }
+
+script Route103_EventScript_Igotnothingtosay {
+	lockall
+	msgbox("...")
+	releaseall
+}
+
+script Route103_EventScript_YinTalk1 {
+	lockall
+	if (flag(FLAG_YIN_WARP_1) && !flag(FLAG_YIN_WARP_2) && !flag(FLAG_YIN_WARP_3)) {
+		msgbox("There is a woman here as well.")
+		msgbox("She isn't looking at you.")
+		msgbox("You look down at her hands.")
+		msgbox("She is pointing downwards.")
+	}
+	else {
+		msgbox("There is a woman here.")
+		msgbox("Her face is pale and sickly, and\nher hair is a deep black.")
+		msgbox("Her eyes are clouded and sharp, like\nmarbles dipped in tar.")
+		msgbox("She is staring at you intently.")
+		msgbox("You look down at her hands.")
+		msgbox("She beckons you to follow her.")
+		removeobject(21)
+		setobjectxyperm(21, 22, 13)
+		addobject(21)
+		setflag(FLAG_YIN_WARP_1)
+	}
+    releaseall
+}
+
 

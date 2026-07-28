@@ -932,7 +932,7 @@ script PetalburgCity_EventScript_Yan1 {
 
 movement YanMovement1 {
     face_right
-    walk_right * 4
+    walk_right * 6
     face_player
 }
 
@@ -974,4 +974,12 @@ movement YanFaceUp {
 movement YanFacePlayer {
     face_player
 }
+#
+#script PetalburgCity_EventScript_FakeCrash {
+	#lockall
+	##playbgm(SE_LOW_HEALTH, FALSE)
+	##fadescreen(FADE_TO_WHITE)
+	##warp(MAP_CURSEZONE, 0, 0, 0)
+	#end
+#}
 

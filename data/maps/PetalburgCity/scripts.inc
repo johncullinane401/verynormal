@@ -1861,6 +1861,10 @@ YanMovement1:
 	walk_right
 # 935 "data/maps/PetalburgCity/scripts.pory"
 	walk_right
+# 935 "data/maps/PetalburgCity/scripts.pory"
+	walk_right
+# 935 "data/maps/PetalburgCity/scripts.pory"
+	walk_right
 # 936 "data/maps/PetalburgCity/scripts.pory"
 	face_player
 	step_end

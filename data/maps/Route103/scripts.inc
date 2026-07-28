@@ -721,10 +721,113 @@ Route103_EventScript_Portal_2:
 	goto Route103_EventScript_Portal_1
 
 
+Route103_EventScript_Igotnothingtosay::
+# 365 "data/maps/Route103/scripts.pory"
+	lockall
+# 366 "data/maps/Route103/scripts.pory"
+	msgbox Route103_EventScript_Igotnothingtosay_Text_0
+# 367 "data/maps/Route103/scripts.pory"
+	releaseall
+	return
+
+
+Route103_EventScript_YinTalk1::
+# 371 "data/maps/Route103/scripts.pory"
+	lockall
+# 372 "data/maps/Route103/scripts.pory"
+	goto_if_set FLAG_YIN_WARP_1, Route103_EventScript_YinTalk1_5
+Route103_EventScript_YinTalk1_3:
+# 379 "data/maps/Route103/scripts.pory"
+	msgbox Route103_EventScript_YinTalk1_Text_4
+# 380 "data/maps/Route103/scripts.pory"
+	msgbox Route103_EventScript_YinTalk1_Text_5
+# 381 "data/maps/Route103/scripts.pory"
+	msgbox Route103_EventScript_YinTalk1_Text_6
+# 382 "data/maps/Route103/scripts.pory"
+	msgbox Route103_EventScript_YinTalk1_Text_7
+# 383 "data/maps/Route103/scripts.pory"
+	msgbox Route103_EventScript_YinTalk1_Text_2
+# 384 "data/maps/Route103/scripts.pory"
+	msgbox Route103_EventScript_YinTalk1_Text_8
+# 385 "data/maps/Route103/scripts.pory"
+	removeobject 21
+# 386 "data/maps/Route103/scripts.pory"
+	setobjectxyperm 21, 22, 13
+# 387 "data/maps/Route103/scripts.pory"
+	addobject 21
+# 388 "data/maps/Route103/scripts.pory"
+	setflag FLAG_YIN_WARP_1
+Route103_EventScript_YinTalk1_1:
+# 390 "data/maps/Route103/scripts.pory"
+	releaseall
+	return
+
+Route103_EventScript_YinTalk1_2:
+# 373 "data/maps/Route103/scripts.pory"
+	msgbox Route103_EventScript_YinTalk1_Text_0
+# 374 "data/maps/Route103/scripts.pory"
+	msgbox Route103_EventScript_YinTalk1_Text_1
+# 375 "data/maps/Route103/scripts.pory"
+	msgbox Route103_EventScript_YinTalk1_Text_2
+# 376 "data/maps/Route103/scripts.pory"
+	msgbox Route103_EventScript_YinTalk1_Text_3
+	goto Route103_EventScript_YinTalk1_1
+
+Route103_EventScript_YinTalk1_4:
+# 372 "data/maps/Route103/scripts.pory"
+	goto_if_unset FLAG_YIN_WARP_3, Route103_EventScript_YinTalk1_2
+	goto Route103_EventScript_YinTalk1_3
+
+Route103_EventScript_YinTalk1_5:
+# 372 "data/maps/Route103/scripts.pory"
+	goto_if_unset FLAG_YIN_WARP_2, Route103_EventScript_YinTalk1_4
+	goto Route103_EventScript_YinTalk1_3
+
+
 Route103_EventScript_Portal_Text_0:
 # 357 "data/maps/Route103/scripts.pory"
-	.string "For some reason, this part of the\ntree and grass is completely grey.$"
+	.string "For some reason, this part of the\ntree and grass is completely grey,\pand the grass has dissolved into sand.$"
 
 Route103_EventScript_Portal_Text_1:
 # 359 "data/maps/Route103/scripts.pory"
 	.string "Use DREAMDEVOUR?$"
+
+Route103_EventScript_Igotnothingtosay_Text_0:
+# 366 "data/maps/Route103/scripts.pory"
+	.string "...$"
+
+Route103_EventScript_YinTalk1_Text_0:
+# 373 "data/maps/Route103/scripts.pory"
+	.string "There is a woman here as well.$"
+
+Route103_EventScript_YinTalk1_Text_1:
+# 374 "data/maps/Route103/scripts.pory"
+	.string "She isn't looking at you.$"
+
+Route103_EventScript_YinTalk1_Text_2:
+# 375 "data/maps/Route103/scripts.pory"
+	.string "You look down at her hands.$"
+
+Route103_EventScript_YinTalk1_Text_3:
+# 376 "data/maps/Route103/scripts.pory"
+	.string "She is pointing downwards.$"
+
+Route103_EventScript_YinTalk1_Text_4:
+# 379 "data/maps/Route103/scripts.pory"
+	.string "There is a woman here.$"
+
+Route103_EventScript_YinTalk1_Text_5:
+# 380 "data/maps/Route103/scripts.pory"
+	.string "Her face is pale and sickly, and\nher hair is a deep black.$"
+
+Route103_EventScript_YinTalk1_Text_6:
+# 381 "data/maps/Route103/scripts.pory"
+	.string "Her eyes are clouded and sharp, like\nmarbles dipped in tar.$"
+
+Route103_EventScript_YinTalk1_Text_7:
+# 382 "data/maps/Route103/scripts.pory"
+	.string "She is staring at you intently.$"
+
+Route103_EventScript_YinTalk1_Text_8:
+# 384 "data/maps/Route103/scripts.pory"
+	.string "She beckons you to follow her.$"

@@ -663,3 +663,33 @@ void Script_GiveRandomBerry(struct ScriptContext *ctx)
 
     gSpecialVar_Result = BerryTypeToItemId(RandomUniform(RNG_RANDOM_BERRY, loBerry, hiBerry));
 }
+
+void DeleteAllPartyMonsExceptSpecies(u16 species)
+{
+    s32 i;
+    bool8 kept = 0;
+    s32 count = CalculatePlayerPartyCount();
+
+    for (i = count - 1; i >= 0; i--)
+    {
+        if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES) != species)
+        {
+            ZeroMonData(&gPlayerParty[i]);
+            CompactPartySlots();
+        } else {
+            if (kept) {
+                ZeroMonData(&gPlayerParty[i]);
+                CompactPartySlots();
+                
+            } else {
+                kept = 1;
+            }
+        }
+        
+    }
+}
+
+void DeleteAllPartyMonsExceptZigzagoon(void)
+{
+    DeleteAllPartyMonsExceptSpecies(SPECIES_ZIGZAGOON);
+}

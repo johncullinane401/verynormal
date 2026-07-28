@@ -822,196 +822,230 @@ OldaleTown_EventScript_Yan1_1:
 # 411 "data/maps/OldaleTown/scripts.pory"
 	waitmovement 0
 # 412 "data/maps/OldaleTown/scripts.pory"
-	msgbox OldaleTown_EventScript_Yan1_Text_1
+	playbgm MUS_CYCLING, FALSE
 # 413 "data/maps/OldaleTown/scripts.pory"
-	msgbox OldaleTown_EventScript_Yan1_Text_2, MSGBOX_YESNO
+	msgbox OldaleTown_EventScript_Yan1_Text_1
 # 414 "data/maps/OldaleTown/scripts.pory"
+	msgbox OldaleTown_EventScript_Yan1_Text_2, MSGBOX_YESNO
+# 415 "data/maps/OldaleTown/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq OldaleTown_EventScript_Yan1_4
-# 417 "data/maps/OldaleTown/scripts.pory"
+# 418 "data/maps/OldaleTown/scripts.pory"
 	msgbox OldaleTown_EventScript_Yan1_Text_4
 OldaleTown_EventScript_Yan1_3:
-# 419 "data/maps/OldaleTown/scripts.pory"
-	msgbox OldaleTown_EventScript_Yan1_Text_5
 # 420 "data/maps/OldaleTown/scripts.pory"
-	msgbox OldaleTown_EventScript_Yan1_Text_6, MSGBOX_YESNO
+	msgbox OldaleTown_EventScript_Yan1_Text_5
 # 421 "data/maps/OldaleTown/scripts.pory"
+	msgbox OldaleTown_EventScript_Yan1_Text_6, MSGBOX_YESNO
+# 422 "data/maps/OldaleTown/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq OldaleTown_EventScript_Yan1_8
-# 424 "data/maps/OldaleTown/scripts.pory"
-	msgbox OldaleTown_EventScript_Yan1_Text_8
 # 425 "data/maps/OldaleTown/scripts.pory"
-	msgbox OldaleTown_EventScript_Yan1_Text_9
+	msgbox OldaleTown_EventScript_Yan1_Text_8
 # 426 "data/maps/OldaleTown/scripts.pory"
+	msgbox OldaleTown_EventScript_Yan1_Text_9
+# 427 "data/maps/OldaleTown/scripts.pory"
 	msgbox OldaleTown_EventScript_Yan1_Text_10
 OldaleTown_EventScript_Yan1_7:
-# 428 "data/maps/OldaleTown/scripts.pory"
-	giveitem ITEM_RED_CARD, 1
 # 429 "data/maps/OldaleTown/scripts.pory"
-	msgbox OldaleTown_EventScript_Yan1_Text_11
+	giveitem ITEM_RED_CARD, 1
 # 430 "data/maps/OldaleTown/scripts.pory"
-	msgbox OldaleTown_EventScript_Yan1_Text_12
+	msgbox OldaleTown_EventScript_Yan1_Text_11
 # 431 "data/maps/OldaleTown/scripts.pory"
-	msgbox OldaleTown_EventScript_Yan1_Text_13, MSGBOX_YESNO
+	msgbox OldaleTown_EventScript_Yan1_Text_12
 # 432 "data/maps/OldaleTown/scripts.pory"
-	msgbox OldaleTown_EventScript_Yan1_Text_14
+	msgbox OldaleTown_EventScript_Yan1_Text_13, MSGBOX_YESNO
 # 433 "data/maps/OldaleTown/scripts.pory"
-	msgbox OldaleTown_EventScript_Yan1_Text_15
+	msgbox OldaleTown_EventScript_Yan1_Text_14
 # 434 "data/maps/OldaleTown/scripts.pory"
-	msgbox OldaleTown_EventScript_Yan1_Text_16
+	msgbox OldaleTown_EventScript_Yan1_Text_15
 # 435 "data/maps/OldaleTown/scripts.pory"
-	msgbox OldaleTown_EventScript_Yan1_Text_17
+	msgbox OldaleTown_EventScript_Yan1_Text_16
 # 436 "data/maps/OldaleTown/scripts.pory"
-	msgbox OldaleTown_EventScript_Yan1_Text_18
+	msgbox OldaleTown_EventScript_Yan1_Text_17
 # 437 "data/maps/OldaleTown/scripts.pory"
-	msgbox OldaleTown_EventScript_Yan1_Text_19
+	applymovement 5, YanFaceLeft
 # 438 "data/maps/OldaleTown/scripts.pory"
-	msgbox OldaleTown_EventScript_Yan1_Text_20
+	msgbox OldaleTown_EventScript_Yan1_Text_18
 # 439 "data/maps/OldaleTown/scripts.pory"
-	msgbox OldaleTown_EventScript_Yan1_Text_21
+	applymovement 5, YanFaceRight
 # 440 "data/maps/OldaleTown/scripts.pory"
-	applymovement 5, YanMovement2
+	applymovement 5, YanFaceLeft
 # 441 "data/maps/OldaleTown/scripts.pory"
-	waitmovement 0
+	applymovement 5, YanFaceRight
 # 442 "data/maps/OldaleTown/scripts.pory"
-	delay 50
+	applymovement 5, YanFaceLeft
 # 443 "data/maps/OldaleTown/scripts.pory"
-	applymovement 5, YanFaceDown
+	applymovement 5, YanFacePlayer
 # 444 "data/maps/OldaleTown/scripts.pory"
-	waitmovement 0
+	msgbox OldaleTown_EventScript_Yan1_Text_19
 # 445 "data/maps/OldaleTown/scripts.pory"
-	applymovement 5, YanWalkDown
+	msgbox OldaleTown_EventScript_Yan1_Text_20
 # 446 "data/maps/OldaleTown/scripts.pory"
-	waitmovement 0
+	msgbox OldaleTown_EventScript_Yan1_Text_21
 # 447 "data/maps/OldaleTown/scripts.pory"
-	msgbox OldaleTown_EventScript_Yan1_Text_22
+	applymovement 5, YanMovement2
 # 448 "data/maps/OldaleTown/scripts.pory"
-	msgbox OldaleTown_EventScript_Yan1_Text_23
-# 449 "data/maps/OldaleTown/scripts.pory"
-	msgbox OldaleTown_EventScript_Yan1_Text_24
-# 450 "data/maps/OldaleTown/scripts.pory"
-	msgbox OldaleTown_EventScript_Yan1_Text_25
-# 451 "data/maps/OldaleTown/scripts.pory"
-	applymovement 5, YanFaceUp
-# 452 "data/maps/OldaleTown/scripts.pory"
 	waitmovement 0
+# 449 "data/maps/OldaleTown/scripts.pory"
+	delay 50
+# 450 "data/maps/OldaleTown/scripts.pory"
+	applymovement 5, YanFaceDown
+# 451 "data/maps/OldaleTown/scripts.pory"
+	waitmovement 0
+# 452 "data/maps/OldaleTown/scripts.pory"
+	applymovement 5, YanWalkDown
 # 453 "data/maps/OldaleTown/scripts.pory"
 	waitmovement 0
 # 454 "data/maps/OldaleTown/scripts.pory"
-	fadeoutbgm 1
+	msgbox OldaleTown_EventScript_Yan1_Text_22
 # 455 "data/maps/OldaleTown/scripts.pory"
-	delay 100
+	msgbox OldaleTown_EventScript_Yan1_Text_23
 # 456 "data/maps/OldaleTown/scripts.pory"
-	msgbox OldaleTown_EventScript_Yan1_Text_26
+	msgbox OldaleTown_EventScript_Yan1_Text_24
 # 457 "data/maps/OldaleTown/scripts.pory"
-	delay 100
+	msgbox OldaleTown_EventScript_Yan1_Text_25
 # 458 "data/maps/OldaleTown/scripts.pory"
-	msgbox OldaleTown_EventScript_Yan1_Text_27
+	applymovement 5, YanFaceUp
 # 459 "data/maps/OldaleTown/scripts.pory"
-	waitmessage
-# 460 "data/maps/OldaleTown/scripts.pory"
-	multichoice 20, 5, MULTI_NONONO, FALSE
-# 461 "data/maps/OldaleTown/scripts.pory"
-	closemessage
-# 462 "data/maps/OldaleTown/scripts.pory"
-	msgbox OldaleTown_EventScript_Yan1_Text_28
-# 463 "data/maps/OldaleTown/scripts.pory"
-	msgbox OldaleTown_EventScript_Yan1_Text_29
-# 464 "data/maps/OldaleTown/scripts.pory"
-	applymovement 5, YanMovement3
-# 465 "data/maps/OldaleTown/scripts.pory"
 	waitmovement 0
+# 460 "data/maps/OldaleTown/scripts.pory"
+	waitmovement 0
+# 461 "data/maps/OldaleTown/scripts.pory"
+	fadeoutbgm 1
+# 462 "data/maps/OldaleTown/scripts.pory"
+	delay 100
+# 463 "data/maps/OldaleTown/scripts.pory"
+	msgbox OldaleTown_EventScript_Yan1_Text_26
+# 464 "data/maps/OldaleTown/scripts.pory"
+	delay 100
+# 465 "data/maps/OldaleTown/scripts.pory"
+	msgbox OldaleTown_EventScript_Yan1_Text_27
 # 466 "data/maps/OldaleTown/scripts.pory"
-	fadeinbgm 1
+	waitmessage
 # 467 "data/maps/OldaleTown/scripts.pory"
-	removeobject 5
+	multichoice 20, 5, MULTI_NONONO, FALSE
 # 468 "data/maps/OldaleTown/scripts.pory"
-	setflag FLAG_FIRST_YAN_MEETING
+	closemessage
 # 469 "data/maps/OldaleTown/scripts.pory"
-	delay 50
+	msgbox OldaleTown_EventScript_Yan1_Text_28
 # 470 "data/maps/OldaleTown/scripts.pory"
-	msgbox OldaleTown_EventScript_Yan1_Text_30
+	msgbox OldaleTown_EventScript_Yan1_Text_29
 # 471 "data/maps/OldaleTown/scripts.pory"
-	clearflag FLAG_DISABLE_CATCHING
+	applymovement 5, YanMovement3
 # 472 "data/maps/OldaleTown/scripts.pory"
+	waitmovement 0
+# 473 "data/maps/OldaleTown/scripts.pory"
+	fadeinbgm 1
+# 474 "data/maps/OldaleTown/scripts.pory"
+	removeobject 5
+# 475 "data/maps/OldaleTown/scripts.pory"
+	playbgm MUS_OLDALE, FALSE
+# 476 "data/maps/OldaleTown/scripts.pory"
+	setflag FLAG_FIRST_YAN_MEETING
+# 477 "data/maps/OldaleTown/scripts.pory"
+	delay 50
+# 478 "data/maps/OldaleTown/scripts.pory"
+	msgbox OldaleTown_EventScript_Yan1_Text_30
+# 479 "data/maps/OldaleTown/scripts.pory"
+	clearflag FLAG_DISABLE_CATCHING
+# 480 "data/maps/OldaleTown/scripts.pory"
 	releaseall
 	return
 
 OldaleTown_EventScript_Yan1_4:
-# 415 "data/maps/OldaleTown/scripts.pory"
+# 416 "data/maps/OldaleTown/scripts.pory"
 	msgbox OldaleTown_EventScript_Yan1_Text_3
 	goto OldaleTown_EventScript_Yan1_3
 
 OldaleTown_EventScript_Yan1_8:
-# 422 "data/maps/OldaleTown/scripts.pory"
+# 423 "data/maps/OldaleTown/scripts.pory"
 	msgbox OldaleTown_EventScript_Yan1_Text_7
 	goto OldaleTown_EventScript_Yan1_7
 
 
-# 477 "data/maps/OldaleTown/scripts.pory"
+# 484 "data/maps/OldaleTown/scripts.pory"
 YanMovement1:
-# 478 "data/maps/OldaleTown/scripts.pory"
+# 485 "data/maps/OldaleTown/scripts.pory"
 	face_down
-# 479 "data/maps/OldaleTown/scripts.pory"
+# 486 "data/maps/OldaleTown/scripts.pory"
 	walk_down
-# 479 "data/maps/OldaleTown/scripts.pory"
+# 486 "data/maps/OldaleTown/scripts.pory"
 	walk_down
-# 479 "data/maps/OldaleTown/scripts.pory"
+# 486 "data/maps/OldaleTown/scripts.pory"
 	walk_down
-# 479 "data/maps/OldaleTown/scripts.pory"
+# 486 "data/maps/OldaleTown/scripts.pory"
 	walk_down
-# 480 "data/maps/OldaleTown/scripts.pory"
+# 487 "data/maps/OldaleTown/scripts.pory"
 	face_player
 	step_end
 
-# 483 "data/maps/OldaleTown/scripts.pory"
+# 490 "data/maps/OldaleTown/scripts.pory"
 YanMovement2:
-# 484 "data/maps/OldaleTown/scripts.pory"
+# 491 "data/maps/OldaleTown/scripts.pory"
 	face_up
-# 485 "data/maps/OldaleTown/scripts.pory"
+# 492 "data/maps/OldaleTown/scripts.pory"
 	walk_up
-# 485 "data/maps/OldaleTown/scripts.pory"
+# 492 "data/maps/OldaleTown/scripts.pory"
 	walk_up
 	step_end
 
-# 488 "data/maps/OldaleTown/scripts.pory"
-YanMovement3:
-# 489 "data/maps/OldaleTown/scripts.pory"
-	face_up
-# 490 "data/maps/OldaleTown/scripts.pory"
-	walk_up
-# 490 "data/maps/OldaleTown/scripts.pory"
-	walk_up
-# 490 "data/maps/OldaleTown/scripts.pory"
-	walk_up
-# 490 "data/maps/OldaleTown/scripts.pory"
-	walk_up
-# 490 "data/maps/OldaleTown/scripts.pory"
-	walk_up
-	step_end
-
-# 494 "data/maps/OldaleTown/scripts.pory"
-YanFaceDown:
 # 495 "data/maps/OldaleTown/scripts.pory"
+YanMovement3:
+# 496 "data/maps/OldaleTown/scripts.pory"
+	face_up
+# 497 "data/maps/OldaleTown/scripts.pory"
+	walk_up
+# 497 "data/maps/OldaleTown/scripts.pory"
+	walk_up
+# 497 "data/maps/OldaleTown/scripts.pory"
+	walk_up
+# 497 "data/maps/OldaleTown/scripts.pory"
+	walk_up
+# 497 "data/maps/OldaleTown/scripts.pory"
+	walk_up
+	step_end
+
+# 501 "data/maps/OldaleTown/scripts.pory"
+YanFaceDown:
+# 502 "data/maps/OldaleTown/scripts.pory"
 	face_down
 	step_end
 
-# 498 "data/maps/OldaleTown/scripts.pory"
+# 505 "data/maps/OldaleTown/scripts.pory"
+YanFaceLeft:
+# 506 "data/maps/OldaleTown/scripts.pory"
+	face_left
+	step_end
+
+# 509 "data/maps/OldaleTown/scripts.pory"
+YanFaceRight:
+# 510 "data/maps/OldaleTown/scripts.pory"
+	face_right
+	step_end
+
+# 513 "data/maps/OldaleTown/scripts.pory"
 YanWalkDown:
-# 499 "data/maps/OldaleTown/scripts.pory"
+# 514 "data/maps/OldaleTown/scripts.pory"
 	walk_down
 	step_end
 
-# 502 "data/maps/OldaleTown/scripts.pory"
+# 517 "data/maps/OldaleTown/scripts.pory"
 YanWalkUp:
-# 503 "data/maps/OldaleTown/scripts.pory"
+# 518 "data/maps/OldaleTown/scripts.pory"
 	walk_up
 	step_end
 
-# 506 "data/maps/OldaleTown/scripts.pory"
+# 521 "data/maps/OldaleTown/scripts.pory"
 YanFaceUp:
-# 507 "data/maps/OldaleTown/scripts.pory"
+# 522 "data/maps/OldaleTown/scripts.pory"
 	face_up
+	step_end
+
+# 525 "data/maps/OldaleTown/scripts.pory"
+YanFacePlayer:
+# 526 "data/maps/OldaleTown/scripts.pory"
+	face_player
 	step_end
 
 OldaleTown_EventScript_Yan1_Text_0:
@@ -1019,121 +1053,121 @@ OldaleTown_EventScript_Yan1_Text_0:
 	.string "Hey!$"
 
 OldaleTown_EventScript_Yan1_Text_1:
-# 412 "data/maps/OldaleTown/scripts.pory"
+# 413 "data/maps/OldaleTown/scripts.pory"
 	.string "Heyo! I'm talkin' to you!$"
 
 OldaleTown_EventScript_Yan1_Text_2:
-# 413 "data/maps/OldaleTown/scripts.pory"
+# 414 "data/maps/OldaleTown/scripts.pory"
 	.string "I haven't seen you around here\nbefore. Are you new around here?$"
 
 OldaleTown_EventScript_Yan1_Text_3:
-# 415 "data/maps/OldaleTown/scripts.pory"
+# 416 "data/maps/OldaleTown/scripts.pory"
 	.string "I knew it!$"
 
 OldaleTown_EventScript_Yan1_Text_4:
-# 417 "data/maps/OldaleTown/scripts.pory"
+# 418 "data/maps/OldaleTown/scripts.pory"
 	.string "Huh. Well, I've never seen you.\nAnyway...$"
 
 OldaleTown_EventScript_Yan1_Text_5:
-# 419 "data/maps/OldaleTown/scripts.pory"
+# 420 "data/maps/OldaleTown/scripts.pory"
 	.string "Take this!$"
 
 OldaleTown_EventScript_Yan1_Text_6:
-# 420 "data/maps/OldaleTown/scripts.pory"
+# 421 "data/maps/OldaleTown/scripts.pory"
 	.string "The woman throws a small card\nat you. Catch it?$"
 
 OldaleTown_EventScript_Yan1_Text_7:
-# 422 "data/maps/OldaleTown/scripts.pory"
+# 423 "data/maps/OldaleTown/scripts.pory"
 	.string "You catch the card with ease.$"
 
 OldaleTown_EventScript_Yan1_Text_8:
-# 424 "data/maps/OldaleTown/scripts.pory"
+# 425 "data/maps/OldaleTown/scripts.pory"
 	.string "The card falls to your feet\non the grass.$"
 
 OldaleTown_EventScript_Yan1_Text_9:
-# 425 "data/maps/OldaleTown/scripts.pory"
+# 426 "data/maps/OldaleTown/scripts.pory"
 	.string "...oh, sorry. I thought\nyou'd catch it.$"
 
 OldaleTown_EventScript_Yan1_Text_10:
-# 426 "data/maps/OldaleTown/scripts.pory"
+# 427 "data/maps/OldaleTown/scripts.pory"
 	.string "You awkwardly pick up the card.$"
 
 OldaleTown_EventScript_Yan1_Text_11:
-# 429 "data/maps/OldaleTown/scripts.pory"
+# 430 "data/maps/OldaleTown/scripts.pory"
 	.string "My name's Yan. I may not\nlook like it, but I'm a detective.$"
 
 OldaleTown_EventScript_Yan1_Text_12:
-# 430 "data/maps/OldaleTown/scripts.pory"
+# 431 "data/maps/OldaleTown/scripts.pory"
 	.string "...or, somethin' like that.$"
 
 OldaleTown_EventScript_Yan1_Text_13:
-# 431 "data/maps/OldaleTown/scripts.pory"
+# 432 "data/maps/OldaleTown/scripts.pory"
 	.string "Since you're new around here,\nI assume you've never heard of me?$"
 
 OldaleTown_EventScript_Yan1_Text_14:
-# 432 "data/maps/OldaleTown/scripts.pory"
+# 433 "data/maps/OldaleTown/scripts.pory"
 	.string "Hey, that was rhetorical.$"
 
 OldaleTown_EventScript_Yan1_Text_15:
-# 433 "data/maps/OldaleTown/scripts.pory"
+# 434 "data/maps/OldaleTown/scripts.pory"
 	.string "Point is, I've been investigating\naround here for some time now.$"
 
 OldaleTown_EventScript_Yan1_Text_16:
-# 434 "data/maps/OldaleTown/scripts.pory"
+# 435 "data/maps/OldaleTown/scripts.pory"
 	.string "Nobody here seems to notice, but\nthere's something weird goin' on.$"
 
 OldaleTown_EventScript_Yan1_Text_17:
-# 435 "data/maps/OldaleTown/scripts.pory"
-	.string "Weird objects, strange looking Pokemon,\netc. etc.$"
+# 436 "data/maps/OldaleTown/scripts.pory"
+	.string "Weird objects, strange looking Pokemon,\ngrey grass and trees.$"
 
 OldaleTown_EventScript_Yan1_Text_18:
-# 436 "data/maps/OldaleTown/scripts.pory"
-	.string "I've seen it! I swear!\nOn Route 103, there's something off.$"
+# 438 "data/maps/OldaleTown/scripts.pory"
+	.string "I've seen it! I swear!\nOn Route 103, there's something strange.$"
 
 OldaleTown_EventScript_Yan1_Text_19:
-# 437 "data/maps/OldaleTown/scripts.pory"
+# 444 "data/maps/OldaleTown/scripts.pory"
 	.string "You can see for yourself!$"
 
 OldaleTown_EventScript_Yan1_Text_20:
-# 438 "data/maps/OldaleTown/scripts.pory"
+# 445 "data/maps/OldaleTown/scripts.pory"
 	.string "Anyway, if you see anything out\nof the ordinary, give me a call!$"
 
 OldaleTown_EventScript_Yan1_Text_21:
-# 439 "data/maps/OldaleTown/scripts.pory"
+# 446 "data/maps/OldaleTown/scripts.pory"
 	.string "See ya!$"
 
 OldaleTown_EventScript_Yan1_Text_22:
-# 447 "data/maps/OldaleTown/scripts.pory"
+# 454 "data/maps/OldaleTown/scripts.pory"
 	.string "...$"
 
 OldaleTown_EventScript_Yan1_Text_23:
-# 448 "data/maps/OldaleTown/scripts.pory"
+# 455 "data/maps/OldaleTown/scripts.pory"
 	.string "Sorry, I almost forgot to\nask your name!$"
 
 OldaleTown_EventScript_Yan1_Text_24:
-# 449 "data/maps/OldaleTown/scripts.pory"
+# 456 "data/maps/OldaleTown/scripts.pory"
 	.string "...oh, {PLAYER}?$"
 
 OldaleTown_EventScript_Yan1_Text_25:
-# 450 "data/maps/OldaleTown/scripts.pory"
+# 457 "data/maps/OldaleTown/scripts.pory"
 	.string "Cool name, dude.$"
 
 OldaleTown_EventScript_Yan1_Text_26:
-# 456 "data/maps/OldaleTown/scripts.pory"
+# 463 "data/maps/OldaleTown/scripts.pory"
 	.string "{PLAYER}...$"
 
 OldaleTown_EventScript_Yan1_Text_27:
-# 458 "data/maps/OldaleTown/scripts.pory"
+# 465 "data/maps/OldaleTown/scripts.pory"
 	.string "You haven't...\p...seen a woman\nin grey, have you?$"
 
 OldaleTown_EventScript_Yan1_Text_28:
-# 462 "data/maps/OldaleTown/scripts.pory"
+# 469 "data/maps/OldaleTown/scripts.pory"
 	.string "...cool. Just curious.$"
 
 OldaleTown_EventScript_Yan1_Text_29:
-# 463 "data/maps/OldaleTown/scripts.pory"
+# 470 "data/maps/OldaleTown/scripts.pory"
 	.string "Be seeing ya.$"
 
 OldaleTown_EventScript_Yan1_Text_30:
-# 470 "data/maps/OldaleTown/scripts.pory"
+# 478 "data/maps/OldaleTown/scripts.pory"
 	.string "You aren't going to call.$"

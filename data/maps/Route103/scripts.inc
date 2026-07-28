@@ -723,7 +723,7 @@ Route103_EventScript_Portal_2:
 
 Route103_EventScript_Portal_Text_0:
 # 357 "data/maps/Route103/scripts.pory"
-	.string "For some reason, this part of the\ntree is completely grey.$"
+	.string "For some reason, this part of the\ntree and grass is completely grey.$"
 
 Route103_EventScript_Portal_Text_1:
 # 359 "data/maps/Route103/scripts.pory"

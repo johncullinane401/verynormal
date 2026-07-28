@@ -796,6 +796,11 @@ script PetalburgCity_EventScript_YinTalk {
         msgbox("Are you prepared for their sacrifice?", MSGBOX_YESNO)
         if (var(VAR_RESULT) == YES) {
             delay(1000)
+			fadescreen(FADE_TO_BLACK)
+			delay(500)
+			
+			fadescreen(FADE_FROM_BLACK)
+			special(DeleteAllPartyMonsExceptZigzagoon)
             msgbox("........................")
             msgbox("It has been taken care of.")
             msgbox("You are a strong-willed person.")

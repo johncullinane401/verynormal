@@ -1532,14 +1532,14 @@ PetalburgCity_EventScript_YinTalk::
 	goto_if_set FLAG_YIN_SPIEL, PetalburgCity_EventScript_YinTalk_2
 # 784 "data/maps/PetalburgCity/scripts.pory"
 	goto_if_set FLAG_CAUGHTNORMAL, PetalburgCity_EventScript_YinTalk_3
-# 824 "data/maps/PetalburgCity/scripts.pory"
+# 829 "data/maps/PetalburgCity/scripts.pory"
 	msgbox PetalburgCity_EventScript_YinTalk_Text_26
-# 825 "data/maps/PetalburgCity/scripts.pory"
+# 830 "data/maps/PetalburgCity/scripts.pory"
 	msgbox PetalburgCity_EventScript_YinTalk_Text_27
-# 826 "data/maps/PetalburgCity/scripts.pory"
+# 831 "data/maps/PetalburgCity/scripts.pory"
 	msgbox PetalburgCity_EventScript_YinTalk_Text_28
 PetalburgCity_EventScript_YinTalk_1:
-# 828 "data/maps/PetalburgCity/scripts.pory"
+# 833 "data/maps/PetalburgCity/scripts.pory"
 	releaseall
 	return
 
@@ -1582,7 +1582,7 @@ PetalburgCity_EventScript_YinTalk_3:
 # 797 "data/maps/PetalburgCity/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq PetalburgCity_EventScript_YinTalk_10
-# 821 "data/maps/PetalburgCity/scripts.pory"
+# 826 "data/maps/PetalburgCity/scripts.pory"
 	msgbox PetalburgCity_EventScript_YinTalk_Text_25
 	goto PetalburgCity_EventScript_YinTalk_1
 
@@ -1611,69 +1611,77 @@ PetalburgCity_EventScript_YinTalk_10:
 # 798 "data/maps/PetalburgCity/scripts.pory"
 	delay 1000
 # 799 "data/maps/PetalburgCity/scripts.pory"
-	msgbox PetalburgCity_EventScript_YinTalk_Text_18
+	fadescreen FADE_TO_BLACK
 # 800 "data/maps/PetalburgCity/scripts.pory"
-	msgbox PetalburgCity_EventScript_YinTalk_Text_19
-# 801 "data/maps/PetalburgCity/scripts.pory"
-	msgbox PetalburgCity_EventScript_YinTalk_Text_20
+	delay 500
 # 802 "data/maps/PetalburgCity/scripts.pory"
-	msgbox PetalburgCity_EventScript_YinTalk_Text_21
+	fadescreen FADE_FROM_BLACK
 # 803 "data/maps/PetalburgCity/scripts.pory"
-	msgbox PetalburgCity_EventScript_YinTalk_Text_22
+	special DeleteAllPartyMonsExceptZigzagoon
 # 804 "data/maps/PetalburgCity/scripts.pory"
-	msgbox PetalburgCity_EventScript_YinTalk_Text_23
+	msgbox PetalburgCity_EventScript_YinTalk_Text_18
 # 805 "data/maps/PetalburgCity/scripts.pory"
-	setflag FLAG_YIN_SPIEL
+	msgbox PetalburgCity_EventScript_YinTalk_Text_19
 # 806 "data/maps/PetalburgCity/scripts.pory"
-	call PetalburgCity_PokemonFanClub_EventScript_DDTutor
+	msgbox PetalburgCity_EventScript_YinTalk_Text_20
 # 807 "data/maps/PetalburgCity/scripts.pory"
+	msgbox PetalburgCity_EventScript_YinTalk_Text_21
+# 808 "data/maps/PetalburgCity/scripts.pory"
+	msgbox PetalburgCity_EventScript_YinTalk_Text_22
+# 809 "data/maps/PetalburgCity/scripts.pory"
+	msgbox PetalburgCity_EventScript_YinTalk_Text_23
+# 810 "data/maps/PetalburgCity/scripts.pory"
+	setflag FLAG_YIN_SPIEL
+# 811 "data/maps/PetalburgCity/scripts.pory"
+	call PetalburgCity_PokemonFanClub_EventScript_DDTutor
+# 812 "data/maps/PetalburgCity/scripts.pory"
 	goto_if_set FLAG_LEARNED_DD, PetalburgCity_EventScript_YinTalk_13
-# 818 "data/maps/PetalburgCity/scripts.pory"
+# 823 "data/maps/PetalburgCity/scripts.pory"
 	msgbox PetalburgCity_EventScript_YinTalk_Text_24
 	goto PetalburgCity_EventScript_YinTalk_1
 
 PetalburgCity_EventScript_YinTalk_13:
-# 808 "data/maps/PetalburgCity/scripts.pory"
-	msgbox PetalburgCity_EventScript_YinTalk_Text_2
-# 809 "data/maps/PetalburgCity/scripts.pory"
-	msgbox PetalburgCity_EventScript_YinTalk_Text_3
-# 810 "data/maps/PetalburgCity/scripts.pory"
-	msgbox PetalburgCity_EventScript_YinTalk_Text_4
-# 811 "data/maps/PetalburgCity/scripts.pory"
-	msgbox PetalburgCity_EventScript_YinTalk_Text_5
-# 812 "data/maps/PetalburgCity/scripts.pory"
-	msgbox PetalburgCity_EventScript_YinTalk_Text_6
 # 813 "data/maps/PetalburgCity/scripts.pory"
-	msgbox PetalburgCity_EventScript_YinTalk_Text_7
+	msgbox PetalburgCity_EventScript_YinTalk_Text_2
 # 814 "data/maps/PetalburgCity/scripts.pory"
-	delay 5
+	msgbox PetalburgCity_EventScript_YinTalk_Text_3
 # 815 "data/maps/PetalburgCity/scripts.pory"
-	removeobject 10
+	msgbox PetalburgCity_EventScript_YinTalk_Text_4
 # 816 "data/maps/PetalburgCity/scripts.pory"
+	msgbox PetalburgCity_EventScript_YinTalk_Text_5
+# 817 "data/maps/PetalburgCity/scripts.pory"
+	msgbox PetalburgCity_EventScript_YinTalk_Text_6
+# 818 "data/maps/PetalburgCity/scripts.pory"
+	msgbox PetalburgCity_EventScript_YinTalk_Text_7
+# 819 "data/maps/PetalburgCity/scripts.pory"
+	delay 5
+# 820 "data/maps/PetalburgCity/scripts.pory"
+	removeobject 10
+# 821 "data/maps/PetalburgCity/scripts.pory"
 	setflag FLAG_YIN_OLDALE
 	goto PetalburgCity_EventScript_YinTalk_1
 
 
 PetalburgCity_CheckForNormalType::
-# 832 "data/maps/PetalburgCity/scripts.pory"
+# 837 "data/maps/PetalburgCity/scripts.pory"
 	checkspecies SPECIES_ZIGZAGOON, NO_PARTY_SCREEN
-# 833 "data/maps/PetalburgCity/scripts.pory"
+# 838 "data/maps/PetalburgCity/scripts.pory"
 	compare VAR_RESULT, TRUE
 	goto_if_eq PetalburgCity_CheckForNormalType_1
 	return
 
 PetalburgCity_CheckForNormalType_1:
-# 834 "data/maps/PetalburgCity/scripts.pory"
+# 839 "data/maps/PetalburgCity/scripts.pory"
 	setflag FLAG_CAUGHTNORMAL
 	return
 
 
 PetalburgCity_EventScript_ObviousRoadblock::
-# 839 "data/maps/PetalburgCity/scripts.pory"
+# 844 "data/maps/PetalburgCity/scripts.pory"
 	lockall
-# 840 "data/maps/PetalburgCity/scripts.pory"
+# 845 "data/maps/PetalburgCity/scripts.pory"
 	msgbox PetalburgCity_EventScript_ObviousRoadblock_Text_0
-# 841 "data/maps/PetalburgCity/scripts.pory"
+# 846 "data/maps/PetalburgCity/scripts.pory"
 	releaseall
 	return
 
@@ -1751,49 +1759,49 @@ PetalburgCity_EventScript_YinTalk_Text_17:
 	.string "Are you prepared for their sacrifice?$"
 
 PetalburgCity_EventScript_YinTalk_Text_18:
-# 799 "data/maps/PetalburgCity/scripts.pory"
+# 804 "data/maps/PetalburgCity/scripts.pory"
 	.string "........................$"
 
 PetalburgCity_EventScript_YinTalk_Text_19:
-# 800 "data/maps/PetalburgCity/scripts.pory"
+# 805 "data/maps/PetalburgCity/scripts.pory"
 	.string "It has been taken care of.$"
 
 PetalburgCity_EventScript_YinTalk_Text_20:
-# 801 "data/maps/PetalburgCity/scripts.pory"
+# 806 "data/maps/PetalburgCity/scripts.pory"
 	.string "You are a strong-willed person.$"
 
 PetalburgCity_EventScript_YinTalk_Text_21:
-# 802 "data/maps/PetalburgCity/scripts.pory"
+# 807 "data/maps/PetalburgCity/scripts.pory"
 	.string "That was not an easy choice to make.$"
 
 PetalburgCity_EventScript_YinTalk_Text_22:
-# 803 "data/maps/PetalburgCity/scripts.pory"
+# 808 "data/maps/PetalburgCity/scripts.pory"
 	.string "Do not weep for your companions.$"
 
 PetalburgCity_EventScript_YinTalk_Text_23:
-# 804 "data/maps/PetalburgCity/scripts.pory"
+# 809 "data/maps/PetalburgCity/scripts.pory"
 	.string "You will see them again in the\nAshen Garden.$"
 
 PetalburgCity_EventScript_YinTalk_Text_24:
-# 818 "data/maps/PetalburgCity/scripts.pory"
+# 823 "data/maps/PetalburgCity/scripts.pory"
 	.string "Very well. Return when you are\nready to accept me.$"
 
 PetalburgCity_EventScript_YinTalk_Text_25:
-# 821 "data/maps/PetalburgCity/scripts.pory"
+# 826 "data/maps/PetalburgCity/scripts.pory"
 	.string "Return when you are ready.$"
 
 PetalburgCity_EventScript_YinTalk_Text_26:
-# 824 "data/maps/PetalburgCity/scripts.pory"
+# 829 "data/maps/PetalburgCity/scripts.pory"
 	.string "Unfortunately, you have not yet\nobtained your CATALYST.$"
 
 PetalburgCity_EventScript_YinTalk_Text_27:
-# 825 "data/maps/PetalburgCity/scripts.pory"
+# 830 "data/maps/PetalburgCity/scripts.pory"
 	.string "Any NORMAL type will do.$"
 
 PetalburgCity_EventScript_YinTalk_Text_28:
-# 826 "data/maps/PetalburgCity/scripts.pory"
+# 831 "data/maps/PetalburgCity/scripts.pory"
 	.string "Please return to me once you have\nobtained one.$"
 
 PetalburgCity_EventScript_ObviousRoadblock_Text_0:
-# 840 "data/maps/PetalburgCity/scripts.pory"
+# 845 "data/maps/PetalburgCity/scripts.pory"
 	.string "The door is sealed tightly shut.$"

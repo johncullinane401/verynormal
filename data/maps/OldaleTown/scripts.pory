@@ -409,6 +409,7 @@ script OldaleTown_EventScript_Yan1 {
 		msgbox("Hey!")
 		applymovement(5, YanMovement1)
 		waitmovement(0)
+		playbgm(MUS_CYCLING, FALSE)
 		msgbox("Heyo! I'm talkin' to you!")
 		msgbox("I haven't seen you around here\nbefore. Are you new around here?", MSGBOX_YESNO)
 		if (var(VAR_RESULT) == YES) {
@@ -432,8 +433,14 @@ script OldaleTown_EventScript_Yan1 {
 		msgbox("Hey, that was rhetorical.")
 		msgbox("Point is, I've been investigating\naround here for some time now.")
 		msgbox("Nobody here seems to notice, but\nthere's something weird goin' on.")
-		msgbox("Weird objects, strange looking Pokemon,\netc. etc.")
-		msgbox("I've seen it! I swear!\nOn Route 103, there's something off.")
+		msgbox("Weird objects, strange looking Pokemon,\ngrey grass and trees.")
+		applymovement(5,YanFaceLeft)
+		msgbox("I've seen it! I swear!\nOn Route 103, there's something strange.")
+		applymovement(5,YanFaceRight)
+		applymovement(5,YanFaceLeft)
+		applymovement(5,YanFaceRight)
+		applymovement(5,YanFaceLeft)
+		applymovement(5,YanFacePlayer)
 		msgbox("You can see for yourself!")
 		msgbox("Anyway, if you see anything out\nof the ordinary, give me a call!")
 		msgbox("See ya!")
@@ -465,12 +472,12 @@ script OldaleTown_EventScript_Yan1 {
 		waitmovement(0)
 		fadeinbgm(1)
 		removeobject(5)
+		playbgm(MUS_OLDALE, FALSE)
 		setflag(FLAG_FIRST_YAN_MEETING)
 		delay(50)
 		msgbox("You aren't going to call.")
 		clearflag(FLAG_DISABLE_CATCHING)
 		releaseall
-		
 	}
 }
 
@@ -495,6 +502,14 @@ movement YanFaceDown {
 	face_down
 }
 
+movement YanFaceLeft {
+	face_left
+}
+
+movement YanFaceRight {
+	face_right
+}
+
 movement YanWalkDown {
 	walk_down
 }
@@ -505,4 +520,8 @@ movement YanWalkUp {
 
 movement YanFaceUp {
 	face_up
+}
+
+movement YanFacePlayer {
+	face_player
 }

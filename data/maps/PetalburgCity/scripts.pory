@@ -837,15 +837,141 @@ script PetalburgCity_EventScript_YinTalk {
 	setflag(FLAG_DISABLE_EXP)
 }
 
-script PetalburgCity_CheckForNormalType {
-	checkspecies(SPECIES_ZIGZAGOON, NO_PARTY_SCREEN)
-	if (var(VAR_RESULT) == TRUE) {
-		setflag(FLAG_CAUGHTNORMAL)
-	}
-}
-
 script PetalburgCity_EventScript_ObviousRoadblock {
 	lockall
 	msgbox("The door is sealed tightly shut.")
 	releaseall
 }
+
+
+
+script PetalburgCity_CheckForNormalType {
+    checkspecies(SPECIES_ZIGZAGOON, NO_PARTY_SCREEN)
+    if (var(VAR_RESULT) == TRUE) {
+        setflag(FLAG_CAUGHTNORMAL)
+    }
+}
+
+script PetalburgCity_EventScript_Yan1 {
+    if (!flag(FLAG_FIRST_YAN_MEETING)) {
+        lockall
+        msgbox("Hey!")
+        applymovement(11, YanMovement1)
+        waitmovement(0)
+        playbgm(MUS_CYCLING, FALSE)
+        msgbox("Heyo! I'm talkin' to you!")
+        msgbox("I haven't seen you around here\nbefore. Are you new around here?", MSGBOX_YESNO)
+        if (var(VAR_RESULT) == YES) {
+            msgbox("I knew it!")
+        } else {
+            msgbox("Huh. Well, I've never seen you.\nAnyway...")
+        }
+        msgbox("Take this!")
+        msgbox("The woman throws a small card\nat you. Catch it?", MSGBOX_YESNO) 
+        if (var(VAR_RESULT) == YES) {
+            msgbox("You catch the card with ease.")
+        } else {
+            msgbox("The card falls to your feet\non the grass.")
+            msgbox("...oh, sorry. I thought\nyou'd catch it.")
+            msgbox("You awkwardly pick up the card.")
+        }
+        giveitem(ITEM_RED_CARD, 1)
+        msgbox("My name's Yan. I may not\nlook like it, but I'm a detective.")
+        msgbox("...or, somethin' like that.")
+        msgbox("Since you're new around here,\nI assume you've never heard of me?", MSGBOX_YESNO)
+        msgbox("Hey, that was rhetorical.")
+        msgbox("Point is, I've been investigating\naround here for some time now.")
+        msgbox("Nobody here seems to notice, but\nthere's something weird goin' on.")
+        msgbox("Weird objects, strange looking Pokemon,\ngrey grass and trees.")
+        applymovement(11,YanFaceLeft)
+        msgbox("I've seen it! I swear!\nOn Route 103, there's something strange.")
+        applymovement(11,YanFaceRight)
+        applymovement(11,YanFaceLeft)
+        applymovement(11,YanFaceRight)
+        applymovement(11,YanFaceLeft)
+        applymovement(11,YanFacePlayer)
+        msgbox("You can see for yourself!")
+        msgbox("Anyway, if you see anything out\nof the ordinary, give me a call!")
+        msgbox("See ya!")
+        applymovement(11, YanMovement2)
+        waitmovement(0)
+        delay(50)
+        applymovement(11, YanFaceDown)
+        waitmovement(0)
+        applymovement(11, YanWalkDown)
+        waitmovement(0)
+        msgbox("...")
+        msgbox("Sorry, I almost forgot to\nask your name!")
+        msgbox("...oh, {PLAYER}?")
+        msgbox("Cool name, dude.")
+        applymovement(11,YanFaceUp)
+        waitmovement(0)
+        waitmovement(0)
+        fadeoutbgm(1)
+        delay(100)
+        msgbox("{PLAYER}...")
+        delay(100)
+        msgbox("You haven't...\p...seen a woman\nin grey, have you?")
+        waitmessage
+        multichoice(20, 5, MULTI_NONONO, FALSE)
+        closemessage
+        msgbox("...cool. Just curious.")
+        msgbox("Be seeing ya.")
+        applymovement(11,YanMovement3)
+        waitmovement(0)
+        fadeinbgm(1)
+        removeobject(11)
+        playbgm(MUS_OLDALE, FALSE)
+        setflag(FLAG_FIRST_YAN_MEETING)
+        delay(50)
+        msgbox("You aren't going to call.")
+        clearflag(FLAG_DISABLE_CATCHING)
+        releaseall
+    }
+}
+
+movement YanMovement1 {
+    face_right
+    walk_right * 4
+    face_player
+}
+
+movement YanMovement2 {
+    face_left
+    walk_left * 2
+}
+
+movement YanMovement3 {
+    face_left
+    walk_left * 5
+}
+
+
+movement YanFaceDown {
+    face_right
+}
+
+movement YanFaceLeft {
+    face_up
+}
+
+movement YanFaceRight {
+    face_down
+}
+
+movement YanWalkDown {
+    walk_right
+}
+
+movement YanWalkUp {
+    walk_left
+}
+
+movement YanFaceUp {
+    face_left
+}
+
+movement YanFacePlayer {
+    face_player
+}
+

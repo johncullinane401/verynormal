@@ -354,10 +354,11 @@ Route103_Text_RouteSign:
 
 script Route103_EventScript_Portal {
 	lockall
-	msgbox("For some reason, this part of the\ntree and grass is completely grey,\pand the grass has dissolved into sand.")
+	msgbox("Somehow, this part of the\ntree and grass is completely grey,\pand the grass has dissolved into sand.")
 	if (flag(FLAG_PORTAL_ACCESS)) {
 		msgbox("Use DREAMDEVOUR?", MSGBOX_YESNO)
 	}
+	// warp(MAP_DARKZONE,0,0)
 	releaseall
 }
 
@@ -369,7 +370,7 @@ script Route103_EventScript_Igotnothingtosay {
 
 script Route103_EventScript_YinTalk1 {
 	lockall
-	if (flag(FLAG_YIN_WARP_1) && !flag(FLAG_YIN_WARP_2) && !flag(FLAG_YIN_WARP_3)) {
+	if (flag(FLAG_YIN_WARP_1)) {
 		msgbox("There is a woman here as well.")
 		msgbox("She isn't looking at you.")
 		msgbox("You look down at her hands.")
@@ -389,5 +390,52 @@ script Route103_EventScript_YinTalk1 {
 	}
     releaseall
 }
+
+script Route103_EventScript_YinLastDialogue {
+    lockall
+    msgbox("Hello, there.")
+    msgbox("I do not have much time to\nspeak with you, so I will be blunt.")
+	msgbox("I had to find a spot where\nwe would not be overheard, you see.")
+    msgbox("You do not need to know my name.")
+    msgbox("After all, I do not know yours.")
+    msgbox("But, I believe we can\nhelp each other.")
+    msgbox("I would prefer for you to stay in the\ndark, however.")
+    msgbox("............")
+    msgbox("I am sure this is sounding rather\nsuspicious to you.")
+    msgbox("Despite this, will you assist me?", MSGBOX_YESNO)
+
+    if (var(VAR_RESULT) == YES) {
+        msgbox("Of course you will.")
+        msgbox("I am happy to hear that.")
+    } else {
+        msgbox("So you say.")
+        msgbox("And yet, what do you have to lose?")
+        msgbox("Ignore me if you wish.")
+        msgbox("But if you change your mind...")
+    }
+    msgbox("I will need you to do something first.")
+    msgbox("You must obtain")
+    msgbox("A CATALYST.")
+    msgbox("A NORMAL type will do.")
+    msgbox("Once you have done this, I will find\nyou again in 'Petalburg City'.")
+    msgbox("With that, I bid you farewell.")
+    removeobject(27)
+    setflag(FLAG_YIN_WARP_2)
+    warp(MAP_ROUTE103, 4, 1)
+    releaseall
+}
+
+script Route103_EventScript_RemoveYinlings {
+	lockall
+	setflag(FLAG_REMOVE_YINLINGS)
+	removeobject(22)
+	removeobject(23)
+	removeobject(24)
+	removeobject(25)
+	removeobject(26)
+	releaseall
+}
+
+
 
 

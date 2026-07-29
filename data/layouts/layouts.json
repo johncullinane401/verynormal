@@ -9333,6 +9333,16 @@
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/CURSEZONE/border.bin",
       "blockdata_filepath": "data/layouts/CURSEZONE/map.bin"
+    },
+    {
+      "id": "LAYOUT_DARKZONE",
+      "name": "darkzone_Layout",
+      "width": 61,
+      "height": 59,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_MirageTower",
+      "border_filepath": "data/layouts/darkzone/border.bin",
+      "blockdata_filepath": "data/layouts/darkzone/map.bin"
     }
   ]
 }

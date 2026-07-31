@@ -704,292 +704,467 @@ Route103_Text_RouteSign:
 	.string "{DOWN_ARROW} OLDALE TOWN$"
 
 Route103_EventScript_Portal::
-# 356 "data/maps/Route103/scripts.pory"
-	lockall
 # 357 "data/maps/Route103/scripts.pory"
-	msgbox Route103_EventScript_Portal_Text_0
+	lockall
 # 358 "data/maps/Route103/scripts.pory"
+	msgbox Route103_EventScript_Portal_Text_0
+# 359 "data/maps/Route103/scripts.pory"
 	goto_if_set FLAG_PORTAL_ACCESS, Route103_EventScript_Portal_2
 Route103_EventScript_Portal_1:
-# 362 "data/maps/Route103/scripts.pory"
+# 371 "data/maps/Route103/scripts.pory"
 	releaseall
 	return
 
 Route103_EventScript_Portal_2:
-# 359 "data/maps/Route103/scripts.pory"
+# 360 "data/maps/Route103/scripts.pory"
 	msgbox Route103_EventScript_Portal_Text_1, MSGBOX_YESNO
+# 361 "data/maps/Route103/scripts.pory"
+	compare VAR_RESULT, YES
+	goto_if_eq Route103_EventScript_Portal_4
+	goto Route103_EventScript_Portal_1
+
+Route103_EventScript_Portal_4:
+# 362 "data/maps/Route103/scripts.pory"
+	fadescreen FADE_TO_WHITE
+# 363 "data/maps/Route103/scripts.pory"
+	delay 200
+# 364 "data/maps/Route103/scripts.pory"
+	setvar VAR_HOTNESS, 0
+# 365 "data/maps/Route103/scripts.pory"
+	warp MAP_WEIRDCAVE1, 9, 30
+# 366 "data/maps/Route103/scripts.pory"
+	fadescreen FADE_FROM_WHITE
 	goto Route103_EventScript_Portal_1
 
 
 Route103_EventScript_Igotnothingtosay::
-# 366 "data/maps/Route103/scripts.pory"
+# 375 "data/maps/Route103/scripts.pory"
 	lockall
-# 367 "data/maps/Route103/scripts.pory"
+# 376 "data/maps/Route103/scripts.pory"
 	msgbox Route103_EventScript_Igotnothingtosay_Text_0
-# 368 "data/maps/Route103/scripts.pory"
+# 377 "data/maps/Route103/scripts.pory"
 	releaseall
 	return
 
 
 Route103_EventScript_YinTalk1::
-# 372 "data/maps/Route103/scripts.pory"
-	lockall
-# 373 "data/maps/Route103/scripts.pory"
-	goto_if_set FLAG_YIN_WARP_1, Route103_EventScript_YinTalk1_2
-# 380 "data/maps/Route103/scripts.pory"
-	msgbox Route103_EventScript_YinTalk1_Text_4
 # 381 "data/maps/Route103/scripts.pory"
-	msgbox Route103_EventScript_YinTalk1_Text_5
+	lockall
 # 382 "data/maps/Route103/scripts.pory"
-	msgbox Route103_EventScript_YinTalk1_Text_6
-# 383 "data/maps/Route103/scripts.pory"
-	msgbox Route103_EventScript_YinTalk1_Text_7
-# 384 "data/maps/Route103/scripts.pory"
-	msgbox Route103_EventScript_YinTalk1_Text_2
-# 385 "data/maps/Route103/scripts.pory"
-	msgbox Route103_EventScript_YinTalk1_Text_8
-# 386 "data/maps/Route103/scripts.pory"
-	removeobject 21
-# 387 "data/maps/Route103/scripts.pory"
-	setobjectxyperm 21, 22, 13
-# 388 "data/maps/Route103/scripts.pory"
-	addobject 21
+	goto_if_set FLAG_YIN_WARP_1, Route103_EventScript_YinTalk1_2
 # 389 "data/maps/Route103/scripts.pory"
+	msgbox Route103_EventScript_YinTalk1_Text_4
+# 390 "data/maps/Route103/scripts.pory"
+	msgbox Route103_EventScript_YinTalk1_Text_5
+# 391 "data/maps/Route103/scripts.pory"
+	msgbox Route103_EventScript_YinTalk1_Text_6
+# 392 "data/maps/Route103/scripts.pory"
+	msgbox Route103_EventScript_YinTalk1_Text_7
+# 393 "data/maps/Route103/scripts.pory"
+	msgbox Route103_EventScript_YinTalk1_Text_2
+# 394 "data/maps/Route103/scripts.pory"
+	msgbox Route103_EventScript_YinTalk1_Text_8
+# 395 "data/maps/Route103/scripts.pory"
+	removeobject 21
+# 396 "data/maps/Route103/scripts.pory"
+	setobjectxyperm 21, 22, 13
+# 397 "data/maps/Route103/scripts.pory"
+	addobject 21
+# 398 "data/maps/Route103/scripts.pory"
 	setflag FLAG_YIN_WARP_1
 Route103_EventScript_YinTalk1_1:
-# 391 "data/maps/Route103/scripts.pory"
+# 400 "data/maps/Route103/scripts.pory"
 	releaseall
 	return
 
 Route103_EventScript_YinTalk1_2:
-# 374 "data/maps/Route103/scripts.pory"
+# 383 "data/maps/Route103/scripts.pory"
 	msgbox Route103_EventScript_YinTalk1_Text_0
-# 375 "data/maps/Route103/scripts.pory"
+# 384 "data/maps/Route103/scripts.pory"
 	msgbox Route103_EventScript_YinTalk1_Text_1
-# 376 "data/maps/Route103/scripts.pory"
+# 385 "data/maps/Route103/scripts.pory"
 	msgbox Route103_EventScript_YinTalk1_Text_2
-# 377 "data/maps/Route103/scripts.pory"
+# 386 "data/maps/Route103/scripts.pory"
 	msgbox Route103_EventScript_YinTalk1_Text_3
 	goto Route103_EventScript_YinTalk1_1
 
 
 Route103_EventScript_YinLastDialogue::
-# 395 "data/maps/Route103/scripts.pory"
-	lockall
-# 396 "data/maps/Route103/scripts.pory"
-	msgbox Route103_EventScript_YinLastDialogue_Text_0
-# 397 "data/maps/Route103/scripts.pory"
-	msgbox Route103_EventScript_YinLastDialogue_Text_1
-# 398 "data/maps/Route103/scripts.pory"
-	msgbox Route103_EventScript_YinLastDialogue_Text_2
-# 399 "data/maps/Route103/scripts.pory"
-	msgbox Route103_EventScript_YinLastDialogue_Text_3
-# 400 "data/maps/Route103/scripts.pory"
-	msgbox Route103_EventScript_YinLastDialogue_Text_4
-# 401 "data/maps/Route103/scripts.pory"
-	msgbox Route103_EventScript_YinLastDialogue_Text_5
-# 402 "data/maps/Route103/scripts.pory"
-	msgbox Route103_EventScript_YinLastDialogue_Text_6
-# 403 "data/maps/Route103/scripts.pory"
-	msgbox Route103_EventScript_YinLastDialogue_Text_7
 # 404 "data/maps/Route103/scripts.pory"
-	msgbox Route103_EventScript_YinLastDialogue_Text_8
+	lockall
 # 405 "data/maps/Route103/scripts.pory"
-	msgbox Route103_EventScript_YinLastDialogue_Text_9, MSGBOX_YESNO
+	setvar VAR_VENOM, 0
+# 406 "data/maps/Route103/scripts.pory"
+	msgbox Route103_EventScript_YinLastDialogue_Text_0
 # 407 "data/maps/Route103/scripts.pory"
+	msgbox Route103_EventScript_YinLastDialogue_Text_1
+# 408 "data/maps/Route103/scripts.pory"
+	msgbox Route103_EventScript_YinLastDialogue_Text_2
+# 409 "data/maps/Route103/scripts.pory"
+	msgbox Route103_EventScript_YinLastDialogue_Text_3
+# 410 "data/maps/Route103/scripts.pory"
+	msgbox Route103_EventScript_YinLastDialogue_Text_4
+# 411 "data/maps/Route103/scripts.pory"
+	msgbox Route103_EventScript_YinLastDialogue_Text_5
+# 412 "data/maps/Route103/scripts.pory"
+	msgbox Route103_EventScript_YinLastDialogue_Text_6
+# 413 "data/maps/Route103/scripts.pory"
+	msgbox Route103_EventScript_YinLastDialogue_Text_7
+# 414 "data/maps/Route103/scripts.pory"
+	msgbox Route103_EventScript_YinLastDialogue_Text_8
+# 415 "data/maps/Route103/scripts.pory"
+	msgbox Route103_EventScript_YinLastDialogue_Text_9, MSGBOX_YESNO
+# 416 "data/maps/Route103/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq Route103_EventScript_YinLastDialogue_2
-# 411 "data/maps/Route103/scripts.pory"
-	msgbox Route103_EventScript_YinLastDialogue_Text_12
-# 412 "data/maps/Route103/scripts.pory"
-	msgbox Route103_EventScript_YinLastDialogue_Text_13
-# 413 "data/maps/Route103/scripts.pory"
-	msgbox Route103_EventScript_YinLastDialogue_Text_14
-# 414 "data/maps/Route103/scripts.pory"
-	msgbox Route103_EventScript_YinLastDialogue_Text_15
-Route103_EventScript_YinLastDialogue_1:
-# 416 "data/maps/Route103/scripts.pory"
-	msgbox Route103_EventScript_YinLastDialogue_Text_16
-# 417 "data/maps/Route103/scripts.pory"
-	msgbox Route103_EventScript_YinLastDialogue_Text_17
-# 418 "data/maps/Route103/scripts.pory"
-	msgbox Route103_EventScript_YinLastDialogue_Text_18
-# 419 "data/maps/Route103/scripts.pory"
-	msgbox Route103_EventScript_YinLastDialogue_Text_19
-# 420 "data/maps/Route103/scripts.pory"
-	msgbox Route103_EventScript_YinLastDialogue_Text_20
-# 421 "data/maps/Route103/scripts.pory"
-	msgbox Route103_EventScript_YinLastDialogue_Text_21
 # 422 "data/maps/Route103/scripts.pory"
-	removeobject 27
+	addvar VAR_VENOM, 1
 # 423 "data/maps/Route103/scripts.pory"
-	setflag FLAG_YIN_WARP_2
+	msgbox Route103_EventScript_YinLastDialogue_Text_14
 # 424 "data/maps/Route103/scripts.pory"
-	warp MAP_ROUTE103, 4, 1
+	msgbox Route103_EventScript_YinLastDialogue_Text_15
 # 425 "data/maps/Route103/scripts.pory"
+	msgbox Route103_EventScript_YinLastDialogue_Text_16
+# 426 "data/maps/Route103/scripts.pory"
+	msgbox Route103_EventScript_YinLastDialogue_Text_17
+# 427 "data/maps/Route103/scripts.pory"
+	msgbox Route103_EventScript_YinLastDialogue_Text_18, MSGBOX_YESNO
+# 428 "data/maps/Route103/scripts.pory"
+	compare VAR_RESULT, YES
+	goto_if_eq Route103_EventScript_YinLastDialogue_9
+# 431 "data/maps/Route103/scripts.pory"
+	addvar VAR_VENOM, 1
+# 432 "data/maps/Route103/scripts.pory"
+	msgbox Route103_EventScript_YinLastDialogue_Text_20
+# 433 "data/maps/Route103/scripts.pory"
+	msgbox Route103_EventScript_YinLastDialogue_Text_21
+# 434 "data/maps/Route103/scripts.pory"
+	msgbox Route103_EventScript_YinLastDialogue_Text_22
+# 435 "data/maps/Route103/scripts.pory"
+	msgbox Route103_EventScript_YinLastDialogue_Text_23
+Route103_EventScript_YinLastDialogue_1:
+# 438 "data/maps/Route103/scripts.pory"
+	msgbox Route103_EventScript_YinLastDialogue_Text_24
+# 439 "data/maps/Route103/scripts.pory"
+	msgbox Route103_EventScript_YinLastDialogue_Text_25
+# 440 "data/maps/Route103/scripts.pory"
+	msgbox Route103_EventScript_YinLastDialogue_Text_26
+# 441 "data/maps/Route103/scripts.pory"
+	msgbox Route103_EventScript_YinLastDialogue_Text_27
+# 442 "data/maps/Route103/scripts.pory"
+	msgbox Route103_EventScript_YinLastDialogue_Text_28
+# 443 "data/maps/Route103/scripts.pory"
+	msgbox Route103_EventScript_YinLastDialogue_Text_29
+# 444 "data/maps/Route103/scripts.pory"
+	msgbox Route103_EventScript_YinLastDialogue_Text_30, MSGBOX_YESNO
+# 446 "data/maps/Route103/scripts.pory"
+	compare VAR_RESULT, YES
+	goto_if_eq Route103_EventScript_YinLastDialogue_6
+# 450 "data/maps/Route103/scripts.pory"
+	addvar VAR_VENOM, 2
+# 451 "data/maps/Route103/scripts.pory"
+	msgbox Route103_EventScript_YinLastDialogue_Text_33
+# 452 "data/maps/Route103/scripts.pory"
+	msgbox Route103_EventScript_YinLastDialogue_Text_34
+# 453 "data/maps/Route103/scripts.pory"
+	msgbox Route103_EventScript_YinLastDialogue_Text_35
+# 454 "data/maps/Route103/scripts.pory"
+	msgbox Route103_EventScript_YinLastDialogue_Text_36
+Route103_EventScript_YinLastDialogue_5:
+# 456 "data/maps/Route103/scripts.pory"
+	msgbox Route103_EventScript_YinLastDialogue_Text_37
+# 457 "data/maps/Route103/scripts.pory"
+	msgbox Route103_EventScript_YinLastDialogue_Text_38
+# 458 "data/maps/Route103/scripts.pory"
+	msgbox Route103_EventScript_YinLastDialogue_Text_39
+# 459 "data/maps/Route103/scripts.pory"
+	msgbox Route103_EventScript_YinLastDialogue_Text_40
+# 460 "data/maps/Route103/scripts.pory"
+	msgbox Route103_EventScript_YinLastDialogue_Text_41
+# 461 "data/maps/Route103/scripts.pory"
+	msgbox Route103_EventScript_YinLastDialogue_Text_42
+# 462 "data/maps/Route103/scripts.pory"
+	removeobject 27
+# 463 "data/maps/Route103/scripts.pory"
+	setflag FLAG_YIN_WARP_2
+# 464 "data/maps/Route103/scripts.pory"
+	warp MAP_ROUTE103, 4, 1
+# 465 "data/maps/Route103/scripts.pory"
 	releaseall
 	return
 
 Route103_EventScript_YinLastDialogue_2:
-# 408 "data/maps/Route103/scripts.pory"
+# 417 "data/maps/Route103/scripts.pory"
 	msgbox Route103_EventScript_YinLastDialogue_Text_10
-# 409 "data/maps/Route103/scripts.pory"
+# 418 "data/maps/Route103/scripts.pory"
 	msgbox Route103_EventScript_YinLastDialogue_Text_11
+# 419 "data/maps/Route103/scripts.pory"
+	msgbox Route103_EventScript_YinLastDialogue_Text_12
+# 420 "data/maps/Route103/scripts.pory"
+	msgbox Route103_EventScript_YinLastDialogue_Text_13
+	goto Route103_EventScript_YinLastDialogue_1
+
+Route103_EventScript_YinLastDialogue_6:
+# 447 "data/maps/Route103/scripts.pory"
+	msgbox Route103_EventScript_YinLastDialogue_Text_31
+# 448 "data/maps/Route103/scripts.pory"
+	msgbox Route103_EventScript_YinLastDialogue_Text_32
+	goto Route103_EventScript_YinLastDialogue_5
+
+Route103_EventScript_YinLastDialogue_9:
+# 429 "data/maps/Route103/scripts.pory"
+	msgbox Route103_EventScript_YinLastDialogue_Text_19
 	goto Route103_EventScript_YinLastDialogue_1
 
 
 Route103_EventScript_RemoveYinlings::
-# 429 "data/maps/Route103/scripts.pory"
+# 469 "data/maps/Route103/scripts.pory"
 	lockall
-# 430 "data/maps/Route103/scripts.pory"
+# 470 "data/maps/Route103/scripts.pory"
 	setflag FLAG_REMOVE_YINLINGS
-# 431 "data/maps/Route103/scripts.pory"
+# 471 "data/maps/Route103/scripts.pory"
 	removeobject 22
-# 432 "data/maps/Route103/scripts.pory"
+# 472 "data/maps/Route103/scripts.pory"
 	removeobject 23
-# 433 "data/maps/Route103/scripts.pory"
+# 473 "data/maps/Route103/scripts.pory"
 	removeobject 24
-# 434 "data/maps/Route103/scripts.pory"
+# 474 "data/maps/Route103/scripts.pory"
 	removeobject 25
-# 435 "data/maps/Route103/scripts.pory"
+# 475 "data/maps/Route103/scripts.pory"
 	removeobject 26
-# 436 "data/maps/Route103/scripts.pory"
+# 476 "data/maps/Route103/scripts.pory"
 	releaseall
 	return
 
 
+YinFaceRight::
+# 480 "data/maps/Route103/scripts.pory"
+	face_right
+	return
+
+
+YinFaceLeft::
+# 484 "data/maps/Route103/scripts.pory"
+	face_left
+	return
+
+
 Route103_EventScript_Portal_Text_0:
-# 357 "data/maps/Route103/scripts.pory"
+# 358 "data/maps/Route103/scripts.pory"
 	.string "Somehow, this part of the\ntree and grass is completely grey,\pand the grass has dissolved into sand.$"
 
 Route103_EventScript_Portal_Text_1:
-# 359 "data/maps/Route103/scripts.pory"
-	.string "Use DREAMDEVOUR?$"
+# 360 "data/maps/Route103/scripts.pory"
+	.string "Use DREAMREAPER??$"
 
 Route103_EventScript_Igotnothingtosay_Text_0:
-# 367 "data/maps/Route103/scripts.pory"
+# 376 "data/maps/Route103/scripts.pory"
 	.string "...$"
 
 Route103_EventScript_YinTalk1_Text_0:
-# 374 "data/maps/Route103/scripts.pory"
+# 383 "data/maps/Route103/scripts.pory"
 	.string "There is a woman here as well.$"
 
 Route103_EventScript_YinTalk1_Text_1:
-# 375 "data/maps/Route103/scripts.pory"
+# 384 "data/maps/Route103/scripts.pory"
 	.string "She isn't looking at you.$"
 
 Route103_EventScript_YinTalk1_Text_2:
-# 376 "data/maps/Route103/scripts.pory"
+# 385 "data/maps/Route103/scripts.pory"
 	.string "You look down at her hands.$"
 
 Route103_EventScript_YinTalk1_Text_3:
-# 377 "data/maps/Route103/scripts.pory"
+# 386 "data/maps/Route103/scripts.pory"
 	.string "She is pointing downwards.$"
 
 Route103_EventScript_YinTalk1_Text_4:
-# 380 "data/maps/Route103/scripts.pory"
+# 389 "data/maps/Route103/scripts.pory"
 	.string "There is a woman here.$"
 
 Route103_EventScript_YinTalk1_Text_5:
-# 381 "data/maps/Route103/scripts.pory"
+# 390 "data/maps/Route103/scripts.pory"
 	.string "Her face is pale and sickly, and\nher hair is a deep black.$"
 
 Route103_EventScript_YinTalk1_Text_6:
-# 382 "data/maps/Route103/scripts.pory"
-	.string "Her eyes are clouded and sharp, like\nmarbles dipped in tar.$"
+# 391 "data/maps/Route103/scripts.pory"
+	.string "Her eyes are clouded, like\nmarbles dipped in ink.$"
 
 Route103_EventScript_YinTalk1_Text_7:
-# 383 "data/maps/Route103/scripts.pory"
+# 392 "data/maps/Route103/scripts.pory"
 	.string "She is staring at you intently.$"
 
 Route103_EventScript_YinTalk1_Text_8:
-# 385 "data/maps/Route103/scripts.pory"
+# 394 "data/maps/Route103/scripts.pory"
 	.string "She beckons you to follow her.$"
 
 Route103_EventScript_YinLastDialogue_Text_0:
-# 396 "data/maps/Route103/scripts.pory"
+# 406 "data/maps/Route103/scripts.pory"
 	.string "Hello, there.$"
 
 Route103_EventScript_YinLastDialogue_Text_1:
-# 397 "data/maps/Route103/scripts.pory"
-	.string "I do not have much time to\nspeak with you, so I will be blunt.$"
+# 407 "data/maps/Route103/scripts.pory"
+	.string "I apologize for the detour.$"
 
 Route103_EventScript_YinLastDialogue_Text_2:
-# 398 "data/maps/Route103/scripts.pory"
+# 408 "data/maps/Route103/scripts.pory"
 	.string "I had to find a spot where\nwe would not be overheard, you see.$"
 
 Route103_EventScript_YinLastDialogue_Text_3:
-# 399 "data/maps/Route103/scripts.pory"
-	.string "You do not need to know my name.$"
+# 409 "data/maps/Route103/scripts.pory"
+	.string "You never know who is listening.$"
 
 Route103_EventScript_YinLastDialogue_Text_4:
-# 400 "data/maps/Route103/scripts.pory"
-	.string "After all, I do not know yours.$"
+# 410 "data/maps/Route103/scripts.pory"
+	.string "I do not have much time to\nspeak with you, so I will be blunt.$"
 
 Route103_EventScript_YinLastDialogue_Text_5:
-# 401 "data/maps/Route103/scripts.pory"
-	.string "But, I believe we can\nhelp each other.$"
+# 411 "data/maps/Route103/scripts.pory"
+	.string "You need not know my name.$"
 
 Route103_EventScript_YinLastDialogue_Text_6:
-# 402 "data/maps/Route103/scripts.pory"
-	.string "I would prefer for you to stay in the\ndark, however.$"
+# 412 "data/maps/Route103/scripts.pory"
+	.string "I have no interest in yours, either.$"
 
 Route103_EventScript_YinLastDialogue_Text_7:
-# 403 "data/maps/Route103/scripts.pory"
-	.string "............$"
+# 413 "data/maps/Route103/scripts.pory"
+	.string "But, I believe we can\nhelp each other.$"
 
 Route103_EventScript_YinLastDialogue_Text_8:
-# 404 "data/maps/Route103/scripts.pory"
-	.string "I am sure this is sounding rather\nsuspicious to you.$"
+# 414 "data/maps/Route103/scripts.pory"
+	.string "This world...is crumbling.$"
 
 Route103_EventScript_YinLastDialogue_Text_9:
-# 405 "data/maps/Route103/scripts.pory"
-	.string "Despite this, will you assist me?$"
+# 415 "data/maps/Route103/scripts.pory"
+	.string "Surely, you have seen it?$"
 
 Route103_EventScript_YinLastDialogue_Text_10:
-# 408 "data/maps/Route103/scripts.pory"
-	.string "Of course you will.$"
+# 417 "data/maps/Route103/scripts.pory"
+	.string "Yes, yes. The GREY. The ASH.$"
 
 Route103_EventScript_YinLastDialogue_Text_11:
-# 409 "data/maps/Route103/scripts.pory"
-	.string "I am happy to hear that.$"
+# 418 "data/maps/Route103/scripts.pory"
+	.string "It is unnatural. Some may even\nfind it repulsive.$"
 
 Route103_EventScript_YinLastDialogue_Text_12:
-# 411 "data/maps/Route103/scripts.pory"
-	.string "So you say.$"
+# 419 "data/maps/Route103/scripts.pory"
+	.string "But, I don't believe it means\nus harm.$"
 
 Route103_EventScript_YinLastDialogue_Text_13:
-# 412 "data/maps/Route103/scripts.pory"
-	.string "And yet, what do you have to lose?$"
+# 420 "data/maps/Route103/scripts.pory"
+	.string "I find it beautiful, in a strange way.$"
 
 Route103_EventScript_YinLastDialogue_Text_14:
-# 413 "data/maps/Route103/scripts.pory"
-	.string "Ignore me if you wish.$"
+# 423 "data/maps/Route103/scripts.pory"
+	.string "No?$"
 
 Route103_EventScript_YinLastDialogue_Text_15:
-# 414 "data/maps/Route103/scripts.pory"
-	.string "But if you change your mind...$"
+# 424 "data/maps/Route103/scripts.pory"
+	.string "You just walked straight through\na row of trees.$"
 
 Route103_EventScript_YinLastDialogue_Text_16:
-# 416 "data/maps/Route103/scripts.pory"
-	.string "I will need you to do something first.$"
+# 425 "data/maps/Route103/scripts.pory"
+	.string "Look at the trees behind me.$"
 
 Route103_EventScript_YinLastDialogue_Text_17:
-# 417 "data/maps/Route103/scripts.pory"
-	.string "You must obtain$"
+# 426 "data/maps/Route103/scripts.pory"
+	.string "Observe the way the leaves bleed\ninto other trees.$"
 
 Route103_EventScript_YinLastDialogue_Text_18:
-# 418 "data/maps/Route103/scripts.pory"
-	.string "A CATALYST.$"
+# 427 "data/maps/Route103/scripts.pory"
+	.string "Do you find it alluring?$"
 
 Route103_EventScript_YinLastDialogue_Text_19:
-# 419 "data/maps/Route103/scripts.pory"
-	.string "A NORMAL type will do.$"
+# 429 "data/maps/Route103/scripts.pory"
+	.string "So you see it too.$"
 
 Route103_EventScript_YinLastDialogue_Text_20:
-# 420 "data/maps/Route103/scripts.pory"
-	.string "Once you have done this, I will find\nyou again in 'Petalburg City'.$"
+# 432 "data/maps/Route103/scripts.pory"
+	.string "It seems you are a person unable\nto find the beauty in strange places.$"
 
 Route103_EventScript_YinLastDialogue_Text_21:
-# 421 "data/maps/Route103/scripts.pory"
+# 433 "data/maps/Route103/scripts.pory"
+	.string "Or, perhaps you are just oblivious.$"
+
+Route103_EventScript_YinLastDialogue_Text_22:
+# 434 "data/maps/Route103/scripts.pory"
+	.string "We may be more different than I expected.$"
+
+Route103_EventScript_YinLastDialogue_Text_23:
+# 435 "data/maps/Route103/scripts.pory"
+	.string "....but not different enough.$"
+
+Route103_EventScript_YinLastDialogue_Text_24:
+# 438 "data/maps/Route103/scripts.pory"
+	.string "I believe...it is time for this\ncharade to end.$"
+
+Route103_EventScript_YinLastDialogue_Text_25:
+# 439 "data/maps/Route103/scripts.pory"
+	.string "Forgive me, but I will say no more.$"
+
+Route103_EventScript_YinLastDialogue_Text_26:
+# 440 "data/maps/Route103/scripts.pory"
+	.string "I would prefer for you to stay in the\ndark.$"
+
+Route103_EventScript_YinLastDialogue_Text_27:
+# 441 "data/maps/Route103/scripts.pory"
+	.string "It is for your own sake.$"
+
+Route103_EventScript_YinLastDialogue_Text_28:
+# 442 "data/maps/Route103/scripts.pory"
+	.string "............$"
+
+Route103_EventScript_YinLastDialogue_Text_29:
+# 443 "data/maps/Route103/scripts.pory"
+	.string "I am sure this is sounding rather\nsuspicious to you.$"
+
+Route103_EventScript_YinLastDialogue_Text_30:
+# 444 "data/maps/Route103/scripts.pory"
+	.string "Despite this, will you assist me?$"
+
+Route103_EventScript_YinLastDialogue_Text_31:
+# 447 "data/maps/Route103/scripts.pory"
+	.string "Of course you will.$"
+
+Route103_EventScript_YinLastDialogue_Text_32:
+# 448 "data/maps/Route103/scripts.pory"
+	.string "I am happy to hear that.$"
+
+Route103_EventScript_YinLastDialogue_Text_33:
+# 451 "data/maps/Route103/scripts.pory"
+	.string "So you say.$"
+
+Route103_EventScript_YinLastDialogue_Text_34:
+# 452 "data/maps/Route103/scripts.pory"
+	.string "And yet, what do you have to lose?$"
+
+Route103_EventScript_YinLastDialogue_Text_35:
+# 453 "data/maps/Route103/scripts.pory"
+	.string "Ignore me if you wish.$"
+
+Route103_EventScript_YinLastDialogue_Text_36:
+# 454 "data/maps/Route103/scripts.pory"
+	.string "But if you change your mind...$"
+
+Route103_EventScript_YinLastDialogue_Text_37:
+# 456 "data/maps/Route103/scripts.pory"
+	.string "I will need you to do something first.$"
+
+Route103_EventScript_YinLastDialogue_Text_38:
+# 457 "data/maps/Route103/scripts.pory"
+	.string "You must obtain$"
+
+Route103_EventScript_YinLastDialogue_Text_39:
+# 458 "data/maps/Route103/scripts.pory"
+	.string "A CATALYST.$"
+
+Route103_EventScript_YinLastDialogue_Text_40:
+# 459 "data/maps/Route103/scripts.pory"
+	.string "A NORMAL type will do.$"
+
+Route103_EventScript_YinLastDialogue_Text_41:
+# 460 "data/maps/Route103/scripts.pory"
+	.string "Once you have done this, I will find\nyou again in 'Petalburg City'.$"
+
+Route103_EventScript_YinLastDialogue_Text_42:
+# 461 "data/maps/Route103/scripts.pory"
 	.string "With that, I bid you farewell.$"

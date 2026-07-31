@@ -352,11 +352,20 @@ Route103_Text_RouteSign:
 	.string "{DOWN_ARROW} OLDALE TOWN$"
 `
 
+// portal 1
 script Route103_EventScript_Portal {
 	lockall
 	msgbox("Somehow, this part of the\ntree and grass is completely grey,\pand the grass has dissolved into sand.")
 	if (flag(FLAG_PORTAL_ACCESS)) {
-		msgbox("Use DREAMDEVOUR?", MSGBOX_YESNO)
+		msgbox("Use DREAMREAPER??", MSGBOX_YESNO)
+		if (var(VAR_RESULT) == YES) {
+			fadescreen(FADE_TO_WHITE)
+			delay(200)
+			setvar(VAR_HOTNESS,0)
+			warp(MAP_WEIRDCAVE1, 9,30)
+			fadescreen(FADE_FROM_WHITE)
+			
+		}
 	}
 	// warp(MAP_DARKZONE,0,0)
 	releaseall
@@ -379,7 +388,7 @@ script Route103_EventScript_YinTalk1 {
 	else {
 		msgbox("There is a woman here.")
 		msgbox("Her face is pale and sickly, and\nher hair is a deep black.")
-		msgbox("Her eyes are clouded and sharp, like\nmarbles dipped in tar.")
+		msgbox("Her eyes are clouded, like\nmarbles dipped in ink.")
 		msgbox("She is staring at you intently.")
 		msgbox("You look down at her hands.")
 		msgbox("She beckons you to follow her.")
@@ -393,13 +402,43 @@ script Route103_EventScript_YinTalk1 {
 
 script Route103_EventScript_YinLastDialogue {
     lockall
+	setvar(VAR_VENOM, 0)
     msgbox("Hello, there.")
-    msgbox("I do not have much time to\nspeak with you, so I will be blunt.")
+	msgbox("I apologize for the detour.")
 	msgbox("I had to find a spot where\nwe would not be overheard, you see.")
-    msgbox("You do not need to know my name.")
-    msgbox("After all, I do not know yours.")
+	msgbox("You never know who is listening.")
+	msgbox("I do not have much time to\nspeak with you, so I will be blunt.")
+    msgbox("You need not know my name.")
+    msgbox("I have no interest in yours, either.")
     msgbox("But, I believe we can\nhelp each other.")
-    msgbox("I would prefer for you to stay in the\ndark, however.")
+	msgbox("This world...is crumbling.")
+	msgbox("Surely, you have seen it?", MSGBOX_YESNO)
+	if (var(VAR_RESULT) == YES) {
+		msgbox("Yes, yes. The GREY. The ASH.")
+		msgbox("It is unnatural. Some may even\nfind it repulsive.")
+		msgbox("But, I don't believe it means\nus harm.")
+		msgbox("I find it beautiful, in a strange way.")
+	} else {
+		addvar(VAR_VENOM, 1)
+		msgbox("No?")
+		msgbox("You just walked straight through\na row of trees.")
+		msgbox("Look at the trees behind me.")
+		msgbox("Observe the way the leaves bleed\ninto other trees.")
+		msgbox("Do you find it alluring?", MSGBOX_YESNO)
+		if (var(VAR_RESULT) == YES) {
+			msgbox("So you see it too.")
+		} else {
+			addvar(VAR_VENOM, 1)
+			msgbox("It seems you are a person unable\nto find the beauty in strange places.")
+			msgbox("Or, perhaps you are just oblivious.")
+			msgbox("We may be more different than I expected.")
+			msgbox("....but not different enough.")
+		}
+	}
+	msgbox("I believe...it is time for this\ncharade to end.")
+	msgbox("Forgive me, but I will say no more.")
+    msgbox("I would prefer for you to stay in the\ndark.")
+	msgbox("It is for your own sake.")
     msgbox("............")
     msgbox("I am sure this is sounding rather\nsuspicious to you.")
     msgbox("Despite this, will you assist me?", MSGBOX_YESNO)
@@ -408,6 +447,7 @@ script Route103_EventScript_YinLastDialogue {
         msgbox("Of course you will.")
         msgbox("I am happy to hear that.")
     } else {
+		addvar(VAR_VENOM,2)
         msgbox("So you say.")
         msgbox("And yet, what do you have to lose?")
         msgbox("Ignore me if you wish.")
@@ -434,6 +474,14 @@ script Route103_EventScript_RemoveYinlings {
 	removeobject(25)
 	removeobject(26)
 	releaseall
+}
+
+script YinFaceRight {
+	face_right
+}
+
+script YinFaceLeft {
+	face_left
 }
 
 

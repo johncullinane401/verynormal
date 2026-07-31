@@ -486,7 +486,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "EventScript_RockSmash",
-      "flag": "0"
+      "flag": "FLAG_ROUTE104ROCK"
     }
   ],
   "warp_events": [
@@ -638,6 +638,14 @@
       "elevation": 3,
       "item": "ITEM_HEART_SCALE",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE_104_HEART_SCALE"
+    },
+    {
+      "type": "sign",
+      "x": 31,
+      "y": 56,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Route104_EventScript_Portal"
     }
   ],
   "region": "REGION_HOENN"

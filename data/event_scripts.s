@@ -1742,3 +1742,5 @@ EventScript_PalletTown_PlayersHouse_2F_TurnOnPC::
 	.include "data/maps/CURSEZONE/scripts.inc"
 
 	.include "data/maps/darkzone/scripts.inc"
+
+	.include "data/maps/WEIRDCAVE1/scripts.inc"

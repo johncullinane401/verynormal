@@ -3779,18 +3779,18 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
 
     [MOVE_DREAMDEVOUR] =
     {
-        .name = COMPOUND_STRING("DREAMDEVOUR"),
+        .name = COMPOUND_STRING("DREAMREAPER"),
         .description = COMPOUND_STRING(
             "Once their dreams have gone,\n"
-            "they will have nothing left."),
+            "what's left will follow you."),
         .effect = EFFECT_ABSORB,
         .power = 250,
         .type = TYPE_NORMAL,
         .accuracy = 100,
-        .pp = 99,
+        .pp = 19,
         .target = TARGET_SELECTED,
         .priority = 1,
-        .category = DAMAGE_CATEGORY_SPECIAL,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
         .argument = { .absorbPercentage = 50 },
         .healingMove = B_HEAL_BLOCKING >= GEN_6,
         .contestEffect = CONTEST_EFFECT_STARTLE_PREV_MONS,

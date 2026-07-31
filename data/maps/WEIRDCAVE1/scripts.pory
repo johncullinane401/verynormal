@@ -1,0 +1,116 @@
+raw `WEIRDCAVE1_MapScripts::
+	.byte 0
+`
+
+script WEIRDCAVE1_EventScript_ReturnSign {
+	lockall
+	msgbox("Leave this place?", MSGBOX_YESNO)
+	if (var(VAR_RESULT)) {
+		warp(MAP_ROUTE103,4,1)
+		if (flag(FLAG_ROCK_PUZZLE)) {
+			msgbox("Your hand is no longer on fire.")
+			clearflag(FLAG_ROCK_PUZZLE)
+		}
+	}
+	releaseall
+
+}
+
+script WEIRDCAVE1_EventScript_Rock1 {
+	lockall
+	msgbox("Put your hand on the rock?", MSGBOX_YESNO)
+	if (var(VAR_HOTNESS) < 0 || var(VAR_HOTNESS) > 5) {
+		setvar(VAR_HOTNESS,0)
+	}
+	if (var(VAR_RESULT) == YES) {
+		msgbox("(You put your hand on the rock.)")
+		msgbox("It's cold to the touch.")
+		if (var(VAR_HOTNESS) == 0) {
+			addvar(VAR_HOTNESS, 1)
+			msgbox("You feel your heat tolerance increase.")
+		} elif (var(VAR_HOTNESS) == 0) {
+			setvar(VAR_HOTNESS, 0)
+			msgbox("You feel your heat tolerance reset.")
+		} 
+	}
+	releaseall
+}
+
+script WEIRDCAVE1_EventScript_Rock2 {
+	lockall
+	msgbox("Put your hand on the rock?", MSGBOX_YESNO)
+	if (var(VAR_RESULT) == YES) {
+		msgbox("(You put your hand on the rock.)")
+		msgbox("It's not warm, but not cold.")
+
+		if (var(VAR_HOTNESS) == 1) {
+			addvar(VAR_HOTNESS, 1)
+			msgbox("You feel your heat tolerance increase.")
+		} elif (var(VAR_HOTNESS) > 1) {
+			setvar(VAR_HOTNESS, 0)
+			msgbox("You feel your heat tolerance reset.")
+		} 
+	}
+
+	
+	releaseall
+}
+
+
+script WEIRDCAVE1_EventScript_Rock3 {
+	lockall
+	msgbox("Put your hand on the rock?", MSGBOX_YESNO)
+	if (var(VAR_RESULT) == YES) {
+		msgbox("(You put your hand on the rock.)")
+		msgbox("It's comfortably warm to the touch.")
+		if (var(VAR_HOTNESS) == 2) {
+			addvar(VAR_HOTNESS, 1)
+			msgbox("You feel your heat tolerance increase.")
+		} elif (var(VAR_HOTNESS) > 2 || var(VAR_HOTNESS) == 1) {
+			setvar(VAR_HOTNESS, 0)
+			msgbox("You feel your heat tolerance reset.")
+		} 
+	}
+	releaseall
+}
+
+
+script WEIRDCAVE1_EventScript_Rock4 {
+	lockall
+	msgbox("Put your hand on the rock?", MSGBOX_YESNO)
+	if (var(VAR_RESULT) == YES) {
+		msgbox("(You put your hand on the rock.)")
+		msgbox("It's toasty. Your hand starts to feel\nuncomfortable.")
+		if (var(VAR_HOTNESS) == 3) {
+			addvar(VAR_HOTNESS, 1)
+			msgbox("You feel your heat tolerance increase.")
+		} elif (var(VAR_HOTNESS) > 3 || var(VAR_HOTNESS) == 2 || var(VAR_HOTNESS) == 1) {
+			setvar(VAR_HOTNESS, 0)
+			msgbox("You feel your heat tolerance reset.")
+		} 
+	}
+	releaseall
+}
+
+script WEIRDCAVE1_EventScript_Rock5 {
+	lockall
+	msgbox("Put your hand on the rock?", MSGBOX_YESNO)
+	if (var(VAR_RESULT) == YES) {
+		msgbox("(You put your hand on the rock.)")
+		msgbox("It's burning hot, like pressing against\nthe tray of an oven.")
+		if (var(VAR_HOTNESS) == 4) {
+			addvar(VAR_HOTNESS, 1)
+			setflag(FLAG_ROCK_PUZZLE)
+			msgbox("(And yet, you keep pressing your\nhand against the rock.)")
+			msgbox("It is an agonizing pain. Words fail\nto describe it.")
+			msgbox("Your hand is on fire.")
+			msgbox("...")
+			msgbox("This rock can't hurt you anymore.")
+			msgbox("After all, your hand is on fire.")
+		} else {
+			msgbox("You instinctively pull your hand back.")
+		}
+	}
+	releaseall
+}
+

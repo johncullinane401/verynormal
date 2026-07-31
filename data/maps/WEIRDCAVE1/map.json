@@ -1,0 +1,181 @@
+{
+  "id": "MAP_WEIRDCAVE1",
+  "name": "WEIRDCAVE1",
+  "layout": "LAYOUT_WEIRDCAVE1",
+  "music": "MUS_NONE",
+  "region_map_section": "MAPSEC_ABANDONED_SHIP",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_NONE",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": false,
+  "show_map_name": false,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": null,
+  "object_events": [],
+  "warp_events": [],
+  "coord_events": [],
+  "bg_events": [
+    {
+      "type": "sign",
+      "x": 10,
+      "y": 33,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "WEIRDCAVE1_EventScript_ReturnSign"
+    },
+    {
+      "type": "sign",
+      "x": 8,
+      "y": 15,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "WEIRDCAVE1_EventScript_Rock1"
+    },
+    {
+      "type": "sign",
+      "x": 9,
+      "y": 15,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "WEIRDCAVE1_EventScript_Rock1"
+    },
+    {
+      "type": "sign",
+      "x": 9,
+      "y": 14,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "WEIRDCAVE1_EventScript_Rock1"
+    },
+    {
+      "type": "sign",
+      "x": 8,
+      "y": 14,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "WEIRDCAVE1_EventScript_Rock1"
+    },
+    {
+      "type": "sign",
+      "x": 14,
+      "y": 17,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "WEIRDCAVE1_EventScript_Rock3"
+    },
+    {
+      "type": "sign",
+      "x": 15,
+      "y": 17,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "WEIRDCAVE1_EventScript_Rock3"
+    },
+    {
+      "type": "sign",
+      "x": 14,
+      "y": 18,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "WEIRDCAVE1_EventScript_Rock3"
+    },
+    {
+      "type": "sign",
+      "x": 15,
+      "y": 18,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "WEIRDCAVE1_EventScript_Rock3"
+    },
+    {
+      "type": "sign",
+      "x": 5,
+      "y": 27,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "WEIRDCAVE1_EventScript_Rock2"
+    },
+    {
+      "type": "sign",
+      "x": 6,
+      "y": 27,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "WEIRDCAVE1_EventScript_Rock2"
+    },
+    {
+      "type": "sign",
+      "x": 14,
+      "y": 23,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "WEIRDCAVE1_EventScript_Rock4"
+    },
+    {
+      "type": "sign",
+      "x": 5,
+      "y": 28,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "WEIRDCAVE1_EventScript_Rock2"
+    },
+    {
+      "type": "sign",
+      "x": 4,
+      "y": 19,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "WEIRDCAVE1_EventScript_Rock5"
+    },
+    {
+      "type": "sign",
+      "x": 4,
+      "y": 20,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "WEIRDCAVE1_EventScript_Rock5"
+    },
+    {
+      "type": "sign",
+      "x": 3,
+      "y": 20,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "WEIRDCAVE1_EventScript_Rock5"
+    },
+    {
+      "type": "sign",
+      "x": 15,
+      "y": 23,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "WEIRDCAVE1_EventScript_Rock4"
+    },
+    {
+      "type": "sign",
+      "x": 15,
+      "y": 24,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "WEIRDCAVE1_EventScript_Rock4"
+    },
+    {
+      "type": "sign",
+      "x": 3,
+      "y": 19,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "WEIRDCAVE1_EventScript_Rock5"
+    },
+    {
+      "type": "sign",
+      "x": 14,
+      "y": 24,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "WEIRDCAVE1_EventScript_Rock4"
+    }
+  ]
+}

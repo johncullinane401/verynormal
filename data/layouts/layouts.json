@@ -9327,9 +9327,9 @@
     {
       "id": "LAYOUT_CURSEZONE",
       "name": "CURSEZONE_Layout",
-      "width": 1,
-      "height": 1,
-      "primary_tileset": "gTileset_General",
+      "width": 19,
+      "height": 24,
+      "primary_tileset": "gTileset_weirdshit1",
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/CURSEZONE/border.bin",
       "blockdata_filepath": "data/layouts/CURSEZONE/map.bin"
@@ -9343,6 +9343,16 @@
       "secondary_tileset": "gTileset_MirageTower",
       "border_filepath": "data/layouts/darkzone/border.bin",
       "blockdata_filepath": "data/layouts/darkzone/map.bin"
+    },
+    {
+      "id": "LAYOUT_WEIRDCAVE1",
+      "name": "WEIRDCAVE1_Layout",
+      "width": 19,
+      "height": 35,
+      "primary_tileset": "gTileset_weirdshit1",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/WEIRDCAVE1/border.bin",
+      "blockdata_filepath": "data/layouts/WEIRDCAVE1/map.bin"
     }
   ]
 }

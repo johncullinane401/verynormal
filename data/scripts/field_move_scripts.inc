@@ -63,7 +63,7 @@ EventScript_UseRockSmash::
 @ Interact with smashable rock
 EventScript_RockSmash::
 	lockall
-	checkfieldmove FIELD_MOVE_ROCK_SMASH, TRUE
+	checkfieldmove FIELD_MOVE_ROCK_SMASH, FALSE
 	goto_if_eq VAR_RESULT, PARTY_SIZE, EventScript_CantSmashRock
 	setfieldeffectargument 0, VAR_RESULT
 	bufferpartymonnick STR_VAR_1, VAR_RESULT

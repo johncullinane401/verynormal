@@ -760,97 +760,12 @@ PetalburgCity_Text_ImLookingForTalentedTrainers:
 	.string "I'm sorry to have taken your time.$"
 `
 
-script PetalburgCity_EventScript_YinTalk {
-    lockall
-    call(PetalburgCity_CheckForNormalType)
-    faceplayer
-    msgbox("I have been waiting patiently\nfor you.")
-    if (flag(FLAG_YIN_SPIEL)) {
-        msgbox("It is time for me to join you.")
-        call(PetalburgCity_PokemonFanClub_EventScript_DDTutor)
-        if (flag(FLAG_LEARNED_DD)) {
-            msgbox("I do not have much time left to\nspeak with you.")
-            msgbox("With your help, we can save this\nworld.")
-            msgbox("Now...go....'Petalburg Woods'...")
-            msgbox("....distortion...you...")
-            msgbox("....must.....")
-            msgbox("take it all.")
-            delay(5)
-            removeobject(10)
-            setflag(FLAG_YIN_OLDALE)
-        } else {
-            msgbox("Very well. Return when you are\nready to accept my power.")
-        }
-    } elif (flag(FLAG_CAUGHTNORMAL)) {
-        msgbox("I see you have obtain your CATALYST.")
-        setflag(FLAG_DISABLE_CATCHING)
-        msgbox("This is most excellent.")
-        msgbox("But, to continue your path, difficult\nchoices must be made.")
-        msgbox("And now, you are met with one of those\nchoices.")
-        fadeoutbgm(2)
-        msgbox("Your CATALSYT will prove to be very\nuseful to you.")
-        msgbox("The rest of your companions...")
-        msgbox("...must be discarded.")
-        delay(300)
-        msgbox("I know you have only known them\na short while.")
-        msgbox("Are you prepared for their sacrifice?", MSGBOX_YESNO)
-        if (var(VAR_RESULT) == YES) {
-            delay(1000)
-			fadescreen(FADE_TO_BLACK)
-			delay(500)
-			
-			fadescreen(FADE_FROM_BLACK)
-			special(DeleteAllPartyMonsExceptZigzagoon)
-            msgbox("........................")
-            msgbox("It has been taken care of.")
-            msgbox("You are a strong-willed person.")
-            msgbox("That was not an easy choice to make.")
-            msgbox("Do not weep for your companions.")
-            msgbox("You will see them again in the\nAshen Garden.")
-			msgbox("Now...")
-            setflag(FLAG_YIN_SPIEL)
-            call(PetalburgCity_PokemonFanClub_EventScript_DDTutor)
-            if (flag(FLAG_LEARNED_DD)) {
-                msgbox("I do not have much time left to\nspeak with you.")
-                msgbox("With your help, we can save this\nworld.")
-                msgbox("Now...go....'Petalburg Woods'...")
-                msgbox("....distortion...you...")
-                msgbox("....must.....")
-                msgbox("take it all.")
-                delay(5)
-                removeobject(10)
-                setflag(FLAG_YIN_OLDALE)
-            } else {
-                msgbox("Very well. Return when you are\nready to accept me.")
-            }
-        } else {
-            msgbox("Return when you are ready.")
-        }
-    } else {
-        msgbox("Unfortunately, you have not yet\nobtained your CATALYST.")
-        msgbox("Any NORMAL type will do.")
-        msgbox("Please return to me once you have\nobtained one.")
-    }
-    releaseall
-	
-	special(SetExpLevel)
-	setflag(FLAG_DISABLE_EXP)
-}
-
 script PetalburgCity_EventScript_ObviousRoadblock {
 	lockall
 	msgbox("The door is sealed tightly shut.")
 	releaseall
 }
 
-
-
-script PetalburgCity_CheckForNormalType {
-    checkspecies(SPECIES_ZIGZAGOON, NO_PARTY_SCREEN)
-    if (var(VAR_RESULT) == TRUE) {
-        setflag(FLAG_CAUGHTNORMAL)
-    }
-}
 
 script PetalburgCity_EventScript_Yan1 {
     if (!flag(FLAG_FIRST_YAN_MEETING)) {

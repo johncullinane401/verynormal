@@ -136,7 +136,9 @@
     "Underwater_Route125",
     "CURSEZONE",
     "darkzone",
-    "WEIRDCAVE1"
+    "WEIRDCAVE1",
+    "WEIRDCAVE2",
+    "GREYFOREST1"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",

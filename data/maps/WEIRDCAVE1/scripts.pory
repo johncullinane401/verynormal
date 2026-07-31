@@ -4,13 +4,14 @@ raw `WEIRDCAVE1_MapScripts::
 
 script WEIRDCAVE1_EventScript_ReturnSign {
 	lockall
-	msgbox("Leave this place?", MSGBOX_YESNO)
+	msgbox("", MSGBOX_YESNO)
 	if (var(VAR_RESULT)) {
-		warp(MAP_ROUTE103,4,1)
 		if (flag(FLAG_ROCK_PUZZLE)) {
 			msgbox("Your hand is no longer on fire.")
 			clearflag(FLAG_ROCK_PUZZLE)
 		}
+		warp(MAP_ROUTE103,4,1)
+		waitstate
 	}
 	releaseall
 

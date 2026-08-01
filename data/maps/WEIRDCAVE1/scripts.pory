@@ -10,7 +10,7 @@ script WEIRDCAVE1_EventScript_ReturnSign {
 			msgbox("Your hand is no longer on fire.")
 			clearflag(FLAG_ROCK_PUZZLE)
 		}
-		warp(MAP_ROUTE103,4,1)
+		warp(MAP_GREYFOREST1,13,4)
 		waitstate
 	}
 	releaseall
@@ -110,6 +110,8 @@ script WEIRDCAVE1_EventScript_Rock5 {
 			msgbox("After all, your hand is on fire.")
 		} else {
 			msgbox("You instinctively pull your hand back.")
+			setvar(VAR_HOTNESS, 0)
+			msgbox("You feel your heat tolerance reset.")
 		}
 	}
 	releaseall

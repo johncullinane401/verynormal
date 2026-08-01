@@ -9357,8 +9357,8 @@
     {
       "id": "LAYOUT_WEIRDCAVE2",
       "name": "WEIRDCAVE2_Layout",
-      "width": 46,
-      "height": 34,
+      "width": 25,
+      "height": 24,
       "primary_tileset": "gTileset_weirdshit1",
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/WEIRDCAVE2/border.bin",
@@ -9368,11 +9368,21 @@
       "id": "LAYOUT_GREYFOREST1",
       "name": "GREYFOREST1_Layout",
       "width": 20,
-      "height": 44,
+      "height": 46,
       "primary_tileset": "gTileset_weirdshit1",
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/GREYFOREST1/border.bin",
       "blockdata_filepath": "data/layouts/GREYFOREST1/map.bin"
+    },
+    {
+      "id": "LAYOUT_FORESTOFREFLECTION",
+      "name": "FORESTOFREFLECTION_Layout",
+      "width": 40,
+      "height": 40,
+      "primary_tileset": "gTileset_weirdshit1",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/FORESTOFREFLECTION/border.bin",
+      "blockdata_filepath": "data/layouts/FORESTOFREFLECTION/map.bin"
     }
   ]
 }

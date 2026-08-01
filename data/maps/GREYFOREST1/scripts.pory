@@ -13,3 +13,41 @@ script GREYFOREST1_EventScript_Exit {
 	waitstate
 	releaseall
 }
+
+script GREYFOREST1_EventScript_CaveWarp {
+	lockall
+	warp(MAP_WEIRDCAVE1, 9,42)
+	waitstate
+	releaseall
+}
+
+script GREYFOREST1_EventScript_SwampWarp {
+	lockall
+	warp(MAP_FORESTOFREFLECTION, 9,9)
+	waitstate
+	releaseall
+}
+
+script GREYFOREST1_EventScript_Yan {
+	lockall
+	msgbox("{COLOR RED}...it's you!")
+	msgbox("Wha...what are you doing here?")
+	msgbox("......")
+	msgbox("Ha...you didn't call.")
+	msgbox("But it seems you've stumbled upon\nsomething interesting, huh?")
+	msgbox("Well, I won't hold you back or\nanything.")
+	msgbox("I'm still trying to understand\nit myself.")
+	msgbox("Speaking of...")
+	msgbox("...you still have that card I gave\nyou?")
+	msgbox("If you find yourself stuck or trapped\nor something, call me.")
+	msgbox("I'll save ya.")
+	msgbox("You never know what could happen in\nhere.")
+	msgbox("...")
+	msgbox("You really aren't much of a talker, are ya?")
+	msgbox("...")
+	msgbox("Ha...")
+	msgbox("I'll be leaving, now.")
+	msgbox("See ya!")
+	releaseall
+
+}

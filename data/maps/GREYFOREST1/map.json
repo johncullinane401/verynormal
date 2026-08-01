@@ -2,7 +2,7 @@
   "id": "MAP_GREYFOREST1",
   "name": "GREYFOREST1",
   "layout": "LAYOUT_GREYFOREST1",
-  "music": "MUS_DUMMY",
+  "music": "MUS_ROUTE113",
   "region_map_section": "MAPSEC_ABANDONED_SHIP",
   "requires_flash": false,
   "weather": "WEATHER_SANDSTORM",
@@ -13,14 +13,28 @@
   "show_map_name": false,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": null,
-  "object_events": [],
+  "object_events": [
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ANABEL",
+      "x": 9,
+      "y": 29,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "GREYFOREST1_EventScript_Yan",
+      "flag": "FLAG_GREYFORESTYAN"
+    }
+  ],
   "warp_events": [],
   "coord_events": [],
   "bg_events": [
     {
       "type": "sign",
       "x": 8,
-      "y": 42,
+      "y": 44,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "GREYFOREST1_EventScript_Exit"
@@ -28,10 +42,26 @@
     {
       "type": "sign",
       "x": 9,
-      "y": 42,
+      "y": 44,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "GREYFOREST1_EventScript_Exit"
+    },
+    {
+      "type": "sign",
+      "x": 13,
+      "y": 3,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "GREYFOREST1_EventScript_CaveWarp"
+    },
+    {
+      "type": "sign",
+      "x": 6,
+      "y": 3,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "GREYFOREST1_EventScript_SwampWarp"
     }
   ]
 }

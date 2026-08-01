@@ -21,7 +21,7 @@ WEIRDCAVE1_EventScript_ReturnSign_2:
 	goto_if_set FLAG_ROCK_PUZZLE, WEIRDCAVE1_EventScript_ReturnSign_5
 WEIRDCAVE1_EventScript_ReturnSign_4:
 # 13 "data/maps/WEIRDCAVE1/scripts.pory"
-	warp MAP_ROUTE103, 4, 1
+	warp MAP_GREYFOREST1, 13, 4
 # 14 "data/maps/WEIRDCAVE1/scripts.pory"
 	waitstate
 	goto WEIRDCAVE1_EventScript_ReturnSign_1
@@ -228,7 +228,7 @@ WEIRDCAVE1_EventScript_Rock5::
 	compare VAR_RESULT, YES
 	goto_if_eq WEIRDCAVE1_EventScript_Rock5_2
 WEIRDCAVE1_EventScript_Rock5_1:
-# 115 "data/maps/WEIRDCAVE1/scripts.pory"
+# 117 "data/maps/WEIRDCAVE1/scripts.pory"
 	releaseall
 	return
 
@@ -242,6 +242,10 @@ WEIRDCAVE1_EventScript_Rock5_2:
 	goto_if_eq WEIRDCAVE1_EventScript_Rock5_4
 # 112 "data/maps/WEIRDCAVE1/scripts.pory"
 	msgbox WEIRDCAVE1_EventScript_Rock5_Text_7
+# 113 "data/maps/WEIRDCAVE1/scripts.pory"
+	setvar VAR_HOTNESS, 0
+# 114 "data/maps/WEIRDCAVE1/scripts.pory"
+	msgbox WEIRDCAVE1_EventScript_Rock1_Text_4
 	goto WEIRDCAVE1_EventScript_Rock5_1
 
 WEIRDCAVE1_EventScript_Rock5_4:

@@ -10586,10 +10586,10 @@ const struct ItemInfo gItemsInfo[] =
             "Yan. It has a phone\n"
             "number, but you\n"
             "don't have a phone."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_KEY_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .type = ITEM_USE_FIELD,
+        .fieldUseFunc = ItemUseOutOfBattle_EscapeRope,
         .flingPower = 36,
         .iconPic = gItemIcon_RedCard,
         .iconPalette = gItemIconPalette_BindingBand,

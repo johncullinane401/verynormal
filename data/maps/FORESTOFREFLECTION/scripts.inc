@@ -1,0 +1,2 @@
+FORESTOFREFLECTION_MapScripts::
+	.byte 0

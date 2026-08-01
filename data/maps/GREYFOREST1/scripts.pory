@@ -1,0 +1,15 @@
+raw `GREYFOREST1_MapScripts::
+	.byte 0
+`
+
+script GREYFOREST1_EventScript_Exit {
+	lockall
+	
+	if (flag(FLAG_ROCK_PUZZLE)) {
+		msgbox("Your hand is no longer on fire.")
+		clearflag(FLAG_ROCK_PUZZLE)
+	}
+	warp(MAP_ROUTE103,4,1)
+	waitstate
+	releaseall
+}

@@ -363,7 +363,7 @@ script Route103_EventScript_Portal {
 			delay(200)
 			setvar(VAR_HOTNESS,0)
 			//warp(MAP_WEIRDCAVE1, 9,30)
-			warp(MAP_GREYFOREST1, 8,17)
+			warp(MAP_GREYFOREST1, 8,41)
 			fadescreen(FADE_FROM_WHITE)
 			
 		}

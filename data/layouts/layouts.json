@@ -9368,7 +9368,7 @@
       "id": "LAYOUT_GREYFOREST1",
       "name": "GREYFOREST1_Layout",
       "width": 20,
-      "height": 32,
+      "height": 44,
       "primary_tileset": "gTileset_weirdshit1",
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/GREYFOREST1/border.bin",

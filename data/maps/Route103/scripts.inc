@@ -731,7 +731,7 @@ Route103_EventScript_Portal_4:
 # 364 "data/maps/Route103/scripts.pory"
 	setvar VAR_HOTNESS, 0
 # 366 "data/maps/Route103/scripts.pory"
-	warp MAP_GREYFOREST1, 8, 17
+	warp MAP_GREYFOREST1, 8, 41
 # 367 "data/maps/Route103/scripts.pory"
 	fadescreen FADE_FROM_WHITE
 	goto Route103_EventScript_Portal_1

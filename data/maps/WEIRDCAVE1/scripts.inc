@@ -268,6 +268,18 @@ WEIRDCAVE1_EventScript_Rock5_4:
 	goto WEIRDCAVE1_EventScript_Rock5_1
 
 
+WEIRDCAVE1_EventScript_BigRock::
+# 121 "data/maps/WEIRDCAVE1/scripts.pory"
+	lockall
+# 122 "data/maps/WEIRDCAVE1/scripts.pory"
+	msgbox WEIRDCAVE1_EventScript_BigRock_Text_0
+# 123 "data/maps/WEIRDCAVE1/scripts.pory"
+	msgbox WEIRDCAVE1_EventScript_BigRock_Text_1
+# 124 "data/maps/WEIRDCAVE1/scripts.pory"
+	releaseall
+	return
+
+
 WEIRDCAVE1_EventScript_ReturnSign_Text_0:
 # 7 "data/maps/WEIRDCAVE1/scripts.pory"
 	.string "$"
@@ -339,3 +351,11 @@ WEIRDCAVE1_EventScript_Rock5_Text_6:
 WEIRDCAVE1_EventScript_Rock5_Text_7:
 # 112 "data/maps/WEIRDCAVE1/scripts.pory"
 	.string "You instinctively pull your hand back.$"
+
+WEIRDCAVE1_EventScript_BigRock_Text_0:
+# 122 "data/maps/WEIRDCAVE1/scripts.pory"
+	.string "There is a big orange rock here.$"
+
+WEIRDCAVE1_EventScript_BigRock_Text_1:
+# 123 "data/maps/WEIRDCAVE1/scripts.pory"
+	.string "Nice.$"

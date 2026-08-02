@@ -1373,3 +1373,13 @@ script RustboroCity_EventScript_YinTalk {
     }
     releaseall
 }
+
+script RustboroCity_EventScript_Headache {
+	lockall
+	msgbox("(You reach for the door, but then...)")
+	msgbox("(You feel a sharp pain in your head.)")
+	msgbox("(It's a splitting headache that won't\nfade.)")
+	msgbox("(You pull your hand away from the door,\nand the pain in your head soothes.)")
+	msgbox("The door is sealed tightly shut.")
+	releaseall
+}

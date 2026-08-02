@@ -1628,7 +1628,7 @@ PetalburgCity_EventScript_Yan1_7:
 # 821 "data/maps/PetalburgCity/scripts.pory"
 	msgbox PetalburgCity_EventScript_Yan1_Text_24
 # 822 "data/maps/PetalburgCity/scripts.pory"
-	applymovement 11, YanFaceUp
+	applymovement 10, YanFaceUp
 # 823 "data/maps/PetalburgCity/scripts.pory"
 	waitmovement 0
 # 824 "data/maps/PetalburgCity/scripts.pory"

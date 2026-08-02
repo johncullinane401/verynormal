@@ -9357,8 +9357,8 @@
     {
       "id": "LAYOUT_WEIRDCAVE2",
       "name": "WEIRDCAVE2_Layout",
-      "width": 25,
-      "height": 24,
+      "width": 37,
+      "height": 25,
       "primary_tileset": "gTileset_weirdshit1",
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/WEIRDCAVE2/border.bin",
@@ -9383,6 +9383,16 @@
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/FORESTOFREFLECTION/border.bin",
       "blockdata_filepath": "data/layouts/FORESTOFREFLECTION/map.bin"
+    },
+    {
+      "id": "LAYOUT_WEIRDCAVEBRIDGE",
+      "name": "WEIRDCAVEBRIDGE_Layout",
+      "width": 20,
+      "height": 9,
+      "primary_tileset": "gTileset_weirdshit1",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/WEIRDCAVEBRIDGE/border.bin",
+      "blockdata_filepath": "data/layouts/WEIRDCAVEBRIDGE/map.bin"
     }
   ]
 }

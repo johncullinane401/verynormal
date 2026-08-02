@@ -1,0 +1,7 @@
+raw `CURSEZONE_MapScripts::
+	.byte 0
+`
+
+script CURSEZONE_EventScript_YanFight {
+	
+}

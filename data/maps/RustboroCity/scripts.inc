@@ -2744,6 +2744,24 @@ RustboroCity_EventScript_YinTalk_13:
 	goto RustboroCity_EventScript_YinTalk_1
 
 
+RustboroCity_EventScript_Headache::
+# 1378 "data/maps/RustboroCity/scripts.pory"
+	lockall
+# 1379 "data/maps/RustboroCity/scripts.pory"
+	msgbox RustboroCity_EventScript_Headache_Text_0
+# 1380 "data/maps/RustboroCity/scripts.pory"
+	msgbox RustboroCity_EventScript_Headache_Text_1
+# 1381 "data/maps/RustboroCity/scripts.pory"
+	msgbox RustboroCity_EventScript_Headache_Text_2
+# 1382 "data/maps/RustboroCity/scripts.pory"
+	msgbox RustboroCity_EventScript_Headache_Text_3
+# 1383 "data/maps/RustboroCity/scripts.pory"
+	msgbox RustboroCity_EventScript_Headache_Text_4
+# 1384 "data/maps/RustboroCity/scripts.pory"
+	releaseall
+	return
+
+
 RustboroCity_EventScript_YinTalk_Text_0:
 # 1304 "data/maps/RustboroCity/scripts.pory"
 	.string "I have been waiting patiently\nfor you.$"
@@ -2863,3 +2881,23 @@ RustboroCity_EventScript_YinTalk_Text_28:
 RustboroCity_EventScript_YinTalk_Text_29:
 # 1372 "data/maps/RustboroCity/scripts.pory"
 	.string "Please return to me once you have\nobtained one.$"
+
+RustboroCity_EventScript_Headache_Text_0:
+# 1379 "data/maps/RustboroCity/scripts.pory"
+	.string "(You reach for the door, but then...)$"
+
+RustboroCity_EventScript_Headache_Text_1:
+# 1380 "data/maps/RustboroCity/scripts.pory"
+	.string "(You feel a sharp pain in your head.)$"
+
+RustboroCity_EventScript_Headache_Text_2:
+# 1381 "data/maps/RustboroCity/scripts.pory"
+	.string "(It's a splitting headache that won't\nfade.)$"
+
+RustboroCity_EventScript_Headache_Text_3:
+# 1382 "data/maps/RustboroCity/scripts.pory"
+	.string "(You pull your hand away from the door,\nand the pain in your head soothes.)$"
+
+RustboroCity_EventScript_Headache_Text_4:
+# 1383 "data/maps/RustboroCity/scripts.pory"
+	.string "The door is sealed tightly shut.$"

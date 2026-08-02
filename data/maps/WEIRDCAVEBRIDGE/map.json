@@ -1,11 +1,11 @@
 {
-  "id": "MAP_WEIRDCAVE2",
-  "name": "WEIRDCAVE2",
-  "layout": "LAYOUT_WEIRDCAVE2",
+  "id": "MAP_WEIRDCAVEBRIDGE",
+  "name": "WEIRDCAVEBRIDGE",
+  "layout": "LAYOUT_WEIRDCAVEBRIDGE",
   "music": "MUS_NONE",
   "region_map_section": "MAPSEC_ABANDONED_SHIP",
   "requires_flash": false,
-  "weather": "WEATHER_SHADE",
+  "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_NONE",
   "allow_cycling": false,
   "allow_escaping": false,
@@ -14,14 +14,9 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "map": "MAP_WEIRDCAVE1",
-      "offset": 9,
-      "direction": "down"
-    },
-    {
-      "map": "MAP_WEIRDCAVEBRIDGE",
-      "offset": 8,
-      "direction": "left"
+      "map": "MAP_WEIRDCAVE2",
+      "offset": -8,
+      "direction": "right"
     }
   ],
   "object_events": [],

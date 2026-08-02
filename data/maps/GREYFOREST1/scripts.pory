@@ -23,7 +23,7 @@ script GREYFOREST1_EventScript_CaveWarp {
 
 script GREYFOREST1_EventScript_SwampWarp {
 	lockall
-	warp(MAP_FORESTOFREFLECTION, 9,9)
+	warp(MAP_FORESTOFREFLECTION, 2,5)
 	waitstate
 	releaseall
 }
@@ -34,16 +34,16 @@ script GREYFOREST1_EventScript_Yan {
 	msgbox("Wha...what are you doing here?")
 	msgbox("......")
 	msgbox("Ha...you didn't call.")
-	msgbox("But it seems you've stumbled upon\nsomething interesting, huh?")
+	msgbox("But it seems you've stumbled upon\nsomething interesting")
 	msgbox("Well, I won't hold you back or\nanything.")
 	msgbox("I'm still trying to understand\nit myself.")
 	msgbox("Speaking of...")
 	msgbox("...you still have that card I gave\nyou?")
 	msgbox("If you find yourself stuck or trapped\nor something, call me.")
-	msgbox("I'll save ya.")
+	msgbox("I'll save you.")
 	msgbox("You never know what could happen in\nhere.")
 	msgbox("...")
-	msgbox("You really aren't much of a talker, are ya?")
+	msgbox("You really aren't much of a talker, are\n ya?")
 	msgbox("...")
 	msgbox("Ha...")
 	msgbox("I'll be leaving, now.")

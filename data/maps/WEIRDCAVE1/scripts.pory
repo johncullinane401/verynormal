@@ -117,3 +117,10 @@ script WEIRDCAVE1_EventScript_Rock5 {
 	releaseall
 }
 
+script WEIRDCAVE1_EventScript_BigRock {
+	lockall
+	msgbox("There is a big orange rock here.")
+	msgbox("Nice.")
+	releaseall
+}
+

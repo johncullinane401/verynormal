@@ -41,7 +41,7 @@ GREYFOREST1_EventScript_SwampWarp::
 # 25 "data/maps/GREYFOREST1/scripts.pory"
 	lockall
 # 26 "data/maps/GREYFOREST1/scripts.pory"
-	warp MAP_FORESTOFREFLECTION, 9, 9
+	warp MAP_FORESTOFREFLECTION, 2, 5
 # 27 "data/maps/GREYFOREST1/scripts.pory"
 	waitstate
 # 28 "data/maps/GREYFOREST1/scripts.pory"
@@ -115,7 +115,7 @@ GREYFOREST1_EventScript_Yan_Text_3:
 
 GREYFOREST1_EventScript_Yan_Text_4:
 # 37 "data/maps/GREYFOREST1/scripts.pory"
-	.string "But it seems you've stumbled upon\nsomething interesting, huh?$"
+	.string "But it seems you've stumbled upon\nsomething interesting$"
 
 GREYFOREST1_EventScript_Yan_Text_5:
 # 38 "data/maps/GREYFOREST1/scripts.pory"
@@ -139,7 +139,7 @@ GREYFOREST1_EventScript_Yan_Text_9:
 
 GREYFOREST1_EventScript_Yan_Text_10:
 # 43 "data/maps/GREYFOREST1/scripts.pory"
-	.string "I'll save ya.$"
+	.string "I'll save you.$"
 
 GREYFOREST1_EventScript_Yan_Text_11:
 # 44 "data/maps/GREYFOREST1/scripts.pory"
@@ -151,7 +151,7 @@ GREYFOREST1_EventScript_Yan_Text_12:
 
 GREYFOREST1_EventScript_Yan_Text_13:
 # 46 "data/maps/GREYFOREST1/scripts.pory"
-	.string "You really aren't much of a talker, are ya?$"
+	.string "You really aren't much of a talker, are\n ya?$"
 
 GREYFOREST1_EventScript_Yan_Text_14:
 # 48 "data/maps/GREYFOREST1/scripts.pory"

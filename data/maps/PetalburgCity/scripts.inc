@@ -1540,7 +1540,7 @@ PetalburgCity_EventScript_Yan1_1:
 # 773 "data/maps/PetalburgCity/scripts.pory"
 	msgbox PetalburgCity_EventScript_Yan1_Text_0
 # 774 "data/maps/PetalburgCity/scripts.pory"
-	applymovement 11, YanMovement1
+	applymovement 10, YanMovement1
 # 775 "data/maps/PetalburgCity/scripts.pory"
 	waitmovement 0
 # 776 "data/maps/PetalburgCity/scripts.pory"
@@ -1586,19 +1586,19 @@ PetalburgCity_EventScript_Yan1_7:
 # 800 "data/maps/PetalburgCity/scripts.pory"
 	msgbox PetalburgCity_EventScript_Yan1_Text_16
 # 801 "data/maps/PetalburgCity/scripts.pory"
-	applymovement 11, YanFaceLeft
+	applymovement 10, YanFaceLeft
 # 802 "data/maps/PetalburgCity/scripts.pory"
 	msgbox PetalburgCity_EventScript_Yan1_Text_17
 # 803 "data/maps/PetalburgCity/scripts.pory"
-	applymovement 11, YanFaceRight
+	applymovement 10, YanFaceRight
 # 804 "data/maps/PetalburgCity/scripts.pory"
-	applymovement 11, YanFaceLeft
+	applymovement 10, YanFaceLeft
 # 805 "data/maps/PetalburgCity/scripts.pory"
-	applymovement 11, YanFaceRight
+	applymovement 10, YanFaceRight
 # 806 "data/maps/PetalburgCity/scripts.pory"
-	applymovement 11, YanFaceLeft
+	applymovement 10, YanFaceLeft
 # 807 "data/maps/PetalburgCity/scripts.pory"
-	applymovement 11, YanFacePlayer
+	applymovement 10, YanFacePlayer
 # 808 "data/maps/PetalburgCity/scripts.pory"
 	msgbox PetalburgCity_EventScript_Yan1_Text_18
 # 809 "data/maps/PetalburgCity/scripts.pory"
@@ -1606,17 +1606,17 @@ PetalburgCity_EventScript_Yan1_7:
 # 810 "data/maps/PetalburgCity/scripts.pory"
 	msgbox PetalburgCity_EventScript_Yan1_Text_20
 # 811 "data/maps/PetalburgCity/scripts.pory"
-	applymovement 11, YanMovement2
+	applymovement 10, YanMovement2
 # 812 "data/maps/PetalburgCity/scripts.pory"
 	waitmovement 0
 # 813 "data/maps/PetalburgCity/scripts.pory"
 	delay 50
 # 814 "data/maps/PetalburgCity/scripts.pory"
-	applymovement 11, YanFaceDown
+	applymovement 10, YanFaceDown
 # 815 "data/maps/PetalburgCity/scripts.pory"
 	waitmovement 0
 # 816 "data/maps/PetalburgCity/scripts.pory"
-	applymovement 11, YanWalkDown
+	applymovement 10, YanWalkDown
 # 817 "data/maps/PetalburgCity/scripts.pory"
 	waitmovement 0
 # 818 "data/maps/PetalburgCity/scripts.pory"
@@ -1654,13 +1654,13 @@ PetalburgCity_EventScript_Yan1_7:
 # 834 "data/maps/PetalburgCity/scripts.pory"
 	msgbox PetalburgCity_EventScript_Yan1_Text_28
 # 835 "data/maps/PetalburgCity/scripts.pory"
-	applymovement 11, YanMovement3
+	applymovement 10, YanMovement3
 # 836 "data/maps/PetalburgCity/scripts.pory"
 	waitmovement 0
 # 837 "data/maps/PetalburgCity/scripts.pory"
 	fadeinbgm 1
 # 838 "data/maps/PetalburgCity/scripts.pory"
-	removeobject 11
+	removeobject 10
 # 839 "data/maps/PetalburgCity/scripts.pory"
 	playbgm MUS_OLDALE, FALSE
 # 840 "data/maps/PetalburgCity/scripts.pory"

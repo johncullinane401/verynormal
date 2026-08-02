@@ -88,6 +88,8 @@ GREYFOREST1_EventScript_Yan::
 	msgbox GREYFOREST1_EventScript_Yan_Text_15
 # 50 "data/maps/GREYFOREST1/scripts.pory"
 	msgbox GREYFOREST1_EventScript_Yan_Text_16
+# 51 "data/maps/GREYFOREST1/scripts.pory"
+	releaseall
 	return
 
 

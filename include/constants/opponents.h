@@ -674,7 +674,7 @@
 #define TRAINER_JONAH                       667
 #define TRAINER_HENRY                       668
 #define TRAINER_ROGER                       669
-#define TRAINER_ALEXA                       670
+#define TRAINER_ALEXA                       670 // yan
 #define TRAINER_RUBEN                       671
 #define TRAINER_KOJI_1                      672
 #define TRAINER_WAYNE                       673

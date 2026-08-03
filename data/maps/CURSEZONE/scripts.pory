@@ -3,5 +3,21 @@ raw `CURSEZONE_MapScripts::
 `
 
 script CURSEZONE_EventScript_YanFight {
-	
+	lockall
+	msgbox("It's you.")
+	msgbox("I knew you would come. Don't\nworry, I haven't been waiting long.")
+	msgbox("There's nothing left, except\n for me.")
+	msgbox("")
+
+
+	releaseall
+	trainerbattle_single(TRAINER_ALEXA, YanIntro, YanOutro)
+}
+
+text YanIntro {
+	"Well, here we go!"
+}
+
+text YanOutro {
+	"....."
 }

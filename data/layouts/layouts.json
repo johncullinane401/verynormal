@@ -9377,8 +9377,8 @@
     {
       "id": "LAYOUT_FORESTOFREFLECTION",
       "name": "FORESTOFREFLECTION_Layout",
-      "width": 40,
-      "height": 40,
+      "width": 48,
+      "height": 49,
       "primary_tileset": "gTileset_weirdshit1",
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/FORESTOFREFLECTION/border.bin",

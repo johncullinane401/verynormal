@@ -1,0 +1,11 @@
+raw `SHADOWWORLD_HOUSE1_MapScripts::
+	.byte 0
+`
+
+script SHADOWWORLD_HOUSE1_EventScript_Guy {
+	lockall
+	msgbox("It's been sooo long since I left\nmy house.")
+	msgbox("I don't really want to go outside.")
+	msgbox("giggles You can stay here as\nlong as you want!")
+	releaseall
+}

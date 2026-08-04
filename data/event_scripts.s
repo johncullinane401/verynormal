@@ -1752,3 +1752,5 @@ EventScript_PalletTown_PlayersHouse_2F_TurnOnPC::
 	.include "data/maps/FORESTOFREFLECTION/scripts.inc"
 
 	.include "data/maps/WEIRDCAVEBRIDGE/scripts.inc"
+
+	.include "data/maps/SHADOWWORLD_HOUSE1/scripts.inc"

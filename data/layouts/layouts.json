@@ -9377,8 +9377,8 @@
     {
       "id": "LAYOUT_FORESTOFREFLECTION",
       "name": "FORESTOFREFLECTION_Layout",
-      "width": 48,
-      "height": 49,
+      "width": 56,
+      "height": 56,
       "primary_tileset": "gTileset_weirdshit1",
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/FORESTOFREFLECTION/border.bin",
@@ -9393,6 +9393,17 @@
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/WEIRDCAVEBRIDGE/border.bin",
       "blockdata_filepath": "data/layouts/WEIRDCAVEBRIDGE/map.bin"
+    },
+    {
+      "id": "LAYOUT_SHADOWWORLD_HOUSE1",
+      "name": "SHADOWWORLD_HOUSE1_Layout",
+      "width": 10,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/SHADOWWORLD_HOUSE1/border.bin",
+      "blockdata_filepath": "data/layouts/SHADOWWORLD_HOUSE1/map.bin",
+      "layout_version": "emerald"
     }
   ]
 }

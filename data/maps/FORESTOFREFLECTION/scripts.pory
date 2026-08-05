@@ -1,0 +1,10 @@
+raw `FORESTOFREFLECTION_MapScripts::
+	.byte 0
+`
+
+script FORESTOFREFLECTION_EventScript_Cry {
+	lockall
+	playmoncry(SPECIES_ZIGZAGOON, CRY_MODE_NORMAL)
+	waitmoncry
+	releaseall
+}

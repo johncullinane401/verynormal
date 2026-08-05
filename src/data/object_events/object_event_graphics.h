@@ -61,6 +61,7 @@ const u32 gObjectEventPic_MayWatering[] = INCGFX_U32("graphics/object_events/pic
 const u16 gObjectEventPal_Npc1[] = INCGFX_U16("graphics/object_events/palettes/npc_1.pal", ".gbapal");
 const u16 gObjectEventPal_Npc2[] = INCGFX_U16("graphics/object_events/palettes/npc_2.pal", ".gbapal");
 const u16 gObjectEventPal_Npc3[] = INCGFX_U16("graphics/object_events/palettes/npc_3.pal", ".gbapal");
+const u16 gObjectEventPal_BeautyBlack[] = INCBIN_U16("graphics/object_events/palettes/npc_3_allblack.pal");
 const u16 gObjectEventPal_Npc4[] = INCGFX_U16("graphics/object_events/palettes/npc_4.pal", ".gbapal");
 const u16 gObjectEventPal_Npc1Reflection[] = INCGFX_U16("graphics/object_events/palettes/npc_1_reflection.pal", ".gbapal");
 const u16 gObjectEventPal_Npc2Reflection[] = INCGFX_U16("graphics/object_events/palettes/npc_2_reflection.pal", ".gbapal");

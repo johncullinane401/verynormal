@@ -4,6 +4,8 @@ raw `GREYFOREST1_MapScripts::
 
 script GREYFOREST1_EventScript_Exit {
 	lockall
+
+	clearflag(FLAG_DREAMING)
 	
 	if (flag(FLAG_ROCK_PUZZLE)) {
 		msgbox("Your hand is no longer on fire.")

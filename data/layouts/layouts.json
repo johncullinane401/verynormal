@@ -9404,6 +9404,58 @@
       "border_filepath": "data/layouts/SHADOWWORLD_HOUSE1/border.bin",
       "blockdata_filepath": "data/layouts/SHADOWWORLD_HOUSE1/map.bin",
       "layout_version": "emerald"
+    },
+    {
+      "id": "LAYOUT_SHADOWWORLD_HOUSE1_2",
+      "name": "SHADOWWORLD_HOUSE1_2_Layout",
+      "width": 11,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/SHADOWWORLD_HOUSE1_2/border.bin",
+      "blockdata_filepath": "data/layouts/SHADOWWORLD_HOUSE1_2/map.bin",
+      "layout_version": "emerald"
+    },
+    {
+      "id": "LAYOUT_SHADOWWORLD_HOUSE1_3",
+      "name": "SHADOWWORLD_HOUSE1_3_Layout",
+      "width": 50,
+      "height": 50,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/SHADOWWORLD_HOUSE1_3/border.bin",
+      "blockdata_filepath": "data/layouts/SHADOWWORLD_HOUSE1_3/map.bin",
+      "layout_version": "emerald"
+    },
+    {
+      "id": "LAYOUT_SCHOOLROOF1",
+      "name": "SCHOOLROOF1_Layout",
+      "width": 22,
+      "height": 23,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Mauville",
+      "border_filepath": "data/layouts/SCHOOLROOF1/border.bin",
+      "blockdata_filepath": "data/layouts/SCHOOLROOF1/map.bin"
+    },
+    {
+      "id": "LAYOUT_WEIRDROOM1",
+      "name": "WEIRDROOM1_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Mauville",
+      "border_filepath": "data/layouts/WEIRDROOM1/border.bin",
+      "blockdata_filepath": "data/layouts/WEIRDROOM1/map.bin"
+    },
+    {
+      "id": "LAYOUT_HUB",
+      "name": "HUB_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_weirdshit1",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/HUB/border.bin",
+      "blockdata_filepath": "data/layouts/HUB/map.bin"
     }
   ]
 }

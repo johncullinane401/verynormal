@@ -1,0 +1,33 @@
+raw `SCHOOLROOF1_MapScripts::
+	.byte 0
+`
+
+script SCHOOLROOF1_EventScript_Mystery {
+	lockall
+	msgbox("...it's beautiful.")
+	msgbox("Please...just leave me be.")
+	if (var(FLAG_CANPUSH)) {
+		msgbox("This girl is entranced, leaning\non the edge of the balcony.")
+		msgbox("Push her?", MSGBOX_YESNO)
+		if (var(VAR_RESULT)) {
+			delay(30)
+			removeobject(1)
+			setflag(FLAG_ROOF_WOMAN)
+			delay(30)
+			addvar(VAR_VENOM, 10)
+		}
+	}
+	releaseall
+}
+
+script SCHOOLROOF1_EventScript_NOTBEHIND {
+	lockall
+	clearflag(FLAG_CANPUSH)
+	releaseall
+}
+
+script SCHOOLROOF1_EventScript_Behind {
+	lockall
+	setflag(FLAG_CANPUSH)
+	releaseall
+}

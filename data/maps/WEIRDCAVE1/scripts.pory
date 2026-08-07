@@ -6,12 +6,13 @@ script WEIRDCAVE1_EventScript_ReturnSign {
 	lockall
 	msgbox("", MSGBOX_YESNO)
 	if (var(VAR_RESULT)) {
-		if (flag(FLAG_ROCK_PUZZLE)) {
-			msgbox("Your hand is no longer on fire.")
-			clearflag(FLAG_ROCK_PUZZLE)
-		}
 		warp(MAP_GREYFOREST1,13,4)
 		waitstate
+		if (flag(FLAG_ROCK_PUZZLE)) {
+			clearflag(FLAG_ROCK_PUZZLE)
+			msgbox("The power of teleportation has\nextinguished your hand fire.")
+		}
+		
 	}
 	releaseall
 

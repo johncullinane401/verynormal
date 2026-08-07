@@ -2556,6 +2556,7 @@ static void EscapeRopeWarpOutEffect_HideFollowerNPC(struct Task *task)
 static void EscapeRopeWarpOutEffect_Spin(struct Task *task)
 {
     struct ObjectEvent *objectEvent;
+    bool8 warpedYet = FlagGet(FLAG_WARP_DEVICE);
     enum Direction spinDirections[5] =  {DIR_SOUTH, DIR_WEST, DIR_EAST, DIR_NORTH, DIR_SOUTH};
     if (task->tTimer != 0 && (--task->tTimer) == 0)
     {
@@ -2567,8 +2568,25 @@ static void EscapeRopeWarpOutEffect_Spin(struct Task *task)
     {
         if (task->tTimer == 0 && !gPaletteFade.active && BGMusicStopped() == TRUE)
         {
-            SetObjectEventDirection(objectEvent, task->tStartDir);
-            SetWarpDestinationToEscapeWarp();
+          SetObjectEventDirection(objectEvent, task->tStartDir);
+            if (FlagGet(FLAG_DREAMING))
+            {
+                
+                SetWarpDestination(MAP_GROUP(MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_2F), MAP_NUM(MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_2F), WARP_ID_NONE, 1, 4);
+                FlagClear(FLAG_DREAMING);
+            }
+            else if (!warpedYet)
+            {
+                FlagSet(FLAG_WARP_DEVICE);
+                SetEscapeWarp(gSaveBlock1Ptr->location.mapGroup, gSaveBlock1Ptr->location.mapNum, WARP_ID_NONE, gSaveBlock1Ptr->pos.x, gSaveBlock1Ptr->pos.y);
+                SetWarpDestinationToLastHealLocation();
+            }
+            else
+            {
+                FlagClear(FLAG_WARP_DEVICE);
+                SetWarpDestinationToEscapeWarp();
+            }
+
             WarpIntoMap();
             gFieldCallback = FieldCallback_EscapeRopeWarpIn;
             SetMainCallback2(CB2_LoadMap);

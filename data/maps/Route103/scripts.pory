@@ -360,6 +360,7 @@ script Route103_EventScript_Portal {
 		msgbox("Use DREAMREAPER??", MSGBOX_YESNO)
 		if (var(VAR_RESULT) == YES) {
 			fadescreen(FADE_TO_WHITE)
+			setflag(FLAG_DREAMING)
 			delay(200)
 			setvar(VAR_HOTNESS,0)
 			//warp(MAP_WEIRDCAVE1, 9,30)

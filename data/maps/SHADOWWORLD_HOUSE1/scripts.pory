@@ -9,3 +9,14 @@ script SHADOWWORLD_HOUSE1_EventScript_Guy {
 	msgbox("giggles You can stay here as\nlong as you want!")
 	releaseall
 }
+
+script SHADOWWORLD_HOUSE1_EventScript_Bookshelf {
+	lockall
+	msgbox("It's filled with all sorts of books.")
+	msgbox("Read one?", MSGBOX_YESNO)
+	if (var(VAR_RESULT) == YES) {
+		msgbox("Nby nqi aclfm mjyhn ypyls xus\nniaynbyl. Nbys qiofx yun fohwb niaynbyl.\pNbys qiofx xlcpy bigy zlig\nwugjom niaynbyl. Cn myygyx um cz\phinbcha wiofx myjyluny nbyg.")
+		msgbox("...what nonsense.")
+	}
+	releaseall
+}

@@ -67,10 +67,10 @@
 #define FLAG_ROUTE104ROCK    0x2D // Unused Flag
 #define FLAG_ROCK_PUZZLE    0x2E // Unused Flag
 #define FLAG_GREYFORESTYAN    0x2F // Unused Flag
-#define FLAG_UNUSED_0x030    0x30 // Unused Flag
-#define FLAG_UNUSED_0x031    0x31 // Unused Flag
-#define FLAG_UNUSED_0x032    0x32 // Unused Flag
-#define FLAG_UNUSED_0x033    0x33 // Unused Flag
+#define FLAG_DREAMING    0x30 // Unused Flag
+#define FLAG_WARP_DEVICE    0x31 // Unused Flag
+#define FLAG_CANPUSH    0x32 // Unused Flag
+#define FLAG_ROOF_WOMAN    0x33 // Unused Flag
 #define FLAG_UNUSED_0x034    0x34 // Unused Flag
 #define FLAG_UNUSED_0x035    0x35 // Unused Flag
 #define FLAG_UNUSED_0x036    0x36 // Unused Flag

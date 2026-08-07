@@ -141,7 +141,12 @@
     "GREYFOREST1",
     "FORESTOFREFLECTION",
     "WEIRDCAVEBRIDGE",
-    "SHADOWWORLD_HOUSE1"
+    "SHADOWWORLD_HOUSE1",
+    "SHADOWWORLD_HOUSE1_2",
+    "SHADOWWORLD_HOUSE1_3",
+    "SCHOOLROOF1",
+    "WEIRDROOM1",
+    "HUB"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",

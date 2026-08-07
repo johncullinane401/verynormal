@@ -1113,8 +1113,11 @@ static void ItemUseOnFieldCB_EscapeRope(u8 taskId)
     DisplayItemMessageOnField(taskId, gStringVar4, Task_UseDigEscapeRopeOnField);
 }
 
-bool8 CanUseDigOrEscapeRopeOnCurMap(void)
-{
+bool8 CanUseDigOrEscapeRopeOnCurMap(void) {
+
+    if (FlagGet(FLAG_DREAMING))
+            return TRUE;
+    
     if (!CheckFollowerNPCFlag(FOLLOWER_NPC_FLAG_CAN_LEAVE_ROUTE))
         return FALSE;
 

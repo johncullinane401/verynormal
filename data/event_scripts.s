@@ -1754,3 +1754,13 @@ EventScript_PalletTown_PlayersHouse_2F_TurnOnPC::
 	.include "data/maps/WEIRDCAVEBRIDGE/scripts.inc"
 
 	.include "data/maps/SHADOWWORLD_HOUSE1/scripts.inc"
+
+	.include "data/maps/SHADOWWORLD_HOUSE1_2/scripts.inc"
+
+	.include "data/maps/SHADOWWORLD_HOUSE1_3/scripts.inc"
+
+	.include "data/maps/SCHOOLROOF1/scripts.inc"
+
+	.include "data/maps/WEIRDROOM1/scripts.inc"
+
+	.include "data/maps/HUB/scripts.inc"

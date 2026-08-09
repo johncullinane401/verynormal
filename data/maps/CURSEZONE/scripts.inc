@@ -73,21 +73,19 @@ CURSEZONE_EventScript_YanFight::
 # 39 "data/maps/CURSEZONE/scripts.pory"
 	delay 100
 # 40 "data/maps/CURSEZONE/scripts.pory"
-	msgbox CURSEZONE_EventScript_YanFight_Text_25
-# 41 "data/maps/CURSEZONE/scripts.pory"
 	msgbox CURSEZONE_EventScript_YanFight_Text_32
-# 42 "data/maps/CURSEZONE/scripts.pory"
+# 41 "data/maps/CURSEZONE/scripts.pory"
 	msgbox CURSEZONE_EventScript_YanFight_Text_25
-# 43 "data/maps/CURSEZONE/scripts.pory"
+# 42 "data/maps/CURSEZONE/scripts.pory"
 	msgbox CURSEZONE_EventScript_YanFight_Text_33
-# 44 "data/maps/CURSEZONE/scripts.pory"
+# 43 "data/maps/CURSEZONE/scripts.pory"
 	msgbox CURSEZONE_EventScript_YanFight_Text_34
 # 45 "data/maps/CURSEZONE/scripts.pory"
-	msgbox CURSEZONE_EventScript_YanFight_Text_35
-# 46 "data/maps/CURSEZONE/scripts.pory"
-	msgbox CURSEZONE_EventScript_YanFight_Text_36
-# 47 "data/maps/CURSEZONE/scripts.pory"
 	msgbox CURSEZONE_EventScript_YanFight_Text_25
+# 46 "data/maps/CURSEZONE/scripts.pory"
+	msgbox CURSEZONE_EventScript_YanFight_Text_35
+# 47 "data/maps/CURSEZONE/scripts.pory"
+	msgbox CURSEZONE_EventScript_YanFight_Text_36
 # 48 "data/maps/CURSEZONE/scripts.pory"
 	msgbox CURSEZONE_EventScript_YanFight_Text_37
 # 49 "data/maps/CURSEZONE/scripts.pory"
@@ -101,9 +99,9 @@ CURSEZONE_EventScript_YanFight::
 # 53 "data/maps/CURSEZONE/scripts.pory"
 	msgbox CURSEZONE_EventScript_YanFight_Text_42
 # 54 "data/maps/CURSEZONE/scripts.pory"
-	msgbox CURSEZONE_EventScript_YanFight_Text_43
+	delay 30
 # 55 "data/maps/CURSEZONE/scripts.pory"
-	msgbox CURSEZONE_EventScript_YanFight_Text_9
+	msgbox CURSEZONE_EventScript_YanFight_Text_43
 # 56 "data/maps/CURSEZONE/scripts.pory"
 	msgbox CURSEZONE_EventScript_YanFight_Text_44
 # 57 "data/maps/CURSEZONE/scripts.pory"
@@ -125,20 +123,56 @@ CURSEZONE_EventScript_YanFight::
 # 65 "data/maps/CURSEZONE/scripts.pory"
 	msgbox CURSEZONE_EventScript_YanFight_Text_53
 # 66 "data/maps/CURSEZONE/scripts.pory"
-	delay 50
-# 67 "data/maps/CURSEZONE/scripts.pory"
 	msgbox CURSEZONE_EventScript_YanFight_Text_54
-# 68 "data/maps/CURSEZONE/scripts.pory"
+# 67 "data/maps/CURSEZONE/scripts.pory"
 	msgbox CURSEZONE_EventScript_YanFight_Text_55
-# 69 "data/maps/CURSEZONE/scripts.pory"
+# 68 "data/maps/CURSEZONE/scripts.pory"
 	msgbox CURSEZONE_EventScript_YanFight_Text_56
-# 70 "data/maps/CURSEZONE/scripts.pory"
+# 69 "data/maps/CURSEZONE/scripts.pory"
 	msgbox CURSEZONE_EventScript_YanFight_Text_57
-# 71 "data/maps/CURSEZONE/scripts.pory"
+# 70 "data/maps/CURSEZONE/scripts.pory"
 	msgbox CURSEZONE_EventScript_YanFight_Text_58
+# 71 "data/maps/CURSEZONE/scripts.pory"
+	msgbox CURSEZONE_EventScript_YanFight_Text_59
+# 72 "data/maps/CURSEZONE/scripts.pory"
+	msgbox CURSEZONE_EventScript_YanFight_Text_60
 # 73 "data/maps/CURSEZONE/scripts.pory"
-	releaseall
+	msgbox CURSEZONE_EventScript_YanFight_Text_61
 # 74 "data/maps/CURSEZONE/scripts.pory"
+	msgbox CURSEZONE_EventScript_YanFight_Text_62
+# 75 "data/maps/CURSEZONE/scripts.pory"
+	msgbox CURSEZONE_EventScript_YanFight_Text_63
+# 76 "data/maps/CURSEZONE/scripts.pory"
+	delay 50
+# 77 "data/maps/CURSEZONE/scripts.pory"
+	msgbox CURSEZONE_EventScript_YanFight_Text_64
+# 78 "data/maps/CURSEZONE/scripts.pory"
+	msgbox CURSEZONE_EventScript_YanFight_Text_65
+# 79 "data/maps/CURSEZONE/scripts.pory"
+	msgbox CURSEZONE_EventScript_YanFight_Text_66
+# 80 "data/maps/CURSEZONE/scripts.pory"
+	msgbox CURSEZONE_EventScript_YanFight_Text_67
+# 81 "data/maps/CURSEZONE/scripts.pory"
+	msgbox CURSEZONE_EventScript_YanFight_Text_68
+# 82 "data/maps/CURSEZONE/scripts.pory"
+	msgbox CURSEZONE_EventScript_YanFight_Text_69
+# 83 "data/maps/CURSEZONE/scripts.pory"
+	msgbox CURSEZONE_EventScript_YanFight_Text_70
+# 84 "data/maps/CURSEZONE/scripts.pory"
+	msgbox CURSEZONE_EventScript_YanFight_Text_71
+# 85 "data/maps/CURSEZONE/scripts.pory"
+	msgbox CURSEZONE_EventScript_YanFight_Text_72
+# 86 "data/maps/CURSEZONE/scripts.pory"
+	msgbox CURSEZONE_EventScript_YanFight_Text_73
+# 87 "data/maps/CURSEZONE/scripts.pory"
+	msgbox CURSEZONE_EventScript_YanFight_Text_74
+# 88 "data/maps/CURSEZONE/scripts.pory"
+	msgbox CURSEZONE_EventScript_YanFight_Text_75
+# 89 "data/maps/CURSEZONE/scripts.pory"
+	msgbox CURSEZONE_EventScript_YanFight_Text_76
+# 92 "data/maps/CURSEZONE/scripts.pory"
+	releaseall
+# 93 "data/maps/CURSEZONE/scripts.pory"
 	trainerbattle_single TRAINER_ALEXA, YanIntro, YanOutro
 	return
 
@@ -272,117 +306,189 @@ CURSEZONE_EventScript_YanFight_Text_31:
 	.string "I wasn't talking to you.$"
 
 CURSEZONE_EventScript_YanFight_Text_32:
-# 41 "data/maps/CURSEZONE/scripts.pory"
-	.string "I'm talking to...the person standing\nbehind you.$"
+# 40 "data/maps/CURSEZONE/scripts.pory"
+	.string "I'm talking to...the person\nstandingbehind you.$"
 
 CURSEZONE_EventScript_YanFight_Text_33:
-# 43 "data/maps/CURSEZONE/scripts.pory"
+# 42 "data/maps/CURSEZONE/scripts.pory"
 	.string "She won't say anything.$"
 
 CURSEZONE_EventScript_YanFight_Text_34:
-# 44 "data/maps/CURSEZONE/scripts.pory"
-	.string "...ha. I already know her answer.$"
+# 43 "data/maps/CURSEZONE/scripts.pory"
+	.string "She won't...even look me in\nthe eyes.$"
 
 CURSEZONE_EventScript_YanFight_Text_35:
-# 45 "data/maps/CURSEZONE/scripts.pory"
-	.string "Since you insist on being so shy\ntoday...$"
+# 46 "data/maps/CURSEZONE/scripts.pory"
+	.string "I can hardly even remember the\ntimes we've spent together...\pthe memories we've made.$"
 
 CURSEZONE_EventScript_YanFight_Text_36:
-# 46 "data/maps/CURSEZONE/scripts.pory"
-	.string "{PLAYER}, you'll have to do.$"
+# 47 "data/maps/CURSEZONE/scripts.pory"
+	.string "The meals we've shared, the risks\nwe've taken...$"
 
 CURSEZONE_EventScript_YanFight_Text_37:
 # 48 "data/maps/CURSEZONE/scripts.pory"
-	.string "But before we begin, I need to know.$"
+	.string "The touch of your hair...and\nsoftness of your skin.$"
 
 CURSEZONE_EventScript_YanFight_Text_38:
 # 49 "data/maps/CURSEZONE/scripts.pory"
-	.string "{PLAYER}...$"
+	.string "There's...nothing left.$"
 
 CURSEZONE_EventScript_YanFight_Text_39:
 # 50 "data/maps/CURSEZONE/scripts.pory"
-	.string "Can you tell me...what you've\nbeen trying to accomplish?$"
+	.string "But despite that,$"
 
 CURSEZONE_EventScript_YanFight_Text_40:
 # 51 "data/maps/CURSEZONE/scripts.pory"
-	.string "Maybe you had some guidance at the beginning, but...$"
+	.string "I still remember you.$"
 
 CURSEZONE_EventScript_YanFight_Text_41:
 # 52 "data/maps/CURSEZONE/scripts.pory"
-	.string "You've made it this far all by yourself.$"
+	.string "...and I can still read you like a\nbook.$"
 
 CURSEZONE_EventScript_YanFight_Text_42:
 # 53 "data/maps/CURSEZONE/scripts.pory"
-	.string "Have you enjoyed it?$"
+	.string "Do you still...remember me?$"
 
 CURSEZONE_EventScript_YanFight_Text_43:
-# 54 "data/maps/CURSEZONE/scripts.pory"
-	.string "Peeling away all these memories...and dreams?$"
+# 55 "data/maps/CURSEZONE/scripts.pory"
+	.string "Ha...$"
 
 CURSEZONE_EventScript_YanFight_Text_44:
 # 56 "data/maps/CURSEZONE/scripts.pory"
-	.string "You don't even know, do you?$"
+	.string "Nothing.$"
 
 CURSEZONE_EventScript_YanFight_Text_45:
 # 57 "data/maps/CURSEZONE/scripts.pory"
-	.string "What you've been REALLY working towards?$"
+	.string "Since you insist on being so shy\ntoday...$"
 
 CURSEZONE_EventScript_YanFight_Text_46:
 # 58 "data/maps/CURSEZONE/scripts.pory"
-	.string "She hasn't told you a thing.$"
+	.string "{PLAYER}, you'll have to do instead.$"
 
 CURSEZONE_EventScript_YanFight_Text_47:
 # 59 "data/maps/CURSEZONE/scripts.pory"
-	.string "You were never promised a reward.$"
+	.string "But before we begin, I need to know.$"
 
 CURSEZONE_EventScript_YanFight_Text_48:
 # 60 "data/maps/CURSEZONE/scripts.pory"
-	.string "It'll all be over soon anyway.$"
+	.string "{PLAYER}...$"
 
 CURSEZONE_EventScript_YanFight_Text_49:
 # 61 "data/maps/CURSEZONE/scripts.pory"
-	.string "So in that case, I'll let you in\non a little secret,\n'{PLAYER}'$"
+	.string "Can you tell me...what you've been\ntrying to accomplish?$"
 
 CURSEZONE_EventScript_YanFight_Text_50:
 # 62 "data/maps/CURSEZONE/scripts.pory"
-	.string "From the start, you've been on her\n path.$"
+	.string "Maybe you had some help at the\nbeginning, but...$"
 
 CURSEZONE_EventScript_YanFight_Text_51:
 # 63 "data/maps/CURSEZONE/scripts.pory"
-	.string "Maybe you've made some stops or\ndetours along the way, but...$"
+	.string "You've made it this far all\nby yourself.$"
 
 CURSEZONE_EventScript_YanFight_Text_52:
 # 64 "data/maps/CURSEZONE/scripts.pory"
-	.string "The path you're on was always\ndesigned to end the same way.$"
+	.string "Are you satisfied?$"
 
 CURSEZONE_EventScript_YanFight_Text_53:
 # 65 "data/maps/CURSEZONE/scripts.pory"
-	.string "....with me.$"
+	.string "Peeling away all these memories...\nand dreams?$"
 
 CURSEZONE_EventScript_YanFight_Text_54:
-# 67 "data/maps/CURSEZONE/scripts.pory"
-	.string "All that work...just for me. I'm\nflattered, really.$"
+# 66 "data/maps/CURSEZONE/scripts.pory"
+	.string "You don't even know, do you?$"
 
 CURSEZONE_EventScript_YanFight_Text_55:
-# 68 "data/maps/CURSEZONE/scripts.pory"
-	.string "But...enough of this. You came\nhereto play a game.$"
+# 67 "data/maps/CURSEZONE/scripts.pory"
+	.string "What you've been REALLY working towards?$"
 
 CURSEZONE_EventScript_YanFight_Text_56:
-# 69 "data/maps/CURSEZONE/scripts.pory"
-	.string "Well, then, let's play.$"
+# 68 "data/maps/CURSEZONE/scripts.pory"
+	.string "She hasn't told you a thing.$"
 
 CURSEZONE_EventScript_YanFight_Text_57:
-# 70 "data/maps/CURSEZONE/scripts.pory"
-	.string "I can see her in the back...smiling.\nShe's been waiting for this for\pa long time.$"
+# 69 "data/maps/CURSEZONE/scripts.pory"
+	.string "You were never promised a reward.$"
 
 CURSEZONE_EventScript_YanFight_Text_58:
+# 70 "data/maps/CURSEZONE/scripts.pory"
+	.string "And yet, here you are. A perfect\npawn.$"
+
+CURSEZONE_EventScript_YanFight_Text_59:
 # 71 "data/maps/CURSEZONE/scripts.pory"
+	.string "I'll let you inon a little\nsecret,\n'{PLAYER}'$"
+
+CURSEZONE_EventScript_YanFight_Text_60:
+# 72 "data/maps/CURSEZONE/scripts.pory"
+	.string "From the start, you've been on her\n path.$"
+
+CURSEZONE_EventScript_YanFight_Text_61:
+# 73 "data/maps/CURSEZONE/scripts.pory"
+	.string "Maybe you've made some stops or\ndetours along the way, but...$"
+
+CURSEZONE_EventScript_YanFight_Text_62:
+# 74 "data/maps/CURSEZONE/scripts.pory"
+	.string "The path you're on was always\ndesigned to end the same way.$"
+
+CURSEZONE_EventScript_YanFight_Text_63:
+# 75 "data/maps/CURSEZONE/scripts.pory"
+	.string "....with me.$"
+
+CURSEZONE_EventScript_YanFight_Text_64:
+# 77 "data/maps/CURSEZONE/scripts.pory"
+	.string "All that effort...just for me. I'm\nflattered, really.$"
+
+CURSEZONE_EventScript_YanFight_Text_65:
+# 78 "data/maps/CURSEZONE/scripts.pory"
+	.string "Well, {PLAYER}, I won't let\nyour hard work go to waste.$"
+
+CURSEZONE_EventScript_YanFight_Text_66:
+# 79 "data/maps/CURSEZONE/scripts.pory"
+	.string "You came\nhere to play a game.$"
+
+CURSEZONE_EventScript_YanFight_Text_67:
+# 80 "data/maps/CURSEZONE/scripts.pory"
+	.string "Well, then, let's play.$"
+
+CURSEZONE_EventScript_YanFight_Text_68:
+# 81 "data/maps/CURSEZONE/scripts.pory"
+	.string "I can see her behind you...smiling.\nShe's been waiting for this for\pa long time.$"
+
+CURSEZONE_EventScript_YanFight_Text_69:
+# 82 "data/maps/CURSEZONE/scripts.pory"
 	.string "And I can't help but smile either.$"
 
+CURSEZONE_EventScript_YanFight_Text_70:
+# 83 "data/maps/CURSEZONE/scripts.pory"
+	.string "The last spark of our lives...\ndies here.$"
+
+CURSEZONE_EventScript_YanFight_Text_71:
+# 84 "data/maps/CURSEZONE/scripts.pory"
+	.string "But I can barely remember why I\nshould even be sad about that.$"
+
+CURSEZONE_EventScript_YanFight_Text_72:
+# 85 "data/maps/CURSEZONE/scripts.pory"
+	.string "Or IF I should even be sad about that.$"
+
+CURSEZONE_EventScript_YanFight_Text_73:
+# 86 "data/maps/CURSEZONE/scripts.pory"
+	.string "Are these memories happy, or painful?$"
+
+CURSEZONE_EventScript_YanFight_Text_74:
+# 87 "data/maps/CURSEZONE/scripts.pory"
+	.string "My mind is fuzzy just thinking\nabout it.$"
+
+CURSEZONE_EventScript_YanFight_Text_75:
+# 88 "data/maps/CURSEZONE/scripts.pory"
+	.string "So...why bother, eh?$"
+
+CURSEZONE_EventScript_YanFight_Text_76:
+# 89 "data/maps/CURSEZONE/scripts.pory"
+	.string "Let's forget about all that for\njust a moment.$"
+
 YanIntro::
-# 77 "data/maps/CURSEZONE/scripts.pory"
-	.string "Well, here we go, {PLAYER}. Don't you know\nit's rude to keep ladies in waiting?$"
+# 96 "data/maps/CURSEZONE/scripts.pory"
+	.string "Let's just...have one last fun game.\nAlright, Yin?.$"
 
 YanOutro::
-# 81 "data/maps/CURSEZONE/scripts.pory"
+# 100 "data/maps/CURSEZONE/scripts.pory"
 	.string ".....$"

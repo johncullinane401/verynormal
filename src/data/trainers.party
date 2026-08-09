@@ -7351,17 +7351,59 @@ Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Doduo
-Level: 27
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Galvantula @ Focus Sash  
+Ability: Compound Eyes  
+EVs: 4 HP / 252 SpA / 252 Spe  
+Modest Nature  
+IVs: 0 Atk  
+- Bug Buzz  
+- Agility  
+- Sticky Web  
+- Volt Switch  
 
-Skarmory
-Level: 27
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Volcarona @ Assault Vest  
+Ability: Flame Body  
+EVs: 252 SpA / 4 SpD / 252 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Air Slash  
+- Fiery Dance  
+- Flamethrower  
+- Bug Buzz  
 
-Tropius
-Level: 27
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Scizor @ Life Orb  
+Ability: Technician  
+- Bullet Punch  
+- Aerial Ace  
+- X-Scissor  
+- Swords Dance  
+
+Pheromosa @ Focus Sash  
+Ability: Beast Boost  
+EVs: 4 HP / 252 Atk / 252 Spe  
+Jolly Nature  
+- High Jump Kick  
+- U-turn  
+- Low Kick  
+- Throat Chop  
+
+Genesect  
+Ability: Download  
+- U-turn  
+- Iron Head  
+- Ice Beam  
+- Thunderbolt  
+
+Golisopod @ Red Card  
+Ability: Emergency Exit  
+EVs: 252 HP / 252 Atk / 4 SpD  
+Adamant Nature  
+- First Impression  
+- Aqua Jet  
+- Protect  
+- X-Scissor  
+
+
 
 === TRAINER_HUMBERTO ===
 Name: HUMBERTO
@@ -12474,7 +12516,7 @@ Name: YAN
 Class: Salon Maiden
 Pic: Cooltrainer F
 Gender: Female
-Music: Cool
+Music: Intense
 Items: Full Restore
 Double Battle: No
 AI: Basic Trainer

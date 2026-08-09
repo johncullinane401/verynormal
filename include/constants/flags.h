@@ -71,7 +71,7 @@
 #define FLAG_WARP_DEVICE    0x31 // Unused Flag
 #define FLAG_CANPUSH    0x32 // Unused Flag
 #define FLAG_ROOF_WOMAN    0x33 // Unused Flag
-#define FLAG_UNUSED_0x034    0x34 // Unused Flag
+#define FLAG_SECOND_YAN_MEETING    0x34 // Unused Flag
 #define FLAG_UNUSED_0x035    0x35 // Unused Flag
 #define FLAG_UNUSED_0x036    0x36 // Unused Flag
 #define FLAG_UNUSED_0x037    0x37 // Unused Flag

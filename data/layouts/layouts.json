@@ -9450,12 +9450,32 @@
     {
       "id": "LAYOUT_HUB",
       "name": "HUB_Layout",
-      "width": 20,
-      "height": 20,
+      "width": 23,
+      "height": 22,
       "primary_tileset": "gTileset_weirdshit1",
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/HUB/border.bin",
       "blockdata_filepath": "data/layouts/HUB/map.bin"
+    },
+    {
+      "id": "LAYOUT_GREYFOREST2",
+      "name": "GREYFOREST2_Layout",
+      "width": 10,
+      "height": 6,
+      "primary_tileset": "gTileset_weirdshit1",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/GREYFOREST2/border.bin",
+      "blockdata_filepath": "data/layouts/GREYFOREST2/map.bin"
+    },
+    {
+      "id": "LAYOUT_GREYFOREST3",
+      "name": "GREYFOREST3_Layout",
+      "width": 38,
+      "height": 33,
+      "primary_tileset": "gTileset_weirdshit1",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/GREYFOREST3/border.bin",
+      "blockdata_filepath": "data/layouts/GREYFOREST3/map.bin"
     }
   ]
 }

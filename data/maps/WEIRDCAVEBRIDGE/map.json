@@ -17,6 +17,11 @@
       "map": "MAP_WEIRDCAVE2",
       "offset": -8,
       "direction": "right"
+    },
+    {
+      "map": "MAP_HUB",
+      "offset": -5,
+      "direction": "left"
     }
   ],
   "object_events": [],

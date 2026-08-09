@@ -394,6 +394,7 @@ void DoWhiteOut(void)
 {
     RunScriptImmediately(EventScript_WhiteOut);
     HealPlayerParty();
+    FlagClear(FLAG_DREAMING);
     Overworld_ResetStateAfterWhiteOut();
     SetWarpDestinationToLastHealLocation();
     WarpIntoMap();

@@ -55,114 +55,220 @@ GREYFOREST1_EventScript_Yan::
 # 34 "data/maps/GREYFOREST1/scripts.pory"
 	lockall
 # 35 "data/maps/GREYFOREST1/scripts.pory"
-	msgbox GREYFOREST1_EventScript_Yan_Text_0
+	addobject 1
 # 36 "data/maps/GREYFOREST1/scripts.pory"
-	msgbox GREYFOREST1_EventScript_Yan_Text_1
+	msgbox GREYFOREST1_EventScript_Yan_Text_0
 # 37 "data/maps/GREYFOREST1/scripts.pory"
-	msgbox GREYFOREST1_EventScript_Yan_Text_2
+	applymovement 1, YanMoveDownAlot
 # 38 "data/maps/GREYFOREST1/scripts.pory"
-	msgbox GREYFOREST1_EventScript_Yan_Text_3
+	waitmovement 1
 # 39 "data/maps/GREYFOREST1/scripts.pory"
-	msgbox GREYFOREST1_EventScript_Yan_Text_4
+	msgbox GREYFOREST1_EventScript_Yan_Text_1
 # 40 "data/maps/GREYFOREST1/scripts.pory"
-	msgbox GREYFOREST1_EventScript_Yan_Text_5
+	msgbox GREYFOREST1_EventScript_Yan_Text_2
 # 41 "data/maps/GREYFOREST1/scripts.pory"
-	msgbox GREYFOREST1_EventScript_Yan_Text_6
+	msgbox GREYFOREST1_EventScript_Yan_Text_3
 # 42 "data/maps/GREYFOREST1/scripts.pory"
-	msgbox GREYFOREST1_EventScript_Yan_Text_7
+	applymovement 1, YanUp
 # 43 "data/maps/GREYFOREST1/scripts.pory"
-	msgbox GREYFOREST1_EventScript_Yan_Text_8
+	waitmovement 1
 # 44 "data/maps/GREYFOREST1/scripts.pory"
-	msgbox GREYFOREST1_EventScript_Yan_Text_9
+	msgbox GREYFOREST1_EventScript_Yan_Text_4
 # 45 "data/maps/GREYFOREST1/scripts.pory"
-	msgbox GREYFOREST1_EventScript_Yan_Text_10
+	applymovement 1, YanDown
 # 46 "data/maps/GREYFOREST1/scripts.pory"
-	msgbox GREYFOREST1_EventScript_Yan_Text_11
+	msgbox GREYFOREST1_EventScript_Yan_Text_5
 # 47 "data/maps/GREYFOREST1/scripts.pory"
-	msgbox GREYFOREST1_EventScript_Yan_Text_12
+	msgbox GREYFOREST1_EventScript_Yan_Text_6
 # 48 "data/maps/GREYFOREST1/scripts.pory"
-	msgbox GREYFOREST1_EventScript_Yan_Text_13
+	msgbox GREYFOREST1_EventScript_Yan_Text_7
 # 49 "data/maps/GREYFOREST1/scripts.pory"
-	msgbox GREYFOREST1_EventScript_Yan_Text_12
+	msgbox GREYFOREST1_EventScript_Yan_Text_8
 # 50 "data/maps/GREYFOREST1/scripts.pory"
-	msgbox GREYFOREST1_EventScript_Yan_Text_14
+	msgbox GREYFOREST1_EventScript_Yan_Text_9
 # 51 "data/maps/GREYFOREST1/scripts.pory"
-	msgbox GREYFOREST1_EventScript_Yan_Text_15
+	msgbox GREYFOREST1_EventScript_Yan_Text_10
 # 52 "data/maps/GREYFOREST1/scripts.pory"
-	msgbox GREYFOREST1_EventScript_Yan_Text_16
+	msgbox GREYFOREST1_EventScript_Yan_Text_11
 # 53 "data/maps/GREYFOREST1/scripts.pory"
+	msgbox GREYFOREST1_EventScript_Yan_Text_12
+# 54 "data/maps/GREYFOREST1/scripts.pory"
+	msgbox GREYFOREST1_EventScript_Yan_Text_13
+# 55 "data/maps/GREYFOREST1/scripts.pory"
+	msgbox GREYFOREST1_EventScript_Yan_Text_14
+# 56 "data/maps/GREYFOREST1/scripts.pory"
+	msgbox GREYFOREST1_EventScript_Yan_Text_15
+# 57 "data/maps/GREYFOREST1/scripts.pory"
+	msgbox GREYFOREST1_EventScript_Yan_Text_16
+# 58 "data/maps/GREYFOREST1/scripts.pory"
+	msgbox GREYFOREST1_EventScript_Yan_Text_17
+# 59 "data/maps/GREYFOREST1/scripts.pory"
+	msgbox GREYFOREST1_EventScript_Yan_Text_18
+# 60 "data/maps/GREYFOREST1/scripts.pory"
+	msgbox GREYFOREST1_EventScript_Yan_Text_19
+# 61 "data/maps/GREYFOREST1/scripts.pory"
+	msgbox GREYFOREST1_EventScript_Yan_Text_20
+# 62 "data/maps/GREYFOREST1/scripts.pory"
+	msgbox GREYFOREST1_EventScript_Yan_Text_21
+# 63 "data/maps/GREYFOREST1/scripts.pory"
+	msgbox GREYFOREST1_EventScript_Yan_Text_22
+# 64 "data/maps/GREYFOREST1/scripts.pory"
+	applymovement 1, YanLeave
+# 65 "data/maps/GREYFOREST1/scripts.pory"
+	waitmovement 1
+# 66 "data/maps/GREYFOREST1/scripts.pory"
+	removeobject 1
+# 67 "data/maps/GREYFOREST1/scripts.pory"
+	setflag FLAG_SECOND_YAN_MEETING
+# 68 "data/maps/GREYFOREST1/scripts.pory"
 	releaseall
 	return
 
+
+# 72 "data/maps/GREYFOREST1/scripts.pory"
+YanMoveDownAlot:
+# 73 "data/maps/GREYFOREST1/scripts.pory"
+	face_down
+# 74 "data/maps/GREYFOREST1/scripts.pory"
+	walk_down
+# 74 "data/maps/GREYFOREST1/scripts.pory"
+	walk_down
+# 74 "data/maps/GREYFOREST1/scripts.pory"
+	walk_down
+# 74 "data/maps/GREYFOREST1/scripts.pory"
+	walk_down
+# 74 "data/maps/GREYFOREST1/scripts.pory"
+	walk_down
+# 74 "data/maps/GREYFOREST1/scripts.pory"
+	walk_down
+# 75 "data/maps/GREYFOREST1/scripts.pory"
+	face_player
+	step_end
+
+# 78 "data/maps/GREYFOREST1/scripts.pory"
+YanLeave:
+# 79 "data/maps/GREYFOREST1/scripts.pory"
+	face_up
+# 80 "data/maps/GREYFOREST1/scripts.pory"
+	walk_up
+# 80 "data/maps/GREYFOREST1/scripts.pory"
+	walk_up
+# 80 "data/maps/GREYFOREST1/scripts.pory"
+	walk_up
+# 80 "data/maps/GREYFOREST1/scripts.pory"
+	walk_up
+# 80 "data/maps/GREYFOREST1/scripts.pory"
+	walk_up
+# 80 "data/maps/GREYFOREST1/scripts.pory"
+	walk_up
+# 81 "data/maps/GREYFOREST1/scripts.pory"
+	face_player
+	step_end
+
+# 84 "data/maps/GREYFOREST1/scripts.pory"
+YanUp:
+# 85 "data/maps/GREYFOREST1/scripts.pory"
+	face_up
+	step_end
+
+# 88 "data/maps/GREYFOREST1/scripts.pory"
+YanDown:
+# 89 "data/maps/GREYFOREST1/scripts.pory"
+	face_player
+	step_end
 
 GREYFOREST1_EventScript_Exit_Text_0:
 # 11 "data/maps/GREYFOREST1/scripts.pory"
 	.string "Your hand is no longer on fire.$"
 
 GREYFOREST1_EventScript_Yan_Text_0:
-# 35 "data/maps/GREYFOREST1/scripts.pory"
+# 36 "data/maps/GREYFOREST1/scripts.pory"
 	.string "{COLOR RED}...it's you!$"
 
 GREYFOREST1_EventScript_Yan_Text_1:
-# 36 "data/maps/GREYFOREST1/scripts.pory"
-	.string "Wha...what are you doing here?$"
+# 39 "data/maps/GREYFOREST1/scripts.pory"
+	.string "{PLAYER}!$"
 
 GREYFOREST1_EventScript_Yan_Text_2:
-# 37 "data/maps/GREYFOREST1/scripts.pory"
-	.string "......$"
+# 40 "data/maps/GREYFOREST1/scripts.pory"
+	.string "Wha...what are you doing here!?$"
 
 GREYFOREST1_EventScript_Yan_Text_3:
-# 38 "data/maps/GREYFOREST1/scripts.pory"
-	.string "Ha...you didn't call.$"
+# 41 "data/maps/GREYFOREST1/scripts.pory"
+	.string "......$"
 
 GREYFOREST1_EventScript_Yan_Text_4:
-# 39 "data/maps/GREYFOREST1/scripts.pory"
-	.string "But it seems you've stumbled upon\nsomething interesting$"
+# 44 "data/maps/GREYFOREST1/scripts.pory"
+	.string "Ha...you didn't call.$"
 
 GREYFOREST1_EventScript_Yan_Text_5:
-# 40 "data/maps/GREYFOREST1/scripts.pory"
-	.string "Well, I won't hold you back or\nanything.$"
+# 46 "data/maps/GREYFOREST1/scripts.pory"
+	.string "Seems you've stumbled upon something\ninteresting.$"
 
 GREYFOREST1_EventScript_Yan_Text_6:
-# 41 "data/maps/GREYFOREST1/scripts.pory"
-	.string "I'm still trying to understand\nit myself.$"
+# 47 "data/maps/GREYFOREST1/scripts.pory"
+	.string "I don't think...you should be in this\nplace.$"
 
 GREYFOREST1_EventScript_Yan_Text_7:
-# 42 "data/maps/GREYFOREST1/scripts.pory"
-	.string "Speaking of...$"
+# 48 "data/maps/GREYFOREST1/scripts.pory"
+	.string "Despite that, though...$"
 
 GREYFOREST1_EventScript_Yan_Text_8:
-# 43 "data/maps/GREYFOREST1/scripts.pory"
-	.string "...you still have that card I gave\nyou?$"
+# 49 "data/maps/GREYFOREST1/scripts.pory"
+	.string "I won't hold you back or\nanything.$"
 
 GREYFOREST1_EventScript_Yan_Text_9:
-# 44 "data/maps/GREYFOREST1/scripts.pory"
-	.string "If you find yourself stuck or trapped\nor something, call me.$"
+# 50 "data/maps/GREYFOREST1/scripts.pory"
+	.string "You know, if you wanted to explore and\n all.$"
 
 GREYFOREST1_EventScript_Yan_Text_10:
-# 45 "data/maps/GREYFOREST1/scripts.pory"
-	.string "I'll save you.$"
+# 51 "data/maps/GREYFOREST1/scripts.pory"
+	.string "I'm still trying to understand\nthis place myself.$"
 
 GREYFOREST1_EventScript_Yan_Text_11:
-# 46 "data/maps/GREYFOREST1/scripts.pory"
-	.string "You never know what could happen in\nhere.$"
+# 52 "data/maps/GREYFOREST1/scripts.pory"
+	.string "Speaking of which...$"
 
 GREYFOREST1_EventScript_Yan_Text_12:
-# 47 "data/maps/GREYFOREST1/scripts.pory"
-	.string "...$"
+# 53 "data/maps/GREYFOREST1/scripts.pory"
+	.string "...you still have that card I gave\nyou?$"
 
 GREYFOREST1_EventScript_Yan_Text_13:
-# 48 "data/maps/GREYFOREST1/scripts.pory"
-	.string "You really aren't much of a talker, are\n ya?$"
+# 54 "data/maps/GREYFOREST1/scripts.pory"
+	.string "If you find yourself stuck or trapped\nor something, call me.$"
 
 GREYFOREST1_EventScript_Yan_Text_14:
-# 50 "data/maps/GREYFOREST1/scripts.pory"
-	.string "Ha...$"
+# 55 "data/maps/GREYFOREST1/scripts.pory"
+	.string "I'll save you.$"
 
 GREYFOREST1_EventScript_Yan_Text_15:
-# 51 "data/maps/GREYFOREST1/scripts.pory"
-	.string "I'll be leaving, now.$"
+# 56 "data/maps/GREYFOREST1/scripts.pory"
+	.string "I'm the detective, after all.$"
 
 GREYFOREST1_EventScript_Yan_Text_16:
-# 52 "data/maps/GREYFOREST1/scripts.pory"
+# 57 "data/maps/GREYFOREST1/scripts.pory"
+	.string "Can't have anyone else going missing!$"
+
+GREYFOREST1_EventScript_Yan_Text_17:
+# 58 "data/maps/GREYFOREST1/scripts.pory"
+	.string "...$"
+
+GREYFOREST1_EventScript_Yan_Text_18:
+# 59 "data/maps/GREYFOREST1/scripts.pory"
+	.string "You really aren't much of a talker, are\nya?$"
+
+GREYFOREST1_EventScript_Yan_Text_19:
+# 60 "data/maps/GREYFOREST1/scripts.pory"
+	.string "Well, just don't forget what I told ya.$"
+
+GREYFOREST1_EventScript_Yan_Text_20:
+# 61 "data/maps/GREYFOREST1/scripts.pory"
+	.string "I'll be leaving, now.$"
+
+GREYFOREST1_EventScript_Yan_Text_21:
+# 62 "data/maps/GREYFOREST1/scripts.pory"
+	.string "I hope I run into you again, {PLAYER}.$"
+
+GREYFOREST1_EventScript_Yan_Text_22:
+# 63 "data/maps/GREYFOREST1/scripts.pory"
 	.string "See ya!$"

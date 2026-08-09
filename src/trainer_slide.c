@@ -63,7 +63,7 @@ static const u8* const sTrainerSlides[DIFFICULTY_COUNT][TRAINER_PARTNER(PARTNER_
     {
         [TRAINER_ALEXA] = 
         {
-            [TRAINER_SLIDE_BEFORE_FIRST_TURN] = COMPOUND_STRING("One final fight, anything goes! Winner takes all! Let's have some fun with this, shall we?{PAUSE_UNTIL_PRESS}\pJust me, you, and her....at the end of everything.{PAUSE_UNTIL_PRESS}"),
+            [TRAINER_SLIDE_BEFORE_FIRST_TURN] = COMPOUND_STRING("One final fight, anything goes! Winner takes all! Let's have some fun with this, shall we?{PAUSE_UNTIL_PRESS}\pCan our brave player step up to the challenge?{PAUSE_UNTIL_PRESS} This'll be a fight to remember, folks! That means...don't forget it!"),
             [TRAINER_SLIDE_PLAYER_LANDS_FIRST_CRITICAL_HIT] = COMPOUND_STRING("A devastating blow! But, witness my flawless recovery!{PAUSE_UNTIL_PRESS}"),
             [TRAINER_SLIDE_ENEMY_LANDS_FIRST_CRITICAL_HIT] = COMPOUND_STRING("A perfect strike! The audience is going wild!\p(....There is no audience.){PAUSE_UNTIL_PRESS}"),
             [TRAINER_SLIDE_PLAYER_LANDS_FIRST_DOWN] = COMPOUND_STRING("...having fun?{PAUSE_UNTIL_PRESS}"),

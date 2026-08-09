@@ -146,7 +146,9 @@
     "SHADOWWORLD_HOUSE1_3",
     "SCHOOLROOF1",
     "WEIRDROOM1",
-    "HUB"
+    "HUB",
+    "GREYFOREST2",
+    "GREYFOREST3"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",

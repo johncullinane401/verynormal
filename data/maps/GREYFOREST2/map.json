@@ -1,0 +1,48 @@
+{
+  "id": "MAP_GREYFOREST2",
+  "name": "GREYFOREST2",
+  "layout": "LAYOUT_GREYFOREST2",
+  "music": "MUS_ROUTE113",
+  "region_map_section": "MAPSEC_ABANDONED_SHIP",
+  "requires_flash": false,
+  "weather": "WEATHER_SANDSTORM",
+  "map_type": "MAP_TYPE_NONE",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": false,
+  "show_map_name": false,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_GREYFOREST1",
+      "offset": -2,
+      "direction": "right"
+    },
+    {
+      "map": "MAP_GREYFOREST3",
+      "offset": -8,
+      "direction": "left"
+    }
+  ],
+  "object_events": [],
+  "warp_events": [],
+  "coord_events": [],
+  "bg_events": [
+    {
+      "type": "sign",
+      "x": 0,
+      "y": -24,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "GREYFOREST1_EventScript_CaveWarp"
+    },
+    {
+      "type": "sign",
+      "x": -7,
+      "y": -24,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "GREYFOREST1_EventScript_SwampWarp"
+    }
+  ]
+}

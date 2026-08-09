@@ -1,0 +1,37 @@
+raw  `HUB_MapScripts::
+	.byte 0
+`
+
+script HUB_EventScript_MothmanTalk {
+    msgbox("Well...what a delicious surprise.")
+    msgbox("And I thought nobody would find me here.")
+    msgbox("Keheheh...what joy!")
+    msgbox("Ah, where are my manners. You may call me\nMOTHMAN.")
+    msgbox("Please, do not be alarmed. I merely\nwish to sell my services to heroes like you.")
+    msgbox("Mmmmm...what is this?")
+    msgbox("Money? No no no, this won't do at all.")
+    msgbox("I have no need for material garbage\nsuch as that.")
+
+    buffernumberstring(STR_VAR_1, VAR_VENOM)
+    msgbox("You have something else I seek...")
+    msgbox("{STR_VAR_1} droplets...")
+    if (var(VAR_VENOM) < 10) {
+        msgbox("That's all?")
+        msgbox("Bah, it's no goddamn good at all.")
+        msgbox("This is hardly even an appetizer!")
+        msgbox("Just forget I said anything.")
+        msgbox("You don't have what I seek.")
+    }
+   
+    msgbox("You're not an OBSERVER in this world.")
+    msgbox("Eheheh...")
+    trainerbattle_single(TRAINER_JARED, MothmanIntro, MothmanOutro)
+}
+
+text MothmanIntro {
+    "You...really got me going, kid!!"
+}
+
+text MothmanOutro {
+    "...I....Impossible."
+}

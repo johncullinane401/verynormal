@@ -32,24 +32,59 @@ script GREYFOREST1_EventScript_SwampWarp {
 
 script GREYFOREST1_EventScript_Yan {
 	lockall
+	addobject(1)
 	msgbox("{COLOR RED}...it's you!")
-	msgbox("Wha...what are you doing here?")
+	applymovement(1, YanMoveDownAlot)
+	waitmovement(1)
+	msgbox("{PLAYER}!")
+	msgbox("Wha...what are you doing here!?")
 	msgbox("......")
+	applymovement(1, YanUp)
+	waitmovement(1)
 	msgbox("Ha...you didn't call.")
-	msgbox("But it seems you've stumbled upon\nsomething interesting")
-	msgbox("Well, I won't hold you back or\nanything.")
-	msgbox("I'm still trying to understand\nit myself.")
-	msgbox("Speaking of...")
+	applymovement(1, YanDown)
+	msgbox("Seems you've stumbled upon something\ninteresting.")
+	msgbox("I don't think...you should be in this\nplace.")
+	msgbox("Despite that, though...")
+	msgbox("I won't hold you back or\nanything.")
+	msgbox("You know, if you wanted to explore and\n all.")
+	msgbox("I'm still trying to understand\nthis place myself.")
+	msgbox("Speaking of which...")
 	msgbox("...you still have that card I gave\nyou?")
 	msgbox("If you find yourself stuck or trapped\nor something, call me.")
 	msgbox("I'll save you.")
-	msgbox("You never know what could happen in\nhere.")
+	msgbox("I'm the detective, after all.")
+	msgbox("Can't have anyone else going missing!")
 	msgbox("...")
-	msgbox("You really aren't much of a talker, are\n ya?")
-	msgbox("...")
-	msgbox("Ha...")
+	msgbox("You really aren't much of a talker, are\nya?")
+	msgbox("Well, just don't forget what I told ya.")
 	msgbox("I'll be leaving, now.")
+	msgbox("I hope I run into you again, {PLAYER}.")
 	msgbox("See ya!")
+	applymovement(1, YanLeave)
+	waitmovement(1)
+	removeobject(1)
+	setflag(FLAG_SECOND_YAN_MEETING)
 	releaseall
 
+}
+
+movement YanMoveDownAlot {
+    face_down
+    walk_down * 6
+    face_player
+}
+
+movement YanLeave {
+    face_up
+    walk_up * 6
+    face_player
+}
+
+movement YanUp {
+	face_up
+}
+
+movement YanDown {
+	face_player
 }

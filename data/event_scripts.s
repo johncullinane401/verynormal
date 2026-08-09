@@ -1764,3 +1764,7 @@ EventScript_PalletTown_PlayersHouse_2F_TurnOnPC::
 	.include "data/maps/WEIRDROOM1/scripts.inc"
 
 	.include "data/maps/HUB/scripts.inc"
+
+	.include "data/maps/GREYFOREST2/scripts.inc"
+
+	.include "data/maps/GREYFOREST3/scripts.inc"

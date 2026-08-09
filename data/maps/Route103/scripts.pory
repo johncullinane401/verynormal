@@ -461,6 +461,7 @@ script Route103_EventScript_YinLastDialogue {
     msgbox("A NORMAL type will do.")
     msgbox("Once you have done this, I will find\nyou again in 'Petalburg City'.")
     msgbox("With that, I bid you farewell.")
+	setflag(FLAG_HIDE_MAP_NAME_POPUP)
     removeobject(27)
     setflag(FLAG_YIN_WARP_2)
     warp(MAP_ROUTE103, 4, 1)

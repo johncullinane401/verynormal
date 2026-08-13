@@ -697,7 +697,7 @@ void DeleteAllPartyMonsExceptZigzagoon(void)
 void SetExpLevel(void)
 {
     struct Pokemon *mon = &gParties[B_TRAINER_PLAYER][0];
-    u8 level = 19;
+    u8 level = 20;
     u32 exp;
 
 

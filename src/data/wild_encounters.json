@@ -36646,6 +36646,75 @@
               }
             ]
           }
+        },
+        {
+          "map": "MAP_DEEPWOODS3",
+          "base_label": "gDEEPWOODS3",
+          "land_mons": {
+            "encounter_rate": 1,
+            "mons": [
+              {
+                "min_level": 99,
+                "max_level": 99,
+                "species": "SPECIES_GHOST"
+              },
+              {
+                "min_level": 99,
+                "max_level": 99,
+                "species": "SPECIES_GHOST"
+              },
+              {
+                "min_level": 99,
+                "max_level": 99,
+                "species": "SPECIES_GHOST"
+              },
+              {
+                "min_level": 99,
+                "max_level": 99,
+                "species": "SPECIES_GHOST"
+              },
+              {
+                "min_level": 99,
+                "max_level": 99,
+                "species": "SPECIES_GHOST"
+              },
+              {
+                "min_level": 99,
+                "max_level": 99,
+                "species": "SPECIES_GHOST"
+              },
+              {
+                "min_level": 99,
+                "max_level": 99,
+                "species": "SPECIES_GHOST"
+              },
+              {
+                "min_level": 99,
+                "max_level": 99,
+                "species": "SPECIES_GHOST"
+              },
+              {
+                "min_level": 99,
+                "max_level": 99,
+                "species": "SPECIES_GHOST"
+              },
+              {
+                "min_level": 99,
+                "max_level": 99,
+                "species": "SPECIES_GHOST"
+              },
+              {
+                "min_level": 99,
+                "max_level": 99,
+                "species": "SPECIES_GHOST"
+              },
+              {
+                "min_level": 99,
+                "max_level": 99,
+                "species": "SPECIES_GHOST"
+              }
+            ]
+          }
         }
       ]
     },

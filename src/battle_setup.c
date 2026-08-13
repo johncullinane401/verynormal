@@ -331,6 +331,8 @@ static bool8 CheckSilphScopeInPokemonTower(u16 mapGroup, u16 mapNum)
 
 void BattleSetup_StartWildBattle(void)
 {
+    if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(MAP_DEEPWOODS3) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(MAP_DEEPWOODS3))
+        FlagSet(FLAG_HAD_FORCED_ENCOUNTER);
     if (GetSafariZoneFlag())
         DoSafariBattle();
     else if (CheckSilphScopeInPokemonTower(gSaveBlock1Ptr->location.mapGroup, gSaveBlock1Ptr->location.mapNum))

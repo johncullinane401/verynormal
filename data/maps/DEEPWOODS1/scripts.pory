@@ -1,0 +1,54 @@
+raw  `DEEPWOODS1_MapScripts::
+	.byte 0
+`
+
+script DEEPWOODS_EventScript_BugCatcher1 {
+    lockall
+    msgbox("I've been searching everywhere for bug\ntype pokemon.")
+    msgbox("I thought I might find them crawling\naround here.")
+    msgbox("But...there's nobody here.")
+    msgbox("There's nothing here.")
+    releaseall
+}
+
+script DEEPWOODS1_EventScript_Lamp1 {
+    lockall
+    msgbox("This lamp's light switch is off.")
+    msgbox("Turn it on?", MSGBOX_YESNO)
+    if (var(VAR_RESULT) == YES) {
+        msgbox("You turned on the lamp.")
+        msgbox("...")
+        msgbox("It's on, it just is very dim.")
+    }
+}
+script DEEPWOODS1_EventScript_Lamp2 {
+    lockall
+    msgbox("This lamp's light switch is off.")
+    msgbox("Turn it on?", MSGBOX_YESNO)
+    if (var(VAR_RESULT) == YES) {
+        msgbox("You turned on the lamp.")
+        msgbox("...")
+        msgbox("It's on, it just is very dim.")
+    }
+}
+script DEEPWOODS1_EventScript_Lamp3 {
+    lockall
+    msgbox("This lamp's light switch is off.")
+    msgbox("Turn it on?", MSGBOX_YESNO)
+    if (var(VAR_RESULT) == YES) {
+        msgbox("You turned on the lamp.")
+        msgbox("...")
+        msgbox("It's on, it just is very dim.")
+    }
+}
+
+script DEEPWOODS1_EventScript_Lamp4 {
+    lockall
+    msgbox("This lamp's light switch is off.")
+    msgbox("Turn it on?", MSGBOX_YESNO)
+    if (var(VAR_RESULT) == YES) {
+        msgbox("You turned on the lamp.")
+        msgbox("...")
+        msgbox("It's on, it just is very dim.")
+    }
+}

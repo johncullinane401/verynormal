@@ -76,25 +76,24 @@ script CURSEZONE_EventScript_YanFight {
 	delay(50)
 	msgbox("All that effort...just for me. I'm\nflattered, really.")
 	msgbox("Well, {PLAYER}, I won't let\nyour hard work go to waste.")
-	msgbox("You came\nhere to play a game.")
+	msgbox("You came here to play a game.")
 	msgbox("Well, then, let's play.")
 	msgbox("I can see her behind you...smiling.\nShe's been waiting for this for\pa long time.")
 	msgbox("And I can't help but smile either.")
-	msgbox("The last spark of our lives...\ndies here.")
-	msgbox("But I can barely remember why I\nshould even be sad about that.")
-	msgbox("Or IF I should even be sad about that.")
+	msgbox("I can't even remember why I\nshould even be sad about this.")
+	msgbox("Or IF I should even be sad about this.")
 	msgbox("Are these memories happy, or painful?")
-	msgbox("My mind is fuzzy just thinking\nabout it.")
+	msgbox("My head aches just thinking\nabout it.")
 	msgbox("So...why bother, eh?")
 	msgbox("Let's forget about all that for\njust a moment.")
-
+	msgbox("The last spark of our lives...\ndies here.")
 
 	releaseall
 	trainerbattle_single(TRAINER_ALEXA, YanIntro, YanOutro)
 }
 
 text YanIntro {
-	"Let's just...have one last fun game.\nAlright, Yin?."
+	"So let's just...have one last fun game.\nAlright, Yin?"
 }
 
 text YanOutro {

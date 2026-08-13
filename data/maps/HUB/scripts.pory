@@ -8,22 +8,22 @@ script HUB_EventScript_MothmanTalk {
     msgbox("Keheheh...what joy!")
     msgbox("Ah, where are my manners. You may call me\nMOTHMAN.")
     msgbox("Please, do not be alarmed. I merely\nwish to sell my services to heroes like you.")
-    msgbox("Mmmmm...what is this?")
-    msgbox("Money? No no no, this won't do at all.")
+    msgbox("I've got things you may find very\nuseful indeed.")
+    msgbox("Money? No no no, no, that won't\n do at all.")
     msgbox("I have no need for material garbage\nsuch as that.")
 
     buffernumberstring(STR_VAR_1, VAR_VENOM)
     msgbox("You have something else I seek...")
-    msgbox("{STR_VAR_1} droplets...")
+    msgbox("Let's see...")
+    msgbox("{STR_VAR_1} droplets.")
     if (var(VAR_VENOM) < 10) {
         msgbox("That's all?")
-        msgbox("Bah, it's no goddamn good at all.")
+        msgbox("Bah, that's no goddamn good at all.")
         msgbox("This is hardly even an appetizer!")
         msgbox("Just forget I said anything.")
         msgbox("You don't have what I seek.")
     }
    
-    msgbox("You're not an OBSERVER in this world.")
     msgbox("Eheheh...")
     trainerbattle_single(TRAINER_JARED, MothmanIntro, MothmanOutro)
 }
@@ -34,4 +34,28 @@ text MothmanIntro {
 
 text MothmanOutro {
     "...I....Impossible."
+}
+
+script HUB_EventScript_Gatekeeper {
+    lockall
+    msgbox("5 remain.")
+    msgbox("Aren't you forgetting something?")
+    releaseall
+}
+
+script HUB_EventScript_LRShortcut {
+    lockall
+    msgbox("", MSGBOX_YESNO)
+    if (var(VAR_RESULT) == YES) {
+        clearflag(FLAG_DREAMING)
+	
+	    if (flag(FLAG_ROCK_PUZZLE)) {
+            msgbox("Your hand is no longer on fire.")
+            clearflag(FLAG_ROCK_PUZZLE)
+	    }
+        warp(MAP_LITTLEROOT_TOWN,42,15)
+        waitstate
+        
+    }
+    releaseall
 }

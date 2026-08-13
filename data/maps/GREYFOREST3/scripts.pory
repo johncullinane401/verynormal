@@ -1,0 +1,47 @@
+raw `GREYFOREST3_MapScripts::
+	.byte 0
+`
+
+script GREYFOREST3_EventScript_NPCTALK1 {
+    lockall
+    msgbox("This forest is so beautiful.")
+    msgbox("...what's that?")
+    msgbox("It's covered in sand?")
+    msgbox("No, no, no. Don't worry about that.")
+    msgbox("Just enjoy the fresh air, okay?")
+    releaseall
+}
+
+script GREYFOREST3_EventScript_NPCTALK2 {
+    lockall
+    msgbox("Do you like playing in the sand?")
+    msgbox("...oh, just don't play in that\ngrey stuff.")
+    msgbox("It's ash.")
+    releaseall
+}
+
+script GREYFOREST3_EventScript_NPCTALK3 {
+    lockall
+    msgbox("This place used to be beautiful\nand full of life.")
+    msgbox("Now the trees have been drained\nof their color.")
+    msgbox("The cool grass and soil has been\nreduced to coarse sand.")
+    msgbox("It's such a shame.")
+    msgbox("And it's all your fault!")
+    releaseall
+}
+
+script GREYFOREST3_EventScript_BurnTree {
+    lockall
+    msgbox("At first glance, this tree looks\nlike it could be cut down.")
+    msgbox("However, now that you are closer,\nyou realize that is impossible.")
+    msgbox("This tree must burn.")
+    if (flag(FLAG_ROCK_PUZZLE)) {
+        msgbox("Your burning hand grazes the tree\nand it bursts into flames.")
+        msgbox("...")
+        removeobject(4)
+        setflag(FLAG_BURNTREE)
+        clearflag(FLAG_ROCK_PUZZLE)
+        msgbox("Your hand fire extinguishes,\nits purpose fulfilled.")
+    }
+    releaseall
+}

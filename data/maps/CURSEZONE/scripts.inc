@@ -170,9 +170,9 @@ CURSEZONE_EventScript_YanFight::
 	msgbox CURSEZONE_EventScript_YanFight_Text_75
 # 89 "data/maps/CURSEZONE/scripts.pory"
 	msgbox CURSEZONE_EventScript_YanFight_Text_76
-# 92 "data/maps/CURSEZONE/scripts.pory"
+# 91 "data/maps/CURSEZONE/scripts.pory"
 	releaseall
-# 93 "data/maps/CURSEZONE/scripts.pory"
+# 92 "data/maps/CURSEZONE/scripts.pory"
 	trainerbattle_single TRAINER_ALEXA, YanIntro, YanOutro
 	return
 
@@ -443,7 +443,7 @@ CURSEZONE_EventScript_YanFight_Text_65:
 
 CURSEZONE_EventScript_YanFight_Text_66:
 # 79 "data/maps/CURSEZONE/scripts.pory"
-	.string "You came\nhere to play a game.$"
+	.string "You came here to play a game.$"
 
 CURSEZONE_EventScript_YanFight_Text_67:
 # 80 "data/maps/CURSEZONE/scripts.pory"
@@ -459,36 +459,36 @@ CURSEZONE_EventScript_YanFight_Text_69:
 
 CURSEZONE_EventScript_YanFight_Text_70:
 # 83 "data/maps/CURSEZONE/scripts.pory"
-	.string "The last spark of our lives...\ndies here.$"
+	.string "I can't even remember why I\nshould even be sad about this.$"
 
 CURSEZONE_EventScript_YanFight_Text_71:
 # 84 "data/maps/CURSEZONE/scripts.pory"
-	.string "But I can barely remember why I\nshould even be sad about that.$"
+	.string "Or IF I should even be sad about this.$"
 
 CURSEZONE_EventScript_YanFight_Text_72:
 # 85 "data/maps/CURSEZONE/scripts.pory"
-	.string "Or IF I should even be sad about that.$"
+	.string "Are these memories happy, or painful?$"
 
 CURSEZONE_EventScript_YanFight_Text_73:
 # 86 "data/maps/CURSEZONE/scripts.pory"
-	.string "Are these memories happy, or painful?$"
+	.string "My head aches just thinking\nabout it.$"
 
 CURSEZONE_EventScript_YanFight_Text_74:
 # 87 "data/maps/CURSEZONE/scripts.pory"
-	.string "My mind is fuzzy just thinking\nabout it.$"
+	.string "So...why bother, eh?$"
 
 CURSEZONE_EventScript_YanFight_Text_75:
 # 88 "data/maps/CURSEZONE/scripts.pory"
-	.string "So...why bother, eh?$"
+	.string "Let's forget about all that for\njust a moment.$"
 
 CURSEZONE_EventScript_YanFight_Text_76:
 # 89 "data/maps/CURSEZONE/scripts.pory"
-	.string "Let's forget about all that for\njust a moment.$"
+	.string "The last spark of our lives...\ndies here.$"
 
 YanIntro::
-# 96 "data/maps/CURSEZONE/scripts.pory"
-	.string "Let's just...have one last fun game.\nAlright, Yin?.$"
+# 95 "data/maps/CURSEZONE/scripts.pory"
+	.string "So let's just...have one last fun game.\nAlright, Yin?$"
 
 YanOutro::
-# 100 "data/maps/CURSEZONE/scripts.pory"
+# 99 "data/maps/CURSEZONE/scripts.pory"
 	.string ".....$"

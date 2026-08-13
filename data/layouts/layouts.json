@@ -103,7 +103,7 @@
     {
       "id": "LAYOUT_LITTLEROOT_TOWN",
       "name": "LittlerootTown_Layout",
-      "width": 20,
+      "width": 44,
       "height": 20,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Petalburg",
@@ -9440,8 +9440,8 @@
     {
       "id": "LAYOUT_WEIRDROOM1",
       "name": "WEIRDROOM1_Layout",
-      "width": 20,
-      "height": 20,
+      "width": 33,
+      "height": 45,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Mauville",
       "border_filepath": "data/layouts/WEIRDROOM1/border.bin",
@@ -9451,7 +9451,7 @@
       "id": "LAYOUT_HUB",
       "name": "HUB_Layout",
       "width": 23,
-      "height": 22,
+      "height": 35,
       "primary_tileset": "gTileset_weirdshit1",
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/HUB/border.bin",
@@ -9471,11 +9471,63 @@
       "id": "LAYOUT_GREYFOREST3",
       "name": "GREYFOREST3_Layout",
       "width": 38,
-      "height": 33,
+      "height": 38,
       "primary_tileset": "gTileset_weirdshit1",
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/GREYFOREST3/border.bin",
       "blockdata_filepath": "data/layouts/GREYFOREST3/map.bin"
+    },
+    {
+      "id": "LAYOUT_DEEPWOODS1",
+      "name": "DEEPWOODS1_Layout",
+      "width": 52,
+      "height": 50,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Rustboro",
+      "border_filepath": "data/layouts/DEEPWOODS1/border.bin",
+      "blockdata_filepath": "data/layouts/DEEPWOODS1/map.bin",
+      "layout_version": "emerald"
+    },
+    {
+      "id": "LAYOUT_GREYFOREST4",
+      "name": "GREYFOREST4_Layout",
+      "width": 6,
+      "height": 12,
+      "primary_tileset": "gTileset_weirdshit1",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/GREYFOREST4/border.bin",
+      "blockdata_filepath": "data/layouts/GREYFOREST4/map.bin"
+    },
+    {
+      "id": "LAYOUT_DEEPWOODS2",
+      "name": "DEEPWOODS2_Layout",
+      "width": 70,
+      "height": 72,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Rustboro",
+      "border_filepath": "data/layouts/DEEPWOODS2/border.bin",
+      "blockdata_filepath": "data/layouts/DEEPWOODS2/map.bin",
+      "layout_version": "emerald"
+    },
+    {
+      "id": "LAYOUT_DEEPWOODS3",
+      "name": "DEEPWOODS3_Layout",
+      "width": 6,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/DEEPWOODS3/border.bin",
+      "blockdata_filepath": "data/layouts/DEEPWOODS3/map.bin"
+    },
+    {
+      "id": "LAYOUT_DEEPWOODS4",
+      "name": "DEEPWOODS4_Layout",
+      "width": 6,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/DEEPWOODS4/border.bin",
+      "blockdata_filepath": "data/layouts/DEEPWOODS4/map.bin"
     }
   ]
 }

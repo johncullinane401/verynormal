@@ -1,0 +1,26 @@
+raw `DEEPWOODS2_MapScripts::
+	.byte 0
+`
+
+script DEEPWOODS2_EventScript_MakeGhost {
+    if (!flag(FLAG_DEEPWOODS_YIN)) {
+        applymovement(1, GhostMoveUp)
+        waitmovement(0)
+        removeobject(1)
+        setflag(FLAG_DEEPWOODS_YIN)
+    }
+    release
+}
+
+movement GhostMoveUp {
+    walk_up
+}
+
+script DEEPWOODS2_EventScript_BugCatcher1 {
+    lockall
+    msgbox("I've been searching everywhere for bug\ntype pokemon.")
+    msgbox("I thought I might find them crawling\naround here.")
+    msgbox("But...there's nobody here.")
+    msgbox("There's nothing here.")
+    releaseall
+}

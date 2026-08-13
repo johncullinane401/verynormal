@@ -1768,3 +1768,13 @@ EventScript_PalletTown_PlayersHouse_2F_TurnOnPC::
 	.include "data/maps/GREYFOREST2/scripts.inc"
 
 	.include "data/maps/GREYFOREST3/scripts.inc"
+
+	.include "data/maps/DEEPWOODS1/scripts.inc"
+
+	.include "data/maps/GREYFOREST4/scripts.inc"
+
+	.include "data/maps/DEEPWOODS2/scripts.inc"
+
+	.include "data/maps/DEEPWOODS3/scripts.inc"
+
+	.include "data/maps/DEEPWOODS4/scripts.inc"

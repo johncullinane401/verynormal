@@ -148,7 +148,12 @@
     "WEIRDROOM1",
     "HUB",
     "GREYFOREST2",
-    "GREYFOREST3"
+    "GREYFOREST3",
+    "DEEPWOODS1",
+    "GREYFOREST4",
+    "DEEPWOODS2",
+    "DEEPWOODS3",
+    "DEEPWOODS4"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",

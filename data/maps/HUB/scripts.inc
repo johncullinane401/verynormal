@@ -27,11 +27,11 @@ HUB_EventScript_MothmanTalk::
 # 17 "data/maps/HUB/scripts.pory"
 	msgbox HUB_EventScript_MothmanTalk_Text_9
 # 18 "data/maps/HUB/scripts.pory"
+	msgbox HUB_EventScript_MothmanTalk_Text_10
+# 19 "data/maps/HUB/scripts.pory"
 	compare VAR_VENOM, 10
 	goto_if_lt HUB_EventScript_MothmanTalk_2
 HUB_EventScript_MothmanTalk_1:
-# 26 "data/maps/HUB/scripts.pory"
-	msgbox HUB_EventScript_MothmanTalk_Text_15
 # 27 "data/maps/HUB/scripts.pory"
 	msgbox HUB_EventScript_MothmanTalk_Text_16
 # 28 "data/maps/HUB/scripts.pory"
@@ -39,8 +39,6 @@ HUB_EventScript_MothmanTalk_1:
 	return
 
 HUB_EventScript_MothmanTalk_2:
-# 19 "data/maps/HUB/scripts.pory"
-	msgbox HUB_EventScript_MothmanTalk_Text_10
 # 20 "data/maps/HUB/scripts.pory"
 	msgbox HUB_EventScript_MothmanTalk_Text_11
 # 21 "data/maps/HUB/scripts.pory"
@@ -49,7 +47,54 @@ HUB_EventScript_MothmanTalk_2:
 	msgbox HUB_EventScript_MothmanTalk_Text_13
 # 23 "data/maps/HUB/scripts.pory"
 	msgbox HUB_EventScript_MothmanTalk_Text_14
+# 24 "data/maps/HUB/scripts.pory"
+	msgbox HUB_EventScript_MothmanTalk_Text_15
 	goto HUB_EventScript_MothmanTalk_1
+
+
+HUB_EventScript_Gatekeeper::
+# 40 "data/maps/HUB/scripts.pory"
+	lockall
+# 41 "data/maps/HUB/scripts.pory"
+	msgbox HUB_EventScript_Gatekeeper_Text_0
+# 42 "data/maps/HUB/scripts.pory"
+	msgbox HUB_EventScript_Gatekeeper_Text_1
+# 43 "data/maps/HUB/scripts.pory"
+	releaseall
+	return
+
+
+HUB_EventScript_LRShortcut::
+# 47 "data/maps/HUB/scripts.pory"
+	lockall
+# 48 "data/maps/HUB/scripts.pory"
+	msgbox HUB_EventScript_LRShortcut_Text_0, MSGBOX_YESNO
+# 49 "data/maps/HUB/scripts.pory"
+	compare VAR_RESULT, YES
+	goto_if_eq HUB_EventScript_LRShortcut_2
+HUB_EventScript_LRShortcut_1:
+# 60 "data/maps/HUB/scripts.pory"
+	releaseall
+	return
+
+HUB_EventScript_LRShortcut_2:
+# 50 "data/maps/HUB/scripts.pory"
+	clearflag FLAG_DREAMING
+# 52 "data/maps/HUB/scripts.pory"
+	goto_if_set FLAG_ROCK_PUZZLE, HUB_EventScript_LRShortcut_5
+HUB_EventScript_LRShortcut_4:
+# 56 "data/maps/HUB/scripts.pory"
+	warp MAP_LITTLEROOT_TOWN, 42, 15
+# 57 "data/maps/HUB/scripts.pory"
+	waitstate
+	goto HUB_EventScript_LRShortcut_1
+
+HUB_EventScript_LRShortcut_5:
+# 53 "data/maps/HUB/scripts.pory"
+	msgbox HUB_EventScript_LRShortcut_Text_1
+# 54 "data/maps/HUB/scripts.pory"
+	clearflag FLAG_ROCK_PUZZLE
+	goto HUB_EventScript_LRShortcut_4
 
 
 HUB_EventScript_MothmanTalk_Text_0:
@@ -74,11 +119,11 @@ HUB_EventScript_MothmanTalk_Text_4:
 
 HUB_EventScript_MothmanTalk_Text_5:
 # 11 "data/maps/HUB/scripts.pory"
-	.string "Mmmmm...what is this?$"
+	.string "I've got things you may find very\nuseful indeed.$"
 
 HUB_EventScript_MothmanTalk_Text_6:
 # 12 "data/maps/HUB/scripts.pory"
-	.string "Money? No no no, this won't do at all.$"
+	.string "Money? No no no, no, that won't\n do at all.$"
 
 HUB_EventScript_MothmanTalk_Text_7:
 # 13 "data/maps/HUB/scripts.pory"
@@ -90,35 +135,51 @@ HUB_EventScript_MothmanTalk_Text_8:
 
 HUB_EventScript_MothmanTalk_Text_9:
 # 17 "data/maps/HUB/scripts.pory"
-	.string "{STR_VAR_1} droplets...$"
+	.string "Let's see...$"
 
 HUB_EventScript_MothmanTalk_Text_10:
-# 19 "data/maps/HUB/scripts.pory"
-	.string "That's all?$"
+# 18 "data/maps/HUB/scripts.pory"
+	.string "{STR_VAR_1} droplets.$"
 
 HUB_EventScript_MothmanTalk_Text_11:
 # 20 "data/maps/HUB/scripts.pory"
-	.string "Bah, it's no goddamn good at all.$"
+	.string "That's all?$"
 
 HUB_EventScript_MothmanTalk_Text_12:
 # 21 "data/maps/HUB/scripts.pory"
-	.string "This is hardly even an appetizer!$"
+	.string "Bah, that's no goddamn good at all.$"
 
 HUB_EventScript_MothmanTalk_Text_13:
 # 22 "data/maps/HUB/scripts.pory"
-	.string "Just forget I said anything.$"
+	.string "This is hardly even an appetizer!$"
 
 HUB_EventScript_MothmanTalk_Text_14:
 # 23 "data/maps/HUB/scripts.pory"
-	.string "You don't have what I seek.$"
+	.string "Just forget I said anything.$"
 
 HUB_EventScript_MothmanTalk_Text_15:
-# 26 "data/maps/HUB/scripts.pory"
-	.string "You're not an OBSERVER in this world.$"
+# 24 "data/maps/HUB/scripts.pory"
+	.string "You don't have what I seek.$"
 
 HUB_EventScript_MothmanTalk_Text_16:
 # 27 "data/maps/HUB/scripts.pory"
 	.string "Eheheh...$"
+
+HUB_EventScript_Gatekeeper_Text_0:
+# 41 "data/maps/HUB/scripts.pory"
+	.string "5 remain.$"
+
+HUB_EventScript_Gatekeeper_Text_1:
+# 42 "data/maps/HUB/scripts.pory"
+	.string "Aren't you forgetting something?$"
+
+HUB_EventScript_LRShortcut_Text_0:
+# 48 "data/maps/HUB/scripts.pory"
+	.string "$"
+
+HUB_EventScript_LRShortcut_Text_1:
+# 53 "data/maps/HUB/scripts.pory"
+	.string "Your hand is no longer on fire.$"
 
 MothmanIntro::
 # 31 "data/maps/HUB/scripts.pory"

@@ -15,8 +15,13 @@
   "connections": [
     {
       "map": "MAP_GREYFOREST2",
-      "offset": 12,
+      "offset": 8,
       "direction": "right"
+    },
+    {
+      "map": "MAP_GREYFOREST4",
+      "offset": 6,
+      "direction": "up"
     }
   ],
   "object_events": [
@@ -30,11 +35,58 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "GREYFOREST3_EventScript_NPCTALK1",
       "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ROXANNE",
+      "x": 5,
+      "y": 13,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "GREYFOREST3_EventScript_NPCTALK2",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_GIRL_1",
+      "x": 21,
+      "y": 29,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "GREYFOREST3_EventScript_NPCTALK3",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_CUTTABLE_TREE",
+      "x": 28,
+      "y": 33,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "GREYFOREST3_EventScript_BurnTree",
+      "flag": "FLAG_BURNTREE"
     }
   ],
-  "warp_events": [],
+  "warp_events": [
+    {
+      "x": 1,
+      "y": 8,
+      "elevation": 0,
+      "dest_map": "MAP_DEEPWOODS2",
+      "dest_warp_id": "0"
+    }
+  ],
   "coord_events": [],
   "bg_events": [
     {

@@ -1020,3 +1020,24 @@ script LittlerootTown_EventScript_Funnysignlol {
     msgbox("If you were looking for a SIGN your\npatch worked, here it is!")
     releaseall
 }
+
+script LittlerootTown_EventScript_HUBWarp {
+	lockall
+	msgbox("You try and focus your eyes on this\npart of the grass, but it\pmakes you feel nauseous.\nYou can't wrap your head around it.")
+	if (flag(FLAG_PORTAL_ACCESS)) {
+		msgbox("Use DREAMREAPER??", MSGBOX_YESNO)
+		if (var(VAR_RESULT) == YES) {
+			setflag(FLAG_HIDE_MAP_NAME_POPUP)
+			fadescreen(FADE_TO_WHITE)
+			setflag(FLAG_DREAMING)
+			delay(200)
+			setvar(VAR_HOTNESS,0)
+			//warp(MAP_WEIRDCAVE1, 9,30)
+			warp(MAP_HUB, 11,32)
+			fadescreen(FADE_FROM_WHITE)
+			
+		}
+	}
+	// warp(MAP_DARKZONE,0,0)
+	releaseall
+}

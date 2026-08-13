@@ -2039,6 +2039,52 @@ LittlerootTown_EventScript_Funnysignlol::
 	return
 
 
+LittlerootTown_EventScript_HUBWarp::
+# 1025 "data/maps/LittlerootTown/scripts.pory"
+	lockall
+# 1026 "data/maps/LittlerootTown/scripts.pory"
+	msgbox LittlerootTown_EventScript_HUBWarp_Text_0
+# 1027 "data/maps/LittlerootTown/scripts.pory"
+	goto_if_set FLAG_PORTAL_ACCESS, LittlerootTown_EventScript_HUBWarp_2
+LittlerootTown_EventScript_HUBWarp_1:
+# 1042 "data/maps/LittlerootTown/scripts.pory"
+	releaseall
+	return
+
+LittlerootTown_EventScript_HUBWarp_2:
+# 1028 "data/maps/LittlerootTown/scripts.pory"
+	msgbox LittlerootTown_EventScript_HUBWarp_Text_1, MSGBOX_YESNO
+# 1029 "data/maps/LittlerootTown/scripts.pory"
+	compare VAR_RESULT, YES
+	goto_if_eq LittlerootTown_EventScript_HUBWarp_4
+	goto LittlerootTown_EventScript_HUBWarp_1
+
+LittlerootTown_EventScript_HUBWarp_4:
+# 1030 "data/maps/LittlerootTown/scripts.pory"
+	setflag FLAG_HIDE_MAP_NAME_POPUP
+# 1031 "data/maps/LittlerootTown/scripts.pory"
+	fadescreen FADE_TO_WHITE
+# 1032 "data/maps/LittlerootTown/scripts.pory"
+	setflag FLAG_DREAMING
+# 1033 "data/maps/LittlerootTown/scripts.pory"
+	delay 200
+# 1034 "data/maps/LittlerootTown/scripts.pory"
+	setvar VAR_HOTNESS, 0
+# 1036 "data/maps/LittlerootTown/scripts.pory"
+	warp MAP_HUB, 11, 32
+# 1037 "data/maps/LittlerootTown/scripts.pory"
+	fadescreen FADE_FROM_WHITE
+	goto LittlerootTown_EventScript_HUBWarp_1
+
+
 LittlerootTown_EventScript_Funnysignlol_Text_0:
 # 1020 "data/maps/LittlerootTown/scripts.pory"
 	.string "If you were looking for a SIGN your\npatch worked, here it is!$"
+
+LittlerootTown_EventScript_HUBWarp_Text_0:
+# 1026 "data/maps/LittlerootTown/scripts.pory"
+	.string "You try and focus your eyes on this\npart of the grass, but it\pmakes you feel nauseous.\nYou can't wrap your head around it.$"
+
+LittlerootTown_EventScript_HUBWarp_Text_1:
+# 1028 "data/maps/LittlerootTown/scripts.pory"
+	.string "Use DREAMREAPER??$"

@@ -75,8 +75,8 @@
 #define FLAG_BURNTREE    0x35 // Unused Flag
 #define FLAG_DEEPWOODS_YIN    0x36 // Unused Flag
 #define FLAG_HAD_FORCED_ENCOUNTER    0x37 // Unused Flag
-#define FLAG_UNUSED_0x038    0x38 // Unused Flag
-#define FLAG_UNUSED_0x039    0x39 // Unused Flag
+#define FLAG_HAS_SHIP_MATERIALS    0x38 // Unused Flag
+#define FLAG_BRINEY_CONVO_1    0x39 // Unused Flag
 #define FLAG_UNUSED_0x03A    0x3A // Unused Flag
 #define FLAG_UNUSED_0x03B    0x3B // Unused Flag
 #define FLAG_UNUSED_0x03C    0x3C // Unused Flag

@@ -1,0 +1,23 @@
+raw `WW_PokemonCenter_MapScripts::
+	.byte 0
+`
+
+script WW_PokemonCenter_EventScript_PC {
+    lockall
+    msgbox("The PC is turned off.")
+    msgbox("It hasn't been used in a long, long\ntime.")
+    msgbox("...and it won't be used again.")
+    releaseall
+}
+
+script WW_PokemonCenter_EventScript_Map {
+    lockall
+    msgbox("It's a map of Earth.")
+    msgbox("...?")
+    releaseall
+}
+
+script WW_PokemonCenter_EventScript_Bookshelf {
+    lockall
+    releaseall
+}

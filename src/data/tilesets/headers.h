@@ -1550,5 +1550,5 @@ const struct Tileset gTileset_weirdshit1 =
     .palettes = gTilesetPalettes_weirdshit1,
     .metatiles = gMetatiles_weirdshit1,
     .metatileAttributes = gMetatileAttributes_weirdshit1,
-    .callback = NULL,
+    .callback = InitTilesetAnim_General,
 };

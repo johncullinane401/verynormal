@@ -9358,7 +9358,7 @@
       "id": "LAYOUT_WEIRDCAVE2",
       "name": "WEIRDCAVE2_Layout",
       "width": 37,
-      "height": 25,
+      "height": 31,
       "primary_tileset": "gTileset_weirdshit1",
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/WEIRDCAVE2/border.bin",
@@ -9522,12 +9522,53 @@
     {
       "id": "LAYOUT_DEEPWOODS4",
       "name": "DEEPWOODS4_Layout",
-      "width": 6,
-      "height": 20,
-      "primary_tileset": "gTileset_General",
+      "width": 12,
+      "height": 18,
+      "primary_tileset": "gTileset_weirdshit1",
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/DEEPWOODS4/border.bin",
       "blockdata_filepath": "data/layouts/DEEPWOODS4/map.bin"
+    },
+    {
+      "id": "LAYOUT_WEIRDCAVEBRIDGE2",
+      "name": "WEIRDCAVEBRIDGE2_Layout",
+      "width": 40,
+      "height": 35,
+      "primary_tileset": "gTileset_weirdshit1",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/WEIRDCAVEBRIDGE2/border.bin",
+      "blockdata_filepath": "data/layouts/WEIRDCAVEBRIDGE2/map.bin"
+    },
+    {
+      "id": "LAYOUT_TRANSITIONAREA1",
+      "name": "TRANSITIONAREA1_Layout",
+      "width": 11,
+      "height": 20,
+      "primary_tileset": "gTileset_weirdshit1",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/TRANSITIONAREA1/border.bin",
+      "blockdata_filepath": "data/layouts/TRANSITIONAREA1/map.bin"
+    },
+    {
+      "id": "LAYOUT_WISTFULWILDERNESS1",
+      "name": "WISTFULWILDERNESS1_Layout",
+      "width": 33,
+      "height": 34,
+      "primary_tileset": "gTileset_weirdshit1",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/WISTFULWILDERNESS1/border.bin",
+      "blockdata_filepath": "data/layouts/WISTFULWILDERNESS1/map.bin"
+    },
+    {
+      "id": "LAYOUT_WW_POKEMON_CENTER",
+      "name": "WW_PokemonCenter_Layout",
+      "width": 14,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonCenter",
+      "border_filepath": "data/layouts/WW_PokemonCenter/border.bin",
+      "blockdata_filepath": "data/layouts/WW_PokemonCenter/map.bin",
+      "layout_version": "emerald"
     }
   ]
 }

@@ -153,7 +153,10 @@
     "GREYFOREST4",
     "DEEPWOODS2",
     "DEEPWOODS3",
-    "DEEPWOODS4"
+    "DEEPWOODS4",
+    "WEIRDCAVEBRIDGE2",
+    "TRANSITIONAREA1",
+    "WISTFULWILDERNESS1"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",
@@ -175,7 +178,8 @@
     "DewfordTown_PokemonCenter_2F",
     "DewfordTown_Gym",
     "DewfordTown_Hall",
-    "DewfordTown_House2"
+    "DewfordTown_House2",
+    "WW_PokemonCenter"
   ],
   "gMapGroup_IndoorLavaridge": [
     "LavaridgeTown_HerbShop",

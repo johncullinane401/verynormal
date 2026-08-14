@@ -1778,3 +1778,11 @@ EventScript_PalletTown_PlayersHouse_2F_TurnOnPC::
 	.include "data/maps/DEEPWOODS3/scripts.inc"
 
 	.include "data/maps/DEEPWOODS4/scripts.inc"
+
+	.include "data/maps/WEIRDCAVEBRIDGE2/scripts.inc"
+
+	.include "data/maps/TRANSITIONAREA1/scripts.inc"
+
+	.include "data/maps/WISTFULWILDERNESS1/scripts.inc"
+
+	.include "data/maps/WW_PokemonCenter/scripts.inc"

@@ -1,0 +1,65 @@
+raw `WEIRDCAVEBRIDGE2_MapScripts::
+	.byte 0
+`
+
+script WEIRDCAVEBRIDGE2_EventScript_Briney {
+    lockall
+    if (!flag(FLAG_BRINEY_CONVO_1)) {
+        msgbox("Hm?")
+        applymovement(1, BrineyMovement1)
+        waitmovement(0)
+        msgbox("Oh!")
+        msgbox("Wahaha! Sorry lad, I didn't see\nya there!")
+        msgbox("...hmmm...nope, never see ya before.")
+        msgbox("'names Briney! Cap'n Briney to you!")
+        msgbox("...hrm? What'dya making that face\nfor?")
+        msgbox("I've been sailin' 'round there parts\nand came ashore at this here village.")
+        msgbox("Ain't a soul still livin' here.")
+        msgbox("It's quite sad, I say.")
+        msgbox("But there's somethin' kinda pretty\n'bout it, don'tcha think?")
+        msgbox("Wahaha! I ain't a poet.")
+        msgbox("Well, anyway, I've been tryna fix up\nthe old girl to get outta here.")
+        msgbox("Some of the hull got torn up pretty\nbad on my way in.")
+        msgbox("Say, you wouldn't happen to\nhave any welding fluid on ya?", MSGBOX_YESNO)
+        if (var(VAR_RESULT) == YES && flag(FLAG_HAS_SHIP_MATERIALS)) {
+            msgbox("Oh my stars! I'm saved! Waha!")
+            msgbox("")
+        } elif (var(VAR_RESULT) == YES && !flag(FLAG_HAS_SHIP_MATERIALS)) {
+            msgbox("You do? Waha!")
+            msgbox("...ah.")
+            msgbox("Yer just yanking my chain,\n aren't ya, kid?")
+            msgbox("Well, I don't know what I was expectin'. Wahaha!")
+        } else {
+            msgbox("Of course not. Why would ya have somethin' like that?")
+            msgbox("Well, if ya find someone who\nmight, let em' know for me, will ya?")
+            msgbox("I'll make it worth yer while!")
+        }
+        msgbox("Just don't dent the ship, alright?")
+        msgbox("She's had her fair share, wahaha!")
+        setflag(FLAG_BRINEY_CONVO_1)
+    } else {
+        msgbox("Ahoy, lad!")
+        msgbox("Say, you wouldn't happen to\nhave any welding fluid on ya?", MSGBOX_YESNO)
+        if (var(VAR_RESULT) == YES && flag(FLAG_HAS_SHIP_MATERIALS)) {
+            msgbox("Oh my stars! I'm saved! Waha!")
+            msgbox("")
+        } elif (var(VAR_RESULT) == YES && !flag(FLAG_HAS_SHIP_MATERIALS)) {
+            msgbox("You do?!")
+            msgbox("...ah.")
+            msgbox("Yer just yanking my chain,\n aren't ya, kid?")
+            msgbox("Well, I don't know what I was expectin'. Wahaha!")
+        } else {
+            msgbox("If ya find someone who\nmight, let em' know for me, will ya?")
+            msgbox("I'll make it worth yer while!")
+        }
+    }
+    
+    releaseall
+}
+
+movement BrineyMovement1 {
+    face_player
+}
+
+
+

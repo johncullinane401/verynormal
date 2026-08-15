@@ -10583,7 +10583,7 @@ const struct ItemInfo gItemsInfo[] =
         .holdEffect = HOLD_EFFECT_RED_CARD,
         .holdEffectParam = 0,
         .description = COMPOUND_STRING(
-            "Yan. It has a phone\n"
+            "'Yan'. It has a phone\n"
             "number, but you\n"
             "don't have a phone."),
         .pocket = POCKET_KEY_ITEMS,

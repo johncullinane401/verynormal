@@ -61,7 +61,7 @@ static void UpdateStairsMovement(s16, s16, s16*, s16*, s16*);
 static void Task_StairWarp(u8);
 static void ForceStairsMovement(u32, s16*, s16*);
 
-static const u8 sText_PlayerAwakens[] = _("You feel a set of instructions echo\nin your skull:\p{UP_ARROW} {LEFT_ARROW} {UP_ARROW} {DOWN_ARROW} {RIGHT_ARROW} {DOWN_ARROW} {UP_ARROW} {DOWN_ARROW} {RIGHT_ARROW} {LEFT_ARROW} {LEFT_ARROW} {PAUSE_UNTIL_PRESS}\p");
+static const u8 sText_PlayerAwakens[] = _("You feel a set of instructions echo\nin your skull:\p{UP_ARROW} {LEFT_ARROW} {UP_ARROW} {DOWN_ARROW} {RIGHT_ARROW} {DOWN_ARROW} {DOWN_ARROW} · {PAUSE_UNTIL_PRESS}\p");
 static const u8 sText_PlayerScurriedToCenter[] = _("{PLAYER} scurried to a POKéMON CENTER,\nprotecting the exhausted and fainted\nPOKéMON from further harm…\p");
 static const u8 sText_PlayerScurriedBackHome[] = _("{PLAYER} scurried back home, protecting\nthe exhausted and fainted POKéMON from\nfurther harm…\p");
 static const u8 sText_PlayerRegroupCenter[] = _("{PLAYER} scurried to a POKéMON CENTER,\nto regroup and reconsider the battle\nstrategy…\p");

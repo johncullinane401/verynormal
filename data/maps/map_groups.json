@@ -156,7 +156,16 @@
     "DEEPWOODS4",
     "WEIRDCAVEBRIDGE2",
     "TRANSITIONAREA1",
-    "WISTFULWILDERNESS1"
+    "WISTFULWILDERNESS1",
+    "LOSTWOODS2",
+    "LOSTWOODS3",
+    "LOSTWOODS4",
+    "LOSTWOODS5",
+    "LOSTWOODS6",
+    "LOSTWOODS7",
+    "LOSTWOODS8",
+    "LOSTWOODS7_TRAP",
+    "LOSTWOODSEND"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",

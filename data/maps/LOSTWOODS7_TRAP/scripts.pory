@@ -1,0 +1,13 @@
+raw `LOSTWOODS7_TRAP_MapScripts::
+	.byte 0
+`
+
+script LOSTWOODS7_TRAP_EventScript_TeleportBack {
+    lockall
+    warp(MAP_DEEPWOODS4, 9, 13)
+    waitstate
+    releaseall
+    lockall
+    msgbox("...there's probably an easier way to do this...")
+    releaseall
+}

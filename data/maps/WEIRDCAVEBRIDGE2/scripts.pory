@@ -30,7 +30,7 @@ script WEIRDCAVEBRIDGE2_EventScript_Briney {
             msgbox("Yer just yanking my chain,\n aren't ya, kid?")
             msgbox("Well, I don't know what I was expectin'. Wahaha!")
         } else {
-            msgbox("Of course not. Why would ya have somethin' like that?")
+            msgbox("Of course not. Why would\nya have somethin' like that?")
             msgbox("Well, if ya find someone who\nmight, let em' know for me, will ya?")
             msgbox("I'll make it worth yer while!")
         }

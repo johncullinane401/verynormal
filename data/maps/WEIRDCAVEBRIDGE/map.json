@@ -15,7 +15,7 @@
   "connections": [
     {
       "map": "MAP_WEIRDCAVE2",
-      "offset": -8,
+      "offset": -14,
       "direction": "right"
     },
     {

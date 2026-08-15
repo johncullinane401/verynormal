@@ -1,0 +1,22 @@
+raw `LOSTWOODS2_MapScripts::
+	.byte 0
+`
+
+script ToTheTrapWithYou {
+    lockall
+    warp(MAP_LOSTWOODS7_TRAP, 9,8)
+    addvar(VAR_EPIC_FAILS, 1)
+    releaseall
+}
+
+script Successful2 {
+    lockall
+    warp(MAP_LOSTWOODS3, 9,8)
+    releaseall
+}
+
+script SetGuessesToZero {
+    lockall
+    setvar(VAR_EPIC_FAILS, 0)
+    releaseall
+}

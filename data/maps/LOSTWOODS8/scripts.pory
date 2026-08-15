@@ -1,0 +1,9 @@
+raw `LOSTWOODS8_MapScripts::
+	.byte 0
+`
+
+script Successful8 {
+	lockall
+	warp(MAP_LOSTWOODSEND,9,10)
+	releaseall
+}

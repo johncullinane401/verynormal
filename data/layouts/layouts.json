@@ -9522,7 +9522,7 @@
     {
       "id": "LAYOUT_DEEPWOODS4",
       "name": "DEEPWOODS4_Layout",
-      "width": 12,
+      "width": 19,
       "height": 18,
       "primary_tileset": "gTileset_weirdshit1",
       "secondary_tileset": "gTileset_Petalburg",
@@ -9569,6 +9569,96 @@
       "border_filepath": "data/layouts/WW_PokemonCenter/border.bin",
       "blockdata_filepath": "data/layouts/WW_PokemonCenter/map.bin",
       "layout_version": "emerald"
+    },
+    {
+      "id": "LAYOUT_LOSTWOODS8",
+      "name": "LOSTWOODS8_Layout",
+      "width": 19,
+      "height": 18,
+      "primary_tileset": "gTileset_weirdshit1",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/LOSTWOODS8/border.bin",
+      "blockdata_filepath": "data/layouts/LOSTWOODS8/map.bin"
+    },
+    {
+      "id": "LAYOUT_LOSTWOODS6",
+      "name": "LOSTWOODS6_Layout",
+      "width": 19,
+      "height": 18,
+      "primary_tileset": "gTileset_weirdshit1",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/LOSTWOODS6/border.bin",
+      "blockdata_filepath": "data/layouts/LOSTWOODS6/map.bin"
+    },
+    {
+      "id": "LAYOUT_LOSTWOODS2",
+      "name": "LOSTWOODS2_Layout",
+      "width": 19,
+      "height": 18,
+      "primary_tileset": "gTileset_weirdshit1",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/LOSTWOODS2/border.bin",
+      "blockdata_filepath": "data/layouts/LOSTWOODS2/map.bin"
+    },
+    {
+      "id": "LAYOUT_LOSTWOODS7",
+      "name": "LOSTWOODS7_Layout",
+      "width": 19,
+      "height": 18,
+      "primary_tileset": "gTileset_weirdshit1",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/LOSTWOODS7/border.bin",
+      "blockdata_filepath": "data/layouts/LOSTWOODS7/map.bin"
+    },
+    {
+      "id": "LAYOUT_LOSTWOODS5",
+      "name": "LOSTWOODS5_Layout",
+      "width": 19,
+      "height": 18,
+      "primary_tileset": "gTileset_weirdshit1",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/LOSTWOODS5/border.bin",
+      "blockdata_filepath": "data/layouts/LOSTWOODS5/map.bin"
+    },
+    {
+      "id": "LAYOUT_LOSTWOODS4",
+      "name": "LOSTWOODS4_Layout",
+      "width": 19,
+      "height": 18,
+      "primary_tileset": "gTileset_weirdshit1",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/LOSTWOODS4/border.bin",
+      "blockdata_filepath": "data/layouts/LOSTWOODS4/map.bin"
+    },
+    {
+      "id": "LAYOUT_LOSTWOODS3",
+      "name": "LOSTWOODS3_Layout",
+      "width": 19,
+      "height": 18,
+      "primary_tileset": "gTileset_weirdshit1",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/LOSTWOODS3/border.bin",
+      "blockdata_filepath": "data/layouts/LOSTWOODS3/map.bin"
+    },
+    {
+      "id": "LAYOUT_LOSTWOODS7_TRAP",
+      "name": "LOSTWOODS7_TRAP_Layout",
+      "width": 19,
+      "height": 18,
+      "primary_tileset": "gTileset_weirdshit1",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/LOSTWOODS7_TRAP/border.bin",
+      "blockdata_filepath": "data/layouts/LOSTWOODS7_TRAP/map.bin"
+    },
+    {
+      "id": "LAYOUT_LOSTWOODSEND",
+      "name": "LOSTWOODSEND_Layout",
+      "width": 19,
+      "height": 18,
+      "primary_tileset": "gTileset_weirdshit1",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/LOSTWOODSEND/border.bin",
+      "blockdata_filepath": "data/layouts/LOSTWOODSEND/map.bin"
     }
   ]
 }

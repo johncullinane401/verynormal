@@ -1,3 +1,9 @@
 raw `DEEPWOODS4_MapScripts::
 	.byte 0
 `
+
+script Successful1 {
+	lockall
+	warp(MAP_LOSTWOODS2,9,8)
+	releaseall
+}

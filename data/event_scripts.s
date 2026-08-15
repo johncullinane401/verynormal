@@ -1786,3 +1786,21 @@ EventScript_PalletTown_PlayersHouse_2F_TurnOnPC::
 	.include "data/maps/WISTFULWILDERNESS1/scripts.inc"
 
 	.include "data/maps/WW_PokemonCenter/scripts.inc"
+
+	.include "data/maps/LOSTWOODS8/scripts.inc"
+
+	.include "data/maps/LOSTWOODS6/scripts.inc"
+
+	.include "data/maps/LOSTWOODS2/scripts.inc"
+
+	.include "data/maps/LOSTWOODS7/scripts.inc"
+
+	.include "data/maps/LOSTWOODS5/scripts.inc"
+
+	.include "data/maps/LOSTWOODS4/scripts.inc"
+
+	.include "data/maps/LOSTWOODS3/scripts.inc"
+
+	.include "data/maps/LOSTWOODS7_TRAP/scripts.inc"
+
+	.include "data/maps/LOSTWOODSEND/scripts.inc"

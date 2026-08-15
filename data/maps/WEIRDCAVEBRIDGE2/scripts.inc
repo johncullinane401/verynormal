@@ -230,7 +230,7 @@ WEIRDCAVEBRIDGE2_EventScript_Briney_Text_19:
 
 WEIRDCAVEBRIDGE2_EventScript_Briney_Text_20:
 # 33 "data/maps/WEIRDCAVEBRIDGE2/scripts.pory"
-	.string "Of course not. Why would ya have somethin' like that?$"
+	.string "Of course not. Why would\nya have somethin' like that?$"
 
 WEIRDCAVEBRIDGE2_EventScript_Briney_Text_21:
 # 34 "data/maps/WEIRDCAVEBRIDGE2/scripts.pory"

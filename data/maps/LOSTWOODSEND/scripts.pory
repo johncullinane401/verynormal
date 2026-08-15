@@ -1,0 +1,11 @@
+raw `LOSTWOODSEND_MapScripts::
+	.byte 0
+`
+
+script LOSTWOODSEND_EventScript_Ghost {
+    lockall
+    msgbox("Welcome, {PLAYER}.")
+    msgbox("Let me join you.")
+    msgbox("Together, we will bleed this world dry.")
+    releaseall
+}

@@ -2,10 +2,16 @@ raw `LOSTWOODSEND_MapScripts::
 	.byte 0
 `
 
-script LOSTWOODSEND_EventScript_Ghost {
+script ObtainNewFriend_Lust {
     lockall
-    msgbox("Welcome, {PLAYER}.")
+    msgbox("Greetings, {PLAYER}.")
+    msgbox("You've done well to make it here.")
     msgbox("Let me join you.")
-    msgbox("Together, we will bleed this world dry.")
+    msgbox("Together, we will absolve this world\nof its debts.")
+    givemon(SPECIES_PYUKUMUKU,65)
+    playfanfare(MUS_OBTAIN_ITEM)
+    msgbox("Asmodia joined you.")
+    removeobject(1)
+    setflag(GOT_ASMODIA)
     releaseall
 }

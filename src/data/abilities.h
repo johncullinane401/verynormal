@@ -412,8 +412,8 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
 
     [ABILITY_TRUANT] =
     {
-        .name = _("Truant"),
-        .description = COMPOUND_STRING("Moves only every two turns."),
+        .name = _("Apathy"),
+        .description = COMPOUND_STRING("Why bother."),
         .aiRating = -2,
         .cantBeOverwritten = TRUE,
     },
@@ -473,8 +473,8 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
 
     [ABILITY_GUTS] =
     {
-        .name = _("Guts"),
-        .description = COMPOUND_STRING("Ups Attack if suffering."),
+        .name = _("Anger"),
+        .description = COMPOUND_STRING("You will suffer as I have."),
         .aiRating = 6,
     },
 
@@ -792,8 +792,8 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
 
     [ABILITY_AFTERMATH] =
     {
-        .name = _("Aftermath"),
-        .description = COMPOUND_STRING("Fainting damages the foe."),
+        .name = _("STARCROSSED LUST"),
+        .description = COMPOUND_STRING("Don't leave me alone...please."),
         .aiRating = 5,
     },
 
@@ -935,8 +935,8 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
 
     [ABILITY_PICKPOCKET] =
     {
-        .name = _("Pickpocket"),
-        .description = COMPOUND_STRING("Steals the foe's held item."),
+        .name = _("It's Mine!!!"),
+        .description = COMPOUND_STRING("We used to share everything."),
         .aiRating = 3,
     },
 
@@ -1647,8 +1647,8 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
 
     [ABILITY_INNARDS_OUT] =
     {
-        .name = _("Innards Out"),
-        .description = COMPOUND_STRING("Hurts foe when defeated."),
+        .name = _("Starcrossed Love"),
+        .description = COMPOUND_STRING("Don't leave me alone...please."),
         .aiRating = 5,
     },
 
@@ -2266,8 +2266,8 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
 
     [ABILITY_SUPREME_OVERLORD] =
     {
-        .name = _("Supreme Overlord"),
-        .description = COMPOUND_STRING("Inherits fallen's strength."),
+        .name = _("I Miss You"),
+        .description = COMPOUND_STRING("I can't lose you again."),
         .aiRating = 6,
     },
 

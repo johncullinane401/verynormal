@@ -77,11 +77,11 @@
 #define FLAG_HAD_FORCED_ENCOUNTER    0x37 // Unused Flag
 #define FLAG_HAS_SHIP_MATERIALS    0x38 // Unused Flag
 #define FLAG_BRINEY_CONVO_1    0x39 // Unused Flag
-#define FLAG_UNUSED_0x03A    0x3A // Unused Flag
-#define FLAG_UNUSED_0x03B    0x3B // Unused Flag
-#define FLAG_UNUSED_0x03C    0x3C // Unused Flag
-#define FLAG_UNUSED_0x03D    0x3D // Unused Flag
-#define FLAG_UNUSED_0x03E    0x3E // Unused Flag
+#define GOT_ASMODIA    0x3A // Unused Flag
+#define GOT_SATA    0x3B // Unused Flag
+#define GOT_LEVIATHA   0x3C // Unused Flag
+#define GOT_BELPHALGA    0x3D // Unused Flag
+#define GOT_MAMMONA    0x3E // Unused Flag
 #define FLAG_UNUSED_0x03F    0x3F // Unused Flag
 #define FLAG_UNUSED_0x040    0x40 // Unused Flag
 #define FLAG_UNUSED_0x041    0x41 // Unused Flag

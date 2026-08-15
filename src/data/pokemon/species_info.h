@@ -224,6 +224,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
        .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
        .levelUpLearnset = sGhostLevelUpLearnset,
     },
+    
 
     /*
     [SPECIES_NONE] =

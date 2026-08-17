@@ -82,7 +82,7 @@
 #define GOT_LEVIATHA   0x3C // Unused Flag
 #define GOT_BELPHALGA    0x3D // Unused Flag
 #define GOT_MAMMONA    0x3E // Unused Flag
-#define FLAG_UNUSED_0x03F    0x3F // Unused Flag
+#define FLAG_BURNTREE_2    0x3F // Unused Flag
 #define FLAG_UNUSED_0x040    0x40 // Unused Flag
 #define FLAG_UNUSED_0x041    0x41 // Unused Flag
 #define FLAG_UNUSED_0x042    0x42 // Unused Flag

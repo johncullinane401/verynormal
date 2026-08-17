@@ -492,12 +492,12 @@
               {
                 "min_level": 4,
                 "max_level": 4,
-                "species": "SPECIES_TAILLOW"
+                "species": "SPECIES_POOCHYENA"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_TAILLOW"
+                "species": "SPECIES_ZIGZAGOON"
               },
               {
                 "min_level": 4,
@@ -1871,7 +1871,7 @@
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_TAILLOW"
+                "species": "SPECIES_ZIGZAGOON"
               },
               {
                 "min_level": 5,
@@ -1881,7 +1881,7 @@
               {
                 "min_level": 6,
                 "max_level": 6,
-                "species": "SPECIES_TAILLOW"
+                "species": "SPECIES_ZIGZAGOON"
               },
               {
                 "min_level": 6,
@@ -36651,7 +36651,7 @@
           "map": "MAP_DEEPWOODS3",
           "base_label": "gDEEPWOODS3",
           "land_mons": {
-            "encounter_rate": 1,
+            "encounter_rate": 2,
             "mons": [
               {
                 "min_level": 99,

@@ -9659,6 +9659,16 @@
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/LOSTWOODSEND/border.bin",
       "blockdata_filepath": "data/layouts/LOSTWOODSEND/map.bin"
+    },
+    {
+      "id": "LAYOUT_DARKCAVE1",
+      "name": "DARKCAVE1_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_weirdshit1",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/DARKCAVE1/border.bin",
+      "blockdata_filepath": "data/layouts/DARKCAVE1/map.bin"
     }
   ]
 }

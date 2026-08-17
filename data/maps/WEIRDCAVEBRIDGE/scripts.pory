@@ -1,0 +1,20 @@
+raw `WEIRDCAVEBRIDGE_MapScripts::
+	.byte 0
+`
+
+
+script WEIRDCAVEBRIDGE_EventScript_BurnTree {
+    lockall
+    msgbox("At first glance, this tree looks\nlike it could be cut down.")
+    msgbox("However, now that you are closer,\nyou realize that is impossible.")
+    msgbox("This tree must burn.")
+    if (flag(FLAG_ROCK_PUZZLE)) {
+        msgbox("Your burning hand grazes the tree\nand it bursts into flames.")
+        msgbox("...")
+        removeobject(1)
+        setflag(FLAG_BURNTREE_2)
+        clearflag(FLAG_ROCK_PUZZLE)
+        msgbox("Your hand fire extinguishes,\nits purpose fulfilled.")
+    }
+    releaseall
+}

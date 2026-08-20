@@ -5,8 +5,7 @@ raw `WW_PokemonCenter_MapScripts::
 script WW_PokemonCenter_EventScript_PC {
     lockall
     msgbox("The PC is turned off.")
-    msgbox("It hasn't been used in a long, long\ntime.")
-    msgbox("...and it won't be used again.")
+    msgbox("There's a thick layer of dust\ncovering the keyboard.")
     releaseall
 }
 
@@ -20,4 +19,183 @@ script WW_PokemonCenter_EventScript_Map {
 script WW_PokemonCenter_EventScript_Bookshelf {
     lockall
     releaseall
+}
+
+script WW_PC_Yan {
+    lockall
+    faceplayer
+    if (!flag(FLAG_TALKED_TO_YAN_PC)) {
+        setflag(FLAG_TALKED_TO_YAN_PC)
+        setflag(FLAG_DEFAULT_YAN)
+        setvar(VAR_GIRL_OPTION, 1)
+        setvar(VAR_YOU_OPTION, 1)
+        msgbox("Oh, hey, {PLAYER}.")
+        msgbox("Good to see you again.")
+        msgbox("I'm just taking a break from\ninvestigating.")
+        msgbox("Every second I'm in this...'world'...")
+        msgbox("I feel like my body is shutting down.")
+        msgbox("I'm so tired...hah.")
+        msgbox("I'll be staying here for a bit...\nwhile I rest up.")
+        msgbox("In the meantime, I'd be happy to\ntalk to you.")
+    } else {
+        msgbox("Hey, {PLAYER}.")
+    }
+    msgbox("What'd you want to talk about?")
+    if (flag(FLAG_DEFAULT_YAN)) {
+        dynmultichoice(0,0, FALSE, 4, 0, DYN_MULTICHOICE_CB_NONE, "Business Card", "This Place", "This World", "Girl", "You")
+    }
+
+    faceplayer
+    switch (var(VAR_RESULT)) {
+        case 0:
+            if (!flag(FLAG_TALKED_BUSINESS_CARD)) {
+                msgbox("Ah, the card?")
+                msgbox("That's my special business card.")
+                msgbox("It even has a watermark!")
+                setflag(FLAG_TALKED_BUSINESS_CARD)
+            } elif (flag(FLAG_TALKED_BUSINESS_CARD) && !flag(FLAG_TALKED_BUSINESS_CARD_2)) {
+                msgbox("Hm?")
+                msgbox("What, still on the card?")
+                msgbox("Yes, I know it's great.")
+                msgbox("You've got good taste, my friend!")
+                setflag(FLAG_TALKED_BUSINESS_CARD_2)
+            } else {
+                msgbox("(Seems there's nothing left to discuss.)")
+            }
+            releaseall
+            face_right
+            break
+        case 1:
+            if (!flag(FLAG_TALKED_MAP)){
+                msgbox("This place?")
+                msgbox("Well, I'm sorry to say, I don't\nreally have an answer for you.")
+                msgbox("But if I had to take a guess...hmm.")
+                msgbox("Well, obviously, it resembles a\nPokemon Center.")
+                msgbox("But, it's, uh, not, obviously.")
+                msgbox("It doesn't seem dangerous or\nanything, though.")
+                msgbox("Seems safe enough for taking a nap.")
+                msgbox("..oh! There is something interesting,\nactually.")
+                msgbox("Why don't you take a look at the map?")
+                msgbox("The one on the wall, I mean.")
+                setflag(FLAG_TALKED_MAP)
+            }
+            elif (flag(FLAG_TALKED_MAP) && !flag(FLAG_TALKED_MAP_2)) {
+                msgbox("See what I mean?")
+                msgbox("It quite odd...it looks familiar,\nbut it's definitely not Hoenn.")
+                msgbox("Well, if you were asking about this\ntown, I'm afraid I know even less.")
+                msgbox("It's got a nostalgic vibe, I guess.\nIt's pretty cute.")
+                msgbox("God, I feel like I'm...missing\nsomething,y'know?")
+                msgbox("Maybe if I hang out here longer,\nI might make a connection.")
+                msgbox("For now, let's just enjoy this\nlittle safe room, eheh.")
+                setflag(FLAG_TALKED_MAP_2)
+            } 
+            else {
+                msgbox("(Seems there's nothing left to discuss.)")
+            }
+            releaseall
+            face_right
+            break
+        case 2:
+            msgbox("This world, huh?")
+            msgbox("I'm sorry, {PLAYER}, but I don't have\nany real answers for you.")
+            msgbox("I know as much as you do.")
+            releaseall
+            face_right
+            break
+        case 3:
+            if (var(VAR_GIRL_OPTION) >= 2 && var(VAR_GIRL_OPTION) < 4) {
+                msgbox("(This option is Unavailable.)")
+                addvar(VAR_GIRL_OPTION, 1)
+            } elif (var(VAR_GIRL_OPTION) >= 4 && var(VAR_GIRL_OPTION) < 6) {
+                msgbox("(This OPTION IS UNAVAILABLE.)")
+                addvar(VAR_GIRL_OPTION, 1)
+            } elif (var(VAR_GIRL_OPTION) >= 6 && var(VAR_GIRL_OPTION) < 8) {
+                msgbox("(This OPTION IS UNAVAILABLE.\nThis OPTION IS UNAVAILABLE.This\nOPTION IS UNAVAILABLE.This OPTION IS\nUNAVAILABLE.This OPTION IS UNAVAILABLE.)")
+                addvar(VAR_GIRL_OPTION, 1)
+            } elif (var(VAR_GIRL_OPTION) >= 8 && var(VAR_GIRL_OPTION) < 10) {
+                msgbox("(Thi.s Opt.ion is Unavai.lable.)")
+                addvar(VAR_GIRL_OPTION, 1)
+            }
+            elif (var(VAR_GIRL_OPTION) == 10) {
+                msgbox("(...your words get through.)")
+                msgbox("...a girl?")
+                msgbox("I think...I know what you are\ntalking about.")
+                msgbox("So, you have seen her.")
+                msgbox("The woman in gray.")
+                msgbox("That phantom girl...of my dreams.")
+                msgbox("I don't know her name...or who she is.")
+                msgbox("I don't even know if she's real.")
+                msgbox("But if you've seen her too, well...")
+                msgbox("Maybe I'm not losing my mind after\nall.")
+                msgbox("I don't think I've told you this,\nand I don't know how else it\pwould come up...")
+                msgbox("But I dream in black and white.")
+                msgbox("It's a real phenomenon.")
+                msgbox("All of them are dreadful and...\nquiet. And hollow.")
+                msgbox("But in all my dreams, and in my\nfaintest of memories, I see her.")
+                msgbox("There's no color in her face, of course.")
+                msgbox("She's always watching from a distance,\njust far enough from my reach.")
+                msgbox("Recently, though, she appeared to me\nagain.")
+                msgbox("And this time, things were different.")
+                msgbox("Once again, I found myself in a garden\nof gray and white flowers.")
+                msgbox("And again, this girl was standing\nacross from me.")
+                msgbox("Her hair was still jet black,\nbut this time.")
+                msgbox("Her face was full of color and life.\nAnd her smile...it was warm.")
+                msgbox("She's beautiful...")
+                msgbox("...I need to find her.")
+                msgbox("Then maybe, I'll understand.")
+                msgbox("What all this means. Why I'm here.")
+                msgbox("...thanks for talking to me, {PLAYER}.")
+                msgbox("I think this is a mystery I'll\nhave to work on myself.")
+                setvar(VAR_GIRL_OPTION, 99)
+            } elif (var(VAR_GIRL_OPTION) == 99) {
+                msgbox("(Seems there's nothing left to discuss.)")
+                msgbox("...hope you're satisfied.")
+            } else {
+                msgbox("(This option is unavailable.)")
+                addvar(VAR_GIRL_OPTION, 1)
+            }
+            
+            releaseall
+            face_right
+            break
+        case 4:
+            if (var(VAR_YOU_OPTION) == 1) {
+                msgbox("Me?")
+                msgbox("What, didja forget my name already?")
+                msgbox("I'm Yan!")
+                msgbox("And it's my job to figure out what's\ngoing on.")
+                msgbox("Y'know, with the weirdness and all.")
+                addvar(VAR_YOU_OPTION, 1)
+                
+            } elif (var(VAR_YOU_OPTION) == 2) {
+                msgbox("...I just told you, dude.")
+                msgbox("Yan.")
+                msgbox("I'm a detective.")
+                msgbox("Don't make me investigate your case of\nmemory loss, now!")
+                addvar(VAR_YOU_OPTION, 1)
+            } elif (var(VAR_YOU_OPTION) == 3) {
+                msgbox("...")
+                msgbox("Alright, your kind of starting\nto creep me out now.")
+                msgbox("Are you feeling alright, {PLAYER}?")
+                msgbox("You know my name.")
+                addvar(VAR_YOU_OPTION, 1)
+            }
+            releaseall
+            face_right
+            break
+        case 127:
+            msgbox("See you, then!")
+            msgbox("Come back if anything happens, alright?")
+            releaseall
+            face_right
+            break
+        applymovement(1, yanfaceright)
+        waitmovement(0)
+        releaseall
+    }
+    
+}
+
+movement yanfaceright {
+    face_right
 }

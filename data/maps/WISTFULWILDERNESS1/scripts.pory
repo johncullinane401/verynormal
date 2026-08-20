@@ -8,3 +8,22 @@ script WISTFULWILDERNESS1_EventScipt_Sign {
     msgbox("                                          ")
     releaseall
 }
+
+script WISTFULWILDERNESS1_EventScript_PokemonCenter {
+    lockall
+    random(25)
+    if (var(VAR_RESULT) == 20 && flag(FLAG_ENTERED_PC) == TRUE) {
+        warp(MAP_DARKCAVE1, 25,19)
+        releaseall
+        lockall
+        waitstate
+    } else {
+        fadescreen(FADE_TO_BLACK)
+        warp(MAP_WW_POKEMON_CENTER, 6, 8)
+        setflag(FLAG_ENTERED_PC)
+        waitstate
+        fadescreen(FADE_FROM_BLACK)
+    }
+    releaseall
+    }
+    

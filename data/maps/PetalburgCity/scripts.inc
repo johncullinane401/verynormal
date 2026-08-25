@@ -1792,7 +1792,7 @@ PetalburgCity_EventScript_Yan1_Text_2:
 
 PetalburgCity_EventScript_Yan1_Text_3:
 # 782 "data/maps/PetalburgCity/scripts.pory"
-	.string "{COLOR BLUE}Huh. Well, I've never seen you.\n{COLOR GREEN}Anyway...$"
+	.string "{COLOR BLUE}Oh, don't lie to me.$"
 
 PetalburgCity_EventScript_Yan1_Text_4:
 # 784 "data/maps/PetalburgCity/scripts.pory"

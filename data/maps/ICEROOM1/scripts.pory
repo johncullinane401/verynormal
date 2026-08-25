@@ -1,0 +1,53 @@
+raw `ICEROOM1_MapScripts::
+	.byte 0
+`
+
+
+script ICEROOM1_EventScript_Boat {
+	lockall
+	msgbox("A seaworthy vessel.")
+	msgbox("Ready for the return journey?", MSGBOX_YESNO)
+	if (var(VAR_RESULT) == YES) {
+		warp(MAP_SCHOOLROOF1_INSIDE, 4,4)
+		waitstate
+	} else {
+		msgbox("Understandable.")
+	}
+	releaseall
+}
+
+script ICEROOM1_EventScript_Girl1 {
+    lockall
+    msgbox("I'm trying to get her to play\nwith me, but she hates my Duskull doll!")
+    msgbox("Maybe he's a little creepy...")
+    msgbox("But Duskull's my favorite...\nhe's such a cutie!")
+    releaseall
+}
+
+script ICEROOM1_EventScript_Girl2 {
+    lockall
+    msgbox("God, why is she so persistent?")
+    msgbox("I don't even want to play out here.\nIt's too cold.")
+    msgbox("      , let's just go back inside!")
+    releaseall
+}
+
+script ICEROOM1_EventScript_Duskull {
+    lockall
+    msgbox("It's a plush toy resembling the\nPokemon Duskull.")
+    if (flag(FLAG_DUSKULL) == FALSE) {
+        msgbox("....................")
+        msgbox("......................................cute.")
+        setflag(FLAG_DUSKULL)
+    }
+    releaseall
+}
+
+script ICEROOM1_EventScript_HideGirls {
+    lockall
+    setflag(FLAG_HIDE_GIRLS)
+    removeobject(4)
+    removeobject(2)
+    removeobject(3)
+    releaseall
+}

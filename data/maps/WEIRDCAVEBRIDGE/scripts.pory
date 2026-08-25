@@ -15,6 +15,7 @@ script WEIRDCAVEBRIDGE_EventScript_BurnTree {
         setflag(FLAG_BURNTREE_2)
         clearflag(FLAG_ROCK_PUZZLE)
         msgbox("Your hand fire extinguishes,\nits purpose fulfilled.")
+        setvar(VAR_HOTNESS, 0)
     }
     releaseall
 }

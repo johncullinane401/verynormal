@@ -3,29 +3,42 @@ raw  `HUB_MapScripts::
 `
 
 script HUB_EventScript_MothmanTalk {
-    msgbox("Well...what a delicious surprise.")
-    msgbox("And I thought nobody would find me here.")
-    msgbox("Keheheh...what joy!")
-    msgbox("Ah, where are my manners. You may call me\nMOTHMAN.")
-    msgbox("Please, do not be alarmed. I merely\nwish to sell my services to heroes like you.")
-    msgbox("I've got things you may find very\nuseful indeed.")
-    msgbox("Money? No no no, no, that won't\n do at all.")
-    msgbox("I have no need for material garbage\nsuch as that.")
-
+    lockall
     buffernumberstring(STR_VAR_1, VAR_VENOM)
-    msgbox("You have something else I seek...")
-    msgbox("Let's see...")
-    msgbox("{STR_VAR_1} droplets.")
-    if (var(VAR_VENOM) < 10) {
-        msgbox("That's all?")
-        msgbox("Bah, that's no goddamn good at all.")
-        msgbox("This is hardly even an appetizer!")
-        msgbox("Just forget I said anything.")
-        msgbox("You don't have what I seek.")
+    msgbox("I'm looking for Bug-Type Pokémon!")
+    msgbox("Let's see here...")
+    msgbox("You've encountered {STR_VAR_1} Bug-Type Pokémon!")
+    msgbox("Whoa! Incredible!")
+
+    if (var(VAR_VENOM) > 10) {
+        msgbox("....")
+        msgbox("Oh?")
+        msgbox("Well...what a delicious surprise.")
+        msgbox("You're quite the interesting\nfellow.")
+        msgbox("Yes, yes.")
+        msgbox("Finally, I can stop with that\nridiculous voice...")
+        msgbox("Ah, where are my manners. You may call me\nMOTHMAN.")
+        msgbox("Please, do not be alarmed. I merely\nwish to sell my services to heroes like you.")
+        msgbox("I've got things you may find very\nuseful indeed.")
+        msgbox("Money? No no no, no, that won't\n do at all.")
+        msgbox("I have no need for material garbage\nsuch as that.")
+
+        buffernumberstring(STR_VAR_1, VAR_VENOM)
+        msgbox("You have something else I seek...")
+        msgbox("Let's see...")
+        msgbox("{STR_VAR_1} droplets.")
+        if (var(VAR_VENOM) < 10) {
+            msgbox("That's all?")
+            msgbox("Bah, that's no goddamn good at all.")
+            msgbox("This is hardly even an appetizer!")
+            msgbox("Just forget I said anything.")
+            msgbox("You don't have what I seek.")
+        }
     }
-   
-    msgbox("Eheheh...")
-    trainerbattle_single(TRAINER_JARED, MothmanIntro, MothmanOutro)
+    
+        msgbox("Eheheh...")
+        trainerbattle_single(TRAINER_JARED, MothmanIntro, MothmanOutro)
+    releaseall
 }
 
 text MothmanIntro {
@@ -50,8 +63,9 @@ script HUB_EventScript_LRShortcut {
         clearflag(FLAG_DREAMING)
 	
 	    if (flag(FLAG_ROCK_PUZZLE)) {
-            msgbox("Your hand is no longer on fire.")
+            msgbox("The power of teleportation has\nextinguished your hand fire.")
             clearflag(FLAG_ROCK_PUZZLE)
+            setvar(VAR_HOTNESS, 0)
 	    }
         warp(MAP_LITTLEROOT_TOWN,42,15)
         waitstate

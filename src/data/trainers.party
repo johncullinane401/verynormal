@@ -1498,30 +1498,76 @@ Level: 42
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_VITO ===
-Name: VITO
-Class: Cooltrainer
-Pic: Cooltrainer M
+Name: BRINEY
+Class: Sailor
+Pic: Sailor
 Gender: Male
 Music: Cool
 Items: Full Restore
 Double Battle: No
 AI: Basic Trainer
 
-Dodrio
-Level: 42
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Kingdra  
+Ability: Swift Swim  
+Level: 70  
+EVs: 4 HP / 252 SpA / 252 Spe  
+Modest Nature  
+IVs: 0 Atk  
+- Disable  
+- Ice Beam  
+- Waterfall  
+- Dragon Dance  
 
-Kadabra
-Level: 42
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Pelipper  
+Ability: Keen Eye  
+Level: 70  
+IVs: 0 Atk  
+- Hydro Pump  
+- Agility  
+- Toxic  
+- Supersonic  
 
-Electrode
-Level: 42
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Golduck  
+Ability: Damp  
+Level: 70  
+EVs: 4 Atk / 252 SpA / 252 Spe  
+Hasty Nature  
+- Body Slam  
+- Calm Mind  
+- Ice Beam  
+- Psychic  
 
-Shiftry
-Level: 42
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Mantine  
+Ability: Swift Swim  
+Level: 70  
+EVs: 4 Atk / 252 SpA / 252 Spe  
+Mild Nature  
+- Rock Slide  
+- Surf  
+- Bubble Beam  
+- Double Team  
+
+Lapras (M)  
+Ability: Water Absorb  
+Level: 70  
+EVs: 252 HP / 252 SpA / 4 SpD  
+Modest Nature  
+IVs: 0 Atk  
+- Curse  
+- Hydro Pump  
+- Perish Song  
+- Thunderbolt  
+
+Sharpedo  
+Ability: Rough Skin  
+Level: 70  
+EVs: 4 HP / 252 SpA / 252 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Crunch  
+- Blizzard  
+- Roar  
+- Surf  
 
 === TRAINER_OWEN ===
 Name: OWEN

@@ -22,11 +22,10 @@ script GREYFOREST3_EventScript_NPCTALK2 {
 
 script GREYFOREST3_EventScript_NPCTALK3 {
     lockall
-    msgbox("This place used to be beautiful\nand full of life.")
+    msgbox("This place used to be beautiful,\nand full of life.")
     msgbox("Now the trees have been drained\nof their color.")
     msgbox("The cool grass and soil has been\nreduced to coarse sand.")
     msgbox("It's such a shame.")
-    msgbox("And it's all your fault!")
     releaseall
 }
 
@@ -42,6 +41,7 @@ script GREYFOREST3_EventScript_BurnTree {
         setflag(FLAG_BURNTREE)
         clearflag(FLAG_ROCK_PUZZLE)
         msgbox("Your hand fire extinguishes,\nits purpose fulfilled.")
+        setvar(VAR_HOTNESS, 0)
     }
     releaseall
 }

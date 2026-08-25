@@ -15,7 +15,7 @@ WEIRDCAVEBRIDGE_EventScript_BurnTree::
 # 11 "data/maps/WEIRDCAVEBRIDGE/scripts.pory"
 	goto_if_set FLAG_ROCK_PUZZLE, WEIRDCAVEBRIDGE_EventScript_BurnTree_2
 WEIRDCAVEBRIDGE_EventScript_BurnTree_1:
-# 19 "data/maps/WEIRDCAVEBRIDGE/scripts.pory"
+# 20 "data/maps/WEIRDCAVEBRIDGE/scripts.pory"
 	releaseall
 	return
 
@@ -32,6 +32,8 @@ WEIRDCAVEBRIDGE_EventScript_BurnTree_2:
 	clearflag FLAG_ROCK_PUZZLE
 # 17 "data/maps/WEIRDCAVEBRIDGE/scripts.pory"
 	msgbox WEIRDCAVEBRIDGE_EventScript_BurnTree_Text_5
+# 18 "data/maps/WEIRDCAVEBRIDGE/scripts.pory"
+	setvar VAR_HOTNESS, 0
 	goto WEIRDCAVEBRIDGE_EventScript_BurnTree_1
 
 

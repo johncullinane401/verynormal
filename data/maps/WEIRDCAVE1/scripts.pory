@@ -11,6 +11,7 @@ script WEIRDCAVE1_EventScript_ReturnSign {
 		if (flag(FLAG_ROCK_PUZZLE)) {
 			clearflag(FLAG_ROCK_PUZZLE)
 			msgbox("The power of teleportation has\nextinguished your hand fire.")
+			setvar(VAR_HOTNESS, 0)
 		}
 		
 	}

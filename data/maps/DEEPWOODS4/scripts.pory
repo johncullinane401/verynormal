@@ -7,3 +7,12 @@ script Successful1 {
 	warp(MAP_LOSTWOODS2,9,8)
 	releaseall
 }
+
+script DEEPWOODS4_EventScript_BroJustGiveUp {
+	lockall
+	if (var(VAR_EPIC_FAILS) >= 3) {
+		msgbox("There's probably an easier way to do\nthis...")
+		setvar(VAR_EPIC_FAILS, 0)
+	}
+	releaseall
+}

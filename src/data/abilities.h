@@ -793,7 +793,7 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
     [ABILITY_AFTERMATH] =
     {
         .name = _("STARCROSSED LUST"),
-        .description = COMPOUND_STRING("Don't leave me alone...please."),
+        .description = COMPOUND_STRING("Don't leave me alone..please."),
         .aiRating = 5,
     },
 
@@ -1648,7 +1648,7 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
     [ABILITY_INNARDS_OUT] =
     {
         .name = _("Starcrossed Love"),
-        .description = COMPOUND_STRING("Don't leave me alone...please."),
+        .description = COMPOUND_STRING("Don't leave me alone..please."),
         .aiRating = 5,
     },
 

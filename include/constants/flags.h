@@ -93,9 +93,9 @@
 #define FLAG_TALKED_WORLD    0x47 // Unused Flag
 #define FLAG_TALKED_GIRL    0x48 // Unused Flag
 #define FLAG_LOOKED_AT_MAP    0x49 // Unused Flag
-#define FLAG_UNUSED_0x04A    0x4A // Unused Flag
-#define FLAG_UNUSED_0x04B    0x4B // Unused Flag
-#define FLAG_UNUSED_0x04C    0x4C // Unused Flag
+#define FLAG_BRINEY_RETURN    0x4A // Unused Flag
+#define FLAG_DUSKULL    0x4B // Unused Flag
+#define FLAG_HIDE_GIRLS    0x4C // Unused Flag
 #define FLAG_UNUSED_0x04D    0x4D // Unused Flag
 #define FLAG_UNUSED_0x04E    0x4E // Unused Flag
 #define FLAG_UNUSED_0x04F    0x4F // Unused Flag

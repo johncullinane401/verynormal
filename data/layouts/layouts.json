@@ -9430,8 +9430,8 @@
     {
       "id": "LAYOUT_SCHOOLROOF1",
       "name": "SCHOOLROOF1_Layout",
-      "width": 22,
-      "height": 23,
+      "width": 86,
+      "height": 66,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Mauville",
       "border_filepath": "data/layouts/SCHOOLROOF1/border.bin",
@@ -9532,8 +9532,8 @@
     {
       "id": "LAYOUT_WEIRDCAVEBRIDGE2",
       "name": "WEIRDCAVEBRIDGE2_Layout",
-      "width": 40,
-      "height": 35,
+      "width": 51,
+      "height": 42,
       "primary_tileset": "gTileset_weirdshit1",
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/WEIRDCAVEBRIDGE2/border.bin",
@@ -9654,7 +9654,7 @@
       "id": "LAYOUT_LOSTWOODSEND",
       "name": "LOSTWOODSEND_Layout",
       "width": 19,
-      "height": 18,
+      "height": 28,
       "primary_tileset": "gTileset_weirdshit1",
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/LOSTWOODSEND/border.bin",
@@ -9669,6 +9669,28 @@
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/DARKCAVE1/border.bin",
       "blockdata_filepath": "data/layouts/DARKCAVE1/map.bin"
+    },
+    {
+      "id": "LAYOUT_SCHOOLROOF1_INSIDE",
+      "name": "SCHOOLROOF1_Inside_Layout",
+      "width": 10,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/SCHOOLROOF1_Inside/border.bin",
+      "blockdata_filepath": "data/layouts/SCHOOLROOF1_Inside/map.bin",
+      "layout_version": "emerald"
+    },
+    {
+      "id": "LAYOUT_ICEROOM1",
+      "name": "ICEROOM1_Layout",
+      "width": 26,
+      "height": 30,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_SootopolisGym",
+      "border_filepath": "data/layouts/ICEROOM1/border.bin",
+      "blockdata_filepath": "data/layouts/ICEROOM1/map.bin",
+      "layout_version": "emerald"
     }
   ]
 }

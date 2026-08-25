@@ -166,7 +166,9 @@
     "LOSTWOODS8",
     "LOSTWOODS7_TRAP",
     "LOSTWOODSEND",
-    "DARKCAVE1"
+    "DARKCAVE1",
+    "SCHOOLROOF1_Inside",
+    "ICEROOM1"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",

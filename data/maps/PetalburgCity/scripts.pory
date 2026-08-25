@@ -779,7 +779,7 @@ script PetalburgCity_EventScript_Yan1 {
         if (var(VAR_RESULT) == YES) {
             msgbox("{COLOR RED}I knew it!")
         } else {
-            msgbox("{COLOR BLUE}Huh. Well, I've never seen you.\n{COLOR GREEN}Anyway...")
+            msgbox("{COLOR BLUE}Oh, don't lie to me.")
         }
         msgbox("{COLOR RED}Take this!")
         msgbox("The woman throws a small card\nat you. Catch it?", MSGBOX_YESNO) 

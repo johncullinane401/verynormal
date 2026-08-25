@@ -1806,3 +1806,7 @@ EventScript_PalletTown_PlayersHouse_2F_TurnOnPC::
 	.include "data/maps/LOSTWOODSEND/scripts.inc"
 
 	.include "data/maps/DARKCAVE1/scripts.inc"
+
+	.include "data/maps/SCHOOLROOF1_Inside/scripts.inc"
+
+	.include "data/maps/ICEROOM1/scripts.inc"

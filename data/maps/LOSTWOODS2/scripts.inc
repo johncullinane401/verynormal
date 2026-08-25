@@ -24,13 +24,3 @@ Successful2::
 	releaseall
 	return
 
-
-SetGuessesToZero::
-# 19 "data/maps/LOSTWOODS2/scripts.pory"
-	lockall
-# 20 "data/maps/LOSTWOODS2/scripts.pory"
-	setvar VAR_EPIC_FAILS, 0
-# 21 "data/maps/LOSTWOODS2/scripts.pory"
-	releaseall
-	return
-

@@ -634,6 +634,7 @@ extern const u8 gText_None[];
 extern const u8 gText_RibbonsVar1[];
 extern const u8 gText_OneDash[];
 extern const u8 gText_TwoDashes[];
+extern const u8 gText_RoseNo[];
 
 extern const u8 *const gBagMenu_ReturnToStrings[];
 extern const u8 *const gPyramidBagMenu_ReturnToStrings[];

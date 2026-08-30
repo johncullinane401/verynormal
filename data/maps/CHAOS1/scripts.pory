@@ -1,0 +1,10 @@
+raw `CHAOS1_MapScripts::
+	.byte 0
+`
+
+script CHAOS1_EventScript_Silence {
+    lockall
+    fadeoutbgm(0)
+    delay(200)
+    releaseall
+}

@@ -193,6 +193,8 @@ static void DisplayCannotUseItemMessage(u8 taskId, bool8 isUsingRegisteredKeyIte
     {
         if (CurrentBattlePyramidLocation() == PYRAMID_LOCATION_NONE)
             DisplayItemMessage(taskId, FONT_NORMAL, gStringVar4, CloseItemMessage);
+        else if (FlagGet(FLAG_IN_PUNISHMENT))
+            DisplayItemMessageInBattlePyramid(taskId, gText_RoseNo, Task_CloseBattlePyramidBagMessage);
         else
             DisplayItemMessageInBattlePyramid(taskId, gText_DadsAdvice, Task_CloseBattlePyramidBagMessage);
     }
@@ -204,7 +206,11 @@ static void DisplayCannotUseItemMessage(u8 taskId, bool8 isUsingRegisteredKeyIte
 
 void DisplayDadsAdviceCannotUseItemMessage(u8 taskId, bool8 isUsingRegisteredKeyItemOnField)
 {
+    if (FlagGet(FLAG_IN_PUNISHMENT)) {
+        DisplayCannotUseItemMessage(taskId, isUsingRegisteredKeyItemOnField, gText_RoseNo);
+    } else {
     DisplayCannotUseItemMessage(taskId, isUsingRegisteredKeyItemOnField, gText_DadsAdvice);
+    }
 }
 
 static void DisplayCannotDismountBikeMessage(u8 taskId, bool8 isUsingRegisteredKeyItemOnField)

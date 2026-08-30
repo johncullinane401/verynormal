@@ -411,3 +411,9 @@ const u16 gMetatileAttributes_HallOfFame[] = INCBIN_U16("data/tilesets/secondary
 
 const u16 gMetatiles_weirdshit1[] = INCBIN_U16("data/tilesets/primary/weirdshit_1/metatiles.bin");
 const u16 gMetatileAttributes_weirdshit1[] = INCBIN_U16("data/tilesets/primary/weirdshit_1/metatile_attributes.bin");
+
+const u16 gMetatiles_weirdshit2[] = INCBIN_U16("data/tilesets/primary/weirdshit_2/metatiles.bin");
+const u16 gMetatileAttributes_weirdshit2[] = INCBIN_U16("data/tilesets/primary/weirdshit_2/metatile_attributes.bin");
+
+const u16 gMetatiles_sootopolisfuckedup[] = INCBIN_U16("data/tilesets/secondary/sootopolisfuckedup/metatiles.bin");
+const u16 gMetatileAttributes_sootopolisfuckedup[] = INCBIN_U16("data/tilesets/secondary/sootopolisfuckedup/metatile_attributes.bin");

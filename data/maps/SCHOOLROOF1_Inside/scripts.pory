@@ -7,7 +7,7 @@ script SCHOOLROOF1_Inside_EventScript_Boat {
 	msgbox("A seaworthy vessel.")
 	msgbox("Climb aboard?", MSGBOX_YESNO)
 	if (var(VAR_RESULT) == YES) {
-		warp(MAP_ICEROOM1, 8,24)
+		warp(MAP_ICEROOM1, 25,26)
 		waitstate
 	} else {
 		msgbox("Understandable.")

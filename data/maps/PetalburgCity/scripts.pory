@@ -840,7 +840,8 @@ script PetalburgCity_EventScript_Yan1 {
         setflag(FLAG_FIRST_YAN_MEETING)
         delay(50)
         msgbox("You aren't going to call.")
-        clearflag(FLAG_DISABLE_CATCHING)
+        
+		clearflag(FLAG_SECOND_YAN_MEETING)
         releaseall
     }
 }

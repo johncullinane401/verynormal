@@ -42,7 +42,7 @@ script WW_PC_Yan {
     }
     msgbox("What'd you want to talk about?")
     if (flag(FLAG_DEFAULT_YAN)) {
-        dynmultichoice(0,0, FALSE, 4, 0, DYN_MULTICHOICE_CB_NONE, "Business Card", "This Place", "This World", "Girl", "You")
+        dynmultichoice(0,0, FALSE, 4, 0, DYN_MULTICHOICE_CB_NONE, "Business Card", "This Place", "This World", "Silver Girl", "You", "What Should I Do Now")
     }
 
     faceplayer
@@ -104,7 +104,7 @@ script WW_PC_Yan {
             break
         case 3:
             if (var(VAR_GIRL_OPTION) >= 2 && var(VAR_GIRL_OPTION) < 4) {
-                msgbox("(This option is Unavailable.)")
+                msgbox("(This option is unavailable.)")
                 addvar(VAR_GIRL_OPTION, 1)
             } elif (var(VAR_GIRL_OPTION) >= 4 && var(VAR_GIRL_OPTION) < 6) {
                 msgbox("(This OPTION IS UNAVAILABLE.)")
@@ -112,11 +112,18 @@ script WW_PC_Yan {
             } elif (var(VAR_GIRL_OPTION) >= 6 && var(VAR_GIRL_OPTION) < 8) {
                 msgbox("(This OPTION IS UNAVAILABLE.\nThis OPTION IS UNAVAILABLE.This\nOPTION IS UNAVAILABLE.This OPTION IS\nUNAVAILABLE.This OPTION IS UNAVAILABLE.)")
                 addvar(VAR_GIRL_OPTION, 1)
-            } elif (var(VAR_GIRL_OPTION) >= 8 && var(VAR_GIRL_OPTION) < 10) {
+            } elif (var(VAR_GIRL_OPTION) >= 8 && var(VAR_GIRL_OPTION) <= 9) {
                 msgbox("(Thi.s Opt.ion is Unavai.lable.)")
                 addvar(VAR_GIRL_OPTION, 1)
             }
             elif (var(VAR_GIRL_OPTION) == 10) {
+                msgbox("WARNING!\pThe following option will\ndelete all saved data.{PAUSE_UNTIL_PRESS}")
+                msgbox("Is it really okay to delete all saved\ndata? This cannot be undone.{PAUSE_UNTIL_PRESS}", MSGBOX_YESNO)
+                if (var(VAR_RESULT) == NO) {
+                    releaseall
+                    face_right
+                    break
+                }
                 msgbox("(...your words get through.)")
                 msgbox("...a girl?")
                 msgbox("I think...I know what you are\ntalking about.")
@@ -146,12 +153,13 @@ script WW_PC_Yan {
                 msgbox("What all this means. Why I'm here.")
                 msgbox("...thanks for talking to me, {PLAYER}.")
                 msgbox("I think this is a mystery I'll\nhave to work on myself.")
+                addvar(VAR_VENOM, 5)
                 setvar(VAR_GIRL_OPTION, 99)
             } elif (var(VAR_GIRL_OPTION) == 99) {
                 msgbox("(Seems there's nothing left to discuss.)")
-                msgbox("...hope you're satisfied.")
+                msgbox("...I hope you're satisfied.")
             } else {
-                msgbox("(This option is unavailable.)")
+                msgbox("(This optioin is unavailable.)")
                 addvar(VAR_GIRL_OPTION, 1)
             }
             
@@ -172,6 +180,8 @@ script WW_PC_Yan {
                 msgbox("Yan.")
                 msgbox("I'm a detective.")
                 msgbox("Don't make me investigate your case of\nmemory loss, now!")
+                msgbox("...eheh. Bad joke.")
+                msgbox("....mm.")
                 addvar(VAR_YOU_OPTION, 1)
             } elif (var(VAR_YOU_OPTION) == 3) {
                 msgbox("...")
@@ -179,9 +189,46 @@ script WW_PC_Yan {
                 msgbox("Are you feeling alright, {PLAYER}?")
                 msgbox("You know my name.")
                 addvar(VAR_YOU_OPTION, 1)
+            } else {
+                msgbox("(Seems there's nothing left to discuss.)")
             }
             releaseall
             face_right
+            break
+        case 5:
+            // note to self for future me: For this incredibly bad bit of code, 
+            // make sure the most recent instructions are higher up in the if statement.
+            msgbox("What to do, eh?")
+            msgbox("Hmmmm....")
+            if (flag(GOT_MAMMONA)) {
+                msgbox("...what?")
+            }
+            elif (flag(GOT_ASMODIA)) {
+                msgbox("So you found something in\nthe depths of the forest?")
+                msgbox("Ho ho, now we're talking!")
+                msgbox("..what, you're not gonna tell me?")
+                msgbox("Well, I'll have to go try looking\nmyself.")
+                msgbox("Last time I went though, I got\nlost...")
+                msgbox("But that's no obstacle to someone like\nme!")
+                msgbox("...oh, sorry, you wanted some\nadvice.")
+                msgbox("Hmmm, well...")
+                msgbox("One thing I've noticed is there\nmight be multiple entrances to this place.")
+                msgbox("You probably got here from Route 103,\nright?")
+                msgbox("Well, if there are other entrances,\nthey might lead to different places.")
+                msgbox("That's my current theory.")
+                msgbox("Maybe that's helpful?")
+            } else {
+                msgbox("Well, exploration is the most fun\npart of adventure, right?")
+                msgbox("Why don't you try and see if you\ncan, y'know, get stuck?")
+                msgbox("Find a dead end or something.")
+                msgbox("I'm not even trying to be vague or\nanything, by the way.")
+                msgbox("I genuinely just got here.")
+                msgbox("I don't really\nhave anything else to share.")
+                msgbox("Except for that thing with the\nrocks, I guess.")
+                msgbox("So just, go crazy, dude!")
+                msgbox("If you don't go out of your way to explore,\nyou'll never learn anything!")
+            }
+            releaseall
             break
         case 127:
             msgbox("See you, then!")

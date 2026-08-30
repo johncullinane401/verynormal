@@ -22,7 +22,7 @@ SCHOOLROOF1_Inside_EventScript_Boat_1:
 
 SCHOOLROOF1_Inside_EventScript_Boat_2:
 # 10 "data/maps/SCHOOLROOF1_Inside/scripts.pory"
-	warp MAP_ICEROOM1, 8, 24
+	warp MAP_ICEROOM1, 25, 26
 # 11 "data/maps/SCHOOLROOF1_Inside/scripts.pory"
 	waitstate
 	goto SCHOOLROOF1_Inside_EventScript_Boat_1

@@ -1179,6 +1179,9 @@ script Route104_EventScript_Portal {
 		msgbox("Use DREAMREAPER??", MSGBOX_YESNO)
 		if (var(VAR_RESULT) == YES) {
 			fadescreen(FADE_TO_WHITE)
+			warp(MAP_FLOWERFIELD, 9, 11)
+			setflag(FLAG_DREAMING)
+        	waitstate
 			delay(200)
 			fadescreen(FADE_FROM_WHITE)
 		}

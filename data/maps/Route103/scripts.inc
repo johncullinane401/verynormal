@@ -892,8 +892,10 @@ Route103_EventScript_YinLastDialogue_5:
 # 466 "data/maps/Route103/scripts.pory"
 	setflag FLAG_YIN_WARP_2
 # 467 "data/maps/Route103/scripts.pory"
-	warp MAP_ROUTE103, 4, 1
+	clearflag FLAG_DISABLE_CATCHING
 # 468 "data/maps/Route103/scripts.pory"
+	warp MAP_ROUTE103, 4, 1
+# 469 "data/maps/Route103/scripts.pory"
 	releaseall
 	return
 
@@ -922,33 +924,33 @@ Route103_EventScript_YinLastDialogue_9:
 
 
 Route103_EventScript_RemoveYinlings::
-# 472 "data/maps/Route103/scripts.pory"
-	lockall
 # 473 "data/maps/Route103/scripts.pory"
-	setflag FLAG_REMOVE_YINLINGS
+	lockall
 # 474 "data/maps/Route103/scripts.pory"
-	removeobject 22
+	setflag FLAG_REMOVE_YINLINGS
 # 475 "data/maps/Route103/scripts.pory"
-	removeobject 23
+	removeobject 22
 # 476 "data/maps/Route103/scripts.pory"
-	removeobject 24
+	removeobject 23
 # 477 "data/maps/Route103/scripts.pory"
-	removeobject 25
+	removeobject 24
 # 478 "data/maps/Route103/scripts.pory"
-	removeobject 26
+	removeobject 25
 # 479 "data/maps/Route103/scripts.pory"
+	removeobject 26
+# 480 "data/maps/Route103/scripts.pory"
 	releaseall
 	return
 
 
 YinFaceRight::
-# 483 "data/maps/Route103/scripts.pory"
+# 484 "data/maps/Route103/scripts.pory"
 	face_right
 	return
 
 
 YinFaceLeft::
-# 487 "data/maps/Route103/scripts.pory"
+# 488 "data/maps/Route103/scripts.pory"
 	face_left
 	return
 

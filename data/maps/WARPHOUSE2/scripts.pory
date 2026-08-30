@@ -1,0 +1,12 @@
+raw `WARPHOUSE2_MapScripts::
+	.byte 0
+`
+
+script WARPHOUSE2_EventScript_Exit {
+    lockall
+    fadescreen(FADE_TO_BLACK)
+    warp(MAP_SCHOOLROOF1, 26, 13)
+    waitstate
+    fadescreen(FADE_FROM_BLACK)
+    releaseall
+}

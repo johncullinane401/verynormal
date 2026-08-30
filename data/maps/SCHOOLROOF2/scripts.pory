@@ -1,0 +1,73 @@
+raw `SCHOOLROOF2_MapScripts::
+	.byte 0
+`
+
+movement BrineyMove1 {
+	walk_up * 13
+}
+
+movement BrineyMove2{
+	face_down
+	walk_down * 9
+}
+
+script BRINEYENCOUNTERLAST {
+	lockall
+	msgbox("Now, hold on just a minute, lad.")
+	addobject(3)
+	applymovement(3, BrineyMove1)
+	waitmovement(3)
+	msgbox("I've been looking for ya since\nya lent me that welding fluid.")
+	msgbox("Thanks to ya, I was able to repair\nthe old hull.")
+	msgbox("The ship, she floats nice and smooth\nnow.")
+	msgbox("Couldnt've found better stuff meself.")
+	msgbox("...On that note...")
+	msgbox("Lad, I have to ask ya.")
+	msgbox("Where'd ya get this?")
+	msgbox("Don't think I'm stupid enough\nto not recognize me own signature.")
+	msgbox("...odd, ain't it?")
+	msgbox("...")
+	msgbox("You won't talk now, eh?")
+	msgbox("Don't be afraid, kid.")
+	msgbox("I don't quite know what\nyou've been doing, but it can't be good.")
+	msgbox("I can even see that...creature,\nya got waiting over there.")
+	msgbox("It's not too late to turn back\nnow, kid.")
+	msgbox("So just...walk away, lad.",  MSGBOX_YESNO)
+
+	if (var(VAR_RESULT) == YES) {
+		msgbox("Aye, a good choice.")
+		msgbox("Just forget about this...thing.")
+		msgbox("There's more to do here in this place.")
+		msgbox("I'll show ya.")
+		msgbox("We can ride on me boat,\nshare a few tales.")
+		msgbox("I'm sure ya got quite a\nfew of your own!")
+		msgbox("Come on, lad.")
+		applymovement(3, BrineyMove2)
+		waitmovement(1)
+	} else {
+		msgbox("...afraid you'd say that.")
+		msgbox("Well...")
+		setvar(VAR_0x8004, 3)
+		goto(SCHOOLROOF1_EventScript_BrineyBattle)
+	}
+	releaseall
+}
+
+script BRINEYRETURNTO {
+	lockall
+	msgbox("...ha.")
+	msgbox("Of course...ya couldn't just listen.")
+}
+
+text BrineyIntro {
+	"Some lessons...just need to be\ntaught the hard way, I s'pose!"
+}
+
+text BrineyOutro {
+	"...aye."
+}
+
+script SCHOOLROOF1_EventScript_BrineyBattle {
+	trainerbattle_single(TRAINER_VITO, BrineyIntro, BrineyOutro)
+	releaseall
+}

@@ -125,6 +125,56 @@ HUB_EventScript_LRShortcut_5:
 	goto HUB_EventScript_LRShortcut_4
 
 
+HUB_EventScript_Lust::
+# 78 "data/maps/HUB/scripts.pory"
+	lockall
+# 79 "data/maps/HUB/scripts.pory"
+	msgbox HUB_EventScript_Lust_Text_0
+# 80 "data/maps/HUB/scripts.pory"
+	releaseall
+	return
+
+
+HUB_EventScript_Wrath::
+# 84 "data/maps/HUB/scripts.pory"
+	lockall
+# 85 "data/maps/HUB/scripts.pory"
+	msgbox HUB_EventScript_Wrath_Text_0
+# 86 "data/maps/HUB/scripts.pory"
+	releaseall
+	return
+
+
+HUB_EventScript_Greed::
+# 90 "data/maps/HUB/scripts.pory"
+	lockall
+# 91 "data/maps/HUB/scripts.pory"
+	msgbox HUB_EventScript_Greed_Text_0
+# 92 "data/maps/HUB/scripts.pory"
+	releaseall
+	return
+
+
+HUB_EventScript_Envy::
+# 96 "data/maps/HUB/scripts.pory"
+	lockall
+# 97 "data/maps/HUB/scripts.pory"
+	msgbox HUB_EventScript_Envy_Text_0
+# 98 "data/maps/HUB/scripts.pory"
+	releaseall
+	return
+
+
+HUB_EventScript_Sloth::
+# 102 "data/maps/HUB/scripts.pory"
+	lockall
+# 103 "data/maps/HUB/scripts.pory"
+	msgbox HUB_EventScript_Sloth_Text_0
+# 104 "data/maps/HUB/scripts.pory"
+	releaseall
+	return
+
+
 HUB_EventScript_MothmanTalk_Text_0:
 # 8 "data/maps/HUB/scripts.pory"
 	.string "I'm looking for Bug-Type Pokémon!$"
@@ -236,6 +286,26 @@ HUB_EventScript_LRShortcut_Text_0:
 HUB_EventScript_LRShortcut_Text_1:
 # 66 "data/maps/HUB/scripts.pory"
 	.string "The power of teleportation has\nextinguished your hand fire.$"
+
+HUB_EventScript_Lust_Text_0:
+# 79 "data/maps/HUB/scripts.pory"
+	.string "At the sunlit forest's dead end,\na sinner waits for you.$"
+
+HUB_EventScript_Wrath_Text_0:
+# 85 "data/maps/HUB/scripts.pory"
+	.string "In a sweltering ring of magma,\na sinner waits for you.$"
+
+HUB_EventScript_Greed_Text_0:
+# 91 "data/maps/HUB/scripts.pory"
+	.string "On the lonely island drenched in tears,\na sinner waits for you.$"
+
+HUB_EventScript_Envy_Text_0:
+# 97 "data/maps/HUB/scripts.pory"
+	.string "At the spire of a special building,\na sinner waits for you.$"
+
+HUB_EventScript_Sloth_Text_0:
+# 103 "data/maps/HUB/scripts.pory"
+	.string "In the furthest, murkiest depths of a\ndream, a sinner waits for you.$"
 
 MothmanIntro::
 # 44 "data/maps/HUB/scripts.pory"

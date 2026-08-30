@@ -1,0 +1,81 @@
+raw `FLOWERFIELD_MapScripts::
+	.byte 0
+`
+
+script FLOWERFIELD_EventScript_WarpEnter {
+    lockall
+    msgbox("  ?", MSGBOX_YESNO)
+    if (var(VAR_RESULT) == YES) {
+        warp(MAP_ROUTE104, 31, 54)
+        clearflag(FLAG_DREAMING)
+        waitstate
+    }
+    releaseall
+}
+
+script FLOWERFIELD_EventScript_PinkFlower {
+    lockall
+    msgbox("A lonely pink flower lies here.")
+    msgbox("What do you want to do?")
+    dynmultichoice(0,0, FALSE, 4, 0, DYN_MULTICHOICE_CB_NONE, "Touch it", "Stomp it", "Smell it", "Nothing")
+    switch(var(VAR_RESULT)) {
+        case 0:
+            msgbox("You reach out and touch the flower.")
+            msgbox("The petals are soft.")
+            break
+        case 1:
+            msgbox("You raise your foot above the flower.")
+            msgbox("You get a really bad feeling about\ndoing this.")
+            msgbox("Stomp on the flower?", MSGBOX_YESNO)
+            if (var(VAR_RESULT) == YES) {
+                delay(100)
+                msgbox(".........{PAUSE_UNTIL_PRESS}")
+                msgbox("The flower seems unaffected.")
+                msgbox("But it's the message that counts.")
+                setflag(FLAG_STOMPED_FLOWER)
+                if (!flag(FLAG_STOMPED_FLOWER)) {
+                    addvar(VAR_VENOM, 10)
+                }
+                
+            }
+            break
+        case 2:
+            msgbox("You lower your head and smell the\nflower.")
+            msgbox("It smells like cotton candy.")
+            break
+        default:
+            break
+    }
+    releaseall
+}
+
+script FLOWERFIELD_EventScript_WhiteFlower {
+    lockall
+    msgbox("A lonely white flower lies here.")
+    msgbox("What do you want to do?")
+    dynmultichoice(0,0, FALSE, 4, 0, DYN_MULTICHOICE_CB_NONE, "Touch it", "Stomp it", "Smell it", "Nothing")
+    switch(var(VAR_RESULT)) {
+        case 0:
+            msgbox("You reach out and touch the flower.")
+            msgbox("The petals are tense.")
+            break
+        case 1:
+            msgbox("You raise your foot above the flower.")
+            msgbox("Stomp on the flower?", MSGBOX_YESNO)
+            if (var(VAR_RESULT) == YES) {
+                if (flag(FLAG_STOMPED_FLOWER)) {
+                    setflag(FLAG_IN_PUNISHMENT)
+                    warp(MAP_CHAOS1, 6,26)
+                }
+            }
+            break
+        case 2:
+            msgbox("You lower your head and smell the\nflower.")
+            msgbox("It smells like nothing.")
+            break
+        default:
+            break
+    }
+    releaseall
+
+}

@@ -2349,7 +2349,7 @@ Route104_EventScript_Portal::
 # 1178 "data/maps/Route104/scripts.pory"
 	goto_if_set FLAG_PORTAL_ACCESS, Route104_EventScript_Portal_2
 Route104_EventScript_Portal_1:
-# 1187 "data/maps/Route104/scripts.pory"
+# 1190 "data/maps/Route104/scripts.pory"
 	releaseall
 	return
 
@@ -2365,8 +2365,14 @@ Route104_EventScript_Portal_4:
 # 1181 "data/maps/Route104/scripts.pory"
 	fadescreen FADE_TO_WHITE
 # 1182 "data/maps/Route104/scripts.pory"
-	delay 200
+	warp MAP_FLOWERFIELD, 9, 11
 # 1183 "data/maps/Route104/scripts.pory"
+	setflag FLAG_DREAMING
+# 1184 "data/maps/Route104/scripts.pory"
+	waitstate
+# 1185 "data/maps/Route104/scripts.pory"
+	delay 200
+# 1186 "data/maps/Route104/scripts.pory"
 	fadescreen FADE_FROM_WHITE
 	goto Route104_EventScript_Portal_1
 

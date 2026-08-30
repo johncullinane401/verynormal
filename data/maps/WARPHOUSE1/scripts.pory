@@ -1,0 +1,20 @@
+raw `WARPHOUSE1_MapScripts::
+	.byte 0
+`
+
+script WARPHOUSE1_EventScript_Exit {
+    lockall
+    fadescreen(FADE_TO_BLACK)
+    warp(MAP_GREYFOREST1, 1, 20)
+    waitstate
+    fadescreen(FADE_FROM_BLACK)
+    releaseall
+}
+
+script WARPHOUSE_EVENTSCRIPT_TV {
+    lockall
+    msgbox("It's your favorite show!")
+    msgbox("...oh, wait.")
+    msgbox("No, it's just TV static.")
+    releaseall
+}

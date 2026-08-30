@@ -1810,3 +1810,15 @@ EventScript_PalletTown_PlayersHouse_2F_TurnOnPC::
 	.include "data/maps/SCHOOLROOF1_Inside/scripts.inc"
 
 	.include "data/maps/ICEROOM1/scripts.inc"
+
+	.include "data/maps/ICEROOM2/scripts.inc"
+
+	.include "data/maps/SCHOOLROOF2/scripts.inc"
+
+	.include "data/maps/WARPHOUSE1/scripts.inc"
+
+	.include "data/maps/WARPHOUSE2/scripts.inc"
+
+	.include "data/maps/CHAOS1/scripts.inc"
+
+	.include "data/maps/FLOWERFIELD/scripts.inc"

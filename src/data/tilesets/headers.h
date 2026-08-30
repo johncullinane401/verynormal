@@ -1552,3 +1552,25 @@ const struct Tileset gTileset_weirdshit1 =
     .metatileAttributes = gMetatileAttributes_weirdshit1,
     .callback = InitTilesetAnim_General,
 };
+
+const struct Tileset gTileset_weirdshit2 =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_weirdshit2,
+    .palettes = gTilesetPalettes_weirdshit2,
+    .metatiles = gMetatiles_weirdshit2,
+    .metatileAttributes = gMetatileAttributes_weirdshit2,
+    .callback = NULL,
+};
+
+const struct Tileset gTileset_sootopolisfuckedup =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_sootopolisfuckedup,
+    .palettes = gTilesetPalettes_sootopolisfuckedup,
+    .metatiles = gMetatiles_sootopolisfuckedup,
+    .metatileAttributes = gMetatileAttributes_sootopolisfuckedup,
+    .callback = NULL,
+};

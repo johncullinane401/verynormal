@@ -96,9 +96,9 @@
 #define FLAG_BRINEY_RETURN    0x4A // Unused Flag
 #define FLAG_DUSKULL    0x4B // Unused Flag
 #define FLAG_HIDE_GIRLS    0x4C // Unused Flag
-#define FLAG_UNUSED_0x04D    0x4D // Unused Flag
-#define FLAG_UNUSED_0x04E    0x4E // Unused Flag
-#define FLAG_UNUSED_0x04F    0x4F // Unused Flag
+#define FLAG_BEACH_GIRL    0x4D // Unused Flag
+#define FLAG_ICE_ROCK_1    0x4E // Unused Flag
+#define FLAG_ICE_ROCK_2    0x4F // Unused Flag
 
 // Scripts
 #define FLAG_HIDE_SKY_PILLAR_TOP_RAYQUAZA_STILL  0x50
@@ -106,8 +106,8 @@
 #define FLAG_RESCUED_BIRCH                       0x52
 #define FLAG_LEGENDARIES_IN_SOOTOPOLIS           0x53
 
-#define FLAG_UNUSED_0x054                    0x54  // Unused Flag
-#define FLAG_UNUSED_0x055                    0x55  // Unused Flag
+#define FLAG_STOMPED_FLOWER                    0x54  // Unused Flag
+#define FLAG_IN_PUNISHMENT                   0x55  // Unused Flag
 
 #define FLAG_HIDE_CONTEST_POKE_BALL          0x56  // Always set after new game, object it hides is added directly
 #define FLAG_MET_RIVAL_MOM                   0x57

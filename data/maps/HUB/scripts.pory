@@ -73,3 +73,33 @@ script HUB_EventScript_LRShortcut {
     }
     releaseall
 }
+
+script HUB_EventScript_Lust {
+    lockall
+    msgbox("At the sunlit forest's dead end,\na sinner waits for you.")
+    releaseall
+}
+
+script HUB_EventScript_Wrath {
+    lockall
+    msgbox("In a sweltering ring of magma,\na sinner waits for you.")
+    releaseall
+}
+
+script HUB_EventScript_Greed {
+    lockall
+    msgbox("On the lonely island drenched in tears,\na sinner waits for you.")
+    releaseall
+}
+
+script HUB_EventScript_Envy {
+    lockall
+    msgbox("At the spire of a special building,\na sinner waits for you.")
+    releaseall
+}
+
+script HUB_EventScript_Sloth {
+    lockall
+    msgbox("In the furthest, murkiest depths of a\ndream, a sinner waits for you.")
+    releaseall
+}

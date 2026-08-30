@@ -1669,9 +1669,9 @@ PetalburgCity_EventScript_Yan1_7:
 	delay 50
 # 842 "data/maps/PetalburgCity/scripts.pory"
 	msgbox PetalburgCity_EventScript_Yan1_Text_29
-# 843 "data/maps/PetalburgCity/scripts.pory"
-	clearflag FLAG_DISABLE_CATCHING
 # 844 "data/maps/PetalburgCity/scripts.pory"
+	clearflag FLAG_SECOND_YAN_MEETING
+# 845 "data/maps/PetalburgCity/scripts.pory"
 	releaseall
 	return
 
@@ -1686,91 +1686,91 @@ PetalburgCity_EventScript_Yan1_8:
 	goto PetalburgCity_EventScript_Yan1_7
 
 
-# 848 "data/maps/PetalburgCity/scripts.pory"
-YanMovement1:
 # 849 "data/maps/PetalburgCity/scripts.pory"
+YanMovement1:
+# 850 "data/maps/PetalburgCity/scripts.pory"
 	face_right
-# 850 "data/maps/PetalburgCity/scripts.pory"
-	walk_right
-# 850 "data/maps/PetalburgCity/scripts.pory"
-	walk_right
-# 850 "data/maps/PetalburgCity/scripts.pory"
-	walk_right
-# 850 "data/maps/PetalburgCity/scripts.pory"
-	walk_right
-# 850 "data/maps/PetalburgCity/scripts.pory"
-	walk_right
-# 850 "data/maps/PetalburgCity/scripts.pory"
+# 851 "data/maps/PetalburgCity/scripts.pory"
 	walk_right
 # 851 "data/maps/PetalburgCity/scripts.pory"
+	walk_right
+# 851 "data/maps/PetalburgCity/scripts.pory"
+	walk_right
+# 851 "data/maps/PetalburgCity/scripts.pory"
+	walk_right
+# 851 "data/maps/PetalburgCity/scripts.pory"
+	walk_right
+# 851 "data/maps/PetalburgCity/scripts.pory"
+	walk_right
+# 852 "data/maps/PetalburgCity/scripts.pory"
 	face_player
 	step_end
 
-# 854 "data/maps/PetalburgCity/scripts.pory"
-YanMovement2:
 # 855 "data/maps/PetalburgCity/scripts.pory"
+YanMovement2:
+# 856 "data/maps/PetalburgCity/scripts.pory"
 	face_left
-# 856 "data/maps/PetalburgCity/scripts.pory"
+# 857 "data/maps/PetalburgCity/scripts.pory"
 	walk_left
-# 856 "data/maps/PetalburgCity/scripts.pory"
+# 857 "data/maps/PetalburgCity/scripts.pory"
 	walk_left
 	step_end
 
-# 859 "data/maps/PetalburgCity/scripts.pory"
-YanMovement3:
 # 860 "data/maps/PetalburgCity/scripts.pory"
+YanMovement3:
+# 861 "data/maps/PetalburgCity/scripts.pory"
 	face_left
-# 861 "data/maps/PetalburgCity/scripts.pory"
+# 862 "data/maps/PetalburgCity/scripts.pory"
 	walk_left
-# 861 "data/maps/PetalburgCity/scripts.pory"
+# 862 "data/maps/PetalburgCity/scripts.pory"
 	walk_left
-# 861 "data/maps/PetalburgCity/scripts.pory"
+# 862 "data/maps/PetalburgCity/scripts.pory"
 	walk_left
-# 861 "data/maps/PetalburgCity/scripts.pory"
+# 862 "data/maps/PetalburgCity/scripts.pory"
 	walk_left
-# 861 "data/maps/PetalburgCity/scripts.pory"
+# 862 "data/maps/PetalburgCity/scripts.pory"
 	walk_left
 	step_end
 
-# 865 "data/maps/PetalburgCity/scripts.pory"
-YanFaceDown:
 # 866 "data/maps/PetalburgCity/scripts.pory"
+YanFaceDown:
+# 867 "data/maps/PetalburgCity/scripts.pory"
 	face_right
 	step_end
 
-# 869 "data/maps/PetalburgCity/scripts.pory"
-YanFaceLeft:
 # 870 "data/maps/PetalburgCity/scripts.pory"
+YanFaceLeft:
+# 871 "data/maps/PetalburgCity/scripts.pory"
 	face_up
 	step_end
 
-# 873 "data/maps/PetalburgCity/scripts.pory"
-YanFaceRight:
 # 874 "data/maps/PetalburgCity/scripts.pory"
+YanFaceRight:
+# 875 "data/maps/PetalburgCity/scripts.pory"
 	face_down
 	step_end
 
-# 877 "data/maps/PetalburgCity/scripts.pory"
-YanWalkDown:
 # 878 "data/maps/PetalburgCity/scripts.pory"
+YanWalkDown:
+# 879 "data/maps/PetalburgCity/scripts.pory"
 	walk_right
 	step_end
 
-# 881 "data/maps/PetalburgCity/scripts.pory"
-YanWalkUp:
 # 882 "data/maps/PetalburgCity/scripts.pory"
+YanWalkUp:
+# 883 "data/maps/PetalburgCity/scripts.pory"
 	walk_left
 	step_end
 
-# 889 "data/maps/PetalburgCity/scripts.pory"
-YanFaceUp:
 # 890 "data/maps/PetalburgCity/scripts.pory"
+YanFaceUp:
+# 891 "data/maps/PetalburgCity/scripts.pory"
 	face_left
 	step_end
 
-# 893 "data/maps/PetalburgCity/scripts.pory"
-YanFacePlayer:
 # 894 "data/maps/PetalburgCity/scripts.pory"
+YanFacePlayer:
+# 895 "data/maps/PetalburgCity/scripts.pory"
 	face_player
 	step_end
 
@@ -1899,5 +1899,5 @@ PetalburgCity_EventScript_Yan1_Text_29:
 	.string "You aren't going to call.$"
 
 YanTextTest::
-# 885 "data/maps/PetalburgCity/scripts.pory"
+# 886 "data/maps/PetalburgCity/scripts.pory"
 	.string "{COLOR RED}{SHADOW LIGHT_RED}Heyo! I'm talkin' to you!$"

@@ -19,12 +19,14 @@ ObtainNewFriend_Lust::
 # 12 "data/maps/LOSTWOODSEND/scripts.pory"
 	playfanfare MUS_OBTAIN_ITEM
 # 13 "data/maps/LOSTWOODSEND/scripts.pory"
-	msgbox ObtainNewFriend_Lust_Text_4
+	delay 3
 # 14 "data/maps/LOSTWOODSEND/scripts.pory"
-	removeobject 1
+	msgbox ObtainNewFriend_Lust_Text_4
 # 15 "data/maps/LOSTWOODSEND/scripts.pory"
-	setflag GOT_ASMODIA
+	removeobject 1
 # 16 "data/maps/LOSTWOODSEND/scripts.pory"
+	setflag GOT_ASMODIA
+# 17 "data/maps/LOSTWOODSEND/scripts.pory"
 	releaseall
 	return
 
@@ -43,8 +45,8 @@ ObtainNewFriend_Lust_Text_2:
 
 ObtainNewFriend_Lust_Text_3:
 # 10 "data/maps/LOSTWOODSEND/scripts.pory"
-	.string "Together, we will absolve this world\nof its debts.$"
+	.string "Together, we will take from this\nworld all that we love...$"
 
 ObtainNewFriend_Lust_Text_4:
-# 13 "data/maps/LOSTWOODSEND/scripts.pory"
+# 14 "data/maps/LOSTWOODSEND/scripts.pory"
 	.string "Asmodia joined you.$"

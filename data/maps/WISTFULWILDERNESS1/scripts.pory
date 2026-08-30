@@ -25,5 +25,5 @@ script WISTFULWILDERNESS1_EventScript_PokemonCenter {
         fadescreen(FADE_FROM_BLACK)
     }
     releaseall
-    }
+}
     

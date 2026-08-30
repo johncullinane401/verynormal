@@ -168,7 +168,13 @@
     "LOSTWOODSEND",
     "DARKCAVE1",
     "SCHOOLROOF1_Inside",
-    "ICEROOM1"
+    "ICEROOM1",
+    "ICEROOM2",
+    "SCHOOLROOF2",
+    "WARPHOUSE1",
+    "WARPHOUSE2",
+    "CHAOS1",
+    "FLOWERFIELD"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",

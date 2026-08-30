@@ -464,6 +464,7 @@ script Route103_EventScript_YinLastDialogue {
 	setflag(FLAG_HIDE_MAP_NAME_POPUP)
     removeobject(27)
     setflag(FLAG_YIN_WARP_2)
+	clearflag(FLAG_DISABLE_CATCHING)
     warp(MAP_ROUTE103, 4, 1)
     releaseall
 }

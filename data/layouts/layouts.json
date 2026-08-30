@@ -9430,8 +9430,8 @@
     {
       "id": "LAYOUT_SCHOOLROOF1",
       "name": "SCHOOLROOF1_Layout",
-      "width": 86,
-      "height": 66,
+      "width": 64,
+      "height": 64,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Mauville",
       "border_filepath": "data/layouts/SCHOOLROOF1/border.bin",
@@ -9461,7 +9461,7 @@
       "id": "LAYOUT_GREYFOREST2",
       "name": "GREYFOREST2_Layout",
       "width": 10,
-      "height": 6,
+      "height": 33,
       "primary_tileset": "gTileset_weirdshit1",
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/GREYFOREST2/border.bin",
@@ -9684,13 +9684,76 @@
     {
       "id": "LAYOUT_ICEROOM1",
       "name": "ICEROOM1_Layout",
-      "width": 26,
+      "width": 43,
       "height": 30,
       "primary_tileset": "gTileset_Building",
       "secondary_tileset": "gTileset_SootopolisGym",
       "border_filepath": "data/layouts/ICEROOM1/border.bin",
       "blockdata_filepath": "data/layouts/ICEROOM1/map.bin",
       "layout_version": "emerald"
+    },
+    {
+      "id": "LAYOUT_ICEROOM2",
+      "name": "ICEROOM2_Layout",
+      "width": 56,
+      "height": 44,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_SootopolisGym",
+      "border_filepath": "data/layouts/ICEROOM2/border.bin",
+      "blockdata_filepath": "data/layouts/ICEROOM2/map.bin",
+      "layout_version": "emerald"
+    },
+    {
+      "id": "LAYOUT_SCHOOLROOF2",
+      "name": "SCHOOLROOF2_Layout",
+      "width": 64,
+      "height": 64,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Mauville",
+      "border_filepath": "data/layouts/SCHOOLROOF2/border.bin",
+      "blockdata_filepath": "data/layouts/SCHOOLROOF2/map.bin"
+    },
+    {
+      "id": "LAYOUT_WARPHOUSE1",
+      "name": "WARPHOUSE1_Layout",
+      "width": 11,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/WARPHOUSE1/border.bin",
+      "blockdata_filepath": "data/layouts/WARPHOUSE1/map.bin",
+      "layout_version": "emerald"
+    },
+    {
+      "id": "LAYOUT_WARPHOUSE2",
+      "name": "WARPHOUSE2_Layout",
+      "width": 11,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/WARPHOUSE2/border.bin",
+      "blockdata_filepath": "data/layouts/WARPHOUSE2/map.bin",
+      "layout_version": "emerald"
+    },
+    {
+      "id": "LAYOUT_CHAOS1",
+      "name": "CHAOS1_Layout",
+      "width": 32,
+      "height": 30,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_SecretBaseTree",
+      "border_filepath": "data/layouts/CHAOS1/border.bin",
+      "blockdata_filepath": "data/layouts/CHAOS1/map.bin"
+    },
+    {
+      "id": "LAYOUT_FLOWERFIELD",
+      "name": "FLOWERFIELD_Layout",
+      "width": 19,
+      "height": 14,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_EverGrande",
+      "border_filepath": "data/layouts/FLOWERFIELD/border.bin",
+      "blockdata_filepath": "data/layouts/FLOWERFIELD/map.bin"
     }
   ]
 }

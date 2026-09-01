@@ -30,8 +30,7 @@ script FLOWERFIELD_EventScript_PinkFlower {
             if (var(VAR_RESULT) == YES) {
                 delay(100)
                 msgbox(".........{PAUSE_UNTIL_PRESS}")
-                msgbox("The flower seems unaffected.")
-                msgbox("But it's the message that counts.")
+                msgbox("The flower seems unaffected. But\nit's the thought that counts.")
                 setflag(FLAG_STOMPED_FLOWER)
                 if (!flag(FLAG_STOMPED_FLOWER)) {
                     addvar(VAR_VENOM, 10)
@@ -77,5 +76,4 @@ script FLOWERFIELD_EventScript_WhiteFlower {
             break
     }
     releaseall
-
 }

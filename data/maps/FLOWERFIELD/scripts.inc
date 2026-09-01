@@ -41,10 +41,10 @@ FLOWERFIELD_EventScript_PinkFlower::
 	case 0, FLOWERFIELD_EventScript_PinkFlower_3
 # 26 "data/maps/FLOWERFIELD/scripts.pory"
 	case 1, FLOWERFIELD_EventScript_PinkFlower_4
-# 42 "data/maps/FLOWERFIELD/scripts.pory"
+# 41 "data/maps/FLOWERFIELD/scripts.pory"
 	case 2, FLOWERFIELD_EventScript_PinkFlower_5
 FLOWERFIELD_EventScript_PinkFlower_1:
-# 49 "data/maps/FLOWERFIELD/scripts.pory"
+# 48 "data/maps/FLOWERFIELD/scripts.pory"
 	releaseall
 	return
 
@@ -69,10 +69,10 @@ FLOWERFIELD_EventScript_PinkFlower_7:
 	goto FLOWERFIELD_EventScript_PinkFlower_1
 
 FLOWERFIELD_EventScript_PinkFlower_5:
+# 42 "data/maps/FLOWERFIELD/scripts.pory"
+	msgbox FLOWERFIELD_EventScript_PinkFlower_Text_13
 # 43 "data/maps/FLOWERFIELD/scripts.pory"
 	msgbox FLOWERFIELD_EventScript_PinkFlower_Text_14
-# 44 "data/maps/FLOWERFIELD/scripts.pory"
-	msgbox FLOWERFIELD_EventScript_PinkFlower_Text_15
 	goto FLOWERFIELD_EventScript_PinkFlower_1
 
 FLOWERFIELD_EventScript_PinkFlower_8:
@@ -83,75 +83,73 @@ FLOWERFIELD_EventScript_PinkFlower_8:
 # 33 "data/maps/FLOWERFIELD/scripts.pory"
 	msgbox FLOWERFIELD_EventScript_PinkFlower_Text_12
 # 34 "data/maps/FLOWERFIELD/scripts.pory"
-	msgbox FLOWERFIELD_EventScript_PinkFlower_Text_13
-# 35 "data/maps/FLOWERFIELD/scripts.pory"
 	setflag FLAG_STOMPED_FLOWER
-# 36 "data/maps/FLOWERFIELD/scripts.pory"
+# 35 "data/maps/FLOWERFIELD/scripts.pory"
 	goto_if_unset FLAG_STOMPED_FLOWER, FLOWERFIELD_EventScript_PinkFlower_10
 	goto FLOWERFIELD_EventScript_PinkFlower_7
 
 FLOWERFIELD_EventScript_PinkFlower_10:
-# 37 "data/maps/FLOWERFIELD/scripts.pory"
+# 36 "data/maps/FLOWERFIELD/scripts.pory"
 	addvar VAR_VENOM, 10
 	goto FLOWERFIELD_EventScript_PinkFlower_7
 
 
 FLOWERFIELD_EventScript_WhiteFlower::
-# 53 "data/maps/FLOWERFIELD/scripts.pory"
+# 52 "data/maps/FLOWERFIELD/scripts.pory"
 	lockall
-# 54 "data/maps/FLOWERFIELD/scripts.pory"
+# 53 "data/maps/FLOWERFIELD/scripts.pory"
 	msgbox FLOWERFIELD_EventScript_WhiteFlower_Text_0
-# 55 "data/maps/FLOWERFIELD/scripts.pory"
+# 54 "data/maps/FLOWERFIELD/scripts.pory"
 	msgbox FLOWERFIELD_EventScript_PinkFlower_Text_1
-# 56 "data/maps/FLOWERFIELD/scripts.pory"
+# 55 "data/maps/FLOWERFIELD/scripts.pory"
 	dynmultichoice 0, 0, FALSE, 4, 0, DYN_MULTICHOICE_CB_NONE, FLOWERFIELD_EventScript_PinkFlower_Text_2, FLOWERFIELD_EventScript_PinkFlower_Text_3, FLOWERFIELD_EventScript_PinkFlower_Text_4, FLOWERFIELD_EventScript_PinkFlower_Text_5
-# 57 "data/maps/FLOWERFIELD/scripts.pory"
+# 56 "data/maps/FLOWERFIELD/scripts.pory"
 	switch VAR_RESULT
-# 58 "data/maps/FLOWERFIELD/scripts.pory"
+# 57 "data/maps/FLOWERFIELD/scripts.pory"
 	case 0, FLOWERFIELD_EventScript_WhiteFlower_3
-# 62 "data/maps/FLOWERFIELD/scripts.pory"
+# 61 "data/maps/FLOWERFIELD/scripts.pory"
 	case 1, FLOWERFIELD_EventScript_WhiteFlower_4
-# 72 "data/maps/FLOWERFIELD/scripts.pory"
+# 71 "data/maps/FLOWERFIELD/scripts.pory"
 	case 2, FLOWERFIELD_EventScript_WhiteFlower_5
 FLOWERFIELD_EventScript_WhiteFlower_1:
-# 79 "data/maps/FLOWERFIELD/scripts.pory"
+# 78 "data/maps/FLOWERFIELD/scripts.pory"
 	releaseall
 	return
 
 FLOWERFIELD_EventScript_WhiteFlower_3:
-# 59 "data/maps/FLOWERFIELD/scripts.pory"
+# 58 "data/maps/FLOWERFIELD/scripts.pory"
 	msgbox FLOWERFIELD_EventScript_PinkFlower_Text_6
-# 60 "data/maps/FLOWERFIELD/scripts.pory"
+# 59 "data/maps/FLOWERFIELD/scripts.pory"
 	msgbox FLOWERFIELD_EventScript_WhiteFlower_Text_1
 	goto FLOWERFIELD_EventScript_WhiteFlower_1
 
 FLOWERFIELD_EventScript_WhiteFlower_4:
-# 63 "data/maps/FLOWERFIELD/scripts.pory"
+# 62 "data/maps/FLOWERFIELD/scripts.pory"
 	msgbox FLOWERFIELD_EventScript_PinkFlower_Text_8
-# 64 "data/maps/FLOWERFIELD/scripts.pory"
+# 63 "data/maps/FLOWERFIELD/scripts.pory"
 	msgbox FLOWERFIELD_EventScript_PinkFlower_Text_10, MSGBOX_YESNO
-# 65 "data/maps/FLOWERFIELD/scripts.pory"
+# 64 "data/maps/FLOWERFIELD/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq FLOWERFIELD_EventScript_WhiteFlower_8
 FLOWERFIELD_EventScript_WhiteFlower_7:
 	goto FLOWERFIELD_EventScript_WhiteFlower_1
 
 FLOWERFIELD_EventScript_WhiteFlower_5:
+# 72 "data/maps/FLOWERFIELD/scripts.pory"
+	msgbox FLOWERFIELD_EventScript_PinkFlower_Text_13
 # 73 "data/maps/FLOWERFIELD/scripts.pory"
-	msgbox FLOWERFIELD_EventScript_PinkFlower_Text_14
-# 74 "data/maps/FLOWERFIELD/scripts.pory"
 	msgbox FLOWERFIELD_EventScript_WhiteFlower_Text_2
 	goto FLOWERFIELD_EventScript_WhiteFlower_1
 
 FLOWERFIELD_EventScript_WhiteFlower_8:
-# 66 "data/maps/FLOWERFIELD/scripts.pory"
+# 65 "data/maps/FLOWERFIELD/scripts.pory"
 	goto_if_set FLAG_STOMPED_FLOWER, FLOWERFIELD_EventScript_WhiteFlower_10
 	goto FLOWERFIELD_EventScript_WhiteFlower_7
 
 FLOWERFIELD_EventScript_WhiteFlower_10:
-# 67 "data/maps/FLOWERFIELD/scripts.pory"
+# 66 "data/maps/FLOWERFIELD/scripts.pory"
 	setflag FLAG_IN_PUNISHMENT
-# 68 "data/maps/FLOWERFIELD/scripts.pory"
+# 67 "data/maps/FLOWERFIELD/scripts.pory"
 	warp MAP_CHAOS1, 6, 26
 	goto FLOWERFIELD_EventScript_WhiteFlower_7
 
@@ -210,28 +208,24 @@ FLOWERFIELD_EventScript_PinkFlower_Text_11:
 
 FLOWERFIELD_EventScript_PinkFlower_Text_12:
 # 33 "data/maps/FLOWERFIELD/scripts.pory"
-	.string "The flower seems unaffected.$"
+	.string "The flower seems unaffected. But\nit's the thought that counts.$"
 
 FLOWERFIELD_EventScript_PinkFlower_Text_13:
-# 34 "data/maps/FLOWERFIELD/scripts.pory"
-	.string "But it's the message that counts.$"
+# 42 "data/maps/FLOWERFIELD/scripts.pory"
+	.string "You lower your head and smell the\nflower.$"
 
 FLOWERFIELD_EventScript_PinkFlower_Text_14:
 # 43 "data/maps/FLOWERFIELD/scripts.pory"
-	.string "You lower your head and smell the\nflower.$"
-
-FLOWERFIELD_EventScript_PinkFlower_Text_15:
-# 44 "data/maps/FLOWERFIELD/scripts.pory"
 	.string "It smells like cotton candy.$"
 
 FLOWERFIELD_EventScript_WhiteFlower_Text_0:
-# 54 "data/maps/FLOWERFIELD/scripts.pory"
+# 53 "data/maps/FLOWERFIELD/scripts.pory"
 	.string "A lonely white flower lies here.$"
 
 FLOWERFIELD_EventScript_WhiteFlower_Text_1:
-# 60 "data/maps/FLOWERFIELD/scripts.pory"
+# 59 "data/maps/FLOWERFIELD/scripts.pory"
 	.string "The petals are tense.$"
 
 FLOWERFIELD_EventScript_WhiteFlower_Text_2:
-# 74 "data/maps/FLOWERFIELD/scripts.pory"
+# 73 "data/maps/FLOWERFIELD/scripts.pory"
 	.string "It smells like nothing.$"

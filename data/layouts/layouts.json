@@ -9749,11 +9749,22 @@
       "id": "LAYOUT_FLOWERFIELD",
       "name": "FLOWERFIELD_Layout",
       "width": 19,
-      "height": 14,
+      "height": 16,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_EverGrande",
       "border_filepath": "data/layouts/FLOWERFIELD/border.bin",
       "blockdata_filepath": "data/layouts/FLOWERFIELD/map.bin"
+    },
+    {
+      "id": "LAYOUT_FLOWERMOUNTAIN",
+      "name": "FLOWERMOUNTAIN_Layout",
+      "width": 38,
+      "height": 51,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Facility",
+      "border_filepath": "data/layouts/FLOWERMOUNTAIN/border.bin",
+      "blockdata_filepath": "data/layouts/FLOWERMOUNTAIN/map.bin",
+      "layout_version": "emerald"
     }
   ]
 }

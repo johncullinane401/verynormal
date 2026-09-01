@@ -174,7 +174,8 @@
     "WARPHOUSE1",
     "WARPHOUSE2",
     "CHAOS1",
-    "FLOWERFIELD"
+    "FLOWERFIELD",
+    "FLOWERMOUNTAIN"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",

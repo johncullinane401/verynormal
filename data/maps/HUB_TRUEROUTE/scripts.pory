@@ -1,0 +1,46 @@
+raw `HUB_TRUEROUTE_MapScripts::
+	.byte 0
+`
+
+script HUB_TRUEROUTE_EventScript_MOTHMAN {
+    lockall
+    faceplayer
+    msgbox("I hope you've enjoyed yourself, ehehe...")
+    msgbox("But I think you'll agree...")
+    msgbox("It's time for this little show to end.")
+    msgbox("After all,\neven your favorite film becomes a drag\ponce you've seen it enough times.")
+    msgbox("")
+    releaseall
+}
+
+script HUB_TRUEROUTE_EventScript_MAID {
+    lockall
+    faceplayer
+    if (flag(FLAG_READY_FOR_QUESTIONS) == FALSE) {
+        msgbox("You clearly have some kind of investment\nin this world...")
+        msgbox("This, I respect.")
+        msgbox("So, as an act of goodwill, and\na reward for your dedication...")
+        msgbox("I will grant you the gift of knowledge.")
+        msgbox("I will answer four questions to\nthe best of my ability.")
+        msgbox("Please come to me again when you are ready.")
+        setflag(FLAG_READY_FOR_QUESTIONS)
+    } else {
+        msgbox("Ah, welcome.")
+        msgbox("Are you ready to ask your questions?", MSGBOX_YESNO)
+        if (var(VAR_RESULT) == YES) {
+            msgbox("I hope you have thought this through.")
+            msgbox("Very well. Let me extend this\nbranch of knowledge.")
+            special(EnterCode)
+            waitstate
+            special(GetCodeFeedback)
+            if (var(VAR_RESULT) == 0) {
+                msgbox("....I'm sorry, I'm afraid I don't understand.")
+            } elif (var(VAR_RESULT) == 1) {
+                msgbox("ah...Yan.")
+            } else {
+
+            }
+        }
+    }
+    releaseall
+}

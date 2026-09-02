@@ -1824,3 +1824,5 @@ EventScript_PalletTown_PlayersHouse_2F_TurnOnPC::
 	.include "data/maps/FLOWERFIELD/scripts.inc"
 
 	.include "data/maps/FLOWERMOUNTAIN/scripts.inc"
+
+	.include "data/maps/HUB_TRUEROUTE/scripts.inc"

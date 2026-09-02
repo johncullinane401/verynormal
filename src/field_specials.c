@@ -4581,10 +4581,23 @@ void EnterCode(void)
 void GetCodeFeedback(void)
 {
     static const u8 sText_SampleCode[] = _("SampleCode");
-    if (!StringCompare(gStringVar2, sText_SampleCode))
+    static const u8 sText_Yan[] = _("Yan");
+    static const u8 sText_WhoIsYan[] = _("Who is Yan");
+    static const u8 sText_YAN[] = _("YAN");
+
+
+    if (!StringCompare(gStringVar2, sText_Yan)) {
         gSpecialVar_Result = 1;
-    else
+    }
+    else if (!StringCompare(gStringVar2, sText_WhoIsYan)) {
+        gSpecialVar_Result = 1;
+    }
+    else if (!StringCompare(gStringVar2, sText_YAN)) {
+        gSpecialVar_Result = 1;
+    }
+    else {
         gSpecialVar_Result = 0;
+    }
 }
 
 void SetHiddenNature(void)

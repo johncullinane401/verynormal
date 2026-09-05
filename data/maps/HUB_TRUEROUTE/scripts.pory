@@ -34,11 +34,72 @@ script HUB_TRUEROUTE_EventScript_MAID {
             waitstate
             special(GetCodeFeedback)
             if (var(VAR_RESULT) == 0) {
-                msgbox("....I'm sorry, I'm afraid I don't understand.")
+                msgbox("....I'm sorry, I'm afraid I don't\nunderstand.")
             } elif (var(VAR_RESULT) == 1) {
-                msgbox("ah...Yan.")
-            } else {
-
+                msgbox(format("Ah, Yan. The elusive detective of this dream. Well, what more is there to say? She seems young, maybe early 20s at most. Nice hat."))
+                msgbox(format("The poor girl. She's been fighting her own demons for a long time, and she doesn't even know it."))
+                msgbox(format("Hmm...but, is it better this way?"))
+                msgbox("To be buried in a meaningless dream...or\nto live in a reality that abandoned you?")
+                msgbox("Maybe this time, you can set her free.")
+                msgbox("And then we can see for ourselves.")
+                msgbox("Not even I know what will happen.")
+            } elif (var(VAR_RESULT) == 2) {
+                msgbox(format("A rose...such a pretty flower. But when it tries to get close to you, to embrace you, it pricks you."))
+                msgbox(format("How poetic our mysterious friends life has been. Her and Yan are the same age, and at one point, were as close as two individuals could get."))
+                msgbox(format("But, life is unpredictable, and unforgiving."))
+                msgbox(format("Fate has been cruel to our friend Rose, hasn't it?"))
+                msgbox(format("Well, who am I to say."))
+                msgbox(format("It's rude to talk about people behind their back."))
+                msgbox(format("There are clearly layers to this flower that she does not want brought to light."))
+                msgbox(format("Why don't you face her yourself"))
+                msgbox(format("Then maybe, you'll understand."))
+            } elif (var(VAR_RESULT) == 3) {
+                msgbox("I must apologize for his behavior.")
+                msgbox("He can get a bit...obsessed.")
+                msgbox("But even so, you managed to\nimpress him.")
+                msgbox("It's not a secret he has become\n a big fan of these 'Bug-Type Pokemon'")
+                msgbox("In truth, it is kind of endearing.")
+                msgbox("He will not admit it, but\nI believe he is sad that this story\pis reaching its conclusion.")
+                msgbox("His bugs will no doubt be of\ngreat use to you.")
+            } elif (var(VAR_RESULT) == 4) {
+                msgbox("...Ah, me?")
+                msgbox("Well, I cannot fault you for being\ncurious.")
+                msgbox(format("Like MOTHMAN, and my brothers and sisters who came before, we are drawn to human pain. More specifically, we seek unique, indescribable flavors of despair that can only be found in the depths of a human heart."))
+                msgbox("This world...you could say it is one\nof these special cases.")
+                msgbox("It nourishes us, and serves as a\nbrief respite from eternity.")
+                msgbox("However, even we can grow tired of\nthe same flavor.")
+                msgbox("I can see from your expression\nthat you may be thinking less of us.")
+                msgbox("I implore you to understand, up\nuntil this moment, we were merely\pspectators.")
+                msgbox("We hold the utmost respect for our\nsubjects.")
+                msgbox("But in this case, as it seems, we are\nnot the only spectators.")
+                msgbox("This is why we will permit this game to\nend.")
+                msgbox("Out of respect.")
+                msgbox("There is nothing more I will tell you on\nthis subject.")
+            } elif (var(VAR_RESULT) == 5) {
+                msgbox("'Captain Briney...'")
+                msgbox("It is quite admirable to see something\nso powerless try to punch so far above its weight.")
+            } elif (var(VAR_RESULT) == 6) {
+                msgbox("Asmodia...")
+                msgbox("The avatar of Lust.")
+                msgbox("A serious sin.")
+                msgbox("Although it is not the most dangerous\nof the sins...")
+                msgbox("Lust has more control over Rose than\nany other.")
+                msgbox("Will you help her understand?")
+            } elif (var(VAR_RESULT) == 7 ) {
+                msgbox("Lucifa...")
+                msgbox("The avatar of Lust.")
+                msgbox("A serious sin.")
+            } elif (var(VAR_RESULT) == 8 ) {
+                msgbox("Leviatha...")
+                msgbox("The avatar of Lust.")
+                msgbox("A serious sin.")
+            } elif (var(VAR_RESULT) == 9 ) {
+                msgbox("Mammona...")
+                msgbox("The avatar of Pride.")
+                msgbox("It is known as the worst sin of all,\nand the root of all evil.")
+                msgbox("But Rose's pride has not overgrown\nher heart yet.")
+            } elif (var(VAR_RESULT) == 10 ) {
+                
             }
         }
     }

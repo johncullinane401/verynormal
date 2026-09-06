@@ -641,4 +641,5 @@ gSpecials::
 	def_special CheckAddCoins
 	def_special DeleteAllPartyMonsExceptZigzagoon
 	def_special SetExpLevel
+	def_special CheckName
 	

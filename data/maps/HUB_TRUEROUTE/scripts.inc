@@ -38,7 +38,7 @@ HUB_TRUEROUTE_EventScript_MAID::
 	compare VAR_RESULT, YES
 	goto_if_eq HUB_TRUEROUTE_EventScript_MAID_5
 HUB_TRUEROUTE_EventScript_MAID_1:
-# 106 "data/maps/HUB_TRUEROUTE/scripts.pory"
+# 96 "data/maps/HUB_TRUEROUTE/scripts.pory"
 	releaseall
 	return
 
@@ -91,18 +91,6 @@ HUB_TRUEROUTE_EventScript_MAID_5:
 # 81 "data/maps/HUB_TRUEROUTE/scripts.pory"
 	compare VAR_RESULT, 6
 	goto_if_eq HUB_TRUEROUTE_EventScript_MAID_13
-# 88 "data/maps/HUB_TRUEROUTE/scripts.pory"
-	compare VAR_RESULT, 7
-	goto_if_eq HUB_TRUEROUTE_EventScript_MAID_14
-# 92 "data/maps/HUB_TRUEROUTE/scripts.pory"
-	compare VAR_RESULT, 8
-	goto_if_eq HUB_TRUEROUTE_EventScript_MAID_15
-# 96 "data/maps/HUB_TRUEROUTE/scripts.pory"
-	compare VAR_RESULT, 9
-	goto_if_eq HUB_TRUEROUTE_EventScript_MAID_16
-# 101 "data/maps/HUB_TRUEROUTE/scripts.pory"
-	compare VAR_RESULT, 10
-	goto_if_eq HUB_TRUEROUTE_EventScript_MAID_17
 	goto HUB_TRUEROUTE_EventScript_MAID_1
 
 HUB_TRUEROUTE_EventScript_MAID_7:
@@ -214,38 +202,12 @@ HUB_TRUEROUTE_EventScript_MAID_13:
 	msgbox HUB_TRUEROUTE_EventScript_MAID_Text_53
 # 87 "data/maps/HUB_TRUEROUTE/scripts.pory"
 	msgbox HUB_TRUEROUTE_EventScript_MAID_Text_54
-	goto HUB_TRUEROUTE_EventScript_MAID_1
-
-HUB_TRUEROUTE_EventScript_MAID_14:
-# 89 "data/maps/HUB_TRUEROUTE/scripts.pory"
+# 88 "data/maps/HUB_TRUEROUTE/scripts.pory"
 	msgbox HUB_TRUEROUTE_EventScript_MAID_Text_55
-# 90 "data/maps/HUB_TRUEROUTE/scripts.pory"
-	msgbox HUB_TRUEROUTE_EventScript_MAID_Text_50
-# 91 "data/maps/HUB_TRUEROUTE/scripts.pory"
-	msgbox HUB_TRUEROUTE_EventScript_MAID_Text_51
-	goto HUB_TRUEROUTE_EventScript_MAID_1
-
-HUB_TRUEROUTE_EventScript_MAID_15:
-# 93 "data/maps/HUB_TRUEROUTE/scripts.pory"
+# 89 "data/maps/HUB_TRUEROUTE/scripts.pory"
 	msgbox HUB_TRUEROUTE_EventScript_MAID_Text_56
-# 94 "data/maps/HUB_TRUEROUTE/scripts.pory"
-	msgbox HUB_TRUEROUTE_EventScript_MAID_Text_50
-# 95 "data/maps/HUB_TRUEROUTE/scripts.pory"
-	msgbox HUB_TRUEROUTE_EventScript_MAID_Text_51
-	goto HUB_TRUEROUTE_EventScript_MAID_1
-
-HUB_TRUEROUTE_EventScript_MAID_16:
-# 97 "data/maps/HUB_TRUEROUTE/scripts.pory"
+# 90 "data/maps/HUB_TRUEROUTE/scripts.pory"
 	msgbox HUB_TRUEROUTE_EventScript_MAID_Text_57
-# 98 "data/maps/HUB_TRUEROUTE/scripts.pory"
-	msgbox HUB_TRUEROUTE_EventScript_MAID_Text_58
-# 99 "data/maps/HUB_TRUEROUTE/scripts.pory"
-	msgbox HUB_TRUEROUTE_EventScript_MAID_Text_59
-# 100 "data/maps/HUB_TRUEROUTE/scripts.pory"
-	msgbox HUB_TRUEROUTE_EventScript_MAID_Text_60
-	goto HUB_TRUEROUTE_EventScript_MAID_1
-
-HUB_TRUEROUTE_EventScript_MAID_17:
 	goto HUB_TRUEROUTE_EventScript_MAID_1
 
 
@@ -487,48 +449,36 @@ HUB_TRUEROUTE_EventScript_MAID_Text_48:
 
 HUB_TRUEROUTE_EventScript_MAID_Text_49:
 # 82 "data/maps/HUB_TRUEROUTE/scripts.pory"
-	.string "Asmodia...$"
+	.string "Ah, so you are curious about the\nsins of the one known as Rose, yes?$"
 
 HUB_TRUEROUTE_EventScript_MAID_Text_50:
 # 83 "data/maps/HUB_TRUEROUTE/scripts.pory"
-	.string "The avatar of Lust.$"
+	.string "Lust.$"
 
 HUB_TRUEROUTE_EventScript_MAID_Text_51:
 # 84 "data/maps/HUB_TRUEROUTE/scripts.pory"
-	.string "A serious sin.$"
+	.string "Wrath.$"
 
 HUB_TRUEROUTE_EventScript_MAID_Text_52:
 # 85 "data/maps/HUB_TRUEROUTE/scripts.pory"
-	.string "Although it is not the most dangerous\nof the sins...$"
+	.string "Envy.$"
 
 HUB_TRUEROUTE_EventScript_MAID_Text_53:
 # 86 "data/maps/HUB_TRUEROUTE/scripts.pory"
-	.string "Lust has more control over Rose than\nany other.$"
+	.string "Sloth.$"
 
 HUB_TRUEROUTE_EventScript_MAID_Text_54:
 # 87 "data/maps/HUB_TRUEROUTE/scripts.pory"
-	.string "Will you help her understand?$"
+	.string "Pride.$"
 
 HUB_TRUEROUTE_EventScript_MAID_Text_55:
-# 89 "data/maps/HUB_TRUEROUTE/scripts.pory"
-	.string "Lucifa...$"
+# 88 "data/maps/HUB_TRUEROUTE/scripts.pory"
+	.string "Rose's sins have bloomed into a\nbeautiful world of dreams.$"
 
 HUB_TRUEROUTE_EventScript_MAID_Text_56:
-# 93 "data/maps/HUB_TRUEROUTE/scripts.pory"
-	.string "Leviatha...$"
+# 89 "data/maps/HUB_TRUEROUTE/scripts.pory"
+	.string "However, she is not yet lost.$"
 
 HUB_TRUEROUTE_EventScript_MAID_Text_57:
-# 97 "data/maps/HUB_TRUEROUTE/scripts.pory"
-	.string "Mammona...$"
-
-HUB_TRUEROUTE_EventScript_MAID_Text_58:
-# 98 "data/maps/HUB_TRUEROUTE/scripts.pory"
-	.string "The avatar of Pride.$"
-
-HUB_TRUEROUTE_EventScript_MAID_Text_59:
-# 99 "data/maps/HUB_TRUEROUTE/scripts.pory"
-	.string "It is known as the worst sin of all,\nand the root of all evil.$"
-
-HUB_TRUEROUTE_EventScript_MAID_Text_60:
-# 100 "data/maps/HUB_TRUEROUTE/scripts.pory"
-	.string "But Rose's pride has not overgrown\nher heart yet.$"
+# 90 "data/maps/HUB_TRUEROUTE/scripts.pory"
+	.string "End this dream, {PLAYER}.$"

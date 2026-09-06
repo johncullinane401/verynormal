@@ -708,3 +708,15 @@ void SetExpLevel(void)
 
     CalculateMonStats(mon);
 }
+
+void CheckName(void)
+{
+    static const u8 sText_ROSENAME[] = _("ROSE");
+    static const u8 sText_RoseName[] = _("Rose");
+
+    if (!StringCompare((gSaveBlock2Ptr->playerName), sText_RoseName)) {
+        gSpecialVar_Result = 1;
+    } else {
+        gSpecialVar_Result = 0;
+    }
+}

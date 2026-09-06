@@ -79,27 +79,17 @@ script HUB_TRUEROUTE_EventScript_MAID {
                 msgbox("'Captain Briney...'")
                 msgbox("It is quite admirable to see something\nso powerless try to punch so far above its weight.")
             } elif (var(VAR_RESULT) == 6) {
-                msgbox("Asmodia...")
-                msgbox("The avatar of Lust.")
-                msgbox("A serious sin.")
-                msgbox("Although it is not the most dangerous\nof the sins...")
-                msgbox("Lust has more control over Rose than\nany other.")
-                msgbox("Will you help her understand?")
-            } elif (var(VAR_RESULT) == 7 ) {
-                msgbox("Lucifa...")
-                msgbox("The avatar of Lust.")
-                msgbox("A serious sin.")
-            } elif (var(VAR_RESULT) == 8 ) {
-                msgbox("Leviatha...")
-                msgbox("The avatar of Lust.")
-                msgbox("A serious sin.")
-            } elif (var(VAR_RESULT) == 9 ) {
-                msgbox("Mammona...")
-                msgbox("The avatar of Pride.")
-                msgbox("It is known as the worst sin of all,\nand the root of all evil.")
-                msgbox("But Rose's pride has not overgrown\nher heart yet.")
-            } elif (var(VAR_RESULT) == 10 ) {
-                
+                msgbox("Ah, so you are curious about the\nsins of the one known as Rose, yes?")
+                msgbox("Lust.")
+                msgbox("Wrath.")
+                msgbox("Envy.")
+                msgbox("Sloth.")
+                msgbox("Pride.")
+                msgbox("Rose's sins have bloomed into a\nbeautiful world of dreams.")
+                msgbox("However, she is not yet lost.")
+                msgbox("End this dream, {PLAYER}.")
+            } else {
+
             }
         }
     }

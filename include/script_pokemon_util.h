@@ -16,5 +16,6 @@ void Script_GetChosenMonDefensiveIVs(void);
 void DeleteAllPartyMonsExceptZigzagoon(void);
 void SetExpLevel(void);
 void SetForcedRespawnPoint(void);
+void CheckName(void);
 
 #endif // GUARD_SCRIPT_POKEMON_UTIL_H

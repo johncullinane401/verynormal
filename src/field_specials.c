@@ -4584,16 +4584,39 @@ void GetCodeFeedback(void)
     static const u8 sText_Yan[] = _("Yan");
     static const u8 sText_WhoIsYan[] = _("Who is Yan");
     static const u8 sText_YAN[] = _("YAN");
+    static const u8 sText_Rose[] = _("Rose");
+    static const u8 sText_ROSE[] = _("ROSE");
+    static const u8 sText_Mothman[] = _("Mothman");
+    static const u8 sText_MOTHMAN[] = _("MOTHMAN");
+    static const u8 sText_Psychic[] = _("Psychic");
+    static const u8 sText_PSYCHIC[] = _("PSYCHIC");
+    static const u8 sText_You[] = _("You");
+    static const u8 sText_you[] = _("you");
+    static const u8 sText_briney[] = _("Briney");
+    static const u8 sText_Briney[] = _("BRINEY");
+    static const u8 sText_Asmodia[] = _("Asmodia");
+    static const u8 sText_Lucifa[] = _("Lucifa");
+    static const u8 sText_Leviatha[] = _("Leviatha");
+    static const u8 sText_Mammona[] = _("Mammona");
+    static const u8 sText_Bephelga[] = _("Bephelga");
 
-
-    if (!StringCompare(gStringVar2, sText_Yan)) {
+    if (!StringCompare(gStringVar2, sText_Rose) || !StringCompare(gStringVar2, sText_ROSE)) {
         gSpecialVar_Result = 1;
     }
-    else if (!StringCompare(gStringVar2, sText_WhoIsYan)) {
-        gSpecialVar_Result = 1;
+    else if (!StringCompare(gStringVar2, sText_MOTHMAN) || !StringCompare(gStringVar2, sText_Mothman)) {
+        gSpecialVar_Result = 2;
     }
-    else if (!StringCompare(gStringVar2, sText_YAN)) {
-        gSpecialVar_Result = 1;
+    else if (!StringCompare(gStringVar2, sText_PSYCHIC) || !StringCompare(gStringVar2, sText_Psychic) || !StringCompare(gStringVar2, sText_You) || !StringCompare(gStringVar2, sText_you)) {
+        gSpecialVar_Result = 3;
+    }
+    else if (!StringCompare(gStringVar2, sText_WhoIsYan) || !StringCompare(gStringVar2, sText_YAN) || !StringCompare(gStringVar2, sText_Yan)) {
+        gSpecialVar_Result = 4;
+    }
+    else if (!StringCompare(gStringVar2, sText_Briney) || !StringCompare(gStringVar2, sText_briney)) {
+        gSpecialVar_Result = 5;
+    }
+    else if (!StringCompare(gStringVar2, sText_Asmodia) || !StringCompare(gStringVar2, sText_Mammona) || !StringCompare(gStringVar2, sText_Bephelga) || !StringCompare(gStringVar2, sText_Leviatha) || !StringCompare(gStringVar2, sText_Lucifa)) {
+        gSpecialVar_Result = 6;
     }
     else {
         gSpecialVar_Result = 0;

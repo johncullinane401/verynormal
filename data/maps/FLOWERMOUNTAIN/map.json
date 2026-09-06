@@ -24,7 +24,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "SCHOOLROOF1_EventScript_Tutorial",
       "flag": "0"
     }
   ],
@@ -34,6 +34,13 @@
       "y": 2,
       "elevation": 0,
       "dest_map": "MAP_FLOWERFIELD",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 10,
+      "y": 42,
+      "elevation": 0,
+      "dest_map": "MAP_ICEROOM1",
       "dest_warp_id": "0"
     }
   ],
@@ -45,7 +52,7 @@
       "y": 35,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "NULL"
+      "script": "GREYFOREST1_EventScript_Window"
     },
     {
       "type": "sign",
@@ -53,23 +60,23 @@
       "y": 35,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "NULL"
+      "script": "GREYFOREST1_EventScript_Window"
     },
     {
       "type": "sign",
       "x": 29,
       "y": 36,
       "elevation": 0,
-      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "NULL"
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_EAST",
+      "script": "GREYFOREST1_EventScript_Doorway"
     },
     {
       "type": "sign",
       "x": 28,
       "y": 36,
       "elevation": 0,
-      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "NULL"
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_WEST",
+      "script": "GREYFOREST1_EventScript_Doorway"
     }
   ],
   "region": "REGION_HOENN"

@@ -9180,7 +9180,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_METAL_COAT] =
     {
-        .name = ITEM_NAME("Metal Coat"),
+        .name = ITEM_NAME("Welding Fluid"),
     #if I_PRICE >= GEN_9
         .price = 3000,
     #elif I_PRICE >= GEN_7
@@ -9191,18 +9191,16 @@ const struct ItemInfo gItemsInfo[] =
         .holdEffect = HOLD_EFFECT_TYPE_POWER,
         .holdEffectParam = TYPE_BOOST_PARAM,
         .description = COMPOUND_STRING(
-            "A hold item that\n"
-            "raises the power of\n"
-            "Steel-type moves."),
-        .pocket = POCKET_ITEMS,
-        .sortType = ITEM_TYPE_TYPE_BOOST_HELD_ITEM,
-        .type = EVO_HELD_ITEM_TYPE,
-        .fieldUseFunc = EVO_HELD_ITEM_FIELD_FUNC,
+            "A liquid coolant for\n"
+            "stopping welding tools\n"
+            "from overheating."),
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
         .effect = gItemEffect_EvoItem,
         .secondaryId = TYPE_STEEL,
         .flingPower = 30,
         .iconPic = gItemIcon_MetalCoat,
-        .iconPalette = gItemIconPalette_MetalCoat,
+        .iconPalette = gItemIconPalette_SilkScarf,
     },
 
 // Choice Items
@@ -10587,7 +10585,6 @@ const struct ItemInfo gItemsInfo[] =
             "number, but you\n"
             "don't have a phone."),
         .pocket = POCKET_KEY_ITEMS,
-        .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_FIELD,
         .fieldUseFunc = ItemUseOutOfBattle_EscapeRope,
         .flingPower = 36,

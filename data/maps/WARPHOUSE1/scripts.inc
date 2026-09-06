@@ -9,7 +9,7 @@ WARPHOUSE1_EventScript_Exit::
 # 7 "data/maps/WARPHOUSE1/scripts.pory"
 	fadescreen FADE_TO_BLACK
 # 8 "data/maps/WARPHOUSE1/scripts.pory"
-	warp MAP_GREYFOREST1, 1, 20
+	warp MAP_FLOWERMOUNTAIN, 28, 36
 # 9 "data/maps/WARPHOUSE1/scripts.pory"
 	waitstate
 # 10 "data/maps/WARPHOUSE1/scripts.pory"
@@ -35,7 +35,7 @@ WARPHOUSE_EVENTSCRIPT_TV::
 
 WARPHOUSE_EVENTSCRIPT_TV_Text_0:
 # 16 "data/maps/WARPHOUSE1/scripts.pory"
-	.string "It's your favorite show!$"
+	.string "Your favorite show is on.$"
 
 WARPHOUSE_EVENTSCRIPT_TV_Text_1:
 # 17 "data/maps/WARPHOUSE1/scripts.pory"

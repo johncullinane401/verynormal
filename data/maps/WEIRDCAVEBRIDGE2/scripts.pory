@@ -9,15 +9,19 @@ script WEIRDCAVEBRIDGE2_EventScript_Briney {
         applymovement(1, BrineyMovement1)
         waitmovement(0)
         msgbox("Oh!")
-        msgbox("Wahaha! Sorry lad, I didn't see\nya there!")
-        msgbox("...hmmm...nope, never see ya before.")
-        msgbox("'names Briney! Cap'n Briney to you!")
-        msgbox("...hrm? What'dya making that face\nfor?")
+        msgbox("Sorry kid, I didn't see\nya there!")
+        if (flag(FLAG_MET_OLD_BRINEY)) {
+            msgbox("...oh...{PLAYER}, right?")
+            msgbox("...hrm? What'dya making that face\nfor?")
+            msgbox("You don't recognize me? It's Cap'n\nBriney!")
+        } else {
+            msgbox("...hmmm...nope, never see ya before.")
+            msgbox("'names Briney! Captain Briney to you!")
+        }
         msgbox("I've been sailin' 'round there parts\nand came ashore at this here village.")
         msgbox("Ain't a soul still livin' here.")
         msgbox("It's quite sad, I say.")
         msgbox("But there's somethin' kinda pretty\n'bout it, don'tcha think?")
-        msgbox("Wahaha! I ain't a poet.")
         msgbox("Well, anyway, I've been tryna fix up\nthe old girl to get outta here.")
         msgbox("Some of the hull got torn up pretty\nbad on my way in.")
         msgbox("Say, you wouldn't happen to\nhave any welding fluid on ya?", MSGBOX_YESNO)
@@ -34,8 +38,8 @@ script WEIRDCAVEBRIDGE2_EventScript_Briney {
             msgbox("Well, if ya find someone who\nmight, let em' know for me, will ya?")
             msgbox("I'll make it worth yer while!")
         }
-        msgbox("Just don't dent the ship, alright?")
-        msgbox("She's had her fair share, wahaha!")
+        msgbox("Just don't dent the ship, alright? Waha!")
+        setflag(FLAG_NEED_WELDING_FLUID)
         setflag(FLAG_BRINEY_CONVO_1)
     } else {
         msgbox("Ahoy, lad!")
@@ -47,7 +51,7 @@ script WEIRDCAVEBRIDGE2_EventScript_Briney {
             msgbox("You do?!")
             msgbox("...ah.")
             msgbox("Yer just yanking my chain,\n aren't ya, kid?")
-            msgbox("Well, I don't know what I was expectin'. Wahaha!")
+            msgbox("Well, I don't know what I was expectin'.")
         } else {
             msgbox("If ya find someone who\nmight, let em' know for me, will ya?")
             msgbox("I'll make it worth yer while!")
@@ -59,6 +63,12 @@ script WEIRDCAVEBRIDGE2_EventScript_Briney {
 
 movement BrineyMovement1 {
     face_player
+}
+
+script WEIRDCAVEBRIDGE2_EventScript_SignForMaze {
+    lockall
+    msgbox("May failure help guide your way.")
+    releaseall
 }
 
 

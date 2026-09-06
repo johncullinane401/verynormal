@@ -2377,6 +2377,83 @@ Route104_EventScript_Portal_4:
 	goto Route104_EventScript_Portal_1
 
 
+Route104_EventScript_Briney::
+# 1194 "data/maps/Route104/scripts.pory"
+	lockall
+# 1195 "data/maps/Route104/scripts.pory"
+	faceplayer
+# 1196 "data/maps/Route104/scripts.pory"
+	goto_if_unset FLAG_MET_OLD_BRINEY, Route104_EventScript_Briney_2
+# 1214 "data/maps/Route104/scripts.pory"
+	msgbox Route104_EventScript_Briney_Text_15
+# 1215 "data/maps/Route104/scripts.pory"
+	msgbox Route104_EventScript_Briney_Text_14
+# 1216 "data/maps/Route104/scripts.pory"
+	goto_if_set FLAG_NEED_WELDING_FLUID, Route104_EventScript_Briney_5
+Route104_EventScript_Briney_1:
+# 1229 "data/maps/Route104/scripts.pory"
+	releaseall
+	return
+
+Route104_EventScript_Briney_2:
+# 1197 "data/maps/Route104/scripts.pory"
+	msgbox Route104_EventScript_Briney_Text_0
+# 1198 "data/maps/Route104/scripts.pory"
+	msgbox Route104_EventScript_Briney_Text_1
+# 1199 "data/maps/Route104/scripts.pory"
+	msgbox Route104_EventScript_Briney_Text_2
+# 1200 "data/maps/Route104/scripts.pory"
+	msgbox Route104_EventScript_Briney_Text_3
+# 1201 "data/maps/Route104/scripts.pory"
+	msgbox Route104_EventScript_Briney_Text_4
+# 1202 "data/maps/Route104/scripts.pory"
+	msgbox Route104_EventScript_Briney_Text_5
+# 1203 "data/maps/Route104/scripts.pory"
+	msgbox Route104_EventScript_Briney_Text_6
+# 1204 "data/maps/Route104/scripts.pory"
+	msgbox Route104_EventScript_Briney_Text_7
+# 1205 "data/maps/Route104/scripts.pory"
+	msgbox Route104_EventScript_Briney_Text_8
+# 1206 "data/maps/Route104/scripts.pory"
+	msgbox Route104_EventScript_Briney_Text_9
+# 1207 "data/maps/Route104/scripts.pory"
+	msgbox Route104_EventScript_Briney_Text_10
+# 1208 "data/maps/Route104/scripts.pory"
+	msgbox Route104_EventScript_Briney_Text_11
+# 1209 "data/maps/Route104/scripts.pory"
+	msgbox Route104_EventScript_Briney_Text_12
+# 1210 "data/maps/Route104/scripts.pory"
+	msgbox Route104_EventScript_Briney_Text_13
+# 1211 "data/maps/Route104/scripts.pory"
+	msgbox Route104_EventScript_Briney_Text_14
+# 1212 "data/maps/Route104/scripts.pory"
+	setflag FLAG_MET_OLD_BRINEY
+	goto Route104_EventScript_Briney_1
+
+Route104_EventScript_Briney_5:
+# 1217 "data/maps/Route104/scripts.pory"
+	msgbox Route104_EventScript_Briney_Text_16
+# 1218 "data/maps/Route104/scripts.pory"
+	msgbox Route104_EventScript_Briney_Text_17
+# 1219 "data/maps/Route104/scripts.pory"
+	msgbox Route104_EventScript_Briney_Text_18
+# 1220 "data/maps/Route104/scripts.pory"
+	msgbox Route104_EventScript_Briney_Text_19
+# 1221 "data/maps/Route104/scripts.pory"
+	msgbox Route104_EventScript_Briney_Text_20
+# 1222 "data/maps/Route104/scripts.pory"
+	giveitem ITEM_METAL_COAT, 1
+# 1223 "data/maps/Route104/scripts.pory"
+	playfanfare MUS_OBTAIN_ITEM
+# 1224 "data/maps/Route104/scripts.pory"
+	msgbox Route104_EventScript_Briney_Text_21
+# 1225 "data/maps/Route104/scripts.pory"
+	waitstate
+# 1226 "data/maps/Route104/scripts.pory"
+	delay 50
+	goto Route104_EventScript_Briney_1
+
+
 Route104_EventScript_Portal_Text_0:
 # 1173 "data/maps/Route104/scripts.pory"
 	.string "For some reason, the flowers here are\nwilting.$"
@@ -2396,3 +2473,91 @@ Route104_EventScript_Portal_Text_3:
 Route104_EventScript_Portal_Text_4:
 # 1179 "data/maps/Route104/scripts.pory"
 	.string "Use DREAMREAPER??$"
+
+Route104_EventScript_Briney_Text_0:
+# 1197 "data/maps/Route104/scripts.pory"
+	.string "..hm?$"
+
+Route104_EventScript_Briney_Text_1:
+# 1198 "data/maps/Route104/scripts.pory"
+	.string "Oh, hello there!$"
+
+Route104_EventScript_Briney_Text_2:
+# 1199 "data/maps/Route104/scripts.pory"
+	.string "And your name is...$"
+
+Route104_EventScript_Briney_Text_3:
+# 1200 "data/maps/Route104/scripts.pory"
+	.string "Ah, {PLAYER}, I see.$"
+
+Route104_EventScript_Briney_Text_4:
+# 1201 "data/maps/Route104/scripts.pory"
+	.string "I am known as Mr. Briney.$"
+
+Route104_EventScript_Briney_Text_5:
+# 1202 "data/maps/Route104/scripts.pory"
+	.string "I'm a retired sailor, but I've been ferrying\ntrainers around up until recently.$"
+
+Route104_EventScript_Briney_Text_6:
+# 1203 "data/maps/Route104/scripts.pory"
+	.string "You look like a promising young trainer!$"
+
+Route104_EventScript_Briney_Text_7:
+# 1204 "data/maps/Route104/scripts.pory"
+	.string "I would offer you a ride to Dewford\nTown, but...$"
+
+Route104_EventScript_Briney_Text_8:
+# 1205 "data/maps/Route104/scripts.pory"
+	.string "Unfortunately, my ship's just...gone!$"
+
+Route104_EventScript_Briney_Text_9:
+# 1206 "data/maps/Route104/scripts.pory"
+	.string "Stolen, perhaps...$"
+
+Route104_EventScript_Briney_Text_10:
+# 1207 "data/maps/Route104/scripts.pory"
+	.string "One night, I came out and she had\nvanished!$"
+
+Route104_EventScript_Briney_Text_11:
+# 1208 "data/maps/Route104/scripts.pory"
+	.string "She was tied firmly to the docks, too.$"
+
+Route104_EventScript_Briney_Text_12:
+# 1209 "data/maps/Route104/scripts.pory"
+	.string "It's almost like magic!$"
+
+Route104_EventScript_Briney_Text_13:
+# 1210 "data/maps/Route104/scripts.pory"
+	.string "Alas...$"
+
+Route104_EventScript_Briney_Text_14:
+# 1211 "data/maps/Route104/scripts.pory"
+	.string "If there's anything that troubles you,\ndon't hesitate to tell me!$"
+
+Route104_EventScript_Briney_Text_15:
+# 1214 "data/maps/Route104/scripts.pory"
+	.string "Hello, {PLAYER}!$"
+
+Route104_EventScript_Briney_Text_16:
+# 1217 "data/maps/Route104/scripts.pory"
+	.string "...hm? Welding fluid?$"
+
+Route104_EventScript_Briney_Text_17:
+# 1218 "data/maps/Route104/scripts.pory"
+	.string "Well, I don't know why you would\nneed somethin' like that, but...$"
+
+Route104_EventScript_Briney_Text_18:
+# 1219 "data/maps/Route104/scripts.pory"
+	.string "I do have some.$"
+
+Route104_EventScript_Briney_Text_19:
+# 1220 "data/maps/Route104/scripts.pory"
+	.string "You seem like a good kid, so\nI trust you with it.$"
+
+Route104_EventScript_Briney_Text_20:
+# 1221 "data/maps/Route104/scripts.pory"
+	.string "All I ask is you return it\nonce you are done.$"
+
+Route104_EventScript_Briney_Text_21:
+# 1224 "data/maps/Route104/scripts.pory"
+	.string "You got Welding Fluid!$"

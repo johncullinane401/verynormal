@@ -1189,3 +1189,39 @@ script Route104_EventScript_Portal {
 	// warp(MAP_DARKZONE,0,0)
 	releaseall
 }
+
+script Route104_EventScript_Briney {
+	lockall
+	faceplayer
+	if (!flag(FLAG_MET_OLD_BRINEY)) {
+		msgbox("..hm?")
+		msgbox("Oh, hello there!")
+		msgbox("And your name is...")
+		msgbox("Ah, {PLAYER}, I see.")
+		msgbox("I am known as Mr. Briney.")
+		msgbox("I'm a retired sailor, but I've been ferrying\ntrainers around up until recently.")
+		msgbox("You look like a promising young trainer!")
+		msgbox("I would offer you a ride to Dewford\nTown, but...")
+		msgbox("Unfortunately, my ship's just...gone!")
+		msgbox("Stolen, perhaps...")
+		msgbox("One night, I came out and she had\nvanished!")
+		msgbox("She was tied firmly to the docks, too.")
+		msgbox("It's almost like magic!")
+		msgbox("Alas...")
+		msgbox("If there's anything that troubles you,\ndon't hesitate to tell me!")
+		setflag(FLAG_MET_OLD_BRINEY)
+	} else {
+		msgbox("Hello, {PLAYER}!")
+		msgbox("If there's anything that troubles you,\ndon't hesitate to tell me!")
+		if (flag(FLAG_NEED_WELDING_FLUID)) {
+			msgbox("...hm? Welding fluid?")
+			msgbox("Well, I don't know why you would\nneed somethin' like that, but...")
+			msgbox("I do have some.")
+			msgbox("You seem like a good kid, so\nI trust you with it.")
+			msgbox("All I ask is you return it\nonce you are done.")
+			giveitem(ITEM_METAL_COAT, 1)
+			playfanfare(MUS_OBTAIN_ITEM)
+		}
+	}
+	releaseall
+}

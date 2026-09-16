@@ -2391,7 +2391,7 @@ Route104_EventScript_Briney::
 # 1216 "data/maps/Route104/scripts.pory"
 	goto_if_set FLAG_NEED_WELDING_FLUID, Route104_EventScript_Briney_5
 Route104_EventScript_Briney_1:
-# 1229 "data/maps/Route104/scripts.pory"
+# 1226 "data/maps/Route104/scripts.pory"
 	releaseall
 	return
 
@@ -2445,12 +2445,6 @@ Route104_EventScript_Briney_5:
 	giveitem ITEM_METAL_COAT, 1
 # 1223 "data/maps/Route104/scripts.pory"
 	playfanfare MUS_OBTAIN_ITEM
-# 1224 "data/maps/Route104/scripts.pory"
-	msgbox Route104_EventScript_Briney_Text_21
-# 1225 "data/maps/Route104/scripts.pory"
-	waitstate
-# 1226 "data/maps/Route104/scripts.pory"
-	delay 50
 	goto Route104_EventScript_Briney_1
 
 
@@ -2557,7 +2551,3 @@ Route104_EventScript_Briney_Text_19:
 Route104_EventScript_Briney_Text_20:
 # 1221 "data/maps/Route104/scripts.pory"
 	.string "All I ask is you return it\nonce you are done.$"
-
-Route104_EventScript_Briney_Text_21:
-# 1224 "data/maps/Route104/scripts.pory"
-	.string "You got Welding Fluid!$"

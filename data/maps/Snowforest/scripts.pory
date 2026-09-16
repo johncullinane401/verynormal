@@ -1,0 +1,18 @@
+raw `Snowforest_MapScripts::
+	.byte 0
+`
+
+script Snowforest_EventScript_Shadow { 
+    lockall
+    msgbox("Enter the hole?", MSGBOX_YESNO) 
+    if (var(VAR_RESULT) == TRUE) {
+        msgbox("You decide to enter the hole...")
+    }
+    releaseall
+}
+
+script DUSKULLDOLL_TEXT {
+    lockall
+    msgbox("A plush resembling Duskull is lying\nhere.")
+    releaseall
+}

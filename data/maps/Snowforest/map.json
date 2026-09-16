@@ -1,0 +1,349 @@
+{
+  "id": "MAP_SNOWFOREST",
+  "name": "Snowforest",
+  "layout": "LAYOUT_SNOWFOREST",
+  "music": "MUS_DUMMY",
+  "region_map_section": "MAPSEC_ABANDONED_SHIP",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_NONE",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": false,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_SNOWFOREST_END",
+      "offset": 0,
+      "direction": "right"
+    }
+  ],
+  "object_events": [],
+  "warp_events": [
+    {
+      "x": 1,
+      "y": 22,
+      "elevation": 0,
+      "dest_map": "MAP_ICEROOM2",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 24,
+      "y": 6,
+      "elevation": 0,
+      "dest_map": "MAP_SNOWFOREST",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 25,
+      "y": 6,
+      "elevation": 0,
+      "dest_map": "MAP_SNOWFOREST",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 26,
+      "y": 6,
+      "elevation": 0,
+      "dest_map": "MAP_SNOWFOREST",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 27,
+      "y": 6,
+      "elevation": 0,
+      "dest_map": "MAP_SNOWFOREST",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 28,
+      "y": 6,
+      "elevation": 0,
+      "dest_map": "MAP_SNOWFOREST",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 29,
+      "y": 6,
+      "elevation": 0,
+      "dest_map": "MAP_SNOWFOREST",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 30,
+      "y": 6,
+      "elevation": 0,
+      "dest_map": "MAP_SNOWFOREST",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 31,
+      "y": 6,
+      "elevation": 0,
+      "dest_map": "MAP_SNOWFOREST",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 32,
+      "y": 6,
+      "elevation": 0,
+      "dest_map": "MAP_SNOWFOREST",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 33,
+      "y": 6,
+      "elevation": 0,
+      "dest_map": "MAP_SNOWFOREST",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 34,
+      "y": 6,
+      "elevation": 0,
+      "dest_map": "MAP_SNOWFOREST",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 35,
+      "y": 6,
+      "elevation": 0,
+      "dest_map": "MAP_SNOWFOREST",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 36,
+      "y": 6,
+      "elevation": 0,
+      "dest_map": "MAP_SNOWFOREST",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 37,
+      "y": 6,
+      "elevation": 0,
+      "dest_map": "MAP_SNOWFOREST",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 38,
+      "y": 6,
+      "elevation": 0,
+      "dest_map": "MAP_SNOWFOREST",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 39,
+      "y": 6,
+      "elevation": 0,
+      "dest_map": "MAP_SNOWFOREST",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 40,
+      "y": 6,
+      "elevation": 0,
+      "dest_map": "MAP_SNOWFOREST",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 41,
+      "y": 6,
+      "elevation": 0,
+      "dest_map": "MAP_SNOWFOREST",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 42,
+      "y": 6,
+      "elevation": 0,
+      "dest_map": "MAP_SNOWFOREST",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 43,
+      "y": 6,
+      "elevation": 0,
+      "dest_map": "MAP_SNOWFOREST",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 44,
+      "y": 6,
+      "elevation": 0,
+      "dest_map": "MAP_SNOWFOREST",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 45,
+      "y": 6,
+      "elevation": 0,
+      "dest_map": "MAP_SNOWFOREST",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 24,
+      "y": 42,
+      "elevation": 0,
+      "dest_map": "MAP_SNOWFOREST",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 25,
+      "y": 42,
+      "elevation": 0,
+      "dest_map": "MAP_SNOWFOREST",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 26,
+      "y": 42,
+      "elevation": 0,
+      "dest_map": "MAP_SNOWFOREST",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 27,
+      "y": 42,
+      "elevation": 0,
+      "dest_map": "MAP_SNOWFOREST",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 28,
+      "y": 42,
+      "elevation": 0,
+      "dest_map": "MAP_SNOWFOREST",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 29,
+      "y": 42,
+      "elevation": 0,
+      "dest_map": "MAP_SNOWFOREST",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 30,
+      "y": 42,
+      "elevation": 0,
+      "dest_map": "MAP_SNOWFOREST",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 31,
+      "y": 42,
+      "elevation": 0,
+      "dest_map": "MAP_SNOWFOREST",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 32,
+      "y": 42,
+      "elevation": 0,
+      "dest_map": "MAP_SNOWFOREST",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 33,
+      "y": 42,
+      "elevation": 0,
+      "dest_map": "MAP_SNOWFOREST",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 34,
+      "y": 42,
+      "elevation": 0,
+      "dest_map": "MAP_SNOWFOREST",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 35,
+      "y": 42,
+      "elevation": 0,
+      "dest_map": "MAP_SNOWFOREST",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 36,
+      "y": 42,
+      "elevation": 0,
+      "dest_map": "MAP_SNOWFOREST",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 37,
+      "y": 42,
+      "elevation": 0,
+      "dest_map": "MAP_SNOWFOREST",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 38,
+      "y": 42,
+      "elevation": 0,
+      "dest_map": "MAP_SNOWFOREST",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 39,
+      "y": 42,
+      "elevation": 0,
+      "dest_map": "MAP_SNOWFOREST",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 40,
+      "y": 42,
+      "elevation": 0,
+      "dest_map": "MAP_SNOWFOREST",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 41,
+      "y": 42,
+      "elevation": 0,
+      "dest_map": "MAP_SNOWFOREST",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 42,
+      "y": 42,
+      "elevation": 0,
+      "dest_map": "MAP_SNOWFOREST",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 43,
+      "y": 42,
+      "elevation": 0,
+      "dest_map": "MAP_SNOWFOREST",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 44,
+      "y": 42,
+      "elevation": 0,
+      "dest_map": "MAP_SNOWFOREST",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 45,
+      "y": 42,
+      "elevation": 0,
+      "dest_map": "MAP_SNOWFOREST",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 3,
+      "y": 44,
+      "elevation": 0,
+      "dest_map": "MAP_WEIRDCAVE2",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [],
+  "bg_events": []
+}

@@ -44,7 +44,15 @@
       "flag": "FLAG_BURNTREE_2"
     }
   ],
-  "warp_events": [],
+  "warp_events": [
+    {
+      "x": 38,
+      "y": 21,
+      "elevation": 0,
+      "dest_map": "MAP_SNOWFOREST",
+      "dest_warp_id": "0"
+    }
+  ],
   "coord_events": [],
   "bg_events": []
 }

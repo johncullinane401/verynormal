@@ -9357,7 +9357,7 @@
     {
       "id": "LAYOUT_WEIRDCAVE2",
       "name": "WEIRDCAVE2_Layout",
-      "width": 37,
+      "width": 41,
       "height": 31,
       "primary_tileset": "gTileset_weirdshit1",
       "secondary_tileset": "gTileset_Petalburg",
@@ -9775,6 +9775,46 @@
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/HUB_TRUEROUTE/border.bin",
       "blockdata_filepath": "data/layouts/HUB_TRUEROUTE/map.bin"
+    },
+    {
+      "id": "LAYOUT_SNOWFOREST",
+      "name": "Snowforest_Layout",
+      "width": 84,
+      "height": 48,
+      "primary_tileset": "gTileset_snowyforest",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/Snowforest/border.bin",
+      "blockdata_filepath": "data/layouts/Snowforest/map.bin"
+    },
+    {
+      "id": "LAYOUT_SNOWFOREST_END",
+      "name": "snowforest_end_Layout",
+      "width": 16,
+      "height": 22,
+      "primary_tileset": "gTileset_snowyforest",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/snowforest_end/border.bin",
+      "blockdata_filepath": "data/layouts/snowforest_end/map.bin"
+    },
+    {
+      "id": "LAYOUT_FIREMOUNTAIN_1",
+      "name": "Firemountain_1_Layout",
+      "width": 20,
+      "height": 21,
+      "primary_tileset": "gTileset_snowyforest",
+      "secondary_tileset": "gTileset_Lavaridge",
+      "border_filepath": "data/layouts/Firemountain_1/border.bin",
+      "blockdata_filepath": "data/layouts/Firemountain_1/map.bin"
+    },
+    {
+      "id": "LAYOUT_LAVACAVE_1",
+      "name": "lavacave_1_Layout",
+      "width": 30,
+      "height": 25,
+      "primary_tileset": "gTileset_snowyforest",
+      "secondary_tileset": "gTileset_Lavaridge",
+      "border_filepath": "data/layouts/lavacave_1/border.bin",
+      "blockdata_filepath": "data/layouts/lavacave_1/map.bin"
     }
   ]
 }

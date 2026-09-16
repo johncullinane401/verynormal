@@ -1826,3 +1826,11 @@ EventScript_PalletTown_PlayersHouse_2F_TurnOnPC::
 	.include "data/maps/FLOWERMOUNTAIN/scripts.inc"
 
 	.include "data/maps/HUB_TRUEROUTE/scripts.inc"
+
+	.include "data/maps/Snowforest/scripts.inc"
+
+	.include "data/maps/snowforest_end/scripts.inc"
+
+	.include "data/maps/Firemountain_1/scripts.inc"
+
+	.include "data/maps/lavacave_1/scripts.inc"

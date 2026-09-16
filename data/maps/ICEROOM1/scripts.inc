@@ -132,7 +132,7 @@ ICEROOM1_EventScript_Girl2_Text_2:
 
 ICEROOM1_EventScript_Duskull_Text_0:
 # 37 "data/maps/ICEROOM1/scripts.pory"
-	.string "It's a plush toy resembling the\nPokemon Duskull.$"
+	.string "It's a plush toy resembling a Duskull.$"
 
 ICEROOM1_EventScript_Duskull_Text_1:
 # 39 "data/maps/ICEROOM1/scripts.pory"

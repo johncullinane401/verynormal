@@ -3105,3 +3105,22 @@ const u16 gTilesetPalettes_sootopolisfuckedup[][16] =
 };
 
 const u32 gTilesetTiles_sootopolisfuckedup[] = INCBIN_U32("data/tilesets/secondary/sootopolisfuckedup/tiles.4bpp.lz");
+
+const u16 gTilesetPalettes_snowyforest[][16] =
+{
+    INCBIN_U16("data/tilesets/primary/snowyforest/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/primary/snowyforest/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/primary/snowyforest/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/primary/snowyforest/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/primary/snowyforest/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/primary/snowyforest/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/primary/snowyforest/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/primary/snowyforest/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/primary/snowyforest/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/primary/snowyforest/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/primary/snowyforest/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/primary/snowyforest/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/primary/snowyforest/palettes/12.gbapal"),
+};
+
+const u32 gTilesetTiles_snowyforest[] = INCBIN_U32("data/tilesets/primary/snowyforest/tiles.4bpp.lz");

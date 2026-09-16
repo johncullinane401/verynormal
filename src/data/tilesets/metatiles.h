@@ -417,3 +417,6 @@ const u16 gMetatileAttributes_weirdshit2[] = INCBIN_U16("data/tilesets/primary/w
 
 const u16 gMetatiles_sootopolisfuckedup[] = INCBIN_U16("data/tilesets/secondary/sootopolisfuckedup/metatiles.bin");
 const u16 gMetatileAttributes_sootopolisfuckedup[] = INCBIN_U16("data/tilesets/secondary/sootopolisfuckedup/metatile_attributes.bin");
+
+const u16 gMetatiles_snowyforest[] = INCBIN_U16("data/tilesets/primary/snowyforest/metatiles.bin");
+const u16 gMetatileAttributes_snowyforest[] = INCBIN_U16("data/tilesets/primary/snowyforest/metatile_attributes.bin");

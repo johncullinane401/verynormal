@@ -34,7 +34,7 @@ script ICEROOM1_EventScript_Girl2 {
 
 script ICEROOM1_EventScript_Duskull {
     lockall
-    msgbox("It's a plush toy resembling the\nPokemon Duskull.")
+    msgbox("It's a plush toy resembling a Duskull.")
     if (flag(FLAG_DUSKULL) == FALSE) {
         msgbox("....................")
         msgbox("......................................cute.")

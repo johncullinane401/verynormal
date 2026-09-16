@@ -1574,3 +1574,14 @@ const struct Tileset gTileset_sootopolisfuckedup =
     .metatileAttributes = gMetatileAttributes_sootopolisfuckedup,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_snowyforest =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_snowyforest,
+    .palettes = gTilesetPalettes_snowyforest,
+    .metatiles = gMetatiles_snowyforest,
+    .metatileAttributes = gMetatileAttributes_snowyforest,
+    .callback = NULL,
+};

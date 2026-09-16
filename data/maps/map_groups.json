@@ -176,7 +176,11 @@
     "CHAOS1",
     "FLOWERFIELD",
     "FLOWERMOUNTAIN",
-    "HUB_TRUEROUTE"
+    "HUB_TRUEROUTE",
+    "Snowforest",
+    "snowforest_end",
+    "Firemountain_1",
+    "lavacave_1"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",

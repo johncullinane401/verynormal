@@ -26,4 +26,24 @@ script WISTFULWILDERNESS1_EventScript_PokemonCenter {
     }
     releaseall
 }
+
+script WISTFULWILDERNESS1_EventScipt_Hole {
+    lockall
+    msgbox("There is a hole here.")
+    msgbox("You can't see the bottom...")
+    msgbox("...Jump down the hole?", MSGBOX_YESNO)
+    if (var(VAR_RESULT) == YES) {
+        msgbox("...")
+        msgbox("...You cannot bring yourself to do it.")
+        msgbox("Not yet.")
+    }
+    releaseall
+}
+
+script WISTFULWILDERNESS1_EventScipt_HoleSign {
+    lockall
+    msgbox("The deepest pit in the dream.")
+    msgbox("Face the four sins and return when\nyou are ready.")
+    releaseall
+}
     

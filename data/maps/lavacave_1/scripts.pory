@@ -1,0 +1,31 @@
+raw `lavacave_1_MapScripts::
+	.byte 0
+`
+
+script lavacave_1_EventScript_WarpDevice {
+    lockall
+    msgbox("There is a strange contraption here.")
+    msgbox("Press the button?", MSGBOX_YESNO)
+    if (var(VAR_RESULT) == YES) {
+        warp(MAP_SNOWFOREST_END, 7, 11)
+        waitstate
+    }
+    releaseall
+}
+
+script lavacave_1_EventScript_Boy {
+    trainerbattle_double(TRAINER_JEFFREY_5, TWINSINTRO, TWINSOUTRO, TWINS_NOTENOUGH)
+    releaseall
+}
+
+text TWINSINTRO {
+    "We've known eachother for ten years.\nOur bond is unbreakable."
+}
+
+text TWINSOUTRO {
+    ""
+}
+
+text TWINS_NOTENOUGH {
+    "'Cmon."
+}

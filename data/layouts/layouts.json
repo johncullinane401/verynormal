@@ -9809,12 +9809,32 @@
     {
       "id": "LAYOUT_LAVACAVE_1",
       "name": "lavacave_1_Layout",
-      "width": 30,
+      "width": 39,
       "height": 25,
       "primary_tileset": "gTileset_snowyforest",
       "secondary_tileset": "gTileset_Lavaridge",
       "border_filepath": "data/layouts/lavacave_1/border.bin",
       "blockdata_filepath": "data/layouts/lavacave_1/map.bin"
+    },
+    {
+      "id": "LAYOUT_WEIRDCAVEBRIDGE3",
+      "name": "WEIRDCAVEBRIDGE3_Layout",
+      "width": 20,
+      "height": 9,
+      "primary_tileset": "gTileset_weirdshit1",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/WEIRDCAVEBRIDGE3/border.bin",
+      "blockdata_filepath": "data/layouts/WEIRDCAVEBRIDGE3/map.bin"
+    },
+    {
+      "id": "LAYOUT_LAVACAVE_2",
+      "name": "lavacave_2_Layout",
+      "width": 39,
+      "height": 25,
+      "primary_tileset": "gTileset_snowyforest",
+      "secondary_tileset": "gTileset_Lavaridge",
+      "border_filepath": "data/layouts/lavacave_2/border.bin",
+      "blockdata_filepath": "data/layouts/lavacave_2/map.bin"
     }
   ]
 }

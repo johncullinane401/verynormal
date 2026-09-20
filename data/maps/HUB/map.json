@@ -22,6 +22,11 @@
       "map": "MAP_CURSEZONE",
       "offset": 2,
       "direction": "up"
+    },
+    {
+      "map": "MAP_WEIRDCAVEBRIDGE3",
+      "offset": 5,
+      "direction": "left"
     }
   ],
   "object_events": [

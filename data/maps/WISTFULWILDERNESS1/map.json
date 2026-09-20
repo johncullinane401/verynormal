@@ -53,6 +53,22 @@
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "WISTFULWILDERNESS1_EventScipt_Sign"
+    },
+    {
+      "type": "sign",
+      "x": 14,
+      "y": 21,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "WISTFULWILDERNESS1_EventScipt_Hole"
+    },
+    {
+      "type": "sign",
+      "x": 15,
+      "y": 21,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "WISTFULWILDERNESS1_EventScipt_HoleSign"
     }
   ]
 }

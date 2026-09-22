@@ -28,8 +28,12 @@ lavacave_1_EventScript_WarpDevice_2:
 
 lavacave_1_EventScript_Boy::
 # 17 "data/maps/lavacave_1/scripts.pory"
-	trainerbattle_double TRAINER_JEFFREY_5, TWINSINTRO, TWINSOUTRO, TWINS_NOTENOUGH
+	setflag FLAG_TWIN_FIGHT
 # 18 "data/maps/lavacave_1/scripts.pory"
+	trainerbattle_double TRAINER_JEFFREY_5, TWINSINTRO, TWINSOUTRO, TWINS_NOTENOUGH
+# 19 "data/maps/lavacave_1/scripts.pory"
+	removeobject 1
+# 20 "data/maps/lavacave_1/scripts.pory"
 	releaseall
 	return
 
@@ -43,13 +47,13 @@ lavacave_1_EventScript_WarpDevice_Text_1:
 	.string "Press the button?$"
 
 TWINSINTRO::
-# 21 "data/maps/lavacave_1/scripts.pory"
-	.string "We've known eachother for ten years.\nOur bond is unbreakable.$"
+# 23 "data/maps/lavacave_1/scripts.pory"
+	.string "Qy'py ehiqh yuwbinbyl zil nyh syulm.\nIol vihx cm ohvlyueuvfy.$"
 
 TWINSOUTRO::
-# 25 "data/maps/lavacave_1/scripts.pory"
+# 27 "data/maps/lavacave_1/scripts.pory"
 	.string "$"
 
 TWINS_NOTENOUGH::
-# 29 "data/maps/lavacave_1/scripts.pory"
+# 31 "data/maps/lavacave_1/scripts.pory"
 	.string "'Cmon.$"

@@ -30,12 +30,27 @@ script WISTFULWILDERNESS1_EventScript_PokemonCenter {
 script WISTFULWILDERNESS1_EventScipt_Hole {
     lockall
     msgbox("There is a hole here.")
-    msgbox("You can't see the bottom...")
-    msgbox("...Jump down the hole?", MSGBOX_YESNO)
-    if (var(VAR_RESULT) == YES) {
-        msgbox("...")
-        msgbox("...You cannot bring yourself to do it.")
-        msgbox("Not yet.")
+    msgbox("What will you do?")
+    dynmultichoice(0,0, FALSE, 4, 0, DYN_MULTICHOICE_CB_NONE, "Investigate", "Jump Down", "Leave")
+    switch (var(VAR_RESULT)) {
+        case 0:
+            msgbox("(You peer into the hole.)")
+            msgbox("(The darkness runs very deep into\nthe earth...)")
+            msgbox("(You can't discern how far down it\ngoes.)")
+            break
+        case 1:
+            msgbox("(You step towards the hole.)")
+            msgbox(".......")
+            msgbox("(Are you sure you want to continue?)", MSGBOX_YESNO)
+            if (var(VAR_RESULT) == YES) {
+                msgbox("(You take another step into the abyss....!)")
+                break
+            } else {
+                msgbox("(You step back from the pit.)")
+                break
+            }
+        case 3:
+            break
     }
     releaseall
 }

@@ -14,12 +14,14 @@ script lavacave_1_EventScript_WarpDevice {
 }
 
 script lavacave_1_EventScript_Boy {
+    setflag(FLAG_TWIN_FIGHT)
     trainerbattle_double(TRAINER_JEFFREY_5, TWINSINTRO, TWINSOUTRO, TWINS_NOTENOUGH)
+    removeobject(1)
     releaseall
 }
 
 text TWINSINTRO {
-    "We've known eachother for ten years.\nOur bond is unbreakable."
+    "Qy'py ehiqh yuwbinbyl zil nyh syulm.\nIol vihx cm ohvlyueuvfy."
 }
 
 text TWINSOUTRO {

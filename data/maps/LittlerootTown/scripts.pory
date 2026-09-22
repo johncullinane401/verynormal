@@ -1041,3 +1041,9 @@ script LittlerootTown_EventScript_HUBWarp {
 	// warp(MAP_DARKZONE,0,0)
 	releaseall
 }
+
+script Littleroot_Oil {
+	lockall
+	msgbox("(It's some kind of oil.)")
+	releaseall
+}

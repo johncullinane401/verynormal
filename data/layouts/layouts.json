@@ -9835,6 +9835,16 @@
       "secondary_tileset": "gTileset_Lavaridge",
       "border_filepath": "data/layouts/lavacave_2/border.bin",
       "blockdata_filepath": "data/layouts/lavacave_2/map.bin"
+    },
+    {
+      "id": "LAYOUT_PIT_LEVEL1",
+      "name": "PIT_LEVEL1_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_snowyforest",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/PIT_LEVEL1/border.bin",
+      "blockdata_filepath": "data/layouts/PIT_LEVEL1/map.bin"
     }
   ]
 }

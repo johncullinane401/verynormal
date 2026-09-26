@@ -1503,24 +1503,12 @@ Class: Sailor
 Pic: Sailor
 Gender: Male
 Music: Cool
-Items: Full Restore
 Double Battle: No
 AI: Basic Trainer
 
-Kingdra  
-Ability: Swift Swim  
-Level: 70  
-EVs: 4 HP / 252 SpA / 252 Spe  
-Modest Nature  
-IVs: 0 Atk  
-- Disable  
-- Ice Beam  
-- Waterfall  
-- Dragon Dance  
-
 Pelipper  
 Ability: Keen Eye  
-Level: 70  
+Level: 50  
 IVs: 0 Atk  
 - Hydro Pump  
 - Agility  
@@ -1529,7 +1517,7 @@ IVs: 0 Atk
 
 Golduck  
 Ability: Damp  
-Level: 70  
+Level: 50  
 EVs: 4 Atk / 252 SpA / 252 Spe  
 Hasty Nature  
 - Body Slam  
@@ -1539,7 +1527,7 @@ Hasty Nature
 
 Mantine  
 Ability: Swift Swim  
-Level: 70  
+Level: 50  
 EVs: 4 Atk / 252 SpA / 252 Spe  
 Mild Nature  
 - Rock Slide  
@@ -1549,7 +1537,7 @@ Mild Nature
 
 Lapras (M)  
 Ability: Water Absorb  
-Level: 70  
+Level: 50  
 EVs: 252 HP / 252 SpA / 4 SpD  
 Modest Nature  
 IVs: 0 Atk  
@@ -1557,17 +1545,6 @@ IVs: 0 Atk
 - Hydro Pump  
 - Perish Song  
 - Thunderbolt  
-
-Sharpedo  
-Ability: Rough Skin  
-Level: 70  
-EVs: 4 HP / 252 SpA / 252 Spe  
-Timid Nature  
-IVs: 0 Atk  
-- Crunch  
-- Blizzard  
-- Roar  
-- Surf  
 
 === TRAINER_OWEN ===
 Name: OWEN

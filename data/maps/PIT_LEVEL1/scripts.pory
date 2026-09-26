@@ -4,7 +4,7 @@ raw `PIT_LEVEL1_MapScripts::
 script PIT_LEVEL1_EventScript_Maiden {
     lockall
     msgbox("Ah...hello.")
-    msgbox("You seek it...the bottom of this world?")
+    msgbox("You desire to reach the bottom of this world?")
     msgbox("Perhaps you seek to understand the\ntruth.")
     msgbox("Or maybe you just want this to end.")
     msgbox("Regardless of your motivation, I must ask...")

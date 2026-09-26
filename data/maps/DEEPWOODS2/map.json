@@ -21,11 +21,11 @@
   ],
   "object_events": [
     {
-      "graphics_id": "OBJ_EVENT_GFX_HEX_MANIAC",
+      "graphics_id": "OBJ_EVENT_GFX_BEAUTY",
       "x": 24,
-      "y": 51,
+      "y": 52,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -50,7 +50,7 @@
   "warp_events": [
     {
       "x": 60,
-      "y": 52,
+      "y": 50,
       "elevation": 0,
       "dest_map": "MAP_DEEPWOODS2",
       "dest_warp_id": "0"
@@ -74,6 +74,33 @@
       "var": "VAR_TEMP_0",
       "var_value": "0",
       "script": "DEEPWOODS2_EventScript_MakeGhost"
+    },
+    {
+      "type": "trigger",
+      "x": 59,
+      "y": 50,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "DEEPWOODS2_EventScript_OminousMessage"
+    },
+    {
+      "type": "trigger",
+      "x": 59,
+      "y": 51,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "DEEPWOODS2_EventScript_OminousMessage"
+    },
+    {
+      "type": "trigger",
+      "x": 59,
+      "y": 52,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "DEEPWOODS2_EventScript_OminousMessage"
     }
   ],
   "bg_events": [],

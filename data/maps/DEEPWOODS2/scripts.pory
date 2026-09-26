@@ -14,6 +14,7 @@ script DEEPWOODS2_EventScript_MakeGhost {
 
 movement GhostMoveUp {
     walk_up
+    walk_up
 }
 
 script DEEPWOODS2_EventScript_BugCatcher1 {
@@ -22,5 +23,15 @@ script DEEPWOODS2_EventScript_BugCatcher1 {
     msgbox("I thought I might find them crawling\naround here.")
     msgbox("But...there's nobody here.")
     msgbox("There's nothing here.")
+    releaseall
+}
+
+script DEEPWOODS2_EventScript_OminousMessage {
+    lockall
+    if (flag(FLAG_FOREST_MESSAGE) != TRUE) {
+        msgbox("(The forest seems to stretch on\nforever...)")
+        setflag(FLAG_FOREST_MESSAGE)
+    }
+    
     releaseall
 }

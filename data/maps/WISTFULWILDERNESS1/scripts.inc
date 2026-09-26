@@ -69,10 +69,10 @@ WISTFULWILDERNESS1_EventScipt_Hole::
 	case 0, WISTFULWILDERNESS1_EventScipt_Hole_3
 # 41 "data/maps/WISTFULWILDERNESS1/scripts.pory"
 	case 1, WISTFULWILDERNESS1_EventScipt_Hole_4
-# 52 "data/maps/WISTFULWILDERNESS1/scripts.pory"
+# 62 "data/maps/WISTFULWILDERNESS1/scripts.pory"
 	case 3, WISTFULWILDERNESS1_EventScipt_Hole_5
 WISTFULWILDERNESS1_EventScipt_Hole_1:
-# 55 "data/maps/WISTFULWILDERNESS1/scripts.pory"
+# 65 "data/maps/WISTFULWILDERNESS1/scripts.pory"
 	releaseall
 	return
 
@@ -95,8 +95,8 @@ WISTFULWILDERNESS1_EventScipt_Hole_4:
 # 45 "data/maps/WISTFULWILDERNESS1/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq WISTFULWILDERNESS1_EventScipt_Hole_6
-# 49 "data/maps/WISTFULWILDERNESS1/scripts.pory"
-	msgbox WISTFULWILDERNESS1_EventScipt_Hole_Text_12
+# 59 "data/maps/WISTFULWILDERNESS1/scripts.pory"
+	msgbox WISTFULWILDERNESS1_EventScipt_Hole_Text_18
 	goto WISTFULWILDERNESS1_EventScipt_Hole_1
 
 WISTFULWILDERNESS1_EventScipt_Hole_5:
@@ -105,17 +105,37 @@ WISTFULWILDERNESS1_EventScipt_Hole_5:
 WISTFULWILDERNESS1_EventScipt_Hole_6:
 # 46 "data/maps/WISTFULWILDERNESS1/scripts.pory"
 	msgbox WISTFULWILDERNESS1_EventScipt_Hole_Text_11
+# 47 "data/maps/WISTFULWILDERNESS1/scripts.pory"
+	fadescreen FADE_TO_BLACK
+# 48 "data/maps/WISTFULWILDERNESS1/scripts.pory"
+	warp MAP_PIT_LEVEL1, 2, 10
+# 49 "data/maps/WISTFULWILDERNESS1/scripts.pory"
+	waitstate
+# 50 "data/maps/WISTFULWILDERNESS1/scripts.pory"
+	msgbox WISTFULWILDERNESS1_EventScipt_Hole_Text_12
+# 51 "data/maps/WISTFULWILDERNESS1/scripts.pory"
+	msgbox WISTFULWILDERNESS1_EventScipt_Hole_Text_13
+# 52 "data/maps/WISTFULWILDERNESS1/scripts.pory"
+	msgbox WISTFULWILDERNESS1_EventScipt_Hole_Text_14
+# 53 "data/maps/WISTFULWILDERNESS1/scripts.pory"
+	fadescreen FADE_FROM_BLACK
+# 54 "data/maps/WISTFULWILDERNESS1/scripts.pory"
+	msgbox WISTFULWILDERNESS1_EventScipt_Hole_Text_15
+# 55 "data/maps/WISTFULWILDERNESS1/scripts.pory"
+	msgbox WISTFULWILDERNESS1_EventScipt_Hole_Text_16
+# 56 "data/maps/WISTFULWILDERNESS1/scripts.pory"
+	msgbox WISTFULWILDERNESS1_EventScipt_Hole_Text_17
 	goto WISTFULWILDERNESS1_EventScipt_Hole_1
 
 
 WISTFULWILDERNESS1_EventScipt_HoleSign::
-# 59 "data/maps/WISTFULWILDERNESS1/scripts.pory"
+# 69 "data/maps/WISTFULWILDERNESS1/scripts.pory"
 	lockall
-# 60 "data/maps/WISTFULWILDERNESS1/scripts.pory"
+# 70 "data/maps/WISTFULWILDERNESS1/scripts.pory"
 	msgbox WISTFULWILDERNESS1_EventScipt_HoleSign_Text_0
-# 61 "data/maps/WISTFULWILDERNESS1/scripts.pory"
+# 71 "data/maps/WISTFULWILDERNESS1/scripts.pory"
 	msgbox WISTFULWILDERNESS1_EventScipt_HoleSign_Text_1
-# 62 "data/maps/WISTFULWILDERNESS1/scripts.pory"
+# 72 "data/maps/WISTFULWILDERNESS1/scripts.pory"
 	releaseall
 	return
 
@@ -173,13 +193,37 @@ WISTFULWILDERNESS1_EventScipt_Hole_Text_11:
 	.string "(You take another step into the abyss....!)$"
 
 WISTFULWILDERNESS1_EventScipt_Hole_Text_12:
-# 49 "data/maps/WISTFULWILDERNESS1/scripts.pory"
+# 50 "data/maps/WISTFULWILDERNESS1/scripts.pory"
+	.string ".$"
+
+WISTFULWILDERNESS1_EventScipt_Hole_Text_13:
+# 51 "data/maps/WISTFULWILDERNESS1/scripts.pory"
+	.string "..$"
+
+WISTFULWILDERNESS1_EventScipt_Hole_Text_14:
+# 52 "data/maps/WISTFULWILDERNESS1/scripts.pory"
+	.string "...$"
+
+WISTFULWILDERNESS1_EventScipt_Hole_Text_15:
+# 54 "data/maps/WISTFULWILDERNESS1/scripts.pory"
+	.string "(....)$"
+
+WISTFULWILDERNESS1_EventScipt_Hole_Text_16:
+# 55 "data/maps/WISTFULWILDERNESS1/scripts.pory"
+	.string "You survived the fall.$"
+
+WISTFULWILDERNESS1_EventScipt_Hole_Text_17:
+# 56 "data/maps/WISTFULWILDERNESS1/scripts.pory"
+	.string "If this was a different game, your\nlegs would surely be shattered.$"
+
+WISTFULWILDERNESS1_EventScipt_Hole_Text_18:
+# 59 "data/maps/WISTFULWILDERNESS1/scripts.pory"
 	.string "(You step back from the pit.)$"
 
 WISTFULWILDERNESS1_EventScipt_HoleSign_Text_0:
-# 60 "data/maps/WISTFULWILDERNESS1/scripts.pory"
+# 70 "data/maps/WISTFULWILDERNESS1/scripts.pory"
 	.string "The deepest pit in the dream.$"
 
 WISTFULWILDERNESS1_EventScipt_HoleSign_Text_1:
-# 61 "data/maps/WISTFULWILDERNESS1/scripts.pory"
+# 71 "data/maps/WISTFULWILDERNESS1/scripts.pory"
 	.string "Face the four sins and return when\nyou are ready.$"

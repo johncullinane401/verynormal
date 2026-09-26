@@ -1,0 +1,36 @@
+raw `PIT_LEVEL1_MapScripts::
+	.byte 0
+`
+script PIT_LEVEL1_EventScript_Maiden {
+    lockall
+    msgbox("Ah...hello.")
+    msgbox("You seek it...the bottom of this world?")
+    msgbox("Perhaps you seek to understand the\ntruth.")
+    msgbox("Or maybe you just want this to end.")
+    msgbox("Regardless of your motivation, I must ask...")
+    if (!flag(GOT_ASMODIA)) {
+        msgbox("Why the rush?")
+        msgbox("You've barely scratched the surface\nof this world.")
+    } elif (flag(GOT_BELPHALGA)) {
+        msgbox("Are you ready?")
+        msgbox("From this point forwards, there's\nno turning back.")
+        msgbox("You will dive deeper and deeper into\nthe abyss.")
+        msgbox("If you have any lingering curiosity, or\nany attachment to this place, I suggest\pyou prepare yourself now.")
+        msgbox("Now, I ask again.")
+        msgbox("Are you ready? {PAUSE_UNTIL_PRESS}", MSGBOX_YESNO)
+        if (var(VAR_RESULT) == YES) {
+            msgbox("...Ha. Alright.")
+            msgbox("You do seem prepared for what comes\nnext.")
+            trainerbattle_single(TRAINER_PHOEBE, Maiden_Intro, Maiden_Outro)
+        }
+    }
+    releaseall
+}
+
+text Maiden_Intro {
+    "But just to be safe...!"
+}
+
+text Maiden_Outro {
+    "...Excellent."
+}

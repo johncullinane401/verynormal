@@ -4669,12 +4669,12 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Slash
 
 === TRAINER_PHOEBE ===
-Name: PHOEBE
-Class: Elite Four
-Pic: Elite Four Phoebe
+Name: THE MAIDEN
+Class: 
+Pic: Aroma Lady
 Gender: Female
 Music: Elite Four
-Items: Full Restore / Full Restore
+Items: Full Restore
 Double Battle: No
 AI: Basic Trainer
 Mugshot: Green

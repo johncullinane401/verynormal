@@ -1840,3 +1840,5 @@ EventScript_PalletTown_PlayersHouse_2F_TurnOnPC::
 	.include "data/maps/lavacave_2/scripts.inc"
 
 	.include "data/maps/PIT_LEVEL1/scripts.inc"
+
+	.include "data/maps/GREYFOREST4_/scripts.inc"

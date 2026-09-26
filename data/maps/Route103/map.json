@@ -300,11 +300,11 @@
       "flag": "FLAG_YIN_WARP_1"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_DITTO_DOLL",
+      "graphics_id": "OBJ_EVENT_GFX_BEAUTY",
       "x": 13,
       "y": 11,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_type": "MOVEMENT_TYPE_WATCH_PLAYER_OWE",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -313,11 +313,11 @@
       "flag": "FLAG_REMOVE_YINLINGS"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_DITTO_DOLL",
+      "graphics_id": "OBJ_EVENT_GFX_BEAUTY",
       "x": 13,
       "y": 10,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_type": "MOVEMENT_TYPE_WATCH_PLAYER_OWE",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -326,11 +326,11 @@
       "flag": "FLAG_REMOVE_YINLINGS"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_DITTO_DOLL",
+      "graphics_id": "OBJ_EVENT_GFX_BEAUTY",
       "x": 13,
       "y": 9,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_type": "MOVEMENT_TYPE_WATCH_PLAYER_OWE",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -339,11 +339,11 @@
       "flag": "FLAG_REMOVE_YINLINGS"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_DITTO_DOLL",
+      "graphics_id": "OBJ_EVENT_GFX_BEAUTY",
       "x": 13,
       "y": 8,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_type": "MOVEMENT_TYPE_WATCH_PLAYER_OWE",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -352,11 +352,11 @@
       "flag": "FLAG_REMOVE_YINLINGS"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_DITTO_DOLL",
+      "graphics_id": "OBJ_EVENT_GFX_BEAUTY",
       "x": 13,
       "y": 7,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_type": "MOVEMENT_TYPE_WATCH_PLAYER_OWE",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",

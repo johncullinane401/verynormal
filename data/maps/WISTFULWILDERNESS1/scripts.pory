@@ -44,6 +44,16 @@ script WISTFULWILDERNESS1_EventScipt_Hole {
             msgbox("(Are you sure you want to continue?)", MSGBOX_YESNO)
             if (var(VAR_RESULT) == YES) {
                 msgbox("(You take another step into the abyss....!)")
+                fadescreen(FADE_TO_BLACK)
+                warp(MAP_PIT_LEVEL1, 2,10)
+                waitstate
+                msgbox(".")
+                msgbox("..")
+                msgbox("...")
+                fadescreen(FADE_FROM_BLACK)
+                msgbox("(....)")
+                msgbox("You survived the fall.")
+                msgbox("If this was a different game, your\nlegs would surely be shattered.")
                 break
             } else {
                 msgbox("(You step back from the pit.)")

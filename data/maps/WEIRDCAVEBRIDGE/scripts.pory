@@ -2,8 +2,7 @@ raw `WEIRDCAVEBRIDGE_MapScripts::
 	.byte 0
 `
 
-
-script WEIRDCAVEBRIDGE_EventScript_BurnTree {
+script EventScript_BurnTree {
     lockall
     msgbox("At first glance, this tree looks\nlike it could be cut down.")
     msgbox("However, now that you are closer,\nyou realize that is impossible.")

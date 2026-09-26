@@ -1,0 +1,10 @@
+raw `GREYFOREST4__MapScripts::
+	.byte 0
+`
+
+script GREYFOREST4__EventScript_Tower {
+    lockall
+    msgbox("(An obsidian tower stands tall before\nyou.)")
+    msgbox("(As you approach it, you hear a faint\nhumming coming from the walls.)")
+    releaseall
+}

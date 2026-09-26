@@ -2077,14 +2077,76 @@ LittlerootTown_EventScript_HUBWarp_4:
 	goto LittlerootTown_EventScript_HUBWarp_1
 
 
+Littleroot_Oil::
+# 1046 "data/maps/LittlerootTown/scripts.pory"
+	lockall
+# 1047 "data/maps/LittlerootTown/scripts.pory"
+	msgbox Littleroot_Oil_Text_0
+# 1048 "data/maps/LittlerootTown/scripts.pory"
+	releaseall
+	return
+
+
+LittlerootTown_EventScript_LabWarp::
+# 1052 "data/maps/LittlerootTown/scripts.pory"
+	lockall
+# 1053 "data/maps/LittlerootTown/scripts.pory"
+	msgbox LittlerootTown_EventScript_LabWarp_Text_0
+# 1054 "data/maps/LittlerootTown/scripts.pory"
+	msgbox LittlerootTown_EventScript_LabWarp_Text_1
+# 1055 "data/maps/LittlerootTown/scripts.pory"
+	goto_if_set FLAG_PORTAL_ACCESS, LittlerootTown_EventScript_LabWarp_2
+LittlerootTown_EventScript_LabWarp_1:
+# 1069 "data/maps/LittlerootTown/scripts.pory"
+	releaseall
+	return
+
+LittlerootTown_EventScript_LabWarp_2:
+# 1056 "data/maps/LittlerootTown/scripts.pory"
+	msgbox LittlerootTown_EventScript_HUBWarp_Text_1, MSGBOX_YESNO
+# 1057 "data/maps/LittlerootTown/scripts.pory"
+	compare VAR_RESULT, YES
+	goto_if_eq LittlerootTown_EventScript_LabWarp_4
+	goto LittlerootTown_EventScript_LabWarp_1
+
+LittlerootTown_EventScript_LabWarp_4:
+# 1058 "data/maps/LittlerootTown/scripts.pory"
+	setflag FLAG_HIDE_MAP_NAME_POPUP
+# 1059 "data/maps/LittlerootTown/scripts.pory"
+	fadescreen FADE_TO_WHITE
+# 1060 "data/maps/LittlerootTown/scripts.pory"
+	setflag FLAG_DREAMING
+# 1061 "data/maps/LittlerootTown/scripts.pory"
+	delay 200
+# 1062 "data/maps/LittlerootTown/scripts.pory"
+	setvar VAR_HOTNESS, 0
+# 1064 "data/maps/LittlerootTown/scripts.pory"
+	warp MAP_HUB, 11, 32
+# 1065 "data/maps/LittlerootTown/scripts.pory"
+	fadescreen FADE_FROM_WHITE
+	goto LittlerootTown_EventScript_LabWarp_1
+
+
 LittlerootTown_EventScript_Funnysignlol_Text_0:
 # 1020 "data/maps/LittlerootTown/scripts.pory"
 	.string "If you were looking for a SIGN your\npatch worked, here it is!$"
 
 LittlerootTown_EventScript_HUBWarp_Text_0:
 # 1026 "data/maps/LittlerootTown/scripts.pory"
-	.string "You try and focus your eyes on this\npart of the grass, but it\pmakes you feel nauseous.\nYou can't wrap your head around it.$"
+	.string "(You try and focus your eyes on this\npart of the grass, but it\pmakes you feel nauseous.\nYou can't wrap your head around it.)$"
 
 LittlerootTown_EventScript_HUBWarp_Text_1:
 # 1028 "data/maps/LittlerootTown/scripts.pory"
 	.string "Use DREAMREAPER??$"
+
+Littleroot_Oil_Text_0:
+# 1047 "data/maps/LittlerootTown/scripts.pory"
+	.string "(It's some kind of oil.)$"
+
+LittlerootTown_EventScript_LabWarp_Text_0:
+# 1053 "data/maps/LittlerootTown/scripts.pory"
+	.string "(The walls of the lab are completely white.)$"
+
+LittlerootTown_EventScript_LabWarp_Text_1:
+# 1054 "data/maps/LittlerootTown/scripts.pory"
+	.string "(Has it always been like this?)$"
